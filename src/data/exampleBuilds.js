@@ -1,0 +1,6 @@
+export const exampleBuilds = [
+  { id: 'student', name: 'The Everyday', use: 'Student & Everyday Productivity', price: 37200, tone: 'sand', image: 'photo-1587202372775-e229f172b9d7', specs: ['Ryzen 5 5600G', '16 GB DDR4', '500 GB NVMe'], text: 'A calm, capable foundation for coursework, research, video calls, and daily multitasking.' },
+  { id: 'gaming', name: 'The Vanguard', use: 'Gaming Performance', price: 67900, tone: 'blue', image: 'photo-1587202372634-32705e3bf49c', specs: ['Ryzen 5 5600', 'Radeon RX 6600', '16 GB DDR4'], text: 'A balanced 1080p gaming direction with a dedicated graphics card and room to grow.' },
+  { id: 'dev', name: 'The Workbench', use: 'Programming & Development', price: 54100, tone: 'green', image: 'photo-1593640408182-31c70c8268f5', specs: ['Core i5-12400', '32 GB DDR4', '1 TB NVMe'], text: 'A responsive development setup for IDEs, local services, containers, and focused work.' },
+  { id: 'creator', name: 'The Studio', use: 'Content Creation & Video Editing', price: 87300, tone: 'rose', image: 'photo-1591488320449-011701bb6704', specs: ['Ryzen 5 7600', 'GeForce RTX 4060', '32 GB DDR5'], text: 'More memory and GPU acceleration headroom for editing timelines and creative applications.' },
+]

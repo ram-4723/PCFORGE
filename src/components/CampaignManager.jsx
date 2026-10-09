@@ -1,0 +1,10 @@
+import { useState } from 'react'
+import { Check, SlidersHorizontal } from 'lucide-react'
+
+export default function CampaignManager({ campaigns, onChange }) {
+  const [selected, setSelected] = useState(campaigns[0]?.id)
+  const current = campaigns.find((campaign) => campaign.id === selected) || campaigns[0]
+  if (!current) return null
+  const update = (key, value) => onChange(campaigns.map((campaign) => campaign.id === current.id ? { ...campaign, [key]: value } : campaign))
+  return <div className="campaign-manager"><div className="campaign-manager-heading"><span className="manager-icon"><SlidersHorizontal size={18} /></span><div><span className="eyebrow">LOCAL DEMO CONTROLS</span><h3>Campaign placement studio</h3><p>Edit sample campaign copy and placement locally. Nothing is published or sent.</p></div></div><div className="campaign-manager-fields"><label>Demo campaign<select value={selected} onChange={(event) => setSelected(event.target.value)}>{campaigns.map((campaign) => <option key={campaign.id} value={campaign.id}>{campaign.campaignTitle}</option>)}</select></label><label>Advertiser label<input value={current.advertiser} onChange={(event) => update('advertiser', event.target.value)} /></label><label>Campaign title<input value={current.campaignTitle} onChange={(event) => update('campaignTitle', event.target.value)} /></label><label>Short description<textarea rows="2" value={current.description} onChange={(event) => update('description', event.target.value)} /></label><div className="manager-form-row"><label>CTA text<input value={current.callToAction} onChange={(event) => update('callToAction', event.target.value)} /></label><label>Placement status<select value={current.campaignStatus} onChange={(event) => update('campaignStatus', event.target.value)}><option>Demo Advertisement</option><option>Paused</option></select></label></div><label>Destination section<input value={current.destinationUrl} onChange={(event) => update('destinationUrl', event.target.value)} /></label><div className="manager-status"><Check size={14} /> Changes exist in this browser session only · demo content is clearly labelled</div></div></div>
+}
