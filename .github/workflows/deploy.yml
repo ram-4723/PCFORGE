@@ -38,6 +38,11 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build site
+        env:
+          # Set the GitHub repository variable VITE_API_URL to the deployed API's
+          # origin plus /api (for example https://pcforge-api.onrender.com/api).
+          # The relative default keeps local and preview builds working.
+          VITE_API_URL: ${{ vars.VITE_API_URL || '/api' }}
         run: pnpm build
 
       - name: Configure GitHub Pages

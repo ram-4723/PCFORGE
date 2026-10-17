@@ -1,0 +1,42 @@
+spring:
+  application:
+    name: pcforge-backend
+  data:
+    mongodb:
+      uri: ${MONGODB_URI}
+      auto-index-creation: true
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+
+server:
+  port: ${PORT:8080}
+  error:
+    include-message: never
+    include-stacktrace: never
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ${MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE:health,info}
+  endpoint:
+    health:
+      show-details: never
+      probes:
+        enabled: true
+
+pcforge:
+  seed-demo: ${PCFORGE_SEED_DEMO:false}
+  test-catalog:
+    enabled: ${PCFORGE_TEST_CATALOG_ENABLED:false}
+  frontend-origins: ${FRONTEND_ORIGINS:http://localhost:5173}
+  invoice:
+    seller-name: ${INVOICE_SELLER_NAME:}
+    seller-address: ${INVOICE_SELLER_ADDRESS:}
+    seller-gstin: ${INVOICE_SELLER_GSTIN:}
+    tax-rate-bps: ${INVOICE_TAX_RATE_BPS:0}
+  razorpay:
+    key-id: ${RAZORPAY_KEY_ID:}
+    key-secret: ${RAZORPAY_KEY_SECRET:}
+    webhook-secret: ${RAZORPAY_WEBHOOK_SECRET:}
