@@ -26,7 +26,11 @@
 
 .shop-product-grid .campaign-inline{grid-column:span 2}.shop-section .section-title p{color:#a5adbb}.total-box .button-darkline{color:#253241;border-color:#b9c0c2;background:transparent}.campaign-placement:focus-visible,.product-card button:focus-visible,.category-tile:focus-visible,.header-actions button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 
-.product-art-photo{padding:12px;background:#f2f1ee}.product-art-photo>img{width:100%;height:100%;min-height:inherit;object-fit:contain}.product-art-small.product-art-photo{padding:4px}.product-art-small.product-art-photo>img{min-height:0}
+.product-art-photo{padding:12px;background:#f2f1ee}.product-art-photo>img{width:100%;height:100%;min-height:inherit;object-fit:contain;transition:opacity .24s ease,transform .3s ease}.product-art-photo>img.product-image-loading{opacity:0}.product-art-photo>img.product-image-loaded{opacity:1}.product-art-photo:hover>img.product-image-loaded{transform:scale(1.035)}.product-art-small.product-art-photo{padding:4px}.product-art-small.product-art-photo>img{min-height:0}
+.product-art-placeholder{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:9px;background:#101827;color:#55c8dc}
+.product-art-placeholder>span{font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:#9da8b6}
+.product-art-small.product-art-placeholder>span{text-align:center;font-size:6px}
+@media (prefers-reduced-motion: reduce){.product-art-photo>img,.product-art-photo:hover>img.product-image-loaded{transition:none;transform:none}}
 
 .campaign-art-has-photo .campaign-disc{display:none}.campaign-deal .campaign-art-has-photo{width:118px;flex:0 0 95px;height:95px;justify-content:center;align-self:flex-end;padding-right:0;margin-left:auto;background:rgba(255,255,255,.08);border-radius:4px}.campaign-deal .campaign-art-has-photo .campaign-photo{width:100%;height:100%;max-height:95px;object-fit:contain;border-radius:4px}.campaign-deal .campaign-art-has-photo+.campaign-copy{position:relative}.campaign-deal .campaign-art-has-photo .campaign-disc{display:none}@media(max-width:760px){.campaign-deal .campaign-art-has-photo{width:95px;flex:0 0 95px;height:95px;align-self:center;margin:0 auto;padding:0}.campaign-deal .campaign-art-has-photo+.campaign-copy{padding-top:0}}
 

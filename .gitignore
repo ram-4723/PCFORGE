@@ -3,3 +3,12 @@ dist/
 .env
 .env.*
 !.env.example
+work/npm-cache/
+work/m2/
+work/m2-retry/
+work/m2-audit/
+work/m2-payment/
+work/maven/
+backend/target/
+work/maven-settings.xml
+work/maven-settings-retry.xml

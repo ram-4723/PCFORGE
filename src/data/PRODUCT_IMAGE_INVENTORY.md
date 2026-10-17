@@ -1,0 +1,28 @@
+# Product image inventory
+
+Audited `public/images/` recursively, including `components/` and `campaigns/`, and visually checked the product assets with ambiguous or generic filenames. Product photos remain in their existing locations; campaign artwork is never used as product photography. `public/images/components/` is currently empty apart from `.gitkeep`.
+
+## Exact product matches wired into the storefront and API-backed catalog
+
+The shared map is `productImageMap.js`. Demo records are keyed by stable catalog ID; MongoDB records without an explicit `imageUrl` are matched only when brand, category and model/name agree.
+
+- Processors: `ryzen 5 7600.webp` (AMD Ryzen 5 7600), `5600g.jpg` (AMD Ryzen 5 5600G), `i5 12400f.jpg` (Intel Core i5-12400F), `intel.jpg` (Intel Core i5-9600K).
+- Graphics cards: `RTX 4060.jpg` (ASUS Dual GeForce RTX 4060 OC), `rx 6600.jpg` (visual identifies the ASUS Dual Radeon RX 7600; filename is misleading but the file content matches the catalog record).
+- Motherboards: `b550.webp` (MSI B550M), `b650.webp` (MSI B650M Gaming Wi-Fi).
+- Memory: `corsiar.jpg` (Corsair Vengeance LPX DDR4), `trident.webp` (G.SKILL Trident Z RGB), `Corsair_Vengeance_RGB_Pro_DDR4_Memory_From_The_Peripheral_Store_01.webp`, `corsair-cmsx8gx4m1a2400c16-original-imaf8nsg7ywn8ghz.webp`, `71ff5CVvFkL.jpg` (XPG Gammix D30).
+- Storage: `crucial-p3-1tb.webp` (Crucial P3; `1tb ssd` is a byte-identical duplicate and is not separately mapped), `HDD.jpg` (D25 1 TB surveillance drive), `Intel-800GB-SATA-6Gbps-2-5-inch-SSD.png`, `in-870-evo-sata-3-2-5-ssd-mz-77e1t0bw-374908662.avif`, `Kingston_SSD_A400_240GB_Internal_Solid_State_Drive_Original_India_Free_Delivery_TPS_The_Peripheral_Store_1.webp`, `PowerXM-SATA256GBSSD_1_ba4aeab4-0820-4b28-b26f-7bd88e582637.webp`, `51x-POJf39L._AC_UF1000,1000_QL80_.jpg` (Kootion SATA SSD).
+- Power supplies: `cooler-master-mwe-650-bronze-v2.png`, `Antec-G650-Gold-Semi-Modular-SMPS-1.jpg`, `mpe-4501-acabw-bin-cooler-master-original-imafxt6cew7ht6hj.webp` (Cooler Master MWE 450 Bronze V2), `images (1).jfif` (ASUS ROG Strix 850G).
+- Cases and cooling: `pc cabineyt.jpg` (ANT Value assembled case), `c5-argb-antec-original-imahfdyuwjhfpgux.webp` (Antec C5 ARGB), `cooler air.jpg` (ANT Esports ICE-120), `Fans.jpg` (ANT Esports Carbonflow), `Thermalright-Peerless-Assassin-120-Vision-MAX-ARGB-White-CPU-Cooler-01.webp`, `1786192995897-powerx-ultra-cpu-cooler-fan-inclined.webp`, `47288.png` (Gigabyte EAGLE LCD liquid cooler), `CW-9060092-WW_01.avif` (Corsair cooler matched only by exact SKU).
+- Displays: `acer-nitro-vg271u-m3.jpg`, `ViewSonic-VX2480-2K-SHD-24-Inch-QHD-2k-Monitor-2-e1711165325957.jpg`, `benq-27-inch-2k-white-ew270q-01.webp`, `gw2491-image-main.webp` (BenQ GW2491), `o202008121103038834.png` (Gigabyte G34WQC).
+- Keyboards and mice: `71w9I5LAUZL._SX522_.jpg` (Redragon RGB keyboard), `71yVlPZv4YL._SX522_.jpg` (ANT Esports keyboard/mouse combo), `Akula65-Signature-2.webp`, `Frame_1000007111.webp`, `9_f8b13895-b9ee-4116-bc74-805598c9ff57.webp`, `Split65_Tech_Card_01.webp`, `51qZtzZrzwL._SX679_.jpg` (Razer mouse), `logitech g502.webp` (Logitech G502), `portronics_vader_x_wired_gaming_mouse.webp`, `redmagic-bluetooth-gaming-mouse-1stri-mode-mouse-gaming-with-26000-dpipc-gaming-mice-with-rgb-backlit-gaming-mouse-redmagic-super-version-694186_larg.webp`, `Front.webp` (PowerX mouse).
+- Controllers and peripherals: `8bitdo-ultimate-c-2-4g.jpg`, `43_76c4b7be-b638-4599-84fc-6da3d5a3bb98_jpg.webp`, `61zKEaKJchL._AC_UF894,1000_QL80_.jpg`, `ab0544b9-f777-4eee-98c8-729a0a0408a2.webp` (controller images; only the named 8BitDo model is currently mapped), `gaming-chair-budget.jpg` (ValorX chair), `gaming chair.jpg` (Draco chair), `thermaltake-dasher-extended.jpg`, `Gaming_Mouse_Pad_Anti-Slip_Rubber_Base_Waterproof_230_200_3mm_Swift_Website_Product_Page_Grunx.webp`, `USB HUB.jpg`, `5111H5tek7L._SX522_.jpg` (Corsair thermal paste), `thermal paste.jpg` (thermal paste asset), `tp-link-archer-ax50.jpg`.
+
+## Product assets still needing a matching catalog record or more exact identity
+
+These files are preserved and are not assigned to a different product just to fill a card: `RAM` (extensionless XPG module file; Vite preview serves it without an image MIME type), `2-1000x1000.jpg` (mousepad underside), `61GpY38PAWL.jpg` (additional Corsair Vengeance RGB Pro view), `61ua_mQs3YL._SX679.webp` and `81tTZpHw2IL._AC_SX569_.jpg` (cases without an identified exact model), `81HVg9NQinL.jpg` (additional memory view), `81VqWALocBL._AC_UF1000,1000_QL80_.jpg` (assembled PC/case photo), `81Zpm+JvTyL._AC_UF1000,1000_QL80_.jpg` (monitor with an unverified exact model), `51qZtzZrzwL._SX679_.jpg` (Razer mouse with no verified model), `c6054c50-8bf1-410e-a38e-1ae370afd1ff.webp` and its `(1)` duplicate (Evofox controllers), `2-1000x1000.jpg` and `92457467-f68a-4eff-acfb-d3fb5ee0d6ab.webp` (mousepad images), and `images (2).jfif` (Antec case with no exact model recorded).
+
+The current 29-record demo storefront has a matching local photo for each mapped record except the HyperX Cloud Core headset. That product uses the designed unavailable-photo fallback until a matching headset image is added. The prebuilt cards are illustrative whole-PC configurations, not single component records, and their existing representative build imagery is separate from this component-image map.
+
+## Campaign art (not component photos)
+
+The assets in `public/images/campaigns/` remain reserved for their disclosed demo campaigns: `amd-ryzen-9000-series.png`, `corsair-gear.png`, `corsair-keyboard-screen.webp`, `geforce-rtx-40-series.png`, `noctua-cooling.png`, `nzxt-build-beyond.png`, and `razer-viper-series.png`.
