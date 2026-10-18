@@ -58,6 +58,8 @@ export function componentToProduct(component = {}, baseUrl = '/') {
     category,
   })
   const categoryImage = findCategoryFallbackImage(category, {
+    id: component._id || component.id || '',
+    brand,
     name: suppliedName,
     model: typeof component.model === 'string' ? component.model : '',
   })

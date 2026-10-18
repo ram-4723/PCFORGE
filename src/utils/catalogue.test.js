@@ -50,6 +50,20 @@ test('selects sensible category fallback photos, including SATA SSDs and case fa
   assert.equal(findCategoryFallbackImage('Unlisted Component Category'), '/images/pc%20cabineyt.jpg')
 })
 
+test('spreads fallback photos across motherboard and cooler products without confusing their categories', () => {
+  const motherboardA = findCategoryFallbackImage('Motherboards', { name: 'A320 DDR4 Motherboard (TEST)' })
+  const motherboardB = findCategoryFallbackImage('Motherboards', { name: 'A520M DDR4 Motherboard (TEST)' })
+  assert.notEqual(motherboardA, motherboardB)
+
+  const coolers = [
+    'Premium Tower CPU Cooler (TEST)',
+    'AM4 Stock CPU Cooler (TEST)',
+    'AM4 Tower CPU Cooler (TEST)',
+  ].map((name) => findCategoryFallbackImage('CPU Coolers', { name }))
+  assert.equal(new Set(coolers).size, coolers.length)
+  assert.equal(coolers.some((image) => image.includes('ryzen')), false)
+})
+
 test('keeps a demo product image when the record carries a verified brand', () => {
   const product = componentToProduct({ name: 'Ryzen 5 7600 (demo)', category: 'Processors (CPU)', brand: 'AMD', priceInr: 18500, imageUrl: '/images/ryzen-5-7600.webp', demoData: true }, '/pcforge/')
   assert.equal(product.brand, 'AMD')

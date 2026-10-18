@@ -32,40 +32,49 @@ export const productImagePathById = Object.freeze({
   'p-mat': '/images/thermaltake-dasher-extended.jpg',
 })
 
-// Prefer recognizable product photography, then use representative category art when
-// an active catalogue record has no exact photo.
+// When no exact model photo is available, spread products across relevant photos so
+// adjacent catalogue items do not all inherit the same category image.
 const categoryFallbacks = [
-  { terms: ['processor', 'cpu'], image: '/images/ryzen%205%207600.webp' },
-  { terms: ['graphics', 'gpu', 'video card'], image: '/images/RTX%204060.jpg' },
-  { terms: ['motherboard'], image: '/images/b650.webp' },
-  { terms: ['ram', 'memory'], image: '/images/trident.webp' },
-  { terms: ['storage', 'ssd', 'hdd'], image: '/images/crucial-p3-1tb.webp' },
-  { terms: ['power suppl', 'psu'], image: '/images/cooler-master-mwe-650-bronze-v2.png' },
-  { terms: ['case', 'cabinet', 'chassis'], image: '/images/pc%20cabineyt.jpg' },
-  { terms: ['cooler', 'cooling'], image: '/images/cooler%20air.jpg' },
-  { terms: ['fan'], image: '/images/Fans.jpg' },
-  { terms: ['monitor', 'display'], image: '/images/acer-nitro-vg271u-m3.jpg' },
-  { terms: ['keyboard'], image: '/images/71w9I5LAUZL._SX522_.jpg' },
-  { terms: ['mouse', 'mice'], image: '/images/logitech%20g502.webp' },
-  { terms: ['chair'], image: '/images/gaming%20chair.jpg' },
-  { terms: ['headphone', 'headset', 'speaker', 'audio'], image: 'https://img.evetech.co.za/repository/components/hyperx-cloud-core-wired-gaming-headset-main-image-600px-v1.jpg?width=600' },
-  { terms: ['controller', 'gamepad'], image: '/images/8bitdo-ultimate-c-2-4g.jpg' },
-  { terms: ['mousepad', 'mouse pad'], image: '/images/thermaltake-dasher-extended.jpg' },
-  { terms: ['network', 'router'], image: '/images/tp-link-archer-ax50.jpg' },
-  { terms: ['accessory', 'accessories', 'usb'], image: '/images/USB%20HUB.jpg' },
+  { terms: ['cpu cooler', 'cpu cooling', 'cooler', 'cooling'], images: ['/images/cooler%20air.jpg', '/images/Thermalright-Peerless-Assassin-120-Vision-MAX-ARGB-White-CPU-Cooler-01.webp', '/images/CW-9060092-WW_01.avif', '/images/47288.png', '/images/1786192995897-powerx-ultra-cpu-cooler-fan-inclined.webp'] },
+  { terms: ['mousepad', 'mouse pad'], images: ['/images/thermaltake-dasher-extended.jpg', '/images/Gaming_Mouse_Pad_Anti-Slip_Rubber_Base_Waterproof_230_200_3mm_Swift_Website_Product_Page_Grunx.webp'] },
+  { terms: ['processor', 'cpu'], images: ['/images/ryzen%205%207600.webp', '/images/5600g.jpg', '/images/i5%2012400f.jpg', '/images/intel.jpg'] },
+  { terms: ['graphics', 'gpu', 'video card'], images: ['/images/RTX%204060.jpg', '/images/rx%206600.jpg', '/images/81huTBuLV+L._AC_UF1000,1000_QL80_.jpg'] },
+  { terms: ['motherboard'], images: ['/images/b650.webp', '/images/b550.webp'] },
+  { terms: ['ram', 'memory'], images: ['/images/trident.webp', '/images/corsiar.jpg', '/images/Corsair_Vengeance_RGB_Pro_DDR4_Memory_From_The_Peripheral_Store_01.webp', '/images/71HIjcYzy2L.jpg', '/images/71QFb5yIQCL.jpg'] },
+  { terms: ['storage', 'ssd', 'hdd'], images: ['/images/crucial-p3-1tb.webp', '/images/HDD.jpg', '/images/Intel-800GB-SATA-6Gbps-2-5-inch-SSD.png', '/images/in-870-evo-sata-3-2-5-ssd-mz-77e1t0bw-374908662.avif', '/images/Kingston_SSD_A400_240GB_Internal_Solid_State_Drive_Original_India_Free_Delivery_TPS_The_Peripheral_Store_1.webp'] },
+  { terms: ['power suppl', 'psu'], images: ['/images/cooler-master-mwe-650-bronze-v2.png', '/images/mpe-4501-acabw-bin-cooler-master-original-imafxt6cew7ht6hj.webp', '/images/Antec-G650-Gold-Semi-Modular-SMPS-1.jpg', '/images/images%20(1).jfif'] },
+  { terms: ['case', 'cabinet', 'chassis'], images: ['/images/pc%20cabineyt.jpg', '/images/c5-argb-antec-original-imahfdyuwjhfpgux.webp', '/images/MASTERFRAME_400_MESH_GOLD_LIMITED_EDITION_001.webp'] },
+  { terms: ['fan'], images: ['/images/Fans.jpg', '/images/cooler%20air.jpg'] },
+  { terms: ['monitor', 'display'], images: ['/images/acer-nitro-vg271u-m3.jpg', '/images/ViewSonic-VX2480-2K-SHD-24-Inch-QHD-2k-Monitor-2-e1711165325957.jpg', '/images/benq-27-inch-2k-white-ew270q-01.webp', '/images/o202008121103038834.png', '/images/gw2491-image-main.webp'] },
+  { terms: ['keyboard'], images: ['/images/71w9I5LAUZL._SX522_.jpg', '/images/9_f8b13895-b9ee-4116-bc74-805598c9ff57.webp'] },
+  { terms: ['mouse', 'mice'], images: ['/images/logitech%20g502.webp', '/images/redmagic-bluetooth-gaming-mouse-1stri-mode-mouse-gaming-with-26000-dpipc-gaming-mice-with-rgb-backlit-gaming-mouse-redmagic-super-version-694186_larg.webp', '/images/portronics_vader_x_wired_gaming_mouse.webp'] },
+  { terms: ['chair'], images: ['/images/gaming%20chair.jpg', '/images/gaming-chair-budget.jpg'] },
+  { terms: ['headphone', 'headset', 'speaker', 'audio'], images: ['https://img.evetech.co.za/repository/components/hyperx-cloud-core-wired-gaming-headset-main-image-600px-v1.jpg?width=600'] },
+  { terms: ['controller', 'gamepad'], images: ['/images/8bitdo-ultimate-c-2-4g.jpg'] },
+  { terms: ['network', 'router'], images: ['/images/tp-link-archer-ax50.jpg'] },
+  { terms: ['accessory', 'accessories', 'usb'], images: ['/images/USB%20HUB.jpg', '/images/71yVlPZv4YL._SX522_.jpg', '/images/thermal%20paste.jpg'] },
 ]
 
-export function findCategoryFallbackImage(category = '', { name = '', model = '' } = {}) {
+function stableImageIndex(identity, count) {
+  let hash = 2166136261
+  for (const character of identity.toLocaleLowerCase()) {
+    hash = Math.imul(hash ^ character.charCodeAt(0), 16777619)
+  }
+  return (hash >>> 0) % count
+}
+
+export function findCategoryFallbackImage(category = '', { id = '', brand = '', name = '', model = '' } = {}) {
   const normalizedCategory = category.trim().toLocaleLowerCase()
   const normalized = `${normalizedCategory} ${name} ${model}`.trim().toLocaleLowerCase()
   if (/sata/.test(normalized) && /(ssd|storage)/.test(normalized)) {
     return '/images/in-870-evo-sata-3-2-5-ssd-mz-77e1t0bw-374908662.avif'
   }
   if (normalizedCategory.includes('case fan')) return '/images/Fans.jpg'
-  if (normalizedCategory.includes('mousepad') || normalizedCategory.includes('mouse pad')) return '/images/thermaltake-dasher-extended.jpg'
   const match = categoryFallbacks.find(({ terms }) => terms.some((term) => normalizedCategory.includes(term)))
     || categoryFallbacks.find(({ terms }) => terms.some((term) => normalized.includes(term)))
-  return match?.image || '/images/pc%20cabineyt.jpg'
+  const images = match?.images || ['/images/pc%20cabineyt.jpg']
+  const identity = [id, brand, model, name].filter(Boolean).join('|') || normalizedCategory
+  return images[stableImageIndex(identity, images.length)]
 }
 
 const imageMatches = [
@@ -119,7 +128,7 @@ const imageMatches = [
 export const verifiedProductImagePaths = Object.freeze([
   ...Object.values(productImagePathById),
   ...imageMatches.map(({ image }) => image),
-  ...categoryFallbacks.map(({ image }) => image),
+  ...categoryFallbacks.flatMap(({ images }) => images),
   '/images/in-870-evo-sata-3-2-5-ssd-mz-77e1t0bw-374908662.avif',
 ].filter((path, index, paths) => paths.indexOf(path) === index))
 
