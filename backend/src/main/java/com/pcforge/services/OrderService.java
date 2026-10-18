@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.HexFormat;
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.beans.factory.annotation.Value;
@@ -43,7 +44,8 @@ public class OrderService {
         PCBuild build = builds.findByIdAndSessionTokenHash(request.buildId(), hashToken(buildToken))
                 .orElseThrow(() -> new ApiException(HttpStatus.NOT_FOUND, "BUILD_NOT_FOUND", "Saved build not found."));
         String creationKeyHash = hashToken(build.getId() + "|" + idempotencyKey);
-        String requestHash = hashToken(build.getId() + "|" + request.customer().name().trim() + "|" + request.customer().email().trim() + "|" + request.customer().phone().trim() + "|" + request.customer().address().trim());
+        String quantityFingerprint = request.quantities() == null || request.quantities().isEmpty() ? "" : "|" + new java.util.TreeMap<>(request.quantities());
+        String requestHash = hashToken(build.getId() + "|" + request.customer().name().trim() + "|" + request.customer().email().trim() + "|" + request.customer().phone().trim() + "|" + request.customer().address().trim() + quantityFingerprint);
         var existing = orders.findByCreationKeyHash(creationKeyHash);
         if (existing.isPresent()) {
             Order previous = existing.get();
@@ -53,6 +55,10 @@ public class OrderService {
         List<String> ids = build.getSelectedComponents();
         if (ids == null || ids.isEmpty() || ids.size() > 12 || new HashSet<>(ids).size() != ids.size())
             throw new ApiException(HttpStatus.CONFLICT, "BUILD_UNAVAILABLE", "The saved build no longer contains a valid component selection.");
+        Map<String, Integer> quantities = request.quantities() == null ? Map.of() : request.quantities();
+        if (quantities.size() > ids.size() || quantities.keySet().stream().anyMatch(id -> !ids.contains(id))
+                || quantities.values().stream().anyMatch(quantity -> quantity == null || quantity < 1 || quantity > 10))
+            throw new ApiException(HttpStatus.BAD_REQUEST, "INVALID_QUANTITY", "Each cart quantity must be between 1 and 10 for a selected component.");
         List<Component> selected = java.util.stream.StreamSupport.stream(components.findAllById(ids).spliterator(), false).toList();
         if (selected.size() != ids.size()) throw unavailable();
         var byId = selected.stream().collect(java.util.stream.Collectors.toMap(Component::getId, c -> c));
@@ -68,11 +74,14 @@ public class OrderService {
             if (component.isDemoData() && !testCatalogueGuard.isEnabled()) throw unavailable();
             Order.Item item = new Order.Item();
             item.setComponentId(component.getId()); item.setName(component.getName()); item.setBrand(component.getBrand());
-            item.setModel(component.getModel()); item.setCategory(component.getCategory()); item.setQuantity(1);
-            item.setUnitPriceInr(component.getPriceInr()); item.setLineTotalInr(component.getPriceInr());
-            snapshots.add(item);
-            try { subtotal = Math.addExact(subtotal, component.getPriceInr()); }
+            item.setModel(component.getModel()); item.setCategory(component.getCategory());
+            int quantity = quantities.getOrDefault(id, 1);
+            long lineTotal;
+            try { lineTotal = Math.multiplyExact(component.getPriceInr(), quantity); subtotal = Math.addExact(subtotal, lineTotal); }
             catch (ArithmeticException overflow) { throw new ApiException(HttpStatus.UNPROCESSABLE_ENTITY, "INVALID_TOTAL", "The selected components exceed the supported order amount."); }
+            item.setQuantity(quantity);
+            item.setUnitPriceInr(component.getPriceInr()); item.setLineTotalInr(lineTotal);
+            snapshots.add(item);
         }
         long tax = java.math.BigDecimal.valueOf(subtotal).multiply(java.math.BigDecimal.valueOf(taxRateBps))
                 .divide(java.math.BigDecimal.valueOf(10_000), 0, java.math.RoundingMode.HALF_UP).longValueExact();

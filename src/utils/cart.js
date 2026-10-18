@@ -1,11 +1,11 @@
 export function addOrIncrement(cart, item) {
   const existing = cart.find((entry) => entry.key === item.key)
-  if (existing) return cart.map((entry) => entry.key === item.key ? { ...entry, quantity: entry.quantity + 1 } : entry)
+  if (existing) return cart.map((entry) => entry.key === item.key ? { ...entry, quantity: Math.min(10, entry.quantity + 1) } : entry)
   return [...cart, { ...item, quantity: 1 }]
 }
 
 export function setCartQuantity(cart, key, quantity) {
-  return cart.map((item) => item.key === key ? { ...item, quantity: Math.max(1, Math.floor(quantity) || 1) } : item)
+  return cart.map((item) => item.key === key ? { ...item, quantity: Math.min(10, Math.max(1, Math.floor(quantity) || 1)) } : item)
 }
 
 export function removeFromCart(cart, key) {

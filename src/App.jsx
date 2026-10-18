@@ -22,6 +22,7 @@ import LiveBuildSummary from './components/LiveBuildSummary.jsx'
 import SpecificationChips from './components/SpecificationChips.jsx'
 import { componentToProduct, productTitle } from './utils/catalogue.js'
 import { publicAsset } from './utils/assets.js'
+import { loadRazorpayCheckout } from './utils/razorpayCheckout.js'
 import { checkBuildCompatibility, createOrder, createPaymentCheckout, downloadInvoice, getComponents, getOrder, getRecommendation, reportPaymentFailure, saveBuild, verifyPayment } from './api/client.js'
 
 const componentIcons = { 'Processors (CPU)': 'Cpu', CPU: 'Cpu', 'Graphics Cards (GPU)': 'Gpu', GPU: 'Gpu', Motherboards: 'CircuitBoard', RAM: 'MemoryStick', 'SSDs and HDDs': 'Database', Storage: 'Database', 'Power Supplies': 'Zap', PSU: 'Zap', 'PC Cabinets and Cases': 'Box', Case: 'Box', 'CPU Coolers': 'Fan', 'CPU Cooler': 'Fan', 'Case Fans': 'Fan', Monitors: 'Monitor', Monitor: 'Monitor', Keyboards: 'Keyboard', Keyboard: 'Keyboard', 'Gaming Mice': 'Mouse', Mouse: 'Mouse', 'Gaming Chairs': 'Box', 'Headphones and Speakers': 'Headphones', 'Gaming Controllers': 'Gamepad2', Mousepads: 'PanelsTopLeft', 'Networking Devices': 'Wifi', 'Other PC Accessories': 'Cable' }
@@ -32,20 +33,6 @@ function toShopProduct(component) {
 function toBuildPart(component) {
   const product = toShopProduct(component)
   return { id: product.id, name: product.name, brand: product.brand, price: product.price, specs: product.specs, isDemoData: product.isDemoData, image: product.image, imageAlt: product.imageAlt, icon: product.icon }
-}
-
-let razorpayScriptPromise
-function loadRazorpayCheckout() {
-  if (window.Razorpay) return Promise.resolve()
-  if (!razorpayScriptPromise) razorpayScriptPromise = new Promise((resolve, reject) => {
-    const script = document.createElement('script')
-    script.src = 'https://checkout.razorpay.com/v1/checkout.js'
-    script.async = true
-    script.onload = () => window.Razorpay ? resolve() : reject(new Error('Razorpay Checkout did not initialize.'))
-    script.onerror = () => { razorpayScriptPromise = null; reject(new Error('Razorpay Checkout could not be loaded. Check your connection and retry.')) }
-    document.body.appendChild(script)
-  })
-  return razorpayScriptPromise
 }
 
 const useCases = [
@@ -159,7 +146,8 @@ function App() {
       return saved.map((item) => {
         const productId = item?.key?.startsWith('product:') ? item.key.slice('product:'.length) : null
         const product = products.find((entry) => entry.id === productId)
-        return product ? { ...item, brand: product.brand, name: product.name, specs: product.specs, icon: product.icon, tone: product.tone, image: product.image, imageAlt: product.imageAlt, imageSource: product.imageSource } : item
+        const componentId = item?.componentId || (/^[a-f\d]{24}$/i.test(productId || '') ? productId : null)
+        return product ? { ...item, componentId, isDemoData: true, brand: product.brand, name: product.name, specs: product.specs, icon: product.icon, tone: product.tone, image: product.image, imageAlt: product.imageAlt, imageSource: product.imageSource } : { ...item, componentId }
       })
     } catch { return [] }
   })
@@ -212,7 +200,7 @@ function App() {
   const visiblePrebuilts = featuredPrebuilts.filter((item) => activePrebuiltUse === 'All prebuilt PCs' || item.use === activePrebuiltUse)
   const catalogueCampaign = getCampaignById(campaigns, campaignPlacements.componentsByCategory[selectedCategory])
   const addCartItem = (item) => setCart((current) => addOrIncrement(current, item))
-  const addProduct = (product) => { addCartItem({ key: `product:${product.id}`, kindLabel: 'Component', brand: product.brand, name: product.name, price: product.price, specs: product.specs, icon: product.icon, tone: product.tone, image: product.image, imageAlt: product.imageAlt, imageSource: product.imageSource }); setCartOpen(true); setWishlistOpen(false) }
+  const addProduct = (product) => { const componentId = /^[a-f\d]{24}$/i.test(product.id || '') ? product.id : null; addCartItem({ key: `product:${product.id}`, kindLabel: 'Component', componentId, isDemoData: product.isDemoData === true, brand: product.brand, name: product.name, price: product.price, specs: product.specs, icon: product.icon, tone: product.tone, image: product.image, imageAlt: product.imageAlt, imageSource: product.imageSource }); setCartOpen(true); setWishlistOpen(false) }
   const addPrebuilt = (item) => { addCartItem({ key: `prebuilt:${item.id}`, kindLabel: 'Prebuilt PC · Sample estimate', name: item.name, price: item.price, specs: item.specs, icon: 'Box', tone: item.tone, image: item.image }); setCartOpen(true) }
   const addConfiguredBuild = () => { if (!build) return; const key = `custom:${visibleComponentKeys.map((part) => build[part].id).join('-')}`; addCartItem({ key, kindLabel: 'Custom PC configuration · Estimate', name: `Custom build · ${generatedFor?.usage || 'PCForge configuration'}`, price: amount, specs: visibleComponentKeys.map((part) => `${categoryLabels[part]}: ${build[part].name}`), icon: 'Cpu', tone: 'gold' }); setCartOpen(true) }
   const toggleWishlist = (product) => setWishlist((current) => current.includes(product.id) ? current.filter((id) => id !== product.id) : [...current, product.id])
@@ -585,7 +573,7 @@ function App() {
     <BuildOrderModal open={checkout} view={checkoutView} setView={setCheckoutView} build={build} parts={visibleComponentKeys} categoryLabels={categoryLabels} customer={contact} setCustomer={setContact} errors={contactErrors} message={checkoutError} orderState={activeOrder} verificationPending={Boolean(pendingPaymentResult)} paymentsEnabled={generatedFor?.paymentsEnabled === true} formatINR={formatINR} onClose={closeCheckout} onPlaceOrder={placeBuildOrder} onPay={startPayment} onDownload={downloadCurrentInvoice} />
     <CartDrawer mode="wishlist" open={wishlistOpen} items={wishlistProducts} onClose={() => setWishlistOpen(false)} onAddToCart={addProduct} onToggleWishlist={toggleWishlist} />
     <CartDrawer mode="cart" open={cartOpen} items={cart} subtotal={cartSubtotal} onClose={() => setCartOpen(false)} onQuantity={updateQuantity} onRemove={removeCartItem} onCheckout={() => { setCartOpen(false); setCartCheckoutOpen(true) }} />
-    <CartCheckoutModal open={cartCheckoutOpen} items={cart} total={cartSubtotal} onClose={() => setCartCheckoutOpen(false)} onBackToCart={() => setCartOpen(true)} />
+    <CartCheckoutModal open={cartCheckoutOpen} items={cart} total={cartSubtotal} onClose={() => setCartCheckoutOpen(false)} onBackToCart={() => setCartOpen(true)} onPurchaseComplete={() => setCart([])} />
 
     <AnimatePresence>{productDetail && <motion.div className="modal-scrim" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onMouseDown={(e) => { if (e.target === e.currentTarget) setProductDetail(null) }}><motion.div className="product-detail-modal" initial={{ y: 18, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: 18, opacity: 0 }} role="dialog" aria-modal="true" aria-labelledby="product-detail-title"><button className="modal-close" onClick={() => setProductDetail(null)} aria-label="Close product details"><X /></button><ProductArt key={productDetail.id} icon={productDetail.icon} tone={productDetail.tone} image={productDetail.image} alt={productDetail.imageAlt || `${productDetail.name} product photo`} /><div><span className="eyebrow">{productDetail.brand ? `${productDetail.brand} · ` : ''}{productDetail.category}</span><h2 id="product-detail-title">{productDetail.name}</h2><SpecificationChips specifications={productDetail.specs} /><p className="detail-stock">{productDetail.stock}</p><strong>{formatINR(productDetail.price)}</strong>{productDetail.isDemoData && <small className="sample-price-label">Sample price</small>}<button className="button button-gold full" onClick={() => { addProduct(productDetail); setProductDetail(null) }}>Add to cart <ShoppingBag size={15} /></button></div></motion.div></motion.div>}</AnimatePresence>
 
