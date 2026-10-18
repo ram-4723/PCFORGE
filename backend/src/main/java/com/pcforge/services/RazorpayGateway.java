@@ -60,7 +60,7 @@ public class RazorpayGateway {
             request.put("currency", "INR");
             request.put("receipt", receipt);
             var created = client().orders.create(request);
-            return new CreatedOrder(String.valueOf(created.get("id")), ((Number) created.get("amount")).longValue(), String.valueOf(created.get("currency")));
+            return new CreatedOrder(String.valueOf(created.get("id")), readLong(created.get("amount")), String.valueOf(created.get("currency")));
         } catch (Exception e) {
             logProviderFailure("create order", e);
             throw new ApiException(HttpStatus.BAD_GATEWAY, "PAYMENT_PROVIDER_ERROR", "Razorpay could not create the payment order.");
@@ -74,7 +74,7 @@ public class RazorpayGateway {
             Payment payment = new Payment();
             payment.setId(providerPayment.has("id") ? String.valueOf(providerPayment.get("id")) : null);
             payment.setOrderId(providerPayment.has("order_id") ? String.valueOf(providerPayment.get("order_id")) : null);
-            payment.setAmount(providerPayment.has("amount") ? ((Number) providerPayment.get("amount")).longValue() : null);
+            payment.setAmount(providerPayment.has("amount") ? readLong(providerPayment.get("amount")) : null);
             payment.setCurrency(providerPayment.has("currency") ? String.valueOf(providerPayment.get("currency")) : null);
             payment.setStatus(providerPayment.has("status") ? String.valueOf(providerPayment.get("status")) : null);
             return payment;
@@ -89,12 +89,23 @@ public class RazorpayGateway {
         if (failure instanceof RazorpayException provider) {
             log.warn("Razorpay {} failed: httpStatus={}, providerCode={}", operation, provider.getStatusCode(), safeCode(provider.getCode()));
         } else {
-            log.warn("Razorpay {} failed before a provider response: exceptionType={}", operation, failure.getClass().getSimpleName());
+            StackTraceElement origin = failure.getStackTrace().length == 0 ? null : failure.getStackTrace()[0];
+            String location = origin == null ? "unavailable" : origin.getClassName() + "." + origin.getMethodName() + ":" + origin.getLineNumber();
+            log.warn("Razorpay {} failed: exceptionType={}, origin={}", operation, failure.getClass().getSimpleName(), location);
         }
     }
 
     private static String safeCode(String code) {
         return code != null && code.matches("[A-Za-z0-9_.-]{1,80}") ? code : "unavailable";
+    }
+
+    private static long readLong(Object value) {
+        if (value instanceof Number number) return number.longValue();
+        if (value instanceof String text) {
+            try { return Long.parseLong(text); }
+            catch (NumberFormatException ignored) { /* handled by the safe error below */ }
+        }
+        throw new IllegalStateException("Razorpay returned a missing or invalid numeric field.");
     }
 
     private RazorpayClient client() throws Exception { return new RazorpayClient(keyId, secret); }
