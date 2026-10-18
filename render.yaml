@@ -8,14 +8,16 @@ services:
     healthCheckPath: /api/health
     autoDeploy: true
     envVars:
+      # This service is a payment-test deployment. The backend's guard only
+      # enables these sample products when MONGODB_URI targets pcforge_test.
       - key: SPRING_PROFILES_ACTIVE
-        value: prod
+        value: test-catalog
       - key: FRONTEND_ORIGINS
         value: https://ram-4723.github.io
       - key: PCFORGE_SEED_DEMO
         value: "false"
       - key: PCFORGE_TEST_CATALOG_ENABLED
-        value: "false"
+        value: "true"
       - key: MONGODB_URI
         sync: false
       - key: RAZORPAY_KEY_ID
