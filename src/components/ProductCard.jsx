@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Box, Cable, CircuitBoard, Cpu, Database, Eye, Fan, Gamepad2, Headphones, Heart, Keyboard, MemoryStick, Monitor, Mouse, PanelsTopLeft, ShoppingCart, Wifi, Zap } from 'lucide-react'
 import { formatINR } from '../utils/pricing.js'
 import { publicAsset } from '../utils/assets.js'
@@ -10,10 +10,13 @@ export function ProductArt({ icon = 'Cpu', tone = 'blue', small = false, thumbna
   const [imageFailed, setImageFailed] = useState(false)
   const [fallbackFailed, setFallbackFailed] = useState(false)
   const [imageLoaded, setImageLoaded] = useState(false)
+  const [nearViewport, setNearViewport] = useState(false)
+  const imageContainer = useRef(null)
   useEffect(() => {
     setImageFailed(false)
     setFallbackFailed(false)
     setImageLoaded(false)
+    setNearViewport(false)
   }, [image, fallbackImage])
   const Icon = artIcons[icon] || Cpu
   const sizeClass = thumbnail ? 'product-art-thumbnail' : small ? 'product-art-small' : ''
@@ -23,7 +26,25 @@ export function ProductArt({ icon = 'Cpu', tone = 'blue', small = false, thumbna
     : image !== genericFallback ? genericFallback : null
   const showingFallback = !image || imageFailed
   const currentImage = showingFallback ? (!fallbackFailed ? backup : null) : image
-  if (currentImage) return <div className={`product-art product-art-photo ${sizeClass}`}><img className={imageLoaded ? 'product-image-loaded' : 'product-image-loading'} src={currentImage} alt={alt} loading="lazy" onLoad={() => setImageLoaded(true)} onError={() => showingFallback ? setFallbackFailed(true) : setImageFailed(true)} /></div>
+  useEffect(() => {
+    const target = imageContainer.current
+    if (!target) return undefined
+    if (typeof IntersectionObserver === 'undefined') { setNearViewport(true); return undefined }
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) { setNearViewport(true); observer.disconnect() }
+    }, { rootMargin: '300px' })
+    observer.observe(target)
+    return () => observer.disconnect()
+  }, [image, fallbackImage])
+  useEffect(() => {
+    if (!currentImage || imageLoaded || !nearViewport) return undefined
+    const timeout = window.setTimeout(() => {
+      if (showingFallback) setFallbackFailed(true)
+      else setImageFailed(true)
+    }, 8000)
+    return () => window.clearTimeout(timeout)
+  }, [currentImage, imageLoaded, nearViewport, showingFallback])
+  if (currentImage) return <div ref={imageContainer} className={`product-art product-art-photo ${sizeClass}`}>{!imageLoaded && <span className="product-art-loading" aria-hidden="true"><Icon size={thumbnail ? 20 : small ? 26 : 42} strokeWidth={1.1} /></span>}<img className={imageLoaded ? 'product-image-loaded' : 'product-image-loading'} src={currentImage} alt={alt} loading={nearViewport ? 'eager' : 'lazy'} onLoad={() => setImageLoaded(true)} onError={() => showingFallback ? setFallbackFailed(true) : setImageFailed(true)} /></div>
   return <div className={`product-art product-art-placeholder ${sizeClass}`} role="img" aria-label={alt}><Icon size={thumbnail ? 22 : small ? 27 : 45} strokeWidth={1.15} />{!thumbnail && <span>Product photo unavailable</span>}</div>
 }
 

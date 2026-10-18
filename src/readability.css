@@ -127,7 +127,9 @@ small { font-size: max(11px, .86em); line-height: 1.45; }
 .product-card:focus-within { border-color: rgba(255,198,74,.72); }
 .product-card button { transition: color .18s ease, background-color .18s ease, border-color .18s ease, transform .18s ease; }
 .product-card button:active { transform: translateY(1px); }
-.product-art-photo { overflow: hidden; }
+.product-art-photo { position: relative; overflow: hidden; }
+.product-art-loading { position: absolute; inset: 0; z-index: 0; display: grid; place-items: center; color: #8799a5; background: linear-gradient(145deg, #12202a, #0d171e); pointer-events: none; }
+.product-art-loading > svg { opacity: .68; }
 .product-art-photo > img { opacity: 0; transform: scale(.985); transition: opacity .24s ease, transform .32s ease; }
 .product-art-photo > img.product-image-loaded { opacity: 1; transform: scale(1); }
 .product-card:hover .product-art-photo > img.product-image-loaded { transform: scale(1.035); }
