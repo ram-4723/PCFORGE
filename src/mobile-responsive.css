@@ -16,7 +16,7 @@
 .checkout-modal,.store-checkout-modal,.product-detail-modal,.prebuilt-detail-modal{width:min(100%,calc(100vw - 32px));max-height:calc(100dvh - 32px);overflow-y:auto}
 }
 @media(max-width:700px){
-.hero{grid-template-columns:minmax(0,1fr);min-height:0;padding:58px clamp(16px,5vw,28px) 32px}.hero-copy{padding:0}.hero h1{font-size:clamp(42px,11vw,62px)}.hero-art{height:clamp(240px,65vw,360px)}.hero-benefits{gap:12px;margin-top:28px}
+.hero{grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto;gap:12px;min-height:0;padding:58px clamp(16px,5vw,28px) 32px}.hero-copy{padding:0}.hero h1{font-size:clamp(42px,11vw,62px)}.hero-art{position:relative;inset:auto;grid-row:auto;width:100%;min-width:0;height:clamp(240px,65vw,360px);margin:0;opacity:1}.hero-benefits{gap:12px;margin-top:28px}
 .category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.shop-filters{grid-template-columns:repeat(2,minmax(0,1fr))}.prebuilt-grid{grid-template-columns:minmax(0,1fr)}.prebuilt-card{grid-template-columns:minmax(110px,.65fr) minmax(0,1.35fr)}.peripheral-layout{grid-template-columns:minmax(0,1fr)}.peripheral-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 .component-row{grid-template-columns:36px minmax(0,1fr) auto}.component-row>select{grid-column:2/-1;grid-row:2;width:100%}.component-row .component-price{grid-column:3;grid-row:1;white-space:nowrap}.component-row .component-brand{grid-column:2;grid-row:2}.component-name{grid-column:2;grid-row:1;padding-right:4px}.component-row>select~.component-brand{display:none}
 .result-lower{grid-template-columns:minmax(0,1fr)}.intro,.about,.contact{grid-template-columns:minmax(0,1fr)}.checkout-content{grid-template-columns:minmax(0,1fr);gap:18px}.checkout-order{border-right:0;border-bottom:1px solid rgba(138,169,191,.2);padding:0 0 18px}.checkout-form,.checkout-form label,.checkout-form input,.checkout-form textarea{min-width:0;width:100%}.store-checkout-grid{grid-template-columns:minmax(0,1fr)}.store-checkout-form{border-left:0;border-top:1px solid rgba(138,169,191,.2)}
@@ -32,3 +32,8 @@
 html,body{max-width:100%;overflow-x:clip}body{min-width:0}
 .hero-art{width:100%;max-width:100%;min-width:0;overflow:hidden}
 }
+
+/* Navbar logo uses the supplied artwork without changing the brand lockup. */
+.topbar .brand-logo{display:block;width:39px;height:39px;flex:0 0 39px;aspect-ratio:1;object-fit:contain;border-radius:50%}
+@media(max-width:1024px){.topbar .brand-logo{width:34px;height:34px;flex-basis:34px}}
+@media(max-width:390px){.topbar .brand-logo{width:30px;height:30px;flex-basis:30px}}
