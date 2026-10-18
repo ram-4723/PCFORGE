@@ -104,3 +104,22 @@
   .config-layout .use-grid { grid-template-columns: 1fr; }
   .config-layout .component-name b { overflow-wrap: anywhere; }
 }
+
+/* Stack delivery address textareas like the other checkout fields. */
+.checkout-form label { display: block; width: 100%; }
+.checkout-form textarea {
+  display: block;
+  width: 100%;
+  min-height: 96px;
+  margin-top: 8px;
+  padding: 12px;
+  border: 1px solid rgba(138, 169, 191, .31);
+  border-radius: 6px;
+  background: #081117;
+  color: #f1f5f9;
+  font: inherit;
+  line-height: 1.45;
+  resize: vertical;
+}
+.checkout-form textarea::placeholder { color: #aebdca; opacity: 1; }
+.checkout-form textarea:focus-visible { border-color: #35c7f5; }
