@@ -1,0 +1,106 @@
+/* Clear text hierarchy for the dark PC builder and its order review. */
+.config-layout {
+  --builder-primary: #f1f5f9;
+  --builder-secondary: #cbd5e1;
+  --builder-muted: #aebdca;
+}
+
+.config-layout :is(.config-heading, .config-form, .config-aside, .result-panel, .live-build-summary) {
+  color: var(--builder-primary);
+}
+
+.config-layout :is(.config-heading .section-title p, .config-note small, .step-heading p,
+  #budget-scope, .budget-range-hint, .use-card small, .builder-progress button small,
+  .live-metric span, .live-budget-balance > span, .live-budget-usage span,
+  .live-selection-heading > span, .live-compatibility p, .live-compatibility li,
+  .live-summary-disclaimer, .result-head p, .component-name small, .component-brand,
+  .compat-line, .tiny-disclaimer, .total-box > p, .total-box > small,
+  .demo-stock-note, .optional-parts-row small, .budget-over-note) {
+  color: var(--builder-secondary);
+}
+
+.config-layout :is(.step-heading h3, .budget-input-row > label, .use-card b,
+  .builder-progress button b, .live-summary-title b, .live-metric strong,
+  .live-budget-balance > b, .live-budget-usage b, .live-selection-heading b,
+  .live-component-copy b, .live-component-price, .result-head h3,
+  .component-name b, .component-price, .compat-title b, .total-box > strong) {
+  color: var(--builder-primary);
+}
+
+.config-layout :is(.step-heading > span, .live-summary-icon, .status-icon) {
+  color: #ffd15a;
+}
+
+.builder-progress button { color: var(--builder-secondary); }
+.builder-progress button.active b,
+.builder-progress button.complete b { color: #ffd15a; }
+.builder-progress button small { color: var(--builder-secondary); }
+.builder-progress button.active small,
+.builder-progress button.complete small { color: var(--builder-secondary); }
+
+.config-layout :is(.live-component-copy, .live-remove-component, .live-findings-toggle,
+  .text-link.light-link) { color: #55d5ff; }
+.config-layout :is(.live-component-copy:hover, .live-findings-toggle:hover,
+  .text-link.light-link:hover) { color: #a2ebff; }
+
+.config-layout .button-darkline {
+  min-height: 44px;
+  border-color: #718496;
+  background: #13232e;
+  color: var(--builder-primary) !important;
+  font-weight: 600;
+}
+.config-layout .button-darkline:hover:not(:disabled) {
+  border-color: #55d5ff;
+  background: #1a3442;
+  color: #fff !important;
+}
+.config-layout .button-gold:disabled,
+.config-layout .button-darkline:disabled,
+.config-layout .button:disabled {
+  opacity: 1;
+  transform: none;
+  cursor: not-allowed;
+  box-shadow: none;
+  color: #d2dae2 !important;
+  border-color: #667684 !important;
+  background: #303b45 !important;
+}
+.config-layout .button-gold:disabled { color: #e4e8ec !important; }
+
+.config-layout .total-box .button-gold:not(:disabled),
+.config-layout .live-summary-continue:not(:disabled) {
+  color: #15120a !important;
+  background: #ffc64a !important;
+  border-color: #ffc64a !important;
+}
+
+.checkout-modal :is(h2, h3, b, strong, label, .checkout-total),
+.checkout-modal .checkout-parts,
+.checkout-modal .checkout-order > p,
+.checkout-modal .sensitive-note,
+.checkout-modal .checkout-top small {
+  color: #f1f5f9;
+}
+.checkout-modal :is(p, small, .checkout-order > span, .checkout-parts > div,
+  .checkout-total > span, .checkout-form > p, .checkout-form label > small,
+  .success-summary > div, .checkout-back, .checkout-result > p) { color: #cbd5e1; }
+.checkout-modal :is(.checkout-parts > div span, .checkout-total strong,
+  .success-summary b, .checkout-result h2, .checkout-form label) { color: #f1f5f9; }
+.checkout-modal :is(input, textarea) { color: #f1f5f9; }
+.checkout-modal :is(input, textarea)::placeholder { color: #aebdca; opacity: 1; }
+
+@media (max-width: 760px) {
+  .builder-progress { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .config-layout .config-form { min-width: 0; }
+  .config-layout .use-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 420px) {
+  .builder-progress { padding-inline: 8px; }
+  .builder-progress button { padding-inline: 2px; }
+  .builder-progress button b { font-size: 9px; }
+  .builder-step-number { width: 28px; height: 28px; }
+  .config-layout .use-grid { grid-template-columns: 1fr; }
+  .config-layout .component-name b { overflow-wrap: anywhere; }
+}

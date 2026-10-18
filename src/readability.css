@@ -53,10 +53,6 @@ small { font-size: max(11px, .86em); line-height: 1.45; }
 #budget-scope, .budget-range-hint { font-size: 12px; line-height: 1.5; }
 .quick-budgets { gap: 9px; margin: 12px 0 0 45px; flex-wrap: wrap; }
 .quick-budgets button { min-height: 40px; padding: 8px 12px; font-size: 12px; }
-.preference-row { gap: 10px; margin: 16px 0 0 45px; }
-.preference-row button { min-height: 76px; padding: 12px; }
-.preference-row button b { font-size: 13px; line-height: 1.35; }
-.preference-row button small { font-size: 11px; line-height: 1.45; }
 .generate-button { min-height: 52px; font-size: 15px; }
 
 /* Summary stays sticky on roomy desktop layouts; only its details scroll. */
@@ -193,7 +189,7 @@ small { font-size: max(11px, .86em); line-height: 1.45; }
   .builder-progress button b { font-size: 11px; }
   .builder-progress button small { display: none; }
   .use-grid { margin-left: 0; }
-  .budget-input-row, .quick-budgets, .preference-row { margin-left: 0; }
+  .budget-input-row, .quick-budgets { margin-left: 0; }
   .live-build-summary { max-height: none; }
   .live-summary-heading { padding: 16px; }
   .live-summary-content { padding: 14px 16px 18px; }
@@ -207,14 +203,13 @@ small { font-size: max(11px, .86em); line-height: 1.45; }
 @media (max-width: 520px) {
   .section-title h2 { font-size: clamp(27px, 8vw, 34px); }
   .section-title p, .hero-copy > p, .intro-copy > p, .about-copy > p { font-size: 14px; }
-  .builder-progress { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; }
+  .builder-progress { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; }
   .builder-progress button b { font-size: 10px; }
   .builder-step-number { width: 30px; height: 30px; }
   .use-grid { grid-template-columns: 1fr 1fr; }
   .use-card { min-height: 145px; }
   .use-card b { font-size: 14px; }
   .use-card small { font-size: 11px; }
-  .preference-row { grid-template-columns: 1fr; }
   .live-metric-grid { grid-template-columns: 1fr 1fr; }
   .live-metric { padding: 10px; }
   .live-metric span { font-size: 11px; }

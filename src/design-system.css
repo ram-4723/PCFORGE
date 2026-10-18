@@ -122,7 +122,7 @@ body { min-width: 320px; background: var(--night); color: var(--text); }
 .config-note { color: var(--brand-blue); font-size: 8px; }
 .config-note small { color: #9aabba; font-size: 8px; }
 .config-layout { display: grid; grid-template-columns: minmax(0,1.7fr) minmax(310px,.7fr); border: 1px solid rgba(74,150,184,.29); border-radius: 12px; overflow: clip; background: #0a1218; box-shadow: 0 16px 48px rgba(0,0,0,.28),0 0 28px rgba(0,158,214,.055); }
-.builder-progress { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 6px; padding: 16px 28px 19px; border-bottom: 1px solid rgba(138,169,191,.18); background: #0b141a; }
+.builder-progress { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 6px; padding: 16px 28px 19px; border-bottom: 1px solid rgba(138,169,191,.18); background: #0b141a; }
 .builder-progress button { position: relative; display: grid; justify-items: center; gap: 5px; min-width: 0; border: 0; padding: 0 5px; background: none; color: #9aabba; text-align: center; cursor: pointer; }
 .builder-progress button:not(:last-child)::after { position: absolute; top: 15px; left: calc(50% + 27px); width: calc(100% - 46px); height: 1px; background: rgba(138,169,191,.35); content: ''; }
 .builder-step-number { display: grid; place-items: center; width: 31px; height: 31px; border: 1px solid #526979; border-radius: 50%; background: #0d1921; color: #b7c6d0; font-size: 9px; font-weight: 700; z-index: 1; }
@@ -157,13 +157,8 @@ body { min-width: 320px; background: var(--night); color: var(--text); }
 .budget-entry-wrap input { color: #f5f8fa; }
 #budget-scope, .budget-range-hint { color: #92a5b2; font-size: 8px; }
 .quick-budgets { gap: 7px; margin: 10px 0 0 36px; }
-.quick-budgets button, .preference-row button { border: 1px solid rgba(145,171,190,.3); border-radius: 6px; padding: 7px 9px; color: #c1d0d9; background: #0c171e; font-size: 8px; }
-.quick-budgets button:hover, .quick-budgets button.active, .preference-row button:hover, .preference-row button.active { border-color: var(--gold); color: var(--gold); background: rgba(255,198,74,.08); }
-.preference-row { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 8px; margin: 14px 0 0 36px; }
-.preference-row button { text-align: left; }
-.preference-row button b, .preference-row button small { display: block; }
-.preference-row button b { font-size: 9px; }
-.preference-row button small { margin-top: 5px; color: #99acb8; font-size: 7px; line-height: 1.45; }
+.quick-budgets button { border: 1px solid rgba(145,171,190,.3); border-radius: 6px; padding: 7px 9px; color: #c1d0d9; background: #0c171e; font-size: 8px; }
+.quick-budgets button:hover, .quick-budgets button.active { border-color: var(--gold); color: var(--gold); background: rgba(255,198,74,.08); }
 .generate-button { min-height: 46px; border-radius: 7px; font-size: 11px; }
 .live-build-summary { position: sticky; top: 86px; align-self: stretch; min-width: 0; max-height: calc(100vh - 105px); overflow: hidden; border-left: 1px solid rgba(90,153,181,.25); background: linear-gradient(160deg,#0b171e,#081116); }
 .live-summary-heading { gap: 9px; padding: 19px 17px 15px; border-bottom-color: rgba(138,169,191,.16); }
@@ -386,8 +381,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--brand-blue) !imp
   .use-card { min-height: 143px; padding: 13px 10px; }
   .use-card b { font-size: 11px; }
   .use-card small { font-size: 7px; }
-  .budget-input-row, .quick-budgets, .preference-row { margin-left: 0; }
-  .preference-row { grid-template-columns: 1fr; }
+  .budget-input-row, .quick-budgets { margin-left: 0; }
   .live-summary-heading { padding-inline: 14px; }
   .live-summary-content { padding-inline: 14px; }
 }
