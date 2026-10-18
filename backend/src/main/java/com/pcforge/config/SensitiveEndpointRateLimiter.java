@@ -19,7 +19,8 @@ public class SensitiveEndpointRateLimiter implements HandlerInterceptor {
 
     @Override public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
         String path = request.getRequestURI();
-        if (!path.startsWith("/api/orders") && !path.equals("/api/payments/webhook")) return true;
+        if (!path.startsWith("/api/orders") && !path.equals("/api/payments/webhook")
+                && !path.equals("/api/auth/login") && !path.equals("/api/auth/register")) return true;
         String key = request.getRemoteAddr() == null ? "unknown" : request.getRemoteAddr();
         long now = Instant.now().getEpochSecond();
         if (calls.incrementAndGet() % 256 == 0) windows.entrySet().removeIf(entry -> now - entry.getValue().startedAt > WINDOW_SECONDS);

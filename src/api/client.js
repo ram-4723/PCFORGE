@@ -62,6 +62,24 @@ export function reportPaymentFailure(id, accessToken, razorpayPaymentId) {
   return request(`/orders/${encodeURIComponent(id)}/payments/fail`, { method: 'POST', headers: { 'X-Order-Access': accessToken }, body: JSON.stringify({ razorpayPaymentId }) })
 }
 
+export function registerAccount(name, email, password) {
+  return request('/auth/register', { method: 'POST', body: JSON.stringify({ name, email, password }) })
+}
+export function loginAccount(email, password) {
+  return request('/auth/login', { method: 'POST', body: JSON.stringify({ email, password }) })
+}
+export function getAdminOverview(accessToken) {
+  return request('/admin/overview', { headers: { Authorization: `Bearer ${accessToken}` } })
+}
+export function getAdminUsers(accessToken, { page = 1, size = 10, search = '' } = {}) {
+  const params = new URLSearchParams({ page: String(page), size: String(size) })
+  if (search.trim()) params.set('search', search.trim())
+  return request(`/admin/users?${params}`, { headers: { Authorization: `Bearer ${accessToken}` } })
+}
+export function logoutAccount(accessToken) {
+  return request('/auth/logout', { method: 'POST', headers: { Authorization: `Bearer ${accessToken}` } })
+}
+
 export async function downloadInvoice(id, accessToken) {
   const response = await fetch(`${API_BASE}/orders/${encodeURIComponent(id)}/invoice`, { headers: { Accept: 'application/pdf', 'X-Order-Access': accessToken } })
   if (!response.ok) {

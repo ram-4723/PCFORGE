@@ -8,5 +8,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class WebConfiguration implements WebMvcConfigurer {
     private final SensitiveEndpointRateLimiter limiter;
     public WebConfiguration(SensitiveEndpointRateLimiter limiter) { this.limiter = limiter; }
-    @Override public void addInterceptors(InterceptorRegistry registry) { registry.addInterceptor(limiter).addPathPatterns("/api/orders/**"); }
+    @Override public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(limiter).addPathPatterns("/api/orders/**", "/api/auth/login", "/api/auth/register");
+    }
 }
