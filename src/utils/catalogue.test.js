@@ -3,7 +3,7 @@ import assert from 'node:assert/strict'
 import { access } from 'node:fs/promises'
 import path from 'node:path'
 import { componentToProduct, productBrand, productImageUrl, productTitle } from './catalogue.js'
-import { findVerifiedProductImage, verifiedProductImagePaths } from '../data/productImageMap.js'
+import { findCategoryFallbackImage, findVerifiedProductImage, verifiedProductImagePaths } from '../data/productImageMap.js'
 
 test('keeps the brand stored on a backend component', () => {
   assert.equal(productBrand({ brand: '  MSI  ' }), 'MSI')
@@ -32,13 +32,22 @@ test('preserves permitted external URLs and rejects unsafe or empty image values
   assert.equal(productImageUrl(''), null)
 })
 
-test('maps backend field names and leaves unverified brand blank', () => {
+test('maps backend field names and uses category art when an exact product image is unavailable', () => {
   const product = componentToProduct({ _id: 'part-1', name: '1 TB NVMe SSD (demo)', category: 'Storage', brand: 'Demo Storage Maker', specifications: { capacity: '1 TB', interface: 'NVMe' }, priceInr: 5400, imageUrl: '/images/ssd.webp', demoData: true }, '/pcforge/')
   assert.equal(product.name, 'Storage · 1 TB · NVMe')
   assert.equal(product.brand, '')
   assert.equal(product.price, 5400)
-  assert.equal(product.image, null)
-  assert.equal(product.imageAlt, `${product.name} product image placeholder`)
+  assert.equal(product.image, '/pcforge/images/ssd.webp')
+  assert.equal(product.fallbackImage, '/pcforge/images/crucial-p3-1tb.webp')
+  assert.equal(product.imageAlt, `${product.name} product photo`)
+})
+
+test('selects sensible category fallback photos, including SATA SSDs and case fans', () => {
+  assert.equal(findCategoryFallbackImage('Power Supplies', { name: '750 W Gold PSU' }), '/images/cooler-master-mwe-650-bronze-v2.png')
+  assert.equal(findCategoryFallbackImage('SSDs and HDDs', { name: '480 GB SATA SSD' }), '/images/in-870-evo-sata-3-2-5-ssd-mz-77e1t0bw-374908662.avif')
+  assert.equal(findCategoryFallbackImage('Case Fans'), '/images/Fans.jpg')
+  assert.equal(findCategoryFallbackImage('Headphones and Speakers')?.startsWith('https://'), true)
+  assert.equal(findCategoryFallbackImage('Unlisted Component Category'), '/images/pc%20cabineyt.jpg')
 })
 
 test('keeps a demo product image when the record carries a verified brand', () => {
@@ -58,7 +67,7 @@ test('uses a verified local model image for an API component without imageUrl', 
     priceInr: 13800,
   }, '/pcforge/')
   assert.equal(product.image, '/pcforge/images/i5%2012400f.jpg')
-  assert.equal(product.imageAlt, 'Intel Core i5-12400F')
+  assert.equal(product.imageAlt, 'Intel Core i5-12400F product photo')
 })
 
 test('local model image matching requires the verified brand and product category', () => {
@@ -70,6 +79,7 @@ test('local model image matching requires the verified brand and product categor
 
 test('every configured local product image points to an existing public asset', async () => {
   for (const imagePath of verifiedProductImagePaths) {
+    if (/^https?:\/\//i.test(imagePath)) continue
     const filename = decodeURIComponent(imagePath.slice('/images/'.length))
     await access(path.join(process.cwd(), 'public', 'images', filename))
   }

@@ -1,5 +1,5 @@
 import { specificationItems } from './specifications.js'
-import { findVerifiedProductImage } from '../data/productImageMap.js'
+import { findCategoryFallbackImage, findVerifiedProductImage } from '../data/productImageMap.js'
 
 const brandFields = ['brand', 'brandName', 'manufacturer', 'vendor']
 
@@ -57,11 +57,14 @@ export function componentToProduct(component = {}, baseUrl = '/') {
     name: suppliedName,
     category,
   })
-  // The backend's explicit imageUrl is the source of truth. When absent, use a strict
-  // brand + category + model lookup so exact local assets also work for Atlas records.
-  const image = component.demoData === true && !brand && !verifiedLocalImage
-    ? null
-    : productImageUrl(rawImage || verifiedLocalImage, baseUrl)
+  const categoryImage = findCategoryFallbackImage(category, {
+    name: suppliedName,
+    model: typeof component.model === 'string' ? component.model : '',
+  })
+  // Keep an explicit catalogue image or strict exact-model match first. A category
+  // representative fills missing photos and provides a backup for a broken image URL.
+  const image = productImageUrl(rawImage || verifiedLocalImage || categoryImage, baseUrl)
+  const fallbackImage = productImageUrl(categoryImage, baseUrl)
 
   return {
     id: component._id || component.id,
@@ -73,6 +76,7 @@ export function componentToProduct(component = {}, baseUrl = '/') {
     stock: component.stockStatus?.replaceAll('_', ' ') || (component.demoData ? 'Availability unverified' : 'Status unavailable'),
     isDemoData: component.demoData === true,
     image,
-    imageAlt: image ? productTitle(name, brand) : `${name} product image placeholder`,
+    fallbackImage: fallbackImage !== image ? fallbackImage : null,
+    imageAlt: `${productTitle(name, brand)} product photo`,
   }
 }

@@ -32,6 +32,42 @@ export const productImagePathById = Object.freeze({
   'p-mat': '/images/thermaltake-dasher-extended.jpg',
 })
 
+// Prefer recognizable product photography, then use representative category art when
+// an active catalogue record has no exact photo.
+const categoryFallbacks = [
+  { terms: ['processor', 'cpu'], image: '/images/ryzen%205%207600.webp' },
+  { terms: ['graphics', 'gpu', 'video card'], image: '/images/RTX%204060.jpg' },
+  { terms: ['motherboard'], image: '/images/b650.webp' },
+  { terms: ['ram', 'memory'], image: '/images/trident.webp' },
+  { terms: ['storage', 'ssd', 'hdd'], image: '/images/crucial-p3-1tb.webp' },
+  { terms: ['power suppl', 'psu'], image: '/images/cooler-master-mwe-650-bronze-v2.png' },
+  { terms: ['case', 'cabinet', 'chassis'], image: '/images/pc%20cabineyt.jpg' },
+  { terms: ['cooler', 'cooling'], image: '/images/cooler%20air.jpg' },
+  { terms: ['fan'], image: '/images/Fans.jpg' },
+  { terms: ['monitor', 'display'], image: '/images/acer-nitro-vg271u-m3.jpg' },
+  { terms: ['keyboard'], image: '/images/71w9I5LAUZL._SX522_.jpg' },
+  { terms: ['mouse', 'mice'], image: '/images/logitech%20g502.webp' },
+  { terms: ['chair'], image: '/images/gaming%20chair.jpg' },
+  { terms: ['headphone', 'headset', 'speaker', 'audio'], image: 'https://img.evetech.co.za/repository/components/hyperx-cloud-core-wired-gaming-headset-main-image-600px-v1.jpg?width=600' },
+  { terms: ['controller', 'gamepad'], image: '/images/8bitdo-ultimate-c-2-4g.jpg' },
+  { terms: ['mousepad', 'mouse pad'], image: '/images/thermaltake-dasher-extended.jpg' },
+  { terms: ['network', 'router'], image: '/images/tp-link-archer-ax50.jpg' },
+  { terms: ['accessory', 'accessories', 'usb'], image: '/images/USB%20HUB.jpg' },
+]
+
+export function findCategoryFallbackImage(category = '', { name = '', model = '' } = {}) {
+  const normalizedCategory = category.trim().toLocaleLowerCase()
+  const normalized = `${normalizedCategory} ${name} ${model}`.trim().toLocaleLowerCase()
+  if (/sata/.test(normalized) && /(ssd|storage)/.test(normalized)) {
+    return '/images/in-870-evo-sata-3-2-5-ssd-mz-77e1t0bw-374908662.avif'
+  }
+  if (normalizedCategory.includes('case fan')) return '/images/Fans.jpg'
+  if (normalizedCategory.includes('mousepad') || normalizedCategory.includes('mouse pad')) return '/images/thermaltake-dasher-extended.jpg'
+  const match = categoryFallbacks.find(({ terms }) => terms.some((term) => normalizedCategory.includes(term)))
+    || categoryFallbacks.find(({ terms }) => terms.some((term) => normalized.includes(term)))
+  return match?.image || '/images/pc%20cabineyt.jpg'
+}
+
 const imageMatches = [
   { brands: ['amd'], categories: ['processor', 'cpu'], model: /ryzen\s*5\s*7600\b/i, image: '/images/ryzen%205%207600.webp' },
   { brands: ['amd'], categories: ['processor', 'cpu'], model: /ryzen\s*5\s*5600g\b/i, image: '/images/5600g.jpg' },
@@ -83,6 +119,8 @@ const imageMatches = [
 export const verifiedProductImagePaths = Object.freeze([
   ...Object.values(productImagePathById),
   ...imageMatches.map(({ image }) => image),
+  ...categoryFallbacks.map(({ image }) => image),
+  '/images/in-870-evo-sata-3-2-5-ssd-mz-77e1t0bw-374908662.avif',
 ].filter((path, index, paths) => paths.indexOf(path) === index))
 
 export function findVerifiedProductImage({ brand = '', model = '', name = '', category = '' } = {}) {

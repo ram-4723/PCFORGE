@@ -47,7 +47,7 @@ export default function LiveBuildSummary({ budget, build, requiredKeys, visibleK
           const Icon = icons[key] || Cpu
           const part = build?.[key]
           return <div className="live-component" key={key}>
-            <span className="live-component-icon">{part ? <ProductArt thumbnail icon={part.icon || key} image={part.image} alt={part.imageAlt || `${productTitle(part.name, part.brand)} product photo`} /> : <Icon size={15} />}</span>
+            <span className="live-component-icon">{part ? <ProductArt key={`${part.id}:${part.image || ''}:${part.fallbackImage || ''}`} thumbnail icon={part.icon || key} image={part.image} fallbackImage={part.fallbackImage} alt={part.imageAlt || `${productTitle(part.name, part.brand)} product photo`} /> : <Icon size={15} />}</span>
             <button type="button" className="live-component-copy" onClick={() => onReviewComponent(key)} aria-label={`Review or change ${labels[key]}`}><small>{labels[key]}{!requiredKeys.includes(key) ? ' · OPTIONAL' : ''}</small><b>{part ? productTitle(part.name, part.brand) : 'Not selected'}</b><SpecificationChips specifications={part?.specs} className="summary-specifications" /></button>
             <span className="live-component-price">{part ? Number.isSafeInteger(part.price) && part.price >= 0 ? formatINR(part.price) : 'Price unavailable' : '—'}</span>
             {part && !requiredKeys.includes(key) && <button className="live-remove-component" type="button" onClick={() => onRemoveOptional(key)} aria-label={`Remove ${labels[key]}`}>×</button>}

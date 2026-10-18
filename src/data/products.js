@@ -1,6 +1,6 @@
 import { publicAsset } from '../utils/assets.js'
 import { productImageSources } from './productImageSources.js'
-import { productImagePathById } from './productImageMap.js'
+import { findCategoryFallbackImage, productImagePathById } from './productImageMap.js'
 
 export const categories = [
   { id: 'all', name: 'All components', icon: 'Cpu' },
@@ -72,6 +72,7 @@ const representativeImagePaths = {
   Keyboards: '/images/71w9I5LAUZL._SX522_.jpg',
   'Gaming Mice': '/images/logitech%20g502.webp',
   'Gaming Chairs': '/images/gaming%20chair.jpg',
+  'Headphones and Speakers': 'https://img.evetech.co.za/repository/components/hyperx-cloud-core-wired-gaming-headset-main-image-600px-v1.jpg?width=600',
   'Gaming Controllers': '/images/8bitdo-ultimate-c-2-4g.jpg',
   Mousepads: '/images/thermaltake-dasher-extended.jpg',
   'Networking Devices': '/images/tp-link-archer-ax50.jpg',
@@ -85,8 +86,9 @@ export const products = productRecords.map((product) => ({
   ...product,
   isDemoData: true,
   stock: 'Availability unverified',
-  image: productImagePathById[product.id] ? publicAsset(productImagePathById[product.id]) : null,
-  imageAlt: productImagePathById[product.id] ? `${product.brand} ${product.name}` : `${product.name} product image placeholder`,
+  image: publicAsset(productImagePathById[product.id] || findCategoryFallbackImage(product.category, product)),
+  fallbackImage: publicAsset(findCategoryFallbackImage(product.category, product)),
+  imageAlt: `${product.brand} ${product.name} product photo`,
   imageSource: productImageSources[product.id] || (productImagePathById[product.id]
     ? { kind: 'existing-local', label: 'Existing project asset; original source was not recorded' }
     : null),
