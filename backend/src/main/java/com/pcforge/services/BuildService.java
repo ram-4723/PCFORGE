@@ -20,6 +20,11 @@ public class BuildService {
     private final CompatibilityService compatibility;
     private final TestCatalogueGuard testCatalogueGuard;
     private final SecureRandom secureRandom = new SecureRandom();
+    private static final Comparator<String> NULL_SAFE_ID_ORDER = Comparator.nullsLast(String::compareTo);
+    private static final Comparator<Component> PRICE_ASCENDING = Comparator.comparing(Component::getPriceInr)
+            .thenComparing(Component::getId, NULL_SAFE_ID_ORDER);
+    private static final Comparator<Component> PRICE_DESCENDING = Comparator.comparing(Component::getPriceInr).reversed()
+            .thenComparing(Component::getId, NULL_SAFE_ID_ORDER);
 
     public BuildService(ComponentRepository components, PCBuildRepository builds, CompatibilityService compatibility, TestCatalogueGuard testCatalogueGuard) {
         this.components = components; this.builds = builds; this.compatibility = compatibility; this.testCatalogueGuard = testCatalogueGuard;
@@ -73,7 +78,7 @@ public class BuildService {
                 .filter(c -> !c.isDemoData() || testCatalogueGuard.isEnabled())
                 .filter(c -> "in_stock".equals(c.getStockStatus()))
                 .filter(c -> c.getPriceInr() != null && c.getPriceInr() > 0)
-                .sorted(Comparator.comparing(Component::getPriceInr).thenComparing(Component::getId)).toList();
+                .sorted(PRICE_ASCENDING).toList();
         Map<String, List<Component>> by = new HashMap<>();
         for (Component c : all) { String key = CompatibilityService.category(c.getCategory()); if (key != null) by.computeIfAbsent(key, ignored -> new ArrayList<>()).add(c); }
         List<String> required = List.of("cpu", "motherboard", "ram", "storage", "psu", "case");
@@ -95,8 +100,7 @@ public class BuildService {
             var gpuChoices = by.get("gpu").stream()
                     .filter(c -> safeAdd(coreTotal, c.getPriceInr()) <= budget)
                     .sorted("budget_focused".equals(preference)
-                            ? Comparator.comparing(Component::getPriceInr).thenComparing(Component::getId)
-                            : Comparator.comparing(Component::getPriceInr).reversed().thenComparing(Component::getId))
+                            ? PRICE_ASCENDING : PRICE_DESCENDING)
                     .toList();
             Component gpu = null;
             for (Component candidate : gpuChoices) {
