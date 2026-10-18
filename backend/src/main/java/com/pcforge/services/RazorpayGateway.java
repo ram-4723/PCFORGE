@@ -2,13 +2,17 @@ package com.pcforge.services;
 
 import com.pcforge.exception.ApiException;
 import com.razorpay.RazorpayClient;
+import com.razorpay.RazorpayException;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Component
 public class RazorpayGateway {
+    private static final Logger log = LoggerFactory.getLogger(RazorpayGateway.class);
     private final String keyId;
     private final String secret;
     private final String webhookSecret;
@@ -58,6 +62,7 @@ public class RazorpayGateway {
             var created = client().orders.create(request);
             return new CreatedOrder(String.valueOf(created.get("id")), ((Number) created.get("amount")).longValue(), String.valueOf(created.get("currency")));
         } catch (Exception e) {
+            logProviderFailure("create order", e);
             throw new ApiException(HttpStatus.BAD_GATEWAY, "PAYMENT_PROVIDER_ERROR", "Razorpay could not create the payment order.");
         }
     }
@@ -74,8 +79,22 @@ public class RazorpayGateway {
             payment.setStatus(providerPayment.has("status") ? String.valueOf(providerPayment.get("status")) : null);
             return payment;
         } catch (Exception e) {
+            logProviderFailure("fetch payment", e);
             throw new ApiException(HttpStatus.BAD_GATEWAY, "PAYMENT_PROVIDER_ERROR", "Razorpay payment status could not be verified.");
         }
+    }
+
+    /** Logs only provider status/code or exception type; never log credentials, request bodies, or raw error text. */
+    private static void logProviderFailure(String operation, Exception failure) {
+        if (failure instanceof RazorpayException provider) {
+            log.warn("Razorpay {} failed: httpStatus={}, providerCode={}", operation, provider.getStatusCode(), safeCode(provider.getCode()));
+        } else {
+            log.warn("Razorpay {} failed before a provider response: exceptionType={}", operation, failure.getClass().getSimpleName());
+        }
+    }
+
+    private static String safeCode(String code) {
+        return code != null && code.matches("[A-Za-z0-9_.-]{1,80}") ? code : "unavailable";
     }
 
     private RazorpayClient client() throws Exception { return new RazorpayClient(keyId, secret); }
