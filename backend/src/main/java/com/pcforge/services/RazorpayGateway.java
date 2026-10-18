@@ -10,12 +10,21 @@ import org.springframework.stereotype.Component;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+import java.nio.charset.StandardCharsets;
+import java.time.Duration;
+import java.util.Base64;
+
 @Component
 public class RazorpayGateway {
     private static final Logger log = LoggerFactory.getLogger(RazorpayGateway.class);
     private final String keyId;
     private final String secret;
     private final String webhookSecret;
+    private final HttpClient httpClient = HttpClient.newBuilder().connectTimeout(Duration.ofSeconds(10)).build();
 
     public RazorpayGateway(@Value("${pcforge.razorpay.key-id:}") String keyId,
                            @Value("${pcforge.razorpay.key-secret:}") String secret,
@@ -59,8 +68,27 @@ public class RazorpayGateway {
             request.put("amount", amountPaise);
             request.put("currency", "INR");
             request.put("receipt", receipt);
-            var created = client().orders.create(request);
-            return new CreatedOrder(String.valueOf(created.get("id")), readLong(created.get("amount")), String.valueOf(created.get("currency")));
+            HttpRequest httpRequest = HttpRequest.newBuilder(URI.create("https://api.razorpay.com/v1/orders"))
+                    .timeout(Duration.ofSeconds(20))
+                    .header("Authorization", basicAuthorization())
+                    .header("Content-Type", "application/json")
+                    .POST(HttpRequest.BodyPublishers.ofString(request.toString(), StandardCharsets.UTF_8))
+                    .build();
+            HttpResponse<String> response = httpClient.send(httpRequest, HttpResponse.BodyHandlers.ofString(StandardCharsets.UTF_8));
+            JSONObject body = new JSONObject(response.body());
+            if (response.statusCode() < 200 || response.statusCode() >= 300) {
+                String providerCode = body.has("error") && body.get("error") instanceof JSONObject error && error.has("code")
+                        ? String.valueOf(error.get("code")) : null;
+                log.warn("Razorpay create order failed: httpStatus={}, providerCode={}", response.statusCode(), safeCode(providerCode));
+                throw new ApiException(HttpStatus.BAD_GATEWAY, "PAYMENT_PROVIDER_ERROR", "Razorpay could not create the payment order.");
+            }
+            return new CreatedOrder(body.getString("id"), readLong(body.get("amount")), body.getString("currency"));
+        } catch (ApiException e) {
+            throw e;
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            logProviderFailure("create order", e);
+            throw new ApiException(HttpStatus.BAD_GATEWAY, "PAYMENT_PROVIDER_ERROR", "Razorpay could not create the payment order.");
         } catch (Exception e) {
             logProviderFailure("create order", e);
             throw new ApiException(HttpStatus.BAD_GATEWAY, "PAYMENT_PROVIDER_ERROR", "Razorpay could not create the payment order.");
@@ -106,6 +134,11 @@ public class RazorpayGateway {
             catch (NumberFormatException ignored) { /* handled by the safe error below */ }
         }
         throw new IllegalStateException("Razorpay returned a missing or invalid numeric field.");
+    }
+
+    private String basicAuthorization() {
+        String credentials = keyId + ":" + secret;
+        return "Basic " + Base64.getEncoder().encodeToString(credentials.getBytes(StandardCharsets.UTF_8));
     }
 
     private RazorpayClient client() throws Exception { return new RazorpayClient(keyId, secret); }
