@@ -15,13 +15,18 @@ import org.junit.jupiter.api.Test;
 class TestCatalogSeederTest {
     @Test void testInventoryIsExplicitlyInStockDemoDataWithStableUniqueKeys() {
         var products = TestCatalogSeeder.testProducts();
-        assertEquals(7, products.size());
+        assertEquals(26, products.size());
         assertTrue(products.stream().allMatch(item -> item.isActive() && item.isDemoData()
                 && "in_stock".equals(item.getStockStatus()) && item.getPriceInr() > 0
                 && item.getTestCatalogKey() != null && item.getSpecifications().containsKey("testCatalog")));
         assertEquals(products.size(), new HashSet<>(products.stream().map(Component::getTestCatalogKey).toList()).size());
         assertTrue(products.stream().anyMatch(item -> "Processors (CPU)".equals(item.getCategory())));
         assertTrue(products.stream().anyMatch(item -> "PC Cabinets and Cases".equals(item.getCategory())));
+        for (String category : java.util.List.of("Processors (CPU)", "Motherboards", "RAM", "SSDs and HDDs",
+                "Power Supplies", "PC Cabinets and Cases", "Graphics Cards (GPU)", "CPU Coolers")) {
+            assertTrue(products.stream().filter(item -> category.equals(item.getCategory())).count() >= 3,
+                    "Expected several choices in " + category);
+        }
         assertTrue(products.stream().filter(item -> "Power Supplies".equals(item.getCategory()))
                 .allMatch(item -> String.valueOf(item.getSpecifications().get("connectors")).contains("8-pin EPS")));
     }
@@ -35,22 +40,26 @@ class TestCatalogSeederTest {
         verifyNoInteractions(repository);
     }
 
-    @Test void seededCatalogueSupportsBuilderRecommendationsAtTheDocumentedTestBudgets() {
+    @Test void seededCatalogueSupportsDifferentCompatibleGamingBuildsAcrossBudgets() {
         ComponentRepository repository = mock(ComponentRepository.class);
         TestCatalogueGuard guard = mock(TestCatalogueGuard.class);
         when(guard.isEnabled()).thenReturn(true);
         when(repository.findAll()).thenReturn(TestCatalogSeeder.testProducts());
         var builder = new BuildService(repository, mock(PCBuildRepository.class), new CompatibilityService(), guard);
 
-        var integratedGraphics = builder.recommend(65_000, "gaming", "balanced");
-        assertEquals(42_500, integratedGraphics.totalInr());
-        assertTrue(integratedGraphics.components().stream().allMatch(item -> "in_stock".equals(item.getStockStatus())));
-        assertTrue(integratedGraphics.components().stream().noneMatch(item -> "Graphics Cards (GPU)".equals(item.getCategory())));
-        assertTrue(integratedGraphics.testCheckoutEnabled());
+        var entryBuild = builder.recommend(30_000, "gaming", "balanced");
+        var midBuild = builder.recommend(40_000, "gaming", "balanced");
+        var upperBuild = builder.recommend(50_000, "gaming", "balanced");
 
-        var withGpu = builder.recommend(75_000, "gaming", "balanced");
-        assertEquals(72_400, withGpu.totalInr());
-        assertTrue(withGpu.components().stream().anyMatch(item -> "Graphics Cards (GPU)".equals(item.getCategory())));
-        assertNotEquals("incompatible", withGpu.compatibility().status());
+        assertEquals(29_300, entryBuild.totalInr());
+        assertEquals(38_300, midBuild.totalInr());
+        assertEquals(48_300, upperBuild.totalInr());
+        assertTrue(java.util.stream.Stream.of(entryBuild, midBuild, upperBuild).allMatch(build ->
+                build.components().stream().allMatch(item -> "in_stock".equals(item.getStockStatus()))
+                        && build.components().stream().anyMatch(item -> "Graphics Cards (GPU)".equals(item.getCategory()))
+                        && !"incompatible".equals(build.compatibility().status()) && build.testCheckoutEnabled()));
+        assertEquals("TEST-GTX1650-4G", entryBuild.components().stream().filter(item -> "Graphics Cards (GPU)".equals(item.getCategory())).findFirst().orElseThrow().getModel());
+        assertEquals("TEST-RTX3050-8G", midBuild.components().stream().filter(item -> "Graphics Cards (GPU)".equals(item.getCategory())).findFirst().orElseThrow().getModel());
+        assertEquals("TEST-DUAL-RTX4060-O8G", upperBuild.components().stream().filter(item -> "Graphics Cards (GPU)".equals(item.getCategory())).findFirst().orElseThrow().getModel());
     }
 }

@@ -94,9 +94,9 @@ public class BuildService {
             long coreTotal = total;
             var gpuChoices = by.get("gpu").stream()
                     .filter(c -> safeAdd(coreTotal, c.getPriceInr()) <= budget)
-                    .sorted("gaming_performance".equals(preference)
-                            ? Comparator.comparing(Component::getPriceInr).reversed().thenComparing(Component::getId)
-                            : Comparator.comparing(Component::getPriceInr).thenComparing(Component::getId))
+                    .sorted("budget_focused".equals(preference)
+                            ? Comparator.comparing(Component::getPriceInr).thenComparing(Component::getId)
+                            : Comparator.comparing(Component::getPriceInr).reversed().thenComparing(Component::getId))
                     .toList();
             Component gpu = null;
             for (Component candidate : gpuChoices) {
