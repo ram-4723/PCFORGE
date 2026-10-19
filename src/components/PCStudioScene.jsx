@@ -1,6 +1,7 @@
-import React, { useMemo, useState } from 'react'
+import React, { useEffect, useMemo, useRef, useState } from 'react'
 import { CircuitBoard, Cpu, Database, Fan, Gauge, Layers2, MemoryStick, RotateCcw, ScanLine, Tag, Zap } from 'lucide-react'
 import GpuExplorer from './GpuExplorer/GpuExplorer.jsx'
+import { MOTHERBOARD_BASE_PATH, MOTHERBOARD_PARTS, MOTHERBOARD_TITLE } from './GpuExplorer/motherboardParts.js'
 
 const parts = [
   { id: 'motherboard', name: 'Motherboard', Icon: CircuitBoard, tag: '01' },
@@ -52,6 +53,7 @@ function Model({ id, technical, exploded }) {
 }
 
 export default function PCStudioScene({ selectedId = 'cpu', onSelect = () => {}, onGpuPartSelect, controls = false, className = '' }) {
+  const viewerRef = useRef(null)
   const [exploded, setExploded] = useState(false)
   const [labels, setLabels] = useState(true)
   const [technical, setTechnical] = useState(false)
@@ -59,15 +61,26 @@ export default function PCStudioScene({ selectedId = 'cpu', onSelect = () => {},
   const [rotation, setRotation] = useState({ x: -9, y: -17 })
   const [drag, setDrag] = useState(null)
   const [hotspot, setHotspot] = useState(null)
+  const hasFrameExplorer = selectedId === 'gpu' || selectedId === 'motherboard'
   const selected = parts.find(p => p.id === selectedId) || parts[0]
   const dots = useMemo(() => Array.from({ length: 34 }, (_, i) => ({ x: (i * 89 + 37) % 680, y: (i * 53 + 13) % 450, r: i % 5 === 0 ? 1.5 : 0.7 })), [])
   const annotations = callouts[selectedId] || []
   const move = (e) => { if (!drag) return; setRotation({ x: Math.max(-36, Math.min(36, drag.x + (e.clientY - drag.py) * .32)), y: drag.y + (e.clientX - drag.px) * .38 }) }
   const reset = () => { setExploded(false); setTechnical(false); setZoom(1); setRotation({ x: -9, y: -17 }); setHotspot(null) }
+  const resetFrameExplorer = () => { viewerRef.current?.reset(); setExploded(false); setLabels(true); setTechnical(false); setZoom(1); setHotspot(null) }
+  const changeFrameZoom = (direction) => viewerRef.current?.[direction > 0 ? 'zoomIn' : 'zoomOut']()
+  useEffect(() => {
+    if (hasFrameExplorer) resetFrameExplorer()
+    // Reset the shared viewer when switching between GPU and motherboard frames.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedId])
   return <div className={`pc-studio ${className}`}>
-    <div className="forge-viewer">
-      <div className="forge-viewer-head"><div><span className="forge-live-dot"/> LIVE COMPONENT STUDY <span className="forge-divider">/</span> {selected.tag} · {selected.name.toUpperCase()}</div><span className="forge-view-hint">{selectedId === 'gpu' ? 'DRAG TO ROTATE · EXPLODE TO INSPECT' : <>DRAG TO ORBIT <i>·</i> SCENE {technical ? 'TECHNICAL' : 'EXPLORE'}</>}</span></div>
-      {selectedId === 'gpu' ? <><GpuExplorer title="Graphics card component study" className="hardware-gpu-explorer" onPartSelect={onGpuPartSelect} /><div className="forge-status"><span><i/> FRAME VIEW READY</span><span>144 ROTATION · 72 EXPLODED FRAMES</span><span>PCFORGE / HARDWARE LAB</span></div></> : <>
+    <div className={`forge-viewer ${hasFrameExplorer && technical ? 'technical-mode' : ''}`}>
+      <div className="forge-viewer-head"><div><span className="forge-live-dot"/> LIVE COMPONENT STUDY <span className="forge-divider">/</span> {selected.tag} · {selected.name.toUpperCase()}</div><span className="forge-view-hint">{hasFrameExplorer ? 'DRAG TO ROTATE · EXPLODE TO INSPECT' : <>DRAG TO ORBIT <i>·</i> SCENE {technical ? 'TECHNICAL' : 'EXPLORE'}</>}</span></div>
+      {hasFrameExplorer ? <>
+      <GpuExplorer ref={viewerRef} title={selectedId === 'motherboard' ? MOTHERBOARD_TITLE : 'Graphics card component study'} basePath={selectedId === 'motherboard' ? MOTHERBOARD_BASE_PATH : undefined} labels={selectedId === 'motherboard' ? MOTHERBOARD_PARTS : undefined} exploded={exploded} onExplodedChange={setExploded} showLabels={labels} onLabelsChange={setLabels} zoom={zoom} onZoomChange={setZoom} hideControls className="hardware-gpu-explorer" onPartSelect={onGpuPartSelect} />
+      {controls && <div className="frame-explorer-controls"><div className="forge-zoom-controls frame-explorer-zoom"><button type="button" onClick={() => changeFrameZoom(-1)} aria-label="Zoom out">−</button><span>{Math.round(zoom * 100)}%</span><button type="button" onClick={() => changeFrameZoom(1)} aria-label="Zoom in">+</button></div><div className="forge-toolbar frame-explorer-toolbar" aria-label="Scene controls"><button type="button" className={!exploded?'active':''} onClick={() => viewerRef.current?.assemble()}><ScanLine size={14}/> Explore</button><button type="button" className={exploded?'active':''} onClick={() => viewerRef.current?.explode()} aria-pressed={exploded}><Layers2 size={14}/> Exploded</button><button type="button" className={labels?'active':''} onClick={() => viewerRef.current?.toggleLabels()} aria-pressed={labels}><Tag size={14}/> Labels</button><button type="button" className={technical?'active':''} onClick={() => setTechnical(v => !v)} aria-pressed={technical}><CircuitBoard size={14}/> Technical</button><button type="button" onClick={resetFrameExplorer}><RotateCcw size={14}/> Reset</button></div></div>}
+      <div className="forge-status"><span><i/> FRAME VIEW READY</span><span>144 ROTATION · 72 EXPLODED FRAMES</span><span>PCFORGE / HARDWARE LAB</span></div></> : <>
       <div className={`pc-stage forge-stage ${technical ? 'technical-mode' : ''}`} onPointerMove={move} onPointerUp={() => setDrag(null)} onPointerLeave={() => setDrag(null)} onPointerDown={e => { if (e.target.closest('button, .svg-hotspot')) return; e.currentTarget.setPointerCapture(e.pointerId); setDrag({ px:e.clientX, py:e.clientY, ...rotation }) }}>
         <div className="forge-reticle"/><div className="forge-axis forge-axis-x"/><div className="forge-axis forge-axis-y"/>
         <div className="forge-particles" aria-hidden="true">{dots.map((d,i)=><i key={i} style={{left:`${d.x/6.8}%`,top:`${d.y/4.5}%`,width:d.r*2,height:d.r*2}}/>)}</div>

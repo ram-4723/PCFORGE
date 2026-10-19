@@ -748,3 +748,11 @@ body { background: var(--night); color: #f3f2ec; }
 @media(max-width:900px) { .home-experiences { grid-template-columns: 1fr; } .home-builder-promo,.home-explorer-promo { min-height: 340px; } .home-explorer-promo { min-height: 360px; } }
 @media(max-width:600px) { .home-experiences { gap: 12px; padding: 34px 16px 54px; } .home-builder-promo { grid-template-columns: 1fr; min-height: 0; } .home-promo-copy { padding: 31px 24px 22px; } .home-promo-copy h2,.home-explorer-copy h2 { font-size: 32px; } .home-promo-copy p,.home-explorer-copy p { font-size: 12px; } .home-builder-visual { min-height: 210px; mask-image: linear-gradient(180deg,transparent,#000 18%); } .home-builder-visual .looping-visual,.home-builder-visual img { min-height: 210px; max-height: 250px; } .home-explorer-promo { min-height: 350px; } .home-explorer-copy { padding: 28px 24px; } .home-promo-index { top: 14px; right: 14px; font-size: 8px; } .home-promo-index span { font-size: 6px; } }
 @media(prefers-reduced-motion:reduce) { .home-explorer-promo { transition: none; } }
+.frame-explorer-controls { display: flex; flex-direction: column; align-items: center; gap: 9px; padding: 0 14px 11px; }
+.frame-explorer-toolbar { position: static; left: auto; bottom: auto; max-width: 100%; margin: 0; transform: none; }
+.frame-explorer-toolbar button { min-height: 36px; }
+.frame-explorer-zoom { position: static; display: flex; align-items: center; gap: 8px; color: #92a2a6; }
+.frame-explorer-zoom button { width: 28px; height: 28px; border: 1px solid #94afb044; background: #101a20d9; color: #d8e2de; font-size: 17px; cursor: pointer; }
+.frame-explorer-zoom button:hover { border-color: #d4aa58; color: #e6d7af; }
+.forge-viewer.technical-mode .gpux-stage { filter: contrast(1.12) saturate(.78); box-shadow: inset 0 0 0 1px rgba(60,200,244,.28),0 12px 28px #0006; }
+@media(max-width:600px) { .frame-explorer-controls { padding: 0 9px 10px; } .frame-explorer-toolbar { width: 100%; overflow-x: auto; } .frame-explorer-toolbar button { min-width: 65px; min-height: 40px; padding: 0 7px; font-size: 7px; flex: 1 0 auto; } }

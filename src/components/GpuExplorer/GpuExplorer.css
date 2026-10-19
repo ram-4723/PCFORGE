@@ -51,6 +51,7 @@
   translate: -8px 0;
   transition: opacity 0.35s ease, translate 0.45s cubic-bezier(.2,.8,.2,1), color 0.2s;
   font: 600 clamp(9px, 1.45cqw, 17px)/1.1 "Manrope", "DM Sans", system-ui, sans-serif;
+  font-size: calc(clamp(9px, 1.45cqw, 17px) / var(--gpux-z, 1));   /* labels keep their on-screen size when zoomed */
   letter-spacing: 0.01em;
   white-space: nowrap;
   color: #fff;
@@ -97,6 +98,15 @@
 .gpux-l-short { display: none; }
 .gpux-desc.is-on { opacity: 1; translate: 0 0; }
 
+/* zoom / pan layer: frame canvas + leaders + labels scale together so labels stay anchored */
+.gpux-view { position: absolute; inset: 0; transform-origin: 50% 50%; will-change: transform; }
+.gpux-stage.is-gesture { touch-action: none; }          /* zoomed or gesture-zoom enabled: two-finger pan/pinch belongs to the viewer */
+.gpux-stage.is-panning { cursor: move; }
+.gpux-label { border-bottom-width: calc(1px / var(--gpux-z, 1)); }
+/* thin progress bar while another component's frames preload (the current one stays on screen) */
+.gpux-switchbar { position: absolute; left: 0; top: 0; height: 3px; z-index: 3; pointer-events: none;
+  background: linear-gradient(90deg, var(--gpux-cyan), var(--gpux-gold)); transition: width 0.2s, opacity 0.3s; }
+
 /* loader + hint */
 .gpux-loader {
   position: absolute; inset: 0; display: grid; place-content: center; gap: 12px; justify-items: center;
@@ -130,7 +140,7 @@
   /* narrow: the description moves out of the image, below it, and is always present once labels are shown */
   .gpux-desc { position: static; width: auto; translate: none; margin-top: 10px; display: none; font-size: 13px; }
   .gpux-desc.is-labelled { display: block; opacity: 1; }
-  .gpux-label { font-size: clamp(8px, 2.3cqw, 11px); }
+  .gpux-label { font-size: calc(clamp(8px, 2.3cqw, 11px) / var(--gpux-z, 1)); }
   .gpux-l-full { display: none; }
   .gpux-l-short { display: inline; }
   .gpux-slider span { display: none; }
