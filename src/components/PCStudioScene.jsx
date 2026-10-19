@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from 'react'
 import { CircuitBoard, Cpu, Database, Fan, Gauge, Layers2, MemoryStick, RotateCcw, ScanLine, Tag, Zap } from 'lucide-react'
+import GpuExplorer from './GpuExplorer/GpuExplorer.jsx'
 
 const parts = [
   { id: 'motherboard', name: 'Motherboard', Icon: CircuitBoard, tag: '01' },
@@ -50,7 +51,7 @@ function Model({ id, technical, exploded }) {
   return <g className={`model-generic ${exploded ? 'exploded' : ''}`}><ellipse className="shadow" cx="405" cy="393" rx="170" ry="20"/><path className="cooler-base" d="M325 355l23-18h115l23 18v21H325z"/><path className="cooler-fin" d="M343 339v-94h125v94z"/>{Array.from({length:11},(_,i)=><path key={i} className="fin" d={`M${350+i*10} 248v88`}/>)}<circle className="cooler-fan" cx="405" cy="245" r="73"/><circle className="fan-inner" cx="405" cy="245" r="12"/>{[0,1,2,3,4,5,6,7].map(i=><path key={i} className="fan-blade" transform={`rotate(${i*45} 405 245)`} d="M405 238q8-28 2-45q-15 14-9 45z"/>)}<path className="cooler-pipe" d="M366 365q-20-52 0-87m78 87q20-52 0-87"/></g>
 }
 
-export default function PCStudioScene({ selectedId = 'cpu', onSelect = () => {}, controls = false, className = '' }) {
+export default function PCStudioScene({ selectedId = 'cpu', onSelect = () => {}, onGpuPartSelect, controls = false, className = '' }) {
   const [exploded, setExploded] = useState(false)
   const [labels, setLabels] = useState(true)
   const [technical, setTechnical] = useState(false)
@@ -65,7 +66,8 @@ export default function PCStudioScene({ selectedId = 'cpu', onSelect = () => {},
   const reset = () => { setExploded(false); setTechnical(false); setZoom(1); setRotation({ x: -9, y: -17 }); setHotspot(null) }
   return <div className={`pc-studio ${className}`}>
     <div className="forge-viewer">
-      <div className="forge-viewer-head"><div><span className="forge-live-dot"/> LIVE COMPONENT STUDY <span className="forge-divider">/</span> {selected.tag} · {selected.name.toUpperCase()}</div><span className="forge-view-hint">DRAG TO ORBIT <i>·</i> SCENE {technical ? 'TECHNICAL' : 'EXPLORE'}</span></div>
+      <div className="forge-viewer-head"><div><span className="forge-live-dot"/> LIVE COMPONENT STUDY <span className="forge-divider">/</span> {selected.tag} · {selected.name.toUpperCase()}</div><span className="forge-view-hint">{selectedId === 'gpu' ? 'DRAG TO ROTATE · EXPLODE TO INSPECT' : <>DRAG TO ORBIT <i>·</i> SCENE {technical ? 'TECHNICAL' : 'EXPLORE'}</>}</span></div>
+      {selectedId === 'gpu' ? <><GpuExplorer title="Graphics card component study" className="hardware-gpu-explorer" onPartSelect={onGpuPartSelect} /><div className="forge-status"><span><i/> FRAME VIEW READY</span><span>144 ROTATION · 72 EXPLODED FRAMES</span><span>PCFORGE / HARDWARE LAB</span></div></> : <>
       <div className={`pc-stage forge-stage ${technical ? 'technical-mode' : ''}`} onPointerMove={move} onPointerUp={() => setDrag(null)} onPointerLeave={() => setDrag(null)} onPointerDown={e => { if (e.target.closest('button, .svg-hotspot')) return; e.currentTarget.setPointerCapture(e.pointerId); setDrag({ px:e.clientX, py:e.clientY, ...rotation }) }}>
         <div className="forge-reticle"/><div className="forge-axis forge-axis-x"/><div className="forge-axis forge-axis-y"/>
         <div className="forge-particles" aria-hidden="true">{dots.map((d,i)=><i key={i} style={{left:`${d.x/6.8}%`,top:`${d.y/4.5}%`,width:d.r*2,height:d.r*2}}/>)}</div>
@@ -76,6 +78,7 @@ export default function PCStudioScene({ selectedId = 'cpu', onSelect = () => {},
         <div className="forge-corner-mark">PF<span>·</span>LAB <small>01—08</small></div>
       </div>
       <div className="forge-status"><span><i/> MODEL READY</span><span>ILLUSTRATIVE ENGINEERING VIEW · NOT TO SCALE</span><span>PCFORGE / HARDWARE LAB</span></div>
+      </>}
     </div>
     {controls && <nav className="pc-part-selector" aria-label="Hardware learning strip">{parts.map(({id,name,Icon,tag})=><button key={id} type="button" className={selectedId===id?'active':''} onClick={()=>{onSelect(id);setHotspot(null)}} aria-pressed={selectedId===id}><span className="part-index">{tag}</span><Icon className="part-icon" size={19}/><span className="part-name">{name}</span><span className="part-indicator"/></button>)}</nav>}
   </div>

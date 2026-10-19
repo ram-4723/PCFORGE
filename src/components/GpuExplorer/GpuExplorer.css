@@ -1,0 +1,143 @@
+/* GpuExplorer — PCForge styling (dark, Manrope / DM Sans, gold #ffc64a, cyan secondary) */
+.gpux {
+  --gpux-gold: #ffc64a;
+  --gpux-cyan: #3cc8f4;
+  --gpux-bg: #07080a;
+  --gpux-line: rgba(235, 240, 245, 0.78);
+  font-family: "Manrope", "DM Sans", system-ui, sans-serif;
+  color: #e9edf2;
+  width: 100%;
+  position: relative;
+  container-type: inline-size;
+}
+.gpux-stage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 18px;
+  background: radial-gradient(120% 90% at 50% 0%, #2a2e33 0%, #121417 50%, var(--gpux-bg) 100%);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06), 0 24px 60px rgba(0, 0, 0, 0.55);
+  cursor: grab;
+  touch-action: pan-y;            /* horizontal drags rotate, vertical swipes still scroll the page */
+  user-select: none;
+  -webkit-user-select: none;
+  outline: none;
+}
+.gpux-stage:active { cursor: grabbing; }
+.gpux-stage:focus-visible { box-shadow: 0 0 0 2px var(--gpux-gold), 0 24px 60px rgba(0, 0, 0, 0.55); }
+.gpux-stage.is-labelled { cursor: default; }
+.gpux-poster, .gpux-canvas, .gpux-leaders, .gpux-labels {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+}
+.gpux-poster { object-fit: cover; filter: blur(2px); opacity: 0.9; pointer-events: none; }
+.gpux-canvas { display: block; }
+
+/* leader lines + anchor dots (SVG in 1600x900 frame space) */
+.gpux-leaders { pointer-events: none; }
+.gpux-leader { opacity: 0; transition: opacity 0.35s ease; }
+.gpux-leader line { stroke: var(--gpux-line); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+.gpux-leader .ring { fill: none; stroke-width: 1.6; vector-effect: non-scaling-stroke; opacity: 0.9; }
+.gpux-leader.is-active line { stroke: #fff; stroke-width: 2.2; }
+.is-labelled .gpux-leader { opacity: 1; transition-delay: calc(var(--i) * 120ms); }
+
+/* HTML labels: text sits on top of a thin underline that starts at the leader end */
+.gpux-labels { pointer-events: none; }
+.gpux-label {
+  position: absolute;
+  transform: translate(0, -100%);
+  pointer-events: none;
+  opacity: 0;
+  translate: -8px 0;
+  transition: opacity 0.35s ease, translate 0.45s cubic-bezier(.2,.8,.2,1), color 0.2s;
+  font: 600 clamp(9px, 1.45cqw, 17px)/1.1 "Manrope", "DM Sans", system-ui, sans-serif;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  color: #fff;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.75);
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--gpux-line);
+  padding: 0 0.55em 0.32em 0.55em;
+  margin: 0;
+  cursor: pointer;
+}
+.gpux-label::before {           /* accent bar at the leader end */
+  content: ""; position: absolute; left: 0; bottom: -2px; width: 1.1em; height: 3px; border-radius: 2px;
+  background: var(--accent, var(--gpux-gold));
+}
+.gpux-label--l { transform: translate(-100%, -100%); }
+.gpux-label--l::before { left: auto; right: 0; }
+.is-labelled .gpux-label {
+  opacity: 1; translate: 0 0; pointer-events: auto;
+  transition-delay: calc(var(--i) * 120ms + 80ms), calc(var(--i) * 120ms + 80ms), 0s;
+}
+.gpux-label:hover, .gpux-label:focus-visible, .gpux-label.is-active {
+  color: var(--accent, var(--gpux-gold)); outline: none; border-bottom-color: var(--accent, var(--gpux-gold));
+}
+
+/* description card */
+.gpux-desc {                       /* top-right strip: kept clear of labels in the exploded layout */
+  position: absolute; right: 1.8%; top: 2%; translate: 0 -6px;
+  width: 55%; box-sizing: border-box;
+  display: block;
+  padding: 0.55em 0.9em;
+  border-radius: 12px;
+  background: rgba(12, 14, 17, 0.82);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: clamp(10px, 1.25cqw, 15px);
+  line-height: 1.4;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.25s, translate 0.25s;
+}
+.gpux-desc strong { font-weight: 700; letter-spacing: 0.02em; margin-right: 0.5em; }
+.gpux-desc span { color: #c3cad3; }
+.gpux-desc-hint { font-style: italic; }
+.gpux-l-short { display: none; }
+.gpux-desc.is-on { opacity: 1; translate: 0 0; }
+
+/* loader + hint */
+.gpux-loader {
+  position: absolute; inset: 0; display: grid; place-content: center; gap: 12px; justify-items: center;
+  background: rgba(7, 8, 10, 0.55); font-size: 14px; color: #c3cad3;
+}
+.gpux-loader-bar { width: min(260px, 50cqw); height: 4px; border-radius: 4px; background: rgba(255, 255, 255, 0.1); overflow: hidden; }
+.gpux-loader-bar i { display: block; height: 100%; background: linear-gradient(90deg, var(--gpux-cyan), var(--gpux-gold)); transition: width 0.2s; }
+.gpux-hint {
+  position: absolute; left: 50%; bottom: 4%; translate: -50% 0;
+  font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(233, 237, 242, 0.55);
+  pointer-events: none; animation: gpux-pulse 2.4s ease-in-out infinite;
+}
+@keyframes gpux-pulse { 50% { opacity: 0.35; } }
+
+/* controls */
+.gpux-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 22px; margin-top: 14px; }
+.gpux-btn {
+  font: 700 14px/1 "Manrope", "DM Sans", system-ui, sans-serif; letter-spacing: 0.04em;
+  color: #111; background: var(--gpux-gold); border: 0; border-radius: 999px; padding: 12px 22px; cursor: pointer;
+  box-shadow: 0 6px 18px rgba(255, 198, 74, 0.25); transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
+}
+.gpux-btn:hover { transform: translateY(-1px); box-shadow: 0 8px 22px rgba(255, 198, 74, 0.35); }
+.gpux-btn:focus-visible { outline: 2px solid var(--gpux-cyan); outline-offset: 3px; }
+.gpux-btn:disabled { opacity: 0.45; cursor: default; transform: none; }
+.gpux-slider { flex: 1 1 260px; display: flex; align-items: center; gap: 12px; font-size: 12px; color: #9aa3ad; letter-spacing: 0.06em; text-transform: uppercase; }
+.gpux-slider input { flex: 1; accent-color: var(--gpux-cyan); height: 4px; cursor: pointer; }
+
+@container (max-width: 560px) {
+  .gpux-stage { border-radius: 12px; }
+  .gpux-label { padding: 0 0.35em 0.22em; }
+  /* narrow: the description moves out of the image, below it, and is always present once labels are shown */
+  .gpux-desc { position: static; width: auto; translate: none; margin-top: 10px; display: none; font-size: 13px; }
+  .gpux-desc.is-labelled { display: block; opacity: 1; }
+  .gpux-label { font-size: clamp(8px, 2.3cqw, 11px); }
+  .gpux-l-full { display: none; }
+  .gpux-l-short { display: inline; }
+  .gpux-slider span { display: none; }
+}
+
+/* reduced motion: no staggered fades / slides / pulses */
+@media (prefers-reduced-motion: reduce) {
+  .gpux *, .gpux *::before { transition: none !important; animation: none !important; }
+}
+.gpux--reduced .gpux-label, .gpux--reduced .gpux-leader { transition: none !important; translate: 0 0; }

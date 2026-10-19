@@ -98,11 +98,13 @@ const hardwareParts = [
 
 function HardwareExplorer() {
   const [selectedId, setSelectedId] = useState(hardwareParts[0].id)
+  const [selectedGpuPart, setSelectedGpuPart] = useState(null)
   const selected = hardwareParts.find((part) => part.id === selectedId) || hardwareParts[0]
+  const selectHardware = (id) => { setSelectedId(id); setSelectedGpuPart(null) }
   return <section className="hardware-explorer-section section-pad">
     <div className="section-top"><SectionTitle eyebrow="PC HARDWARE, EXPLAINED" title="Explore what’s inside." copy="Choose a component to learn what it does and which fit questions matter when planning a PC." /><span className="side-note">INTERACTIVE COMPONENT GUIDE</span></div>
-    <div className="hardware-explorer-grid"><PCStudioScene selectedId={selectedId} onSelect={setSelectedId} controls className="hardware-studio-scene" />
-      <article className="hardware-part-detail" aria-live="polite"><div className="hardware-part-copy"><span className="eyebrow">{selected.category} · COMPONENT GUIDE</span><h3>{selected.name}</h3><p className="hardware-part-summary">{selected.summary}</p><p>{selected.detail}</p><div className="hardware-fact"><span>WHY IT MATTERS</span><p>{selected.why}</p></div><div className="hardware-fact"><span>KEY SPECIFICATIONS</span><p>{selected.specs}</p></div><div className="hardware-fact-grid"><div><span>COMMON MISTAKE</span><p>{selected.mistake}</p></div><div><span>BUYING TIP</span><p>{selected.tip}</p></div></div><div className="hardware-fit-note"><ShieldCheck size={17} /><span><b>Fit depends on the full parts list.</b><small>Confirm exact compatibility with manufacturer specifications.</small></span></div></div></article>
+    <div className="hardware-explorer-grid"><PCStudioScene selectedId={selectedId} onSelect={selectHardware} onGpuPartSelect={setSelectedGpuPart} controls className="hardware-studio-scene" />
+      <article className="hardware-part-detail" aria-live="polite"><div className="hardware-part-copy"><span className="eyebrow">{selected.category} · COMPONENT GUIDE</span><h3>{selected.name}</h3><p className="hardware-part-summary">{selected.summary}</p><p>{selected.detail}</p>{selectedId === 'gpu' && <div className="hardware-gpu-part-note"><span>{selectedGpuPart ? `GPU COMPONENT · ${selectedGpuPart.name.toUpperCase()}` : 'INTERACTIVE GPU STUDY'}</span><p>{selectedGpuPart?.desc || 'Drag the graphics card to rotate it. Explode the assembly and select a label to learn what each part does.'}</p></div>}<div className="hardware-fact"><span>WHY IT MATTERS</span><p>{selected.why}</p></div><div className="hardware-fact"><span>KEY SPECIFICATIONS</span><p>{selected.specs}</p></div><div className="hardware-fact-grid"><div><span>COMMON MISTAKE</span><p>{selected.mistake}</p></div><div><span>BUYING TIP</span><p>{selected.tip}</p></div></div><div className="hardware-fit-note"><ShieldCheck size={17} /><span><b>Fit depends on the full parts list.</b><small>Confirm exact compatibility with manufacturer specifications.</small></span></div></div></article>
     </div>
   </section>
 }
