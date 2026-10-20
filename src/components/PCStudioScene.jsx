@@ -88,7 +88,8 @@ export default function PCStudioScene({ selectedId = 'cpu', onSelect = () => {},
   const selected = parts.find(p => p.id === selectedId) || parts[0]
   const dots = useMemo(() => Array.from({ length: 34 }, (_, i) => ({ x: (i * 89 + 37) % 680, y: (i * 53 + 13) % 450, r: i % 5 === 0 ? 1.5 : 0.7 })), [])
   const annotations = callouts[selectedId] || []
-  const move = (e) => { if (!drag) return; setRotation({ x: Math.max(-36, Math.min(36, drag.x + (e.clientY - drag.py) * .32)), y: drag.y + (e.clientX - drag.px) * .38 }) }
+  // Keep the model moving with the pointer so horizontal drag feels direct.
+  const move = (e) => { if (!drag) return; setRotation({ x: Math.max(-36, Math.min(36, drag.x + (e.clientY - drag.py) * .32)), y: drag.y - (e.clientX - drag.px) * .38 }) }
   const reset = () => { setExploded(false); setTechnical(false); setZoom(1); setRotation({ x: -9, y: -17 }); setHotspot(null) }
   const resetFrameExplorer = () => { viewerRef.current?.reset(); setExploded(false); setLabels(true); setTechnical(false); setZoom(1); setHotspot(null) }
   const changeFrameZoom = (direction) => viewerRef.current?.[direction > 0 ? 'zoomIn' : 'zoomOut']()

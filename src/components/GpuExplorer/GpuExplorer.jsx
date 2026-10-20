@@ -369,9 +369,9 @@ export const GpuExplorer = forwardRef(function GpuExplorer({
     const w = stageRef.current.clientWidth || 1;
     const now = performance.now();
     const dFrames = ((ev.clientX - st.drag.x) / w) * rotateCount * dragTurnsPerWidth;
-    st.a -= dFrames;   // drag right → card turns to the right
+    st.a += dFrames;   // drag right → card turns to the right
     const dt = Math.max(1, now - st.drag.t) / 1000;
-    st.drag.v = 0.7 * (-dFrames / dt) + 0.3 * st.drag.v;
+    st.drag.v = 0.7 * (dFrames / dt) + 0.3 * st.drag.v;
     st.drag.x = ev.clientX; st.drag.t = now;
     drawFrame();
   };
