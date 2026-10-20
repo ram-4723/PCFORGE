@@ -117,5 +117,6 @@ export default function PCStudioScene({ selectedId = 'cpu', onSelect = () => {},
       </>}
     </div>
     {controls && <nav className="pc-part-selector" aria-label="Hardware learning strip">{parts.map(({id,name,Icon,tag})=><button key={id} type="button" className={selectedId===id?'active':''} onClick={()=>{onSelect(id);setHotspot(null)}} aria-pressed={selectedId===id}><span className="part-index">{tag}</span><Icon className="part-icon" size={19}/><span className="part-name">{name}</span><span className="part-indicator"/></button>)}</nav>}
+    {controls && selectedId === 'monitor' && <a className="text-link forge-panel-compare-link" href="#panel-technology">Compare panel types</a>}
   </div>
 }
