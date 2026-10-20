@@ -103,9 +103,15 @@
 .gpux-stage.is-gesture { touch-action: none; }          /* zoomed or gesture-zoom enabled: two-finger pan/pinch belongs to the viewer */
 .gpux-stage.is-panning { cursor: move; }
 .gpux-label { border-bottom-width: calc(1px / var(--gpux-z, 1)); }
-/* thin progress bar while another component's frames preload (the current one stays on screen) */
-.gpux-switchbar { position: absolute; left: 0; top: 0; height: 3px; z-index: 3; pointer-events: none;
-  background: linear-gradient(90deg, var(--gpux-cyan), var(--gpux-gold)); transition: width 0.2s, opacity 0.3s; }
+/* show which component is loading while keeping the current frame visible */
+.gpux-switch-progress { position: absolute; top: 14px; left: 50%; z-index: 5; width: min(300px, calc(100% - 32px)); transform: translateX(-50%);
+  display: grid; gap: 7px; padding: 9px 12px; border: 1px solid rgba(85, 204, 231, 0.34); border-radius: 8px;
+  background: rgba(5, 12, 18, 0.92); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28); color: #e6edf0;
+  font-size: 11px; line-height: 1.2; pointer-events: none; backdrop-filter: blur(8px); }
+.gpux-switch-progress > span { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.gpux-switch-progress b { color: var(--gpux-gold); font-variant-numeric: tabular-nums; }
+.gpux-switch-progress-track { height: 4px; overflow: hidden; border-radius: 999px; background: rgba(255, 255, 255, 0.14); }
+.gpux-switch-progress-track i { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--gpux-cyan), var(--gpux-gold)); transition: width 0.2s ease; }
 
 /* loader + hint */
 .gpux-loader {

@@ -481,7 +481,12 @@ export const GpuExplorer = forwardRef(function GpuExplorer({
             <span>Loading 3D view… {Math.round(progress * 100)}%</span>
           </div>
         )}
-        {switching > 0 && <div className="gpux-switchbar" style={{ width: `${Math.round(switching * 100)}%` }} aria-hidden="true" />}
+        {switching > 0 && <div className="gpux-switch-progress" role="status" aria-live="polite" aria-atomic="true">
+          <span>Loading {title}… <b>{Math.round(switching * 100)}%</b></span>
+          <div className="gpux-switch-progress-track" role="progressbar" aria-label={`Loading ${title}`} aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(switching * 100)}>
+            <i style={{ width: `${Math.round(switching * 100)}%` }} />
+          </div>
+        </div>}
         {ready && explodeUI === 0 && !full && <div className="gpux-hint" aria-hidden="true">Drag to rotate</div>}
       </div>
 
