@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react'
-import { CircuitBoard, Cpu, Database, Fan, Gauge, Layers2, MemoryStick, Monitor, RotateCcw, ScanLine, Tag, Zap } from 'lucide-react'
+import { ArrowDownRight, CircuitBoard, Cpu, Database, Fan, Gauge, Layers2, MemoryStick, Monitor, RotateCcw, ScanLine, Tag, Zap } from 'lucide-react'
 import GpuExplorer from './GpuExplorer/GpuExplorer.jsx'
 import { MOTHERBOARD_BASE_PATH, MOTHERBOARD_PARTS, MOTHERBOARD_TITLE } from './GpuExplorer/motherboardParts.js'
 import { RAM_BASE_PATH, RAM_PARTS, RAM_TITLE } from './GpuExplorer/ramParts.js'
@@ -99,7 +99,7 @@ export default function PCStudioScene({ selectedId = 'cpu', onSelect = () => {},
   }, [selectedId])
   return <div className={`pc-studio ${className}`}>
     <div className={`forge-viewer ${hasFrameExplorer && technical ? 'technical-mode' : ''}`}>
-      <div className="forge-viewer-head"><div><span className="forge-live-dot"/> LIVE COMPONENT STUDY <span className="forge-divider">/</span> {selected.tag} · {selected.name.toUpperCase()}</div><span className="forge-view-hint">{hasFrameExplorer ? 'DRAG TO ROTATE · EXPLODE TO INSPECT' : <>DRAG TO ORBIT <i>·</i> SCENE {technical ? 'TECHNICAL' : 'EXPLORE'}</>}</span></div>
+      <div className="forge-viewer-head"><div><span className="forge-live-dot"/> LIVE COMPONENT STUDY <span className="forge-divider">/</span> {selected.tag} · {selected.name.toUpperCase()}</div><div className="forge-viewer-head-actions"><span className="forge-view-hint">{hasFrameExplorer ? 'DRAG TO ROTATE · EXPLODE TO INSPECT' : <>DRAG TO ORBIT <i>·</i> SCENE {technical ? 'TECHNICAL' : 'EXPLORE'}</>}</span>{controls && selectedId === 'monitor' && <a className="forge-panel-compare-button" href="#panel-technology">Panel Technology <ArrowDownRight size={13}/></a>}</div></div>
       {hasFrameExplorer ? <>
       <GpuExplorer ref={viewerRef} title={frameExplorer.title} basePath={frameExplorer.basePath} labels={frameExplorer.labels} exploded={exploded} onExplodedChange={setExploded} showLabels={labels} onLabelsChange={setLabels} zoom={zoom} onZoomChange={setZoom} hideControls className="hardware-gpu-explorer" onPartSelect={onGpuPartSelect} />
       {controls && <div className="frame-explorer-controls"><div className="forge-zoom-controls frame-explorer-zoom"><button type="button" onClick={() => changeFrameZoom(-1)} aria-label="Zoom out">−</button><span>{Math.round(zoom * 100)}%</span><button type="button" onClick={() => changeFrameZoom(1)} aria-label="Zoom in">+</button></div><div className="forge-toolbar frame-explorer-toolbar" aria-label="Scene controls"><button type="button" className={!exploded?'active':''} onClick={() => viewerRef.current?.assemble()}><ScanLine size={14}/> Explore</button><button type="button" className={exploded?'active':''} onClick={() => viewerRef.current?.explode()} aria-pressed={exploded}><Layers2 size={14}/> Exploded</button><button type="button" className={labels?'active':''} onClick={() => viewerRef.current?.toggleLabels()} aria-pressed={labels}><Tag size={14}/> Labels</button><button type="button" className={technical?'active':''} onClick={() => setTechnical(v => !v)} aria-pressed={technical}><CircuitBoard size={14}/> Technical</button><button type="button" onClick={resetFrameExplorer}><RotateCcw size={14}/> Reset</button></div></div>}
@@ -117,6 +117,5 @@ export default function PCStudioScene({ selectedId = 'cpu', onSelect = () => {},
       </>}
     </div>
     {controls && <nav className="pc-part-selector" aria-label="Hardware learning strip">{parts.map(({id,name,Icon,tag})=><button key={id} type="button" className={selectedId===id?'active':''} onClick={()=>{onSelect(id);setHotspot(null)}} aria-pressed={selectedId===id}><span className="part-index">{tag}</span><Icon className="part-icon" size={19}/><span className="part-name">{name}</span><span className="part-indicator"/></button>)}</nav>}
-    {controls && selectedId === 'monitor' && <a className="text-link forge-panel-compare-link" href="#panel-technology">Compare panel types</a>}
   </div>
 }
