@@ -43,9 +43,9 @@ const useCases = [
 ]
 const prebuiltFilters = ['All prebuilt PCs', ...featuredPrebuilts.map((item) => item.use)]
 const DEFAULT_PREFERENCE = 'balanced'
-const primaryNavIds = ['home', 'builder', 'components', 'prebuilt', 'showcase']
+const primaryNavIds = ['home', 'builder', 'components', 'prebuilt', 'showcase', 'hardware-explorer']
 const navDisplayLabels = { builder: 'PC Builder', prebuilt: 'Builds' }
-const navIcons = { home: House, builder: Cpu, components: CircuitBoard, prebuilt: Monitor, showcase: Images }
+const navIcons = { home: House, builder: Cpu, components: CircuitBoard, prebuilt: Monitor, showcase: Images, 'hardware-explorer': CircuitBoard }
 const navLinks = siteNavigationRoutes.filter(({ id }) => primaryNavIds.includes(id)).map(({ id, label, path }) => [id, navDisplayLabels[id] || label, path])
 const componentKeys = ['cpu', 'motherboard', 'ram', 'storage', 'psu', 'case']
 const categoryKeys = { 'CPU': 'cpu', 'Processors (CPU)': 'cpu', 'GPU': 'gpu', 'Graphics Cards (GPU)': 'gpu', Motherboard: 'motherboard', Motherboards: 'motherboard', RAM: 'ram', Storage: 'storage', 'SSDs and HDDs': 'storage', PSU: 'psu', 'Power Supplies': 'psu', Case: 'case', 'PC Cabinets and Cases': 'case', 'CPU Cooler': 'cooling', 'CPU Coolers': 'cooling' }
@@ -63,6 +63,16 @@ function LoopingVisual({ src, poster, alt, className = '', loading = 'lazy' }) {
       ? <img src={poster} alt={alt} />
       : <picture><source media="(prefers-reduced-motion: reduce)" srcSet={poster} /><img src={src} alt={alt} loading={loading} decoding="async" onError={() => setFailed(true)} /></picture>}
   </div>
+}
+
+function HardwareExplorerPreview() {
+  const [frame, setFrame] = useState(0)
+  useEffect(() => {
+    const timer = window.setInterval(() => setFrame((current) => (current + 1) % 144), 90)
+    return () => window.clearInterval(timer)
+  }, [])
+  const frameName = String(frame).padStart(3, '0')
+  return <img className="home-explorer-preview" src={publicAsset(`/gpu-explorer/rotate/${frameName}.webp`)} alt="Graphics card rotating inside Hardware Explorer" loading="lazy" />
 }
 
 function Reveal({ children, className = '', delay = 0 }) {
@@ -501,11 +511,16 @@ function App() {
           <div className="home-promo-index">01 <span>PLAN WITH PURPOSE</span></div>
         </article>
         <Link className="home-explorer-promo" to="/hardware-explorer">
-          <img src={publicAsset('/gpu-explorer/poster.webp')} alt="Illustrated graphics card in the interactive hardware explorer" loading="lazy" />
+          <HardwareExplorerPreview />
           <div className="home-explorer-shade" />
           <div className="home-explorer-copy"><span className="eyebrow">INTERACTIVE HARDWARE GUIDE</span><h2>Get to know<br />what’s inside.</h2><p>Rotate, explore, and understand the parts behind your next build.</p><span className="button button-line">Explore Hardware <ArrowRight size={15} /></span></div>
           <span className="home-promo-index">02 <span>HARDWARE, MADE CLEAR</span></span>
         </Link>
+      </section>
+
+      <section className="home-featured-shop section-pad" aria-labelledby="home-featured-title">
+        <div className="home-featured-heading"><div><span className="eyebrow">THE COMPONENT SHOP</span><h2 id="home-featured-title">A little something for your next build.</h2></div><Link className="text-link" to="/components">Shop components <ArrowRight size={15} /></Link></div>
+        {shopProducts.length > 0 && <div className="home-featured-product"><ProductCard product={shopProducts[0]} wishlisted={wishlist.includes(shopProducts[0].id)} onAdd={addProduct} onWishlist={toggleWishlist} onViewDetails={setProductDetail} /></div>}
       </section>
 
       </>}
