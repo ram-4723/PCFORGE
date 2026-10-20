@@ -1,0 +1,10546 @@
+{
+ "version": 2,
+ "frameSize": [
+  1600,
+  900
+ ],
+ "coords": "normalised 0-1, origin top-left of the frame",
+ "note": "explode.frames[j].anchors are the 2D anchor points of each labelled part in explode frame j; labels are meant to be shown on the last (fully exploded) frame. rotate anchors are informational (visible=false means occluded at that angle).",
+ "rotate": {
+  "count": 144,
+  "path": "rotate/{000-143}.webp",
+  "angleDeg": [
+   0.0,
+   2.5,
+   5.0,
+   7.5,
+   10.0,
+   12.5,
+   15.0,
+   17.5,
+   20.0,
+   22.5,
+   25.0,
+   27.5,
+   30.0,
+   32.5,
+   35.0,
+   37.5,
+   40.0,
+   42.5,
+   45.0,
+   47.5,
+   50.0,
+   52.5,
+   55.0,
+   57.5,
+   60.0,
+   62.5,
+   65.0,
+   67.5,
+   70.0,
+   72.5,
+   75.0,
+   77.5,
+   80.0,
+   82.5,
+   85.0,
+   87.5,
+   90.0,
+   92.5,
+   95.0,
+   97.5,
+   100.0,
+   102.5,
+   105.0,
+   107.5,
+   110.0,
+   112.5,
+   115.0,
+   117.5,
+   120.0,
+   122.5,
+   125.0,
+   127.5,
+   130.0,
+   132.5,
+   135.0,
+   137.5,
+   140.0,
+   142.5,
+   145.0,
+   147.5,
+   150.0,
+   152.5,
+   155.0,
+   157.5,
+   160.0,
+   162.5,
+   165.0,
+   167.5,
+   170.0,
+   172.5,
+   175.0,
+   177.5,
+   180.0,
+   182.5,
+   185.0,
+   187.5,
+   190.0,
+   192.5,
+   195.0,
+   197.5,
+   200.0,
+   202.5,
+   205.0,
+   207.5,
+   210.0,
+   212.5,
+   215.0,
+   217.5,
+   220.0,
+   222.5,
+   225.0,
+   227.5,
+   230.0,
+   232.5,
+   235.0,
+   237.5,
+   240.0,
+   242.5,
+   245.0,
+   247.5,
+   250.0,
+   252.5,
+   255.0,
+   257.5,
+   260.0,
+   262.5,
+   265.0,
+   267.5,
+   270.0,
+   272.5,
+   275.0,
+   277.5,
+   280.0,
+   282.5,
+   285.0,
+   287.5,
+   290.0,
+   292.5,
+   295.0,
+   297.5,
+   300.0,
+   302.5,
+   305.0,
+   307.5,
+   310.0,
+   312.5,
+   315.0,
+   317.5,
+   320.0,
+   322.5,
+   325.0,
+   327.5,
+   330.0,
+   332.5,
+   335.0,
+   337.5,
+   340.0,
+   342.5,
+   345.0,
+   347.5,
+   350.0,
+   352.5,
+   355.0,
+   357.5
+  ],
+  "frames": [
+   {
+    "angleDeg": 0.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.28511,
+      "y": 0.52964,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.1959,
+      "y": 0.61005,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.18216,
+      "y": 0.69807,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27588,
+      "y": 0.35969,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.30932,
+      "y": 0.60357,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.72864,
+      "y": 0.38591,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73809,
+      "y": 0.59548,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 2.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.29378,
+      "y": 0.53049,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.20202,
+      "y": 0.61386,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.18705,
+      "y": 0.70405,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27831,
+      "y": 0.35751,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.31005,
+      "y": 0.60568,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.72661,
+      "y": 0.38039,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73404,
+      "y": 0.59138,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 5.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.30304,
+      "y": 0.53113,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.20878,
+      "y": 0.61764,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.19255,
+      "y": 0.71019,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.28108,
+      "y": 0.35496,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.311,
+      "y": 0.60779,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.7243,
+      "y": 0.37464,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.72968,
+      "y": 0.5873,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 7.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.31294,
+      "y": 0.53155,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.21623,
+      "y": 0.62142,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.19869,
+      "y": 0.71649,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.28421,
+      "y": 0.35202,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.31219,
+      "y": 0.60992,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.72166,
+      "y": 0.36868,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.72496,
+      "y": 0.58324,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 10.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.3235,
+      "y": 0.53176,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.22441,
+      "y": 0.62518,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.20552,
+      "y": 0.72296,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.28772,
+      "y": 0.34871,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.31362,
+      "y": 0.61209,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.71865,
+      "y": 0.36252,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.71983,
+      "y": 0.5792,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 12.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.33474,
+      "y": 0.53176,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.23337,
+      "y": 0.62893,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.2131,
+      "y": 0.72961,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.29162,
+      "y": 0.34503,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.31529,
+      "y": 0.61428,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.7152,
+      "y": 0.35617,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.71424,
+      "y": 0.57519,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 15.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.34669,
+      "y": 0.53154,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.24317,
+      "y": 0.63267,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.22148,
+      "y": 0.73643,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.29592,
+      "y": 0.341,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.31721,
+      "y": 0.61651,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.71126,
+      "y": 0.34966,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.70813,
+      "y": 0.57122,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 17.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.35936,
+      "y": 0.53111,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.25384,
+      "y": 0.63639,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.2307,
+      "y": 0.74341,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30064,
+      "y": 0.33664,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.31939,
+      "y": 0.61879,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.70676,
+      "y": 0.34303,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.70144,
+      "y": 0.56729,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 20.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.37276,
+      "y": 0.53046,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.26544,
+      "y": 0.64008,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.24083,
+      "y": 0.75053,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30581,
+      "y": 0.33197,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.32183,
+      "y": 0.62111,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.70164,
+      "y": 0.3363,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.6941,
+      "y": 0.56343,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 22.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.3869,
+      "y": 0.52961,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.27802,
+      "y": 0.64374,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.25191,
+      "y": 0.75777,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.31143,
+      "y": 0.32703,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.32453,
+      "y": 0.62348,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.69582,
+      "y": 0.32952,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.68605,
+      "y": 0.55965,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 25.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.40175,
+      "y": 0.52856,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.2916,
+      "y": 0.64733,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.26398,
+      "y": 0.76508,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.31751,
+      "y": 0.32187,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.3275,
+      "y": 0.62589,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.68924,
+      "y": 0.32274,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.67723,
+      "y": 0.55596,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 27.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.41729,
+      "y": 0.52731,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.30621,
+      "y": 0.65084,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.2771,
+      "y": 0.77244,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.32407,
+      "y": 0.31653,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.33074,
+      "y": 0.62835,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.68183,
+      "y": 0.316,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.66758,
+      "y": 0.55239,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 30.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.43348,
+      "y": 0.52588,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.32188,
+      "y": 0.65425,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.29128,
+      "y": 0.77976,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.33111,
+      "y": 0.31107,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.33426,
+      "y": 0.63084,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.67354,
+      "y": 0.30938,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.65706,
+      "y": 0.54896,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 32.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.45025,
+      "y": 0.52427,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.33859,
+      "y": 0.65751,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.30655,
+      "y": 0.787,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.33863,
+      "y": 0.30557,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.33806,
+      "y": 0.63337,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.66433,
+      "y": 0.30292,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.64562,
+      "y": 0.5457,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 35.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.46753,
+      "y": 0.52251,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.35632,
+      "y": 0.66059,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.32289,
+      "y": 0.79406,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.34663,
+      "y": 0.3001,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.34215,
+      "y": 0.63592,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.65416,
+      "y": 0.2967,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.63325,
+      "y": 0.54263,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 37.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.48523,
+      "y": 0.52061,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.37503,
+      "y": 0.66346,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.3403,
+      "y": 0.80086,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.35512,
+      "y": 0.29474,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.34654,
+      "y": 0.63847,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.64301,
+      "y": 0.29077,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.61994,
+      "y": 0.53977,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 40.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.50322,
+      "y": 0.51859,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.39466,
+      "y": 0.66607,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.35873,
+      "y": 0.8073,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.36407,
+      "y": 0.28959,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.35122,
+      "y": 0.64102,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.63088,
+      "y": 0.28521,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.60569,
+      "y": 0.53717,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 42.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.5214,
+      "y": 0.51649,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.41512,
+      "y": 0.66837,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.37811,
+      "y": 0.81328,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.37347,
+      "y": 0.28474,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.35622,
+      "y": 0.64354,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.6178,
+      "y": 0.28009,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.59054,
+      "y": 0.53484,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 45.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.53962,
+      "y": 0.51432,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.43629,
+      "y": 0.67033,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.39837,
+      "y": 0.81869,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.3833,
+      "y": 0.28028,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.36154,
+      "y": 0.64602,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.60381,
+      "y": 0.27545,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.57454,
+      "y": 0.5328,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 47.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.55774,
+      "y": 0.51212,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.45804,
+      "y": 0.6719,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.41939,
+      "y": 0.82344,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.39356,
+      "y": 0.2763,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.3672,
+      "y": 0.64843,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.58898,
+      "y": 0.27137,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.55777,
+      "y": 0.53109,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 50.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.57564,
+      "y": 0.50991,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.48024,
+      "y": 0.67304,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.44105,
+      "y": 0.82743,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.4042,
+      "y": 0.27288,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.37322,
+      "y": 0.65075,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.57339,
+      "y": 0.26788,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.54031,
+      "y": 0.52973,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 52.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.59317,
+      "y": 0.50773,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.5027,
+      "y": 0.67373,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.4632,
+      "y": 0.83058,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.41522,
+      "y": 0.2701,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.37962,
+      "y": 0.65296,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.55715,
+      "y": 0.26504,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.52228,
+      "y": 0.52873,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 55.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.6102,
+      "y": 0.5056,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.52527,
+      "y": 0.67395,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.48569,
+      "y": 0.8328,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.42658,
+      "y": 0.26803,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.38642,
+      "y": 0.65503,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.54038,
+      "y": 0.26287,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.50381,
+      "y": 0.52811,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 57.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.62663,
+      "y": 0.50356,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.54778,
+      "y": 0.67367,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.50836,
+      "y": 0.83405,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.43825,
+      "y": 0.26671,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.39364,
+      "y": 0.65694,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.52323,
+      "y": 0.26141,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.48504,
+      "y": 0.52788,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 60.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.64235,
+      "y": 0.50162,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.57003,
+      "y": 0.67289,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.53102,
+      "y": 0.83429,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.45021,
+      "y": 0.26617,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.4013,
+      "y": 0.65866,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.50584,
+      "y": 0.26068,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.46612,
+      "y": 0.52804,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 62.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.65729,
+      "y": 0.4998,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.59188,
+      "y": 0.67162,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.55352,
+      "y": 0.83351,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.46242,
+      "y": 0.26644,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.40942,
+      "y": 0.66018,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.48838,
+      "y": 0.26068,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.44722,
+      "y": 0.5286,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 65.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.67138,
+      "y": 0.49814,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.61317,
+      "y": 0.66988,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.57568,
+      "y": 0.83173,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.47484,
+      "y": 0.26752,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.41799,
+      "y": 0.66149,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.471,
+      "y": 0.26142,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.42849,
+      "y": 0.52956,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 67.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.68457,
+      "y": 0.49663,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.63374,
+      "y": 0.66769,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.59734,
+      "y": 0.82896,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.48743,
+      "y": 0.26939,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.42702,
+      "y": 0.66256,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.45386,
+      "y": 0.26289,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.41009,
+      "y": 0.53091,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 70.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.69684,
+      "y": 0.49528,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.65348,
+      "y": 0.66509,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.61836,
+      "y": 0.82528,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.50014,
+      "y": 0.27201,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.43649,
+      "y": 0.66339,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.43711,
+      "y": 0.26506,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.39218,
+      "y": 0.53263,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 72.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.70817,
+      "y": 0.49411,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.67227,
+      "y": 0.66211,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.6386,
+      "y": 0.82074,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.51291,
+      "y": 0.27533,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.44638,
+      "y": 0.66398,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.4209,
+      "y": 0.26791,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.37489,
+      "y": 0.53472,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 75.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.71856,
+      "y": 0.4931,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.69003,
+      "y": 0.65881,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.65795,
+      "y": 0.81544,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.52568,
+      "y": 0.27928,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.45664,
+      "y": 0.66431,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.40535,
+      "y": 0.2714,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.35836,
+      "y": 0.53716,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 77.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.72802,
+      "y": 0.49225,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.70669,
+      "y": 0.65522,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.67633,
+      "y": 0.80947,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.53839,
+      "y": 0.28379,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.46722,
+      "y": 0.66441,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.39056,
+      "y": 0.2755,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.34269,
+      "y": 0.53992,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 80.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.73657,
+      "y": 0.49155,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.72221,
+      "y": 0.65141,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.69364,
+      "y": 0.80293,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.55096,
+      "y": 0.28877,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.47806,
+      "y": 0.66427,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.37663,
+      "y": 0.28015,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.32797,
+      "y": 0.54297,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 82.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.74425,
+      "y": 0.49099,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.73657,
+      "y": 0.64742,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.70985,
+      "y": 0.79594,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.56335,
+      "y": 0.29413,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.48909,
+      "y": 0.66391,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.36361,
+      "y": 0.2853,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.31426,
+      "y": 0.5463,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 85.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.75109,
+      "y": 0.49054,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.74975,
+      "y": 0.6433,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.72492,
+      "y": 0.7886,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.57547,
+      "y": 0.29978,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.50023,
+      "y": 0.66333,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.35156,
+      "y": 0.29087,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.30162,
+      "y": 0.54987,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 87.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.75713,
+      "y": 0.49019,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.76177,
+      "y": 0.63909,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.73884,
+      "y": 0.781,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.58726,
+      "y": 0.30561,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.51141,
+      "y": 0.66257,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.3405,
+      "y": 0.29682,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.29005,
+      "y": 0.55366,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 90.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.76242,
+      "y": 0.48991,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.77267,
+      "y": 0.63483,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.75161,
+      "y": 0.77324,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.59869,
+      "y": 0.31154,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.52254,
+      "y": 0.66163,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.33043,
+      "y": 0.30307,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.27957,
+      "y": 0.55763,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 92.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.767,
+      "y": 0.48968,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.78247,
+      "y": 0.63055,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.76327,
+      "y": 0.76542,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.60969,
+      "y": 0.31748,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.53356,
+      "y": 0.66053,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.32133,
+      "y": 0.30955,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.27015,
+      "y": 0.56176,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 95.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.77092,
+      "y": 0.48948,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.79123,
+      "y": 0.62627,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.77385,
+      "y": 0.75758,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.62024,
+      "y": 0.32335,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.5444,
+      "y": 0.65929,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.31316,
+      "y": 0.31621,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.26175,
+      "y": 0.56602,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 97.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.77423,
+      "y": 0.48929,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.79901,
+      "y": 0.62203,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.78339,
+      "y": 0.74981,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.6303,
+      "y": 0.32908,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.55499,
+      "y": 0.65794,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.30589,
+      "y": 0.32298,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.25433,
+      "y": 0.57038,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 100.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.77698,
+      "y": 0.48908,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.80587,
+      "y": 0.61783,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.79195,
+      "y": 0.74216,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.63985,
+      "y": 0.33461,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.5653,
+      "y": 0.65648,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.29945,
+      "y": 0.3298,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.24782,
+      "y": 0.57483,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 102.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.77921,
+      "y": 0.48885,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.81188,
+      "y": 0.61368,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.79959,
+      "y": 0.73465,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.64889,
+      "y": 0.33989,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.57527,
+      "y": 0.65493,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.29378,
+      "y": 0.33662,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.24217,
+      "y": 0.57934,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 105.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.78096,
+      "y": 0.48856,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.81709,
+      "y": 0.6096,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.80636,
+      "y": 0.72732,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.6574,
+      "y": 0.34486,
+      "visible": true
+     },
+     {
+      "id": "fittings",
+      "x": 0.58488,
+      "y": 0.65331,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.28882,
+      "y": 0.34339,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.23728,
+      "y": 0.5839,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 107.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.78227,
+      "y": 0.4882,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.82158,
+      "y": 0.60558,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.81234,
+      "y": 0.72018,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.6654,
+      "y": 0.34951,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.5941,
+      "y": 0.65163,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.28449,
+      "y": 0.35006,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.2331,
+      "y": 0.58849,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 110.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.78318,
+      "y": 0.48776,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.8254,
+      "y": 0.60162,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.81759,
+      "y": 0.71326,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.67289,
+      "y": 0.35379,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.60292,
+      "y": 0.64989,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.28072,
+      "y": 0.35661,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.22955,
+      "y": 0.59311,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 112.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.78372,
+      "y": 0.48723,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.8286,
+      "y": 0.59772,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.82214,
+      "y": 0.70655,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.67988,
+      "y": 0.3577,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.61133,
+      "y": 0.6481,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.27746,
+      "y": 0.363,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.22655,
+      "y": 0.59773,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 115.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.78391,
+      "y": 0.48659,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.83123,
+      "y": 0.59388,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.82607,
+      "y": 0.70005,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.68639,
+      "y": 0.36122,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.61932,
+      "y": 0.64627,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.27463,
+      "y": 0.36921,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.22404,
+      "y": 0.60236,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 117.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.78378,
+      "y": 0.48584,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.83334,
+      "y": 0.59007,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.82941,
+      "y": 0.69375,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.69244,
+      "y": 0.36434,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.62691,
+      "y": 0.6444,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.27218,
+      "y": 0.37522,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.22197,
+      "y": 0.60699,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 120.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.78335,
+      "y": 0.48497,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.83497,
+      "y": 0.58631,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.83221,
+      "y": 0.68764,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.69804,
+      "y": 0.36705,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.63409,
+      "y": 0.64249,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.27006,
+      "y": 0.38101,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.22027,
+      "y": 0.61161,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 122.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.78263,
+      "y": 0.48397,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.83615,
+      "y": 0.58256,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.83451,
+      "y": 0.68172,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.7032,
+      "y": 0.36937,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.64088,
+      "y": 0.64053,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.26823,
+      "y": 0.38657,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.21891,
+      "y": 0.61623,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 125.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.78165,
+      "y": 0.48283,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.83691,
+      "y": 0.57883,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.83634,
+      "y": 0.67596,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.70796,
+      "y": 0.37128,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.64728,
+      "y": 0.63853,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.26665,
+      "y": 0.39189,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.21784,
+      "y": 0.62083,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 127.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.7804,
+      "y": 0.48155,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.83728,
+      "y": 0.57511,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.83773,
+      "y": 0.67035,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.71232,
+      "y": 0.3728,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.65331,
+      "y": 0.63647,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.26529,
+      "y": 0.39697,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.21703,
+      "y": 0.62543,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 130.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.77891,
+      "y": 0.48012,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.83728,
+      "y": 0.57137,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.83871,
+      "y": 0.66488,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.7163,
+      "y": 0.37393,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.65899,
+      "y": 0.63437,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.26413,
+      "y": 0.40181,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.21646,
+      "y": 0.63001,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 132.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.77718,
+      "y": 0.47854,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.83693,
+      "y": 0.56762,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.83929,
+      "y": 0.65951,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.71993,
+      "y": 0.37467,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.66432,
+      "y": 0.6322,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.26315,
+      "y": 0.40639,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.21611,
+      "y": 0.63458,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 135.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.77522,
+      "y": 0.47681,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.83624,
+      "y": 0.56384,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.8395,
+      "y": 0.65425,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.72322,
+      "y": 0.37503,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.66932,
+      "y": 0.62996,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.26234,
+      "y": 0.41072,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.21597,
+      "y": 0.63914,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 137.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.77303,
+      "y": 0.47492,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.83524,
+      "y": 0.56001,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.83936,
+      "y": 0.64906,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.72617,
+      "y": 0.37502,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.67401,
+      "y": 0.62765,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.26168,
+      "y": 0.4148,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.21604,
+      "y": 0.64368,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 140.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.77063,
+      "y": 0.47287,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.83393,
+      "y": 0.55614,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.83888,
+      "y": 0.64395,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.72883,
+      "y": 0.37464,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.67841,
+      "y": 0.62526,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.26119,
+      "y": 0.41862,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.2163,
+      "y": 0.64821,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 142.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.76802,
+      "y": 0.47065,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.83234,
+      "y": 0.55222,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.83809,
+      "y": 0.63888,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.73119,
+      "y": 0.3739,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.68252,
+      "y": 0.62278,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.26085,
+      "y": 0.42219,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.21677,
+      "y": 0.65272,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 145.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.76522,
+      "y": 0.46828,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.83047,
+      "y": 0.54823,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.83699,
+      "y": 0.63386,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.73327,
+      "y": 0.37279,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.68638,
+      "y": 0.62021,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.26068,
+      "y": 0.42551,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.21745,
+      "y": 0.65722,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 147.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.76222,
+      "y": 0.46573,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.82833,
+      "y": 0.54417,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.83561,
+      "y": 0.62886,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.7351,
+      "y": 0.37134,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.69,
+      "y": 0.61754,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.26069,
+      "y": 0.42857,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.21836,
+      "y": 0.66171,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 150.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.75904,
+      "y": 0.46301,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.82596,
+      "y": 0.54004,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.83395,
+      "y": 0.62389,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.73669,
+      "y": 0.36954,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.69338,
+      "y": 0.61478,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.26088,
+      "y": 0.43137,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.2195,
+      "y": 0.66619,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 152.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.75569,
+      "y": 0.46013,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.82334,
+      "y": 0.53582,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.83204,
+      "y": 0.61893,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.73805,
+      "y": 0.36738,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.69657,
+      "y": 0.61191,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.26127,
+      "y": 0.43391,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.22089,
+      "y": 0.67067,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 155.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.75218,
+      "y": 0.45707,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.8205,
+      "y": 0.53152,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.82989,
+      "y": 0.61397,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.73921,
+      "y": 0.36489,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.69956,
+      "y": 0.60894,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.26187,
+      "y": 0.43619,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.22255,
+      "y": 0.67515,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 157.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.7485,
+      "y": 0.45384,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.81745,
+      "y": 0.52714,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.8275,
+      "y": 0.60901,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.74017,
+      "y": 0.36206,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.70237,
+      "y": 0.60586,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.26269,
+      "y": 0.43822,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.2245,
+      "y": 0.67964,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 160.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.74468,
+      "y": 0.45044,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.81419,
+      "y": 0.52267,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.82488,
+      "y": 0.60405,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.74095,
+      "y": 0.35888,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.70502,
+      "y": 0.60268,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.26375,
+      "y": 0.43999,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.22675,
+      "y": 0.68414,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 162.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.7407,
+      "y": 0.44686,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.81073,
+      "y": 0.5181,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.82206,
+      "y": 0.59908,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.74155,
+      "y": 0.35538,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.70753,
+      "y": 0.59939,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.26507,
+      "y": 0.44149,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.22932,
+      "y": 0.68868,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 165.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.73658,
+      "y": 0.44312,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.80707,
+      "y": 0.51345,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.81901,
+      "y": 0.5941,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.74199,
+      "y": 0.35153,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.70989,
+      "y": 0.59599,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.26666,
+      "y": 0.44273,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.23223,
+      "y": 0.69325,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 167.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.7323,
+      "y": 0.4392,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.80321,
+      "y": 0.5087,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.81576,
+      "y": 0.58912,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.74227,
+      "y": 0.34735,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.71211,
+      "y": 0.5925,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.26854,
+      "y": 0.44371,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.23551,
+      "y": 0.69787,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 170.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.72786,
+      "y": 0.43511,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.79914,
+      "y": 0.50387,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.81229,
+      "y": 0.58412,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.74239,
+      "y": 0.34284,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.7142,
+      "y": 0.5889,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.27071,
+      "y": 0.44443,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.23917,
+      "y": 0.70256,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 172.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.72325,
+      "y": 0.43086,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.79486,
+      "y": 0.49894,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.80859,
+      "y": 0.57911,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.74234,
+      "y": 0.338,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.71616,
+      "y": 0.5852,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.27321,
+      "y": 0.44488,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.24323,
+      "y": 0.70732,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 175.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.71846,
+      "y": 0.42643,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.79034,
+      "y": 0.49392,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.80464,
+      "y": 0.5741,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.74211,
+      "y": 0.33283,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.71797,
+      "y": 0.58141,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.27603,
+      "y": 0.44506,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.24771,
+      "y": 0.71218,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 177.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.71346,
+      "y": 0.42184,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.78558,
+      "y": 0.48882,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.80044,
+      "y": 0.56907,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.74168,
+      "y": 0.32733,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.71962,
+      "y": 0.57752,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.27919,
+      "y": 0.44499,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.25264,
+      "y": 0.71715,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 180.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.70822,
+      "y": 0.4171,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.78053,
+      "y": 0.48363,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.79594,
+      "y": 0.56404,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.74104,
+      "y": 0.32151,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.72109,
+      "y": 0.57355,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.28272,
+      "y": 0.44464,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.25804,
+      "y": 0.72224,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 182.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.70271,
+      "y": 0.41219,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.77516,
+      "y": 0.47837,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.79112,
+      "y": 0.55901,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.74015,
+      "y": 0.31538,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.72236,
+      "y": 0.56948,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.28662,
+      "y": 0.44403,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.26394,
+      "y": 0.72746,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 185.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.6969,
+      "y": 0.40714,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.76944,
+      "y": 0.47303,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.78594,
+      "y": 0.55397,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.73897,
+      "y": 0.30895,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.72339,
+      "y": 0.56533,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.29092,
+      "y": 0.44316,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.27036,
+      "y": 0.73282,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 187.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.69075,
+      "y": 0.40196,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.76332,
+      "y": 0.46762,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.78034,
+      "y": 0.54894,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.73747,
+      "y": 0.30222,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.72413,
+      "y": 0.56109,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.29563,
+      "y": 0.44202,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.27733,
+      "y": 0.73834,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 190.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.68419,
+      "y": 0.39665,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.75674,
+      "y": 0.46217,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.77428,
+      "y": 0.54393,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.73559,
+      "y": 0.29523,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.72455,
+      "y": 0.55679,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.30077,
+      "y": 0.44063,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.28488,
+      "y": 0.74401,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 192.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.67719,
+      "y": 0.39123,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.74965,
+      "y": 0.45667,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.76769,
+      "y": 0.53893,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.73328,
+      "y": 0.28799,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.72459,
+      "y": 0.55242,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.30635,
+      "y": 0.43899,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.29303,
+      "y": 0.74983,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 195.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.66969,
+      "y": 0.38573,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.74198,
+      "y": 0.45115,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.76052,
+      "y": 0.53397,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.73047,
+      "y": 0.28053,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.72418,
+      "y": 0.54799,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.3124,
+      "y": 0.43711,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.30182,
+      "y": 0.7558,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 197.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.66161,
+      "y": 0.38017,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.73367,
+      "y": 0.44563,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.75269,
+      "y": 0.52905,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.7271,
+      "y": 0.27289,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.72325,
+      "y": 0.54351,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.31893,
+      "y": 0.43501,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.31127,
+      "y": 0.76191,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 200.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.65292,
+      "y": 0.37458,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.72466,
+      "y": 0.44013,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.74415,
+      "y": 0.5242,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.72309,
+      "y": 0.26511,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.72174,
+      "y": 0.53901,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.32596,
+      "y": 0.43269,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.32141,
+      "y": 0.76813,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 202.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.64354,
+      "y": 0.369,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.71488,
+      "y": 0.43468,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.73481,
+      "y": 0.51943,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.71837,
+      "y": 0.25725,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.71956,
+      "y": 0.5345,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.3335,
+      "y": 0.43019,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.33225,
+      "y": 0.77443,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 205.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.63343,
+      "y": 0.36346,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.70427,
+      "y": 0.42932,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.72463,
+      "y": 0.51477,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.71286,
+      "y": 0.24936,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.71664,
+      "y": 0.52999,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.34155,
+      "y": 0.42752,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.34379,
+      "y": 0.78078,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 207.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.62253,
+      "y": 0.35802,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.69276,
+      "y": 0.42407,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.71353,
+      "y": 0.51024,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.70651,
+      "y": 0.2415,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.71291,
+      "y": 0.52552,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.35011,
+      "y": 0.42472,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.35606,
+      "y": 0.78713,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 210.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.6108,
+      "y": 0.3527,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.68033,
+      "y": 0.41898,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.70148,
+      "y": 0.50587,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.69924,
+      "y": 0.23375,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.70829,
+      "y": 0.52111,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.35919,
+      "y": 0.42182,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.36902,
+      "y": 0.79341,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 212.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.59821,
+      "y": 0.34758,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.66692,
+      "y": 0.4141,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.68843,
+      "y": 0.50169,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.69101,
+      "y": 0.22617,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.70273,
+      "y": 0.51679,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.36878,
+      "y": 0.41886,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.38267,
+      "y": 0.79957,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 215.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.58474,
+      "y": 0.3427,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.65252,
+      "y": 0.40945,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.67436,
+      "y": 0.49773,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.68177,
+      "y": 0.21885,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.69617,
+      "y": 0.51259,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.37885,
+      "y": 0.41589,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.39697,
+      "y": 0.80554,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 217.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.5704,
+      "y": 0.33811,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.63712,
+      "y": 0.40509,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.65926,
+      "y": 0.49403,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.6715,
+      "y": 0.21187,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.68858,
+      "y": 0.50855,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.38938,
+      "y": 0.41295,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.41187,
+      "y": 0.81121,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 220.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.55521,
+      "y": 0.33387,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.62075,
+      "y": 0.40106,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.64315,
+      "y": 0.49061,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.6602,
+      "y": 0.2053,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.67995,
+      "y": 0.5047,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.40034,
+      "y": 0.41009,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.42731,
+      "y": 0.81652,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 222.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.53919,
+      "y": 0.33003,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.60343,
+      "y": 0.39741,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.62606,
+      "y": 0.48751,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.64788,
+      "y": 0.19922,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.67027,
+      "y": 0.50108,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.4117,
+      "y": 0.40738,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.44321,
+      "y": 0.82137,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 225.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.52241,
+      "y": 0.32665,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.58522,
+      "y": 0.39416,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.60804,
+      "y": 0.48475,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.63459,
+      "y": 0.1937,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.65958,
+      "y": 0.49771,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.4234,
+      "y": 0.40485,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.45949,
+      "y": 0.82567,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 227.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.50495,
+      "y": 0.32376,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.5662,
+      "y": 0.39137,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.58918,
+      "y": 0.48238,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.62037,
+      "y": 0.18882,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.64793,
+      "y": 0.49463,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.43541,
+      "y": 0.40256,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.47605,
+      "y": 0.82934,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 230.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.4869,
+      "y": 0.32141,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.54647,
+      "y": 0.38907,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.56956,
+      "y": 0.4804,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.60532,
+      "y": 0.18462,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.63538,
+      "y": 0.49188,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.44766,
+      "y": 0.40056,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.49278,
+      "y": 0.8323,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 232.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.46839,
+      "y": 0.31964,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.52614,
+      "y": 0.38727,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.5493,
+      "y": 0.47885,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.58954,
+      "y": 0.18116,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.62203,
+      "y": 0.48947,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.46012,
+      "y": 0.39889,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.50959,
+      "y": 0.83447,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 235.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.44954,
+      "y": 0.31847,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.50536,
+      "y": 0.38601,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.52854,
+      "y": 0.47774,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.57316,
+      "y": 0.17849,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.608,
+      "y": 0.48742,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.47273,
+      "y": 0.39759,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.52637,
+      "y": 0.83581,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 237.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.43051,
+      "y": 0.31793,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.48426,
+      "y": 0.38531,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.50743,
+      "y": 0.47708,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.5563,
+      "y": 0.17663,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.5934,
+      "y": 0.48577,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.48544,
+      "y": 0.39668,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.543,
+      "y": 0.83628,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 240.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.41146,
+      "y": 0.31804,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.463,
+      "y": 0.38518,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.48611,
+      "y": 0.47689,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.53913,
+      "y": 0.1756,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.57839,
+      "y": 0.48452,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.49819,
+      "y": 0.39618,
+      "visible": false
+     },
+     {
+      "id": "rad",
+      "x": 0.5594,
+      "y": 0.83586,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 242.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.39254,
+      "y": 0.3188,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.44176,
+      "y": 0.38561,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.46475,
+      "y": 0.47716,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.52179,
+      "y": 0.17543,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.56311,
+      "y": 0.48367,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.51095,
+      "y": 0.39611,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.57546,
+      "y": 0.83455,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 245.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.37393,
+      "y": 0.32021,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.42069,
+      "y": 0.38662,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.44352,
+      "y": 0.4779,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.50446,
+      "y": 0.17609,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.54771,
+      "y": 0.48324,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.52365,
+      "y": 0.39647,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.59111,
+      "y": 0.83236,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 247.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.35578,
+      "y": 0.32227,
+      "visible": false
+     },
+     {
+      "id": "pump",
+      "x": 0.39996,
+      "y": 0.38819,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.42259,
+      "y": 0.47911,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.48728,
+      "y": 0.1776,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.53236,
+      "y": 0.48322,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.53626,
+      "y": 0.39724,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.60626,
+      "y": 0.82933,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 250.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.33826,
+      "y": 0.32495,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.37973,
+      "y": 0.39032,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.4021,
+      "y": 0.48076,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.47042,
+      "y": 0.17991,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.51719,
+      "y": 0.4836,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.54872,
+      "y": 0.39841,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.62085,
+      "y": 0.82552,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 252.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.32149,
+      "y": 0.32825,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.36015,
+      "y": 0.39298,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.3822,
+      "y": 0.48286,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.45401,
+      "y": 0.18301,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.50234,
+      "y": 0.48438,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.56099,
+      "y": 0.39996,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.63481,
+      "y": 0.82098,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 255.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.30562,
+      "y": 0.33212,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.34134,
+      "y": 0.39615,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.36303,
+      "y": 0.48537,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.43819,
+      "y": 0.18685,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.48794,
+      "y": 0.48553,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.57302,
+      "y": 0.40184,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.64812,
+      "y": 0.81581,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 257.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.29074,
+      "y": 0.33652,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.32343,
+      "y": 0.3998,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.34471,
+      "y": 0.48828,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.42306,
+      "y": 0.19137,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.4741,
+      "y": 0.48703,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.58476,
+      "y": 0.40401,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.66071,
+      "y": 0.81008,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 260.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.27694,
+      "y": 0.34143,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.30651,
+      "y": 0.4039,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.32732,
+      "y": 0.49155,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.40871,
+      "y": 0.19652,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.46091,
+      "y": 0.48887,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.59617,
+      "y": 0.40644,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.67258,
+      "y": 0.80389,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 262.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.26428,
+      "y": 0.34678,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.29064,
+      "y": 0.4084,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.31095,
+      "y": 0.49517,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.39522,
+      "y": 0.20224,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.44843,
+      "y": 0.49101,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.60721,
+      "y": 0.40906,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.6837,
+      "y": 0.79733,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 265.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.2528,
+      "y": 0.35252,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.27589,
+      "y": 0.41327,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.29564,
+      "y": 0.4991,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.38263,
+      "y": 0.20844,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.43671,
+      "y": 0.49343,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.61784,
+      "y": 0.41183,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.69406,
+      "y": 0.7905,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 267.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.24252,
+      "y": 0.3586,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.26227,
+      "y": 0.41846,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.28142,
+      "y": 0.5033,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.37097,
+      "y": 0.21506,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.4258,
+      "y": 0.49609,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.62802,
+      "y": 0.41469,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.70367,
+      "y": 0.78347,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 270.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.23342,
+      "y": 0.36496,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.2498,
+      "y": 0.42393,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.26831,
+      "y": 0.50775,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.36024,
+      "y": 0.22202,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.41568,
+      "y": 0.49896,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.63773,
+      "y": 0.4176,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.71253,
+      "y": 0.77634,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 272.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.22548,
+      "y": 0.37154,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.23845,
+      "y": 0.42963,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.25629,
+      "y": 0.51241,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.35044,
+      "y": 0.22924,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.40637,
+      "y": 0.50201,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.64694,
+      "y": 0.42051,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.72066,
+      "y": 0.76917,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 275.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.21865,
+      "y": 0.37829,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.2282,
+      "y": 0.43551,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.24534,
+      "y": 0.51724,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.34154,
+      "y": 0.23664,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.39784,
+      "y": 0.50521,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.65566,
+      "y": 0.42336,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.72808,
+      "y": 0.76202,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 277.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.21287,
+      "y": 0.38514,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.219,
+      "y": 0.44153,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.2354,
+      "y": 0.52223,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.33349,
+      "y": 0.24415,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.39005,
+      "y": 0.50853,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.66386,
+      "y": 0.42613,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73482,
+      "y": 0.75496,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 280.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.20807,
+      "y": 0.39206,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.21078,
+      "y": 0.44766,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.22643,
+      "y": 0.52733,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.32624,
+      "y": 0.25171,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.38296,
+      "y": 0.51193,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.67154,
+      "y": 0.42877,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.74092,
+      "y": 0.74803,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 282.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.20416,
+      "y": 0.39899,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.20349,
+      "y": 0.45385,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.21837,
+      "y": 0.53252,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.31974,
+      "y": 0.25925,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.37652,
+      "y": 0.5154,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.67872,
+      "y": 0.43125,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.74639,
+      "y": 0.74125,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 285.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.20108,
+      "y": 0.40588,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.19705,
+      "y": 0.46007,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.21113,
+      "y": 0.53779,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.31391,
+      "y": 0.26671,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.37067,
+      "y": 0.51892,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.6854,
+      "y": 0.43356,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.75129,
+      "y": 0.73466,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 287.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.19873,
+      "y": 0.41271,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.19137,
+      "y": 0.4663,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.20465,
+      "y": 0.5431,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.3087,
+      "y": 0.27404,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.36536,
+      "y": 0.52246,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.69159,
+      "y": 0.43565,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.75564,
+      "y": 0.72827,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 290.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.19703,
+      "y": 0.41945,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.1864,
+      "y": 0.4725,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.19886,
+      "y": 0.54846,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.30405,
+      "y": 0.2812,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.36053,
+      "y": 0.526,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.6973,
+      "y": 0.43753,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.75947,
+      "y": 0.72209,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 292.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.19592,
+      "y": 0.42606,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.18204,
+      "y": 0.47867,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.19368,
+      "y": 0.55383,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.29987,
+      "y": 0.28816,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.35613,
+      "y": 0.52953,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.70256,
+      "y": 0.43917,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.76282,
+      "y": 0.71612,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 295.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.1953,
+      "y": 0.43253,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.17824,
+      "y": 0.48477,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.18905,
+      "y": 0.55921,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.29613,
+      "y": 0.29488,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.3521,
+      "y": 0.53304,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.70739,
+      "y": 0.44056,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.76572,
+      "y": 0.71036,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 297.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.19514,
+      "y": 0.43883,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.17493,
+      "y": 0.49081,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.18491,
+      "y": 0.5646,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.29276,
+      "y": 0.30135,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.34839,
+      "y": 0.53651,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.71179,
+      "y": 0.4417,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.7682,
+      "y": 0.70481,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 300.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.19535,
+      "y": 0.44496,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.17206,
+      "y": 0.49676,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.1812,
+      "y": 0.56998,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.28971,
+      "y": 0.30753,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.34496,
+      "y": 0.53995,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.71579,
+      "y": 0.44259,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.77027,
+      "y": 0.69945,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 302.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.19591,
+      "y": 0.4509,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.16957,
+      "y": 0.50262,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.17787,
+      "y": 0.57535,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.28695,
+      "y": 0.31343,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.34176,
+      "y": 0.54333,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.71941,
+      "y": 0.44321,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.77197,
+      "y": 0.69428,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 305.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.19677,
+      "y": 0.45665,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.16743,
+      "y": 0.50838,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.17489,
+      "y": 0.5807,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.28443,
+      "y": 0.31902,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33878,
+      "y": 0.54667,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.72265,
+      "y": 0.44357,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.77331,
+      "y": 0.68927,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 307.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.1979,
+      "y": 0.4622,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.1656,
+      "y": 0.51405,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.17221,
+      "y": 0.58605,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.28212,
+      "y": 0.32431,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33597,
+      "y": 0.54994,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.72555,
+      "y": 0.44367,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.77431,
+      "y": 0.68441,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 310.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.19927,
+      "y": 0.46754,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.16405,
+      "y": 0.51961,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.16981,
+      "y": 0.59137,
+      "visible": false
+     },
+     {
+      "id": "tubes",
+      "x": 0.28001,
+      "y": 0.32928,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33332,
+      "y": 0.55315,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.72811,
+      "y": 0.4435,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.77498,
+      "y": 0.67969,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 312.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.20087,
+      "y": 0.47268,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.16276,
+      "y": 0.52506,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.16767,
+      "y": 0.59668,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27806,
+      "y": 0.33393,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33081,
+      "y": 0.5563,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.73034,
+      "y": 0.44307,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.77535,
+      "y": 0.67509,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 315.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.20269,
+      "y": 0.47761,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.16173,
+      "y": 0.53041,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.16578,
+      "y": 0.60196,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27628,
+      "y": 0.33827,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.32842,
+      "y": 0.55938,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.73226,
+      "y": 0.44238,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.77541,
+      "y": 0.67058,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 317.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.20473,
+      "y": 0.48233,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.16094,
+      "y": 0.53565,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.16413,
+      "y": 0.60723,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27464,
+      "y": 0.34228,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.32615,
+      "y": 0.56239,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.73389,
+      "y": 0.44143,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.77519,
+      "y": 0.66617,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 320.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.20698,
+      "y": 0.48684,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.16039,
+      "y": 0.54078,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.16272,
+      "y": 0.61248,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27316,
+      "y": 0.34598,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.32399,
+      "y": 0.56532,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.73524,
+      "y": 0.44021,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.7747,
+      "y": 0.66183,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 322.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.20945,
+      "y": 0.49114,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.16009,
+      "y": 0.54581,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.16154,
+      "y": 0.61772,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27182,
+      "y": 0.34935,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.32194,
+      "y": 0.56818,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.73633,
+      "y": 0.43874,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.77395,
+      "y": 0.65754,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 325.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.21215,
+      "y": 0.49522,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.16005,
+      "y": 0.55072,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.16061,
+      "y": 0.62294,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27063,
+      "y": 0.3524,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.32001,
+      "y": 0.57097,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.73716,
+      "y": 0.437,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.77295,
+      "y": 0.65331,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 327.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.2151,
+      "y": 0.49908,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.16027,
+      "y": 0.55553,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.15993,
+      "y": 0.62814,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.2696,
+      "y": 0.35513,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.3182,
+      "y": 0.57368,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.73776,
+      "y": 0.43501,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.77172,
+      "y": 0.64911,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 330.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.21832,
+      "y": 0.50273,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.16077,
+      "y": 0.56024,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.15952,
+      "y": 0.63334,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.26874,
+      "y": 0.35753,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.31651,
+      "y": 0.57632,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.73813,
+      "y": 0.43276,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.77027,
+      "y": 0.64494,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 332.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.22181,
+      "y": 0.50616,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.16156,
+      "y": 0.56484,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.15939,
+      "y": 0.63853,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.26806,
+      "y": 0.3596,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.31496,
+      "y": 0.57889,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.7383,
+      "y": 0.43025,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.76861,
+      "y": 0.64078,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 335.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.2256,
+      "y": 0.50937,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.16267,
+      "y": 0.56933,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.15956,
+      "y": 0.64372,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.26757,
+      "y": 0.36134,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.31355,
+      "y": 0.58138,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.73827,
+      "y": 0.42748,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.76675,
+      "y": 0.63664,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 337.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.22972,
+      "y": 0.51237,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.16412,
+      "y": 0.57374,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.16005,
+      "y": 0.64893,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.26728,
+      "y": 0.36275,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.31229,
+      "y": 0.58381,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.73806,
+      "y": 0.42446,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.7647,
+      "y": 0.63251,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 340.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.23418,
+      "y": 0.51515,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.16591,
+      "y": 0.57805,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.16087,
+      "y": 0.65415,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.2672,
+      "y": 0.36382,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.3112,
+      "y": 0.58617,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.73767,
+      "y": 0.42119,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.76247,
+      "y": 0.62839,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 342.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.239,
+      "y": 0.51771,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.16809,
+      "y": 0.58227,
+      "visible": false
+     },
+     {
+      "id": "bracket",
+      "x": 0.16205,
+      "y": 0.6594,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.26735,
+      "y": 0.36455,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.31028,
+      "y": 0.58848,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.73712,
+      "y": 0.41766,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.76006,
+      "y": 0.62426,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 345.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.24422,
+      "y": 0.52006,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.17066,
+      "y": 0.58642,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.16361,
+      "y": 0.66469,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.26775,
+      "y": 0.36494,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.30954,
+      "y": 0.59073,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.73642,
+      "y": 0.41387,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.75749,
+      "y": 0.62014,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 347.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.24985,
+      "y": 0.52219,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.17366,
+      "y": 0.59049,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.16556,
+      "y": 0.67003,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.2684,
+      "y": 0.36497,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.30899,
+      "y": 0.59294,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.73555,
+      "y": 0.40984,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.75474,
+      "y": 0.61603,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 350.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.25592,
+      "y": 0.52411,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.1771,
+      "y": 0.5945,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.16794,
+      "y": 0.67544,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.26931,
+      "y": 0.36465,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.30864,
+      "y": 0.59511,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.73453,
+      "y": 0.40555,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.75181,
+      "y": 0.61191,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 352.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.26246,
+      "y": 0.52581,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.18101,
+      "y": 0.59845,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.17076,
+      "y": 0.68094,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.2705,
+      "y": 0.36396,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.30849,
+      "y": 0.59725,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.73334,
+      "y": 0.40101,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.7487,
+      "y": 0.6078,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 355.0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.26948,
+      "y": 0.5273,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.18543,
+      "y": 0.60236,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.17405,
+      "y": 0.68653,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27199,
+      "y": 0.36291,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.30855,
+      "y": 0.59937,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.73198,
+      "y": 0.39622,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.74539,
+      "y": 0.60368,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 357.5,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.27702,
+      "y": 0.52857,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.19038,
+      "y": 0.60622,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.17784,
+      "y": 0.69224,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27377,
+      "y": 0.36149,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.30883,
+      "y": 0.60147,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.73042,
+      "y": 0.39118,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.74187,
+      "y": 0.59958,
+      "visible": false
+     }
+    ]
+   }
+  ]
+ },
+ "explode": {
+  "count": 72,
+  "path": "explode/{000-071}.webp",
+  "easing": {
+   "explode": "cubic in-out of u",
+   "dolly": "expo in-out of u"
+  },
+  "frames": [
+   {
+    "u": 0,
+    "explode": 0,
+    "dolly": 0,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.28511,
+      "y": 0.52964,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.1959,
+      "y": 0.61005,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.18216,
+      "y": 0.69807,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27588,
+      "y": 0.35969,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.30932,
+      "y": 0.60357,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.72864,
+      "y": 0.38591,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73809,
+      "y": 0.59548,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.01408,
+    "explode": 1e-05,
+    "dolly": 0.00059,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.28514,
+      "y": 0.52959,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.19593,
+      "y": 0.60999,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.1822,
+      "y": 0.698,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.2759,
+      "y": 0.35965,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.30934,
+      "y": 0.6035,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.72861,
+      "y": 0.38585,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73806,
+      "y": 0.59539,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.02817,
+    "explode": 9e-05,
+    "dolly": 0.00072,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.28514,
+      "y": 0.52957,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.19594,
+      "y": 0.60997,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.18221,
+      "y": 0.69798,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.2759,
+      "y": 0.35965,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.30935,
+      "y": 0.60348,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.72861,
+      "y": 0.38584,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73805,
+      "y": 0.59537,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.04225,
+    "explode": 0.0003,
+    "dolly": 0.00088,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.28515,
+      "y": 0.52956,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.19595,
+      "y": 0.60996,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.18222,
+      "y": 0.69796,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27591,
+      "y": 0.35964,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.30935,
+      "y": 0.60346,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.72863,
+      "y": 0.38583,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73805,
+      "y": 0.59535,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.05634,
+    "explode": 0.00072,
+    "dolly": 0.00107,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.28516,
+      "y": 0.52954,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.19596,
+      "y": 0.60994,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.18223,
+      "y": 0.69793,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27592,
+      "y": 0.35962,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.30936,
+      "y": 0.60344,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.72867,
+      "y": 0.38583,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73804,
+      "y": 0.59533,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.07042,
+    "explode": 0.0014,
+    "dolly": 0.0013,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.28517,
+      "y": 0.52952,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.19598,
+      "y": 0.60991,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.18224,
+      "y": 0.6979,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27593,
+      "y": 0.35961,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.30937,
+      "y": 0.60341,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.72875,
+      "y": 0.38584,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73802,
+      "y": 0.59529,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.08451,
+    "explode": 0.00241,
+    "dolly": 0.00158,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.28518,
+      "y": 0.5295,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.19599,
+      "y": 0.60988,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.18226,
+      "y": 0.69787,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27594,
+      "y": 0.35959,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.30937,
+      "y": 0.60338,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.72886,
+      "y": 0.38586,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73801,
+      "y": 0.59526,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.09859,
+    "explode": 0.00383,
+    "dolly": 0.00192,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.28521,
+      "y": 0.52948,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.19601,
+      "y": 0.60984,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.18228,
+      "y": 0.69782,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27595,
+      "y": 0.35957,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.30939,
+      "y": 0.60334,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.72902,
+      "y": 0.38588,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73799,
+      "y": 0.59521,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.11268,
+    "explode": 0.00572,
+    "dolly": 0.00233,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.28525,
+      "y": 0.52946,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.19604,
+      "y": 0.6098,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.18231,
+      "y": 0.69777,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27597,
+      "y": 0.35954,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.3094,
+      "y": 0.60329,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.72923,
+      "y": 0.38592,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73797,
+      "y": 0.59515,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.12676,
+    "explode": 0.00815,
+    "dolly": 0.00283,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.28532,
+      "y": 0.52945,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.19607,
+      "y": 0.60975,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.18234,
+      "y": 0.6977,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27599,
+      "y": 0.35951,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.30941,
+      "y": 0.60322,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.72951,
+      "y": 0.38597,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73794,
+      "y": 0.59508,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.14085,
+    "explode": 0.01118,
+    "dolly": 0.00344,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.28541,
+      "y": 0.52944,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.19611,
+      "y": 0.60968,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.18238,
+      "y": 0.69764,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27601,
+      "y": 0.35947,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.30943,
+      "y": 0.60315,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.72985,
+      "y": 0.38604,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73791,
+      "y": 0.59499,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.15493,
+    "explode": 0.01488,
+    "dolly": 0.00418,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.28554,
+      "y": 0.52944,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.19615,
+      "y": 0.6096,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.18243,
+      "y": 0.69761,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27604,
+      "y": 0.35943,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.30946,
+      "y": 0.60306,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.73027,
+      "y": 0.38612,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73787,
+      "y": 0.59489,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.16901,
+    "explode": 0.01931,
+    "dolly": 0.00508,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.28571,
+      "y": 0.52945,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.19621,
+      "y": 0.6095,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.18248,
+      "y": 0.69765,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27607,
+      "y": 0.35937,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.30949,
+      "y": 0.60295,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.73078,
+      "y": 0.38622,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73782,
+      "y": 0.59476,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.1831,
+    "explode": 0.02455,
+    "dolly": 0.00618,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.28593,
+      "y": 0.52947,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.19628,
+      "y": 0.60938,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.18255,
+      "y": 0.69778,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27612,
+      "y": 0.3593,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.30952,
+      "y": 0.60281,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.73138,
+      "y": 0.38633,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73777,
+      "y": 0.59461,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.19718,
+    "explode": 0.03067,
+    "dolly": 0.00751,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.28619,
+      "y": 0.5295,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.19636,
+      "y": 0.60924,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.18263,
+      "y": 0.69803,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27617,
+      "y": 0.35922,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.30956,
+      "y": 0.60265,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.73207,
+      "y": 0.38645,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.7377,
+      "y": 0.59442,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.21127,
+    "explode": 0.03772,
+    "dolly": 0.00913,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.28653,
+      "y": 0.52954,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.19646,
+      "y": 0.60906,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.18272,
+      "y": 0.69843,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27623,
+      "y": 0.35911,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.30962,
+      "y": 0.60245,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.73287,
+      "y": 0.38659,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73761,
+      "y": 0.5942,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.22535,
+    "explode": 0.04578,
+    "dolly": 0.0111,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.28692,
+      "y": 0.52959,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.19658,
+      "y": 0.60885,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.18283,
+      "y": 0.69901,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27631,
+      "y": 0.35899,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.30968,
+      "y": 0.60221,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.73377,
+      "y": 0.38674,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73751,
+      "y": 0.59392,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.23944,
+    "explode": 0.05491,
+    "dolly": 0.0135,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.2874,
+      "y": 0.52963,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.19673,
+      "y": 0.60859,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.18296,
+      "y": 0.69978,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.2764,
+      "y": 0.35884,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.30975,
+      "y": 0.60191,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.73479,
+      "y": 0.38689,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73738,
+      "y": 0.59359,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.25352,
+    "explode": 0.06518,
+    "dolly": 0.01641,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.28796,
+      "y": 0.52968,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.1969,
+      "y": 0.60828,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.18312,
+      "y": 0.70078,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27652,
+      "y": 0.35866,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.30985,
+      "y": 0.60156,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.73592,
+      "y": 0.38705,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73723,
+      "y": 0.59318,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.26761,
+    "explode": 0.07666,
+    "dolly": 0.01994,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.28861,
+      "y": 0.52972,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.19712,
+      "y": 0.6079,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.18331,
+      "y": 0.70202,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27665,
+      "y": 0.35843,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.30996,
+      "y": 0.60112,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.73718,
+      "y": 0.3872,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73704,
+      "y": 0.59269,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.28169,
+    "explode": 0.08941,
+    "dolly": 0.02424,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.28937,
+      "y": 0.52975,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.19738,
+      "y": 0.60744,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.18354,
+      "y": 0.70351,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27682,
+      "y": 0.35816,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.31009,
+      "y": 0.6006,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.73855,
+      "y": 0.38733,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73682,
+      "y": 0.59209,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.29577,
+    "explode": 0.1035,
+    "dolly": 0.02947,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.29025,
+      "y": 0.52975,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.1977,
+      "y": 0.60688,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.18383,
+      "y": 0.70526,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27702,
+      "y": 0.35783,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.31026,
+      "y": 0.59996,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74004,
+      "y": 0.38744,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73655,
+      "y": 0.59136,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.30986,
+    "explode": 0.119,
+    "dolly": 0.03583,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.29125,
+      "y": 0.52972,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.19808,
+      "y": 0.6062,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.18418,
+      "y": 0.70728,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27727,
+      "y": 0.35744,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.31046,
+      "y": 0.59918,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74165,
+      "y": 0.3875,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73621,
+      "y": 0.59048,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.32394,
+    "explode": 0.13598,
+    "dolly": 0.04355,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.29239,
+      "y": 0.52963,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.19855,
+      "y": 0.60538,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.1846,
+      "y": 0.70957,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27757,
+      "y": 0.35695,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.3107,
+      "y": 0.59825,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74338,
+      "y": 0.38751,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73581,
+      "y": 0.58941,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.33803,
+    "explode": 0.1545,
+    "dolly": 0.05294,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.2937,
+      "y": 0.52947,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.19911,
+      "y": 0.60438,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.18512,
+      "y": 0.71211,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27793,
+      "y": 0.35637,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.311,
+      "y": 0.59711,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74521,
+      "y": 0.38745,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73533,
+      "y": 0.58812,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.35211,
+    "explode": 0.17462,
+    "dolly": 0.06436,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.29517,
+      "y": 0.52921,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.1998,
+      "y": 0.60317,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.18575,
+      "y": 0.71488,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27836,
+      "y": 0.35566,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.31135,
+      "y": 0.59573,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74713,
+      "y": 0.38727,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73474,
+      "y": 0.58655,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.3662,
+    "explode": 0.19643,
+    "dolly": 0.07823,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.29684,
+      "y": 0.52882,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.20062,
+      "y": 0.60172,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.18652,
+      "y": 0.71786,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27889,
+      "y": 0.3548,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.31178,
+      "y": 0.59406,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74912,
+      "y": 0.38697,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73403,
+      "y": 0.58465,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.38028,
+    "explode": 0.21998,
+    "dolly": 0.0951,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.29873,
+      "y": 0.52827,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.20162,
+      "y": 0.59995,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.18746,
+      "y": 0.72098,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.27952,
+      "y": 0.35376,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.3123,
+      "y": 0.59205,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.75117,
+      "y": 0.38649,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73317,
+      "y": 0.58235,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.39437,
+    "explode": 0.24533,
+    "dolly": 0.11561,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.30085,
+      "y": 0.52752,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.20282,
+      "y": 0.59782,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.1886,
+      "y": 0.72419,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.28029,
+      "y": 0.35251,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.31292,
+      "y": 0.58962,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.75324,
+      "y": 0.38579,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73213,
+      "y": 0.57958,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.40845,
+    "explode": 0.27257,
+    "dolly": 0.14054,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.30324,
+      "y": 0.5265,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.20426,
+      "y": 0.59526,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.18999,
+      "y": 0.72739,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.28121,
+      "y": 0.351,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.31367,
+      "y": 0.58669,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.75529,
+      "y": 0.38482,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.73088,
+      "y": 0.57623,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.42254,
+    "explode": 0.30175,
+    "dolly": 0.17084,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.30592,
+      "y": 0.52517,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.20599,
+      "y": 0.59218,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.19168,
+      "y": 0.73047,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.28232,
+      "y": 0.34917,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.31458,
+      "y": 0.58316,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.75708,
+      "y": 0.38345,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.72938,
+      "y": 0.5722,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.43662,
+    "explode": 0.33294,
+    "dolly": 0.20767,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.30893,
+      "y": 0.52345,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.20806,
+      "y": 0.58848,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.19371,
+      "y": 0.7333,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.28365,
+      "y": 0.34698,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.31566,
+      "y": 0.57892,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.75825,
+      "y": 0.38149,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.72758,
+      "y": 0.56735,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.4507,
+    "explode": 0.36621,
+    "dolly": 0.25245,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.31229,
+      "y": 0.52126,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.21053,
+      "y": 0.58405,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.19615,
+      "y": 0.73568,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.28523,
+      "y": 0.34435,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.31695,
+      "y": 0.57385,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.75874,
+      "y": 0.37885,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.72542,
+      "y": 0.56153,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.46479,
+    "explode": 0.40163,
+    "dolly": 0.30689,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.31605,
+      "y": 0.51851,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.21346,
+      "y": 0.57877,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.19907,
+      "y": 0.7374,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.28711,
+      "y": 0.34121,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.31848,
+      "y": 0.56779,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.75846,
+      "y": 0.37543,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.72285,
+      "y": 0.55458,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.47887,
+    "explode": 0.43926,
+    "dolly": 0.37306,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.32017,
+      "y": 0.51505,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.21692,
+      "y": 0.5725,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.20256,
+      "y": 0.73821,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.28934,
+      "y": 0.33746,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.3203,
+      "y": 0.56057,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.75734,
+      "y": 0.3711,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.71979,
+      "y": 0.54628,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.49296,
+    "explode": 0.47917,
+    "dolly": 0.45349,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.32449,
+      "y": 0.51061,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.221,
+      "y": 0.56507,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.20668,
+      "y": 0.73781,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.29197,
+      "y": 0.333,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.32245,
+      "y": 0.55202,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.75528,
+      "y": 0.36573,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.71618,
+      "y": 0.53642,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.50704,
+    "explode": 0.52083,
+    "dolly": 0.54651,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.32888,
+      "y": 0.50539,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.22553,
+      "y": 0.55675,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.21129,
+      "y": 0.73646,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.2949,
+      "y": 0.32799,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.32484,
+      "y": 0.54242,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.75244,
+      "y": 0.35953,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.71213,
+      "y": 0.52533,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.52113,
+    "explode": 0.56074,
+    "dolly": 0.62694,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.33266,
+      "y": 0.50116,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.22931,
+      "y": 0.54978,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.21508,
+      "y": 0.73746,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.29734,
+      "y": 0.32376,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.32683,
+      "y": 0.53435,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.75015,
+      "y": 0.35441,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.70874,
+      "y": 0.51599,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.53521,
+    "explode": 0.59837,
+    "dolly": 0.69311,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.33584,
+      "y": 0.49795,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.23232,
+      "y": 0.54418,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.21806,
+      "y": 0.74083,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.2993,
+      "y": 0.32036,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.32842,
+      "y": 0.52787,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74848,
+      "y": 0.35039,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.70603,
+      "y": 0.50847,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.5493,
+    "explode": 0.63379,
+    "dolly": 0.74755,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.33856,
+      "y": 0.49553,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.23473,
+      "y": 0.53967,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.22042,
+      "y": 0.74504,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30086,
+      "y": 0.31762,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.3297,
+      "y": 0.52264,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74728,
+      "y": 0.34724,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.70384,
+      "y": 0.50239,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.56338,
+    "explode": 0.66706,
+    "dolly": 0.79233,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.34088,
+      "y": 0.4937,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.23667,
+      "y": 0.53603,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.2223,
+      "y": 0.74957,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30213,
+      "y": 0.31539,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33073,
+      "y": 0.51841,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74642,
+      "y": 0.34476,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.70207,
+      "y": 0.49747,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.57746,
+    "explode": 0.69825,
+    "dolly": 0.82916,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.34287,
+      "y": 0.49235,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.23824,
+      "y": 0.53307,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.2238,
+      "y": 0.75426,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30315,
+      "y": 0.31358,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33157,
+      "y": 0.51498,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74582,
+      "y": 0.34281,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.70064,
+      "y": 0.49346,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.59155,
+    "explode": 0.72743,
+    "dolly": 0.85946,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.3446,
+      "y": 0.49134,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.23952,
+      "y": 0.53066,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.225,
+      "y": 0.75898,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30398,
+      "y": 0.31211,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33224,
+      "y": 0.51218,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74541,
+      "y": 0.34127,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.69947,
+      "y": 0.4902,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.60563,
+    "explode": 0.75467,
+    "dolly": 0.88439,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.34609,
+      "y": 0.49061,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.24055,
+      "y": 0.5287,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.22596,
+      "y": 0.76365,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30466,
+      "y": 0.3109,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.3328,
+      "y": 0.5099,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74514,
+      "y": 0.34005,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.69852,
+      "y": 0.48754,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.61972,
+    "explode": 0.78002,
+    "dolly": 0.9049,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.34738,
+      "y": 0.49009,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.2414,
+      "y": 0.5271,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.22673,
+      "y": 0.76819,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30521,
+      "y": 0.30992,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33325,
+      "y": 0.50803,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74498,
+      "y": 0.33909,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.69775,
+      "y": 0.48537,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.6338,
+    "explode": 0.80357,
+    "dolly": 0.92177,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.3485,
+      "y": 0.48973,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.24209,
+      "y": 0.52579,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.22734,
+      "y": 0.77255,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30566,
+      "y": 0.30912,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33361,
+      "y": 0.50651,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74488,
+      "y": 0.33832,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.69711,
+      "y": 0.48359,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.64789,
+    "explode": 0.82538,
+    "dolly": 0.93564,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.34947,
+      "y": 0.48948,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.24265,
+      "y": 0.52472,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.22783,
+      "y": 0.77669,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30603,
+      "y": 0.30846,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33391,
+      "y": 0.50526,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74482,
+      "y": 0.33771,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.69659,
+      "y": 0.48213,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.66197,
+    "explode": 0.8455,
+    "dolly": 0.94706,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.35031,
+      "y": 0.48932,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.24312,
+      "y": 0.52384,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.22823,
+      "y": 0.78057,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30633,
+      "y": 0.30792,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33416,
+      "y": 0.50424,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74479,
+      "y": 0.33722,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.69617,
+      "y": 0.48093,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.67606,
+    "explode": 0.86402,
+    "dolly": 0.95645,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.35103,
+      "y": 0.48922,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.24349,
+      "y": 0.52312,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.22854,
+      "y": 0.78418,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30657,
+      "y": 0.30747,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33436,
+      "y": 0.5034,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74478,
+      "y": 0.33682,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.69582,
+      "y": 0.47995,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.69014,
+    "explode": 0.881,
+    "dolly": 0.96417,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.35165,
+      "y": 0.48917,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.2438,
+      "y": 0.52253,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.22879,
+      "y": 0.7875,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30678,
+      "y": 0.30711,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33453,
+      "y": 0.50271,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74476,
+      "y": 0.3365,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.69554,
+      "y": 0.47915,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.70423,
+    "explode": 0.8965,
+    "dolly": 0.97053,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.35217,
+      "y": 0.48914,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.24406,
+      "y": 0.52205,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.22899,
+      "y": 0.79052,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30694,
+      "y": 0.30681,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33466,
+      "y": 0.50215,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74475,
+      "y": 0.33623,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.6953,
+      "y": 0.47849,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.71831,
+    "explode": 0.91059,
+    "dolly": 0.97576,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.35261,
+      "y": 0.48913,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.24427,
+      "y": 0.52165,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.22915,
+      "y": 0.79325,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30708,
+      "y": 0.30657,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33477,
+      "y": 0.50169,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74472,
+      "y": 0.336,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.69511,
+      "y": 0.47795,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.73239,
+    "explode": 0.92334,
+    "dolly": 0.98006,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.35298,
+      "y": 0.48912,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.24444,
+      "y": 0.52132,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.22928,
+      "y": 0.79569,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30719,
+      "y": 0.30636,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33486,
+      "y": 0.50131,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74469,
+      "y": 0.33581,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.69495,
+      "y": 0.4775,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.74648,
+    "explode": 0.93482,
+    "dolly": 0.98359,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.35329,
+      "y": 0.48912,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.24458,
+      "y": 0.52105,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.22938,
+      "y": 0.79784,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30728,
+      "y": 0.3062,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33494,
+      "y": 0.50099,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74464,
+      "y": 0.33565,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.69482,
+      "y": 0.47713,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.76056,
+    "explode": 0.94509,
+    "dolly": 0.9865,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.35353,
+      "y": 0.48912,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.24469,
+      "y": 0.52083,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.22946,
+      "y": 0.79971,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30736,
+      "y": 0.30606,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.335,
+      "y": 0.50074,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74459,
+      "y": 0.3355,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.69471,
+      "y": 0.47683,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.77465,
+    "explode": 0.95422,
+    "dolly": 0.9889,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.35373,
+      "y": 0.48911,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.24479,
+      "y": 0.52065,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.22953,
+      "y": 0.80133,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30742,
+      "y": 0.30595,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33505,
+      "y": 0.50052,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74453,
+      "y": 0.33537,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.69463,
+      "y": 0.47659,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.78873,
+    "explode": 0.96228,
+    "dolly": 0.99087,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.35389,
+      "y": 0.4891,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.24487,
+      "y": 0.5205,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.22958,
+      "y": 0.80269,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30747,
+      "y": 0.30586,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33509,
+      "y": 0.50035,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74446,
+      "y": 0.33526,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.69455,
+      "y": 0.47638,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.80282,
+    "explode": 0.96933,
+    "dolly": 0.99249,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.354,
+      "y": 0.48907,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.24493,
+      "y": 0.52038,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.22963,
+      "y": 0.80382,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30751,
+      "y": 0.30578,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33513,
+      "y": 0.50021,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.7444,
+      "y": 0.33516,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.69449,
+      "y": 0.47621,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.8169,
+    "explode": 0.97545,
+    "dolly": 0.99382,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.35409,
+      "y": 0.48905,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.24498,
+      "y": 0.52028,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.22966,
+      "y": 0.80474,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30755,
+      "y": 0.30572,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33515,
+      "y": 0.50009,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74434,
+      "y": 0.33508,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.69445,
+      "y": 0.47608,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.83099,
+    "explode": 0.98069,
+    "dolly": 0.99492,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.35415,
+      "y": 0.48902,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.24503,
+      "y": 0.52019,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.22969,
+      "y": 0.80547,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30758,
+      "y": 0.30567,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33518,
+      "y": 0.49999,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74428,
+      "y": 0.33501,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.69441,
+      "y": 0.47596,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.84507,
+    "explode": 0.98512,
+    "dolly": 0.99582,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.35418,
+      "y": 0.48898,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.24506,
+      "y": 0.52013,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.22972,
+      "y": 0.80602,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.3076,
+      "y": 0.30563,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.3352,
+      "y": 0.49991,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74424,
+      "y": 0.33495,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.69437,
+      "y": 0.47587,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.85915,
+    "explode": 0.98882,
+    "dolly": 0.99656,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.35421,
+      "y": 0.48895,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.24509,
+      "y": 0.52007,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.22974,
+      "y": 0.80643,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30762,
+      "y": 0.30559,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33521,
+      "y": 0.49985,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74421,
+      "y": 0.3349,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.69435,
+      "y": 0.47579,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.87324,
+    "explode": 0.99185,
+    "dolly": 0.99717,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.35422,
+      "y": 0.48891,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.24512,
+      "y": 0.52002,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.22976,
+      "y": 0.8067,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30763,
+      "y": 0.30557,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33523,
+      "y": 0.49979,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74418,
+      "y": 0.33486,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.69432,
+      "y": 0.47573,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.88732,
+    "explode": 0.99428,
+    "dolly": 0.99767,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.35423,
+      "y": 0.48888,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.24514,
+      "y": 0.51999,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.22978,
+      "y": 0.80686,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30765,
+      "y": 0.30554,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33524,
+      "y": 0.49975,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74415,
+      "y": 0.33483,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.69431,
+      "y": 0.47568,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.90141,
+    "explode": 0.99617,
+    "dolly": 0.99808,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.35424,
+      "y": 0.48886,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.24515,
+      "y": 0.51995,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.22979,
+      "y": 0.80694,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30766,
+      "y": 0.30552,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33524,
+      "y": 0.49971,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74414,
+      "y": 0.3348,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.69429,
+      "y": 0.47564,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.91549,
+    "explode": 0.99759,
+    "dolly": 0.99842,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.35425,
+      "y": 0.48884,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.24517,
+      "y": 0.51993,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.2298,
+      "y": 0.80696,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30767,
+      "y": 0.30551,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33525,
+      "y": 0.49968,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74412,
+      "y": 0.33478,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.69428,
+      "y": 0.4756,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.92958,
+    "explode": 0.9986,
+    "dolly": 0.9987,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.35425,
+      "y": 0.48882,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.24518,
+      "y": 0.51991,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.22982,
+      "y": 0.80694,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30767,
+      "y": 0.30549,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33526,
+      "y": 0.49966,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74411,
+      "y": 0.33476,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.69427,
+      "y": 0.47557,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.94366,
+    "explode": 0.99928,
+    "dolly": 0.99893,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.35426,
+      "y": 0.48881,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.24519,
+      "y": 0.51989,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.22983,
+      "y": 0.80691,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30768,
+      "y": 0.30548,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33526,
+      "y": 0.49964,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.7441,
+      "y": 0.33475,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.69426,
+      "y": 0.47555,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.95775,
+    "explode": 0.9997,
+    "dolly": 0.99912,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.35426,
+      "y": 0.4888,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.24519,
+      "y": 0.51988,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.22983,
+      "y": 0.80689,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30768,
+      "y": 0.30547,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33527,
+      "y": 0.49962,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74409,
+      "y": 0.33474,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.69425,
+      "y": 0.47553,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.97183,
+    "explode": 0.99991,
+    "dolly": 0.99928,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.35427,
+      "y": 0.48879,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.2452,
+      "y": 0.51986,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.22984,
+      "y": 0.80686,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30769,
+      "y": 0.30547,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33527,
+      "y": 0.49961,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74408,
+      "y": 0.33473,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.69425,
+      "y": 0.47551,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.98592,
+    "explode": 0.99999,
+    "dolly": 0.99941,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.35427,
+      "y": 0.48878,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.24521,
+      "y": 0.51986,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.22985,
+      "y": 0.80685,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30769,
+      "y": 0.30546,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33527,
+      "y": 0.4996,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74407,
+      "y": 0.33472,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.69424,
+      "y": 0.4755,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 1,
+    "explode": 1,
+    "dolly": 1,
+    "anchors": [
+     {
+      "id": "lcd",
+      "x": 0.35428,
+      "y": 0.48875,
+      "visible": true
+     },
+     {
+      "id": "pump",
+      "x": 0.24523,
+      "y": 0.51981,
+      "visible": true
+     },
+     {
+      "id": "bracket",
+      "x": 0.22987,
+      "y": 0.80676,
+      "visible": true
+     },
+     {
+      "id": "tubes",
+      "x": 0.30771,
+      "y": 0.30543,
+      "visible": false
+     },
+     {
+      "id": "fittings",
+      "x": 0.33529,
+      "y": 0.49955,
+      "visible": false
+     },
+     {
+      "id": "fans",
+      "x": 0.74405,
+      "y": 0.33468,
+      "visible": true
+     },
+     {
+      "id": "rad",
+      "x": 0.69422,
+      "y": 0.47544,
+      "visible": false
+     }
+    ]
+   }
+  ]
+ },
+ "parts": [
+  {
+   "id": "lcd",
+   "name": "Pump Head LCD",
+   "description": "A round screen on the pump cap that can show live readouts such as CPU temperature, framed by an ARGB light ring.",
+   "color": "#3cc8f4",
+   "side": "l",
+   "label": {
+    "x": 0.2,
+    "y": 0.2
+   }
+  },
+  {
+   "id": "pump",
+   "name": "Pump Block and Cold Plate",
+   "description": "The pump that circulates the coolant, sitting on a copper cold plate that touches the CPU and draws its heat into the liquid.",
+   "color": "#ffc64a",
+   "side": "l",
+   "label": {
+    "x": 0.2,
+    "y": 0.42
+   }
+  },
+  {
+   "id": "bracket",
+   "name": "Mounting Bracket",
+   "description": "The cross-shaped bracket and thumb screws that hold the pump block down firmly onto the CPU socket.",
+   "color": "#3cc8f4",
+   "side": "l",
+   "label": {
+    "x": 0.2,
+    "y": 0.75
+   }
+  },
+  {
+   "id": "tubes",
+   "name": "Coolant Tubes",
+   "description": "Two flexible, braided-sleeve hoses that carry warm coolant to the radiator and cooled coolant back to the pump.",
+   "color": "#ffc64a",
+   "side": "l",
+   "label": {
+    "x": 0.3,
+    "y": 0.09
+   }
+  },
+  {
+   "id": "fittings",
+   "name": "Fittings",
+   "description": "Swivel connectors where the tubes join the radiator and the pump block, sealed so the loop never needs refilling.",
+   "color": "#ffc64a",
+   "side": "l",
+   "label": {
+    "x": 0.2,
+    "y": 0.6
+   }
+  },
+  {
+   "id": "fans",
+   "name": "ARGB Fans (x3)",
+   "description": "Three 120 mm fans with addressable pink and cyan lighting that push air through the radiator fins.",
+   "color": "#3cc8f4",
+   "side": "r",
+   "label": {
+    "x": 0.8,
+    "y": 0.2
+   }
+  },
+  {
+   "id": "rad",
+   "name": "Radiator (360mm)",
+   "description": "A 360 mm long finned heat exchanger. Coolant flows through thin channels while the fans blow the heat away.",
+   "color": "#ffc64a",
+   "side": "r",
+   "label": {
+    "x": 0.8,
+    "y": 0.78
+   }
+  }
+ ]
+}

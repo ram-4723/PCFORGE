@@ -1,17 +1,39 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react'
-import { CircuitBoard, Cpu, Database, Fan, Gauge, Layers2, MemoryStick, RotateCcw, ScanLine, Tag, Zap } from 'lucide-react'
+import { CircuitBoard, Cpu, Database, Fan, Gauge, Layers2, MemoryStick, Monitor, RotateCcw, ScanLine, Tag, Zap } from 'lucide-react'
 import GpuExplorer from './GpuExplorer/GpuExplorer.jsx'
 import { MOTHERBOARD_BASE_PATH, MOTHERBOARD_PARTS, MOTHERBOARD_TITLE } from './GpuExplorer/motherboardParts.js'
+import { RAM_BASE_PATH, RAM_PARTS, RAM_TITLE } from './GpuExplorer/ramParts.js'
+import { CPU_BASE_PATH, CPU_PARTS, CPU_TITLE } from './GpuExplorer/cpuParts.js'
+import { PSU_BASE_PATH, PSU_PARTS, PSU_TITLE } from './GpuExplorer/psuParts.js'
+import { AIO_BASE_PATH, AIO_PARTS, AIO_TITLE } from './GpuExplorer/aioParts.js'
+import { MONITOR_BASE_PATH, MONITOR_PARTS, MONITOR_TITLE } from './GpuExplorer/monitorParts.js'
+import { CASE_BASE_PATH, CASE_PARTS, CASE_TITLE } from './GpuExplorer/caseParts.js'
+import { SSD_BASE_PATH, SSD_PARTS, SSD_TITLE } from './GpuExplorer/ssdParts.js'
+import { GPU_PARTS } from './GpuExplorer/parts.js'
+
+const frameExplorers = {
+  motherboard: { basePath: MOTHERBOARD_BASE_PATH, labels: MOTHERBOARD_PARTS, title: MOTHERBOARD_TITLE },
+  cpu: { basePath: CPU_BASE_PATH, labels: CPU_PARTS, title: CPU_TITLE },
+  ram: { basePath: RAM_BASE_PATH, labels: RAM_PARTS, title: RAM_TITLE },
+  gpu: { labels: GPU_PARTS, title: 'Gigabyte GeForce RTX Gaming OC' },
+  ssd: { basePath: SSD_BASE_PATH, labels: SSD_PARTS, title: SSD_TITLE },
+  psu: { basePath: PSU_BASE_PATH, labels: PSU_PARTS, title: PSU_TITLE },
+  case: { basePath: CASE_BASE_PATH, labels: CASE_PARTS, title: CASE_TITLE },
+  aio: { basePath: AIO_BASE_PATH, labels: AIO_PARTS, title: AIO_TITLE },
+  monitor: { basePath: MONITOR_BASE_PATH, labels: MONITOR_PARTS, title: MONITOR_TITLE },
+}
 
 const parts = [
   { id: 'motherboard', name: 'Motherboard', Icon: CircuitBoard, tag: '01' },
   { id: 'cpu', name: 'Processor', Icon: Cpu, tag: '02' },
   { id: 'ram', name: 'Memory', Icon: MemoryStick, tag: '03' },
   { id: 'gpu', name: 'Graphics card', Icon: Gauge, tag: '04' },
-  { id: 'storage', name: 'Storage', Icon: Database, tag: '05' },
+  { id: 'ssd', name: 'SSD storage', Icon: Database, tag: '05' },
   { id: 'psu', name: 'Power supply', Icon: Zap, tag: '06' },
   { id: 'case', name: 'Case and airflow', Icon: ScanLine, tag: '07' },
   { id: 'cooling', name: 'CPU cooling', Icon: Fan, tag: '08' },
+  { id: 'aio', name: 'AIO liquid cooler', Icon: Fan, tag: '09' },
+  { id: 'monitor', name: 'Monitor', Icon: Monitor, tag: '10' },
 ]
 
 const callouts = {
@@ -61,7 +83,8 @@ export default function PCStudioScene({ selectedId = 'cpu', onSelect = () => {},
   const [rotation, setRotation] = useState({ x: -9, y: -17 })
   const [drag, setDrag] = useState(null)
   const [hotspot, setHotspot] = useState(null)
-  const hasFrameExplorer = selectedId === 'gpu' || selectedId === 'motherboard'
+  const frameExplorer = frameExplorers[selectedId]
+  const hasFrameExplorer = Boolean(frameExplorer)
   const selected = parts.find(p => p.id === selectedId) || parts[0]
   const dots = useMemo(() => Array.from({ length: 34 }, (_, i) => ({ x: (i * 89 + 37) % 680, y: (i * 53 + 13) % 450, r: i % 5 === 0 ? 1.5 : 0.7 })), [])
   const annotations = callouts[selectedId] || []
@@ -78,7 +101,7 @@ export default function PCStudioScene({ selectedId = 'cpu', onSelect = () => {},
     <div className={`forge-viewer ${hasFrameExplorer && technical ? 'technical-mode' : ''}`}>
       <div className="forge-viewer-head"><div><span className="forge-live-dot"/> LIVE COMPONENT STUDY <span className="forge-divider">/</span> {selected.tag} · {selected.name.toUpperCase()}</div><span className="forge-view-hint">{hasFrameExplorer ? 'DRAG TO ROTATE · EXPLODE TO INSPECT' : <>DRAG TO ORBIT <i>·</i> SCENE {technical ? 'TECHNICAL' : 'EXPLORE'}</>}</span></div>
       {hasFrameExplorer ? <>
-      <GpuExplorer ref={viewerRef} title={selectedId === 'motherboard' ? MOTHERBOARD_TITLE : 'Graphics card component study'} basePath={selectedId === 'motherboard' ? MOTHERBOARD_BASE_PATH : undefined} labels={selectedId === 'motherboard' ? MOTHERBOARD_PARTS : undefined} exploded={exploded} onExplodedChange={setExploded} showLabels={labels} onLabelsChange={setLabels} zoom={zoom} onZoomChange={setZoom} hideControls className="hardware-gpu-explorer" onPartSelect={onGpuPartSelect} />
+      <GpuExplorer ref={viewerRef} title={frameExplorer.title} basePath={frameExplorer.basePath} labels={frameExplorer.labels} exploded={exploded} onExplodedChange={setExploded} showLabels={labels} onLabelsChange={setLabels} zoom={zoom} onZoomChange={setZoom} hideControls className="hardware-gpu-explorer" onPartSelect={onGpuPartSelect} />
       {controls && <div className="frame-explorer-controls"><div className="forge-zoom-controls frame-explorer-zoom"><button type="button" onClick={() => changeFrameZoom(-1)} aria-label="Zoom out">−</button><span>{Math.round(zoom * 100)}%</span><button type="button" onClick={() => changeFrameZoom(1)} aria-label="Zoom in">+</button></div><div className="forge-toolbar frame-explorer-toolbar" aria-label="Scene controls"><button type="button" className={!exploded?'active':''} onClick={() => viewerRef.current?.assemble()}><ScanLine size={14}/> Explore</button><button type="button" className={exploded?'active':''} onClick={() => viewerRef.current?.explode()} aria-pressed={exploded}><Layers2 size={14}/> Exploded</button><button type="button" className={labels?'active':''} onClick={() => viewerRef.current?.toggleLabels()} aria-pressed={labels}><Tag size={14}/> Labels</button><button type="button" className={technical?'active':''} onClick={() => setTechnical(v => !v)} aria-pressed={technical}><CircuitBoard size={14}/> Technical</button><button type="button" onClick={resetFrameExplorer}><RotateCcw size={14}/> Reset</button></div></div>}
       <div className="forge-status"><span><i/> FRAME VIEW READY</span><span>144 ROTATION · 72 EXPLODED FRAMES</span><span>PCFORGE / HARDWARE LAB</span></div></> : <>
       <div className={`pc-stage forge-stage ${technical ? 'technical-mode' : ''}`} onPointerMove={move} onPointerUp={() => setDrag(null)} onPointerLeave={() => setDrag(null)} onPointerDown={e => { if (e.target.closest('button, .svg-hotspot')) return; e.currentTarget.setPointerCapture(e.pointerId); setDrag({ px:e.clientX, py:e.clientY, ...rotation }) }}>

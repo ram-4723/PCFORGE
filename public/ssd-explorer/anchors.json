@@ -1,0 +1,9239 @@
+{
+ "version": 2,
+ "frameSize": [
+  1600,
+  900
+ ],
+ "coords": "normalised 0-1, origin top-left of the frame",
+ "note": "explode.frames[j].anchors are the 2D anchor points of each labelled part in explode frame j; labels are meant to be shown on the last (fully exploded) frame. rotate anchors are informational (visible=false means occluded at that angle).",
+ "rotate": {
+  "count": 144,
+  "path": "rotate/{000-143}.webp",
+  "angleDeg": [
+   0.0,
+   2.5,
+   5.0,
+   7.5,
+   10.0,
+   12.5,
+   15.0,
+   17.5,
+   20.0,
+   22.5,
+   25.0,
+   27.5,
+   30.0,
+   32.5,
+   35.0,
+   37.5,
+   40.0,
+   42.5,
+   45.0,
+   47.5,
+   50.0,
+   52.5,
+   55.0,
+   57.5,
+   60.0,
+   62.5,
+   65.0,
+   67.5,
+   70.0,
+   72.5,
+   75.0,
+   77.5,
+   80.0,
+   82.5,
+   85.0,
+   87.5,
+   90.0,
+   92.5,
+   95.0,
+   97.5,
+   100.0,
+   102.5,
+   105.0,
+   107.5,
+   110.0,
+   112.5,
+   115.0,
+   117.5,
+   120.0,
+   122.5,
+   125.0,
+   127.5,
+   130.0,
+   132.5,
+   135.0,
+   137.5,
+   140.0,
+   142.5,
+   145.0,
+   147.5,
+   150.0,
+   152.5,
+   155.0,
+   157.5,
+   160.0,
+   162.5,
+   165.0,
+   167.5,
+   170.0,
+   172.5,
+   175.0,
+   177.5,
+   180.0,
+   182.5,
+   185.0,
+   187.5,
+   190.0,
+   192.5,
+   195.0,
+   197.5,
+   200.0,
+   202.5,
+   205.0,
+   207.5,
+   210.0,
+   212.5,
+   215.0,
+   217.5,
+   220.0,
+   222.5,
+   225.0,
+   227.5,
+   230.0,
+   232.5,
+   235.0,
+   237.5,
+   240.0,
+   242.5,
+   245.0,
+   247.5,
+   250.0,
+   252.5,
+   255.0,
+   257.5,
+   260.0,
+   262.5,
+   265.0,
+   267.5,
+   270.0,
+   272.5,
+   275.0,
+   277.5,
+   280.0,
+   282.5,
+   285.0,
+   287.5,
+   290.0,
+   292.5,
+   295.0,
+   297.5,
+   300.0,
+   302.5,
+   305.0,
+   307.5,
+   310.0,
+   312.5,
+   315.0,
+   317.5,
+   320.0,
+   322.5,
+   325.0,
+   327.5,
+   330.0,
+   332.5,
+   335.0,
+   337.5,
+   340.0,
+   342.5,
+   345.0,
+   347.5,
+   350.0,
+   352.5,
+   355.0,
+   357.5
+  ],
+  "frames": [
+   {
+    "angleDeg": 0.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.36354,
+      "y": 0.4137,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53392,
+      "y": 0.44882,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.69526,
+      "y": 0.40504,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.45618,
+      "y": 0.6565,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.22181,
+      "y": 0.56024,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.75588,
+      "y": 0.51859,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 2.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.37296,
+      "y": 0.4102,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53482,
+      "y": 0.44482,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.6863,
+      "y": 0.39938,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.4598,
+      "y": 0.65701,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.23489,
+      "y": 0.56177,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.74193,
+      "y": 0.5135,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 5.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.3829,
+      "y": 0.40676,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.5353,
+      "y": 0.44093,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.67635,
+      "y": 0.39397,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.46334,
+      "y": 0.65742,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.24934,
+      "y": 0.5632,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.7269,
+      "y": 0.50865,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 7.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.39331,
+      "y": 0.40341,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53535,
+      "y": 0.4372,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.66546,
+      "y": 0.38887,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.46679,
+      "y": 0.65775,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.26516,
+      "y": 0.56453,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.71081,
+      "y": 0.50409,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 10.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.40415,
+      "y": 0.40022,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53497,
+      "y": 0.43367,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65365,
+      "y": 0.38412,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.47012,
+      "y": 0.658,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.28233,
+      "y": 0.56575,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.69374,
+      "y": 0.49984,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 12.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.41538,
+      "y": 0.39721,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53414,
+      "y": 0.43038,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.64097,
+      "y": 0.37975,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.47333,
+      "y": 0.65818,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.30077,
+      "y": 0.56687,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.67573,
+      "y": 0.49594,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 15.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.42694,
+      "y": 0.39443,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53289,
+      "y": 0.42737,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.62748,
+      "y": 0.37581,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.47641,
+      "y": 0.6583,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.32042,
+      "y": 0.56788,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.65687,
+      "y": 0.49242,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 17.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.43877,
+      "y": 0.39191,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53123,
+      "y": 0.42466,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.61326,
+      "y": 0.3723,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.47934,
+      "y": 0.65837,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.34117,
+      "y": 0.56879,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.63725,
+      "y": 0.4893,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 20.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.45081,
+      "y": 0.38968,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.52919,
+      "y": 0.42228,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.59839,
+      "y": 0.36925,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.48213,
+      "y": 0.65841,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.3629,
+      "y": 0.56957,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.61696,
+      "y": 0.48659,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 22.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.46301,
+      "y": 0.38776,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.52681,
+      "y": 0.42024,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.58296,
+      "y": 0.36668,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.4848,
+      "y": 0.65843,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.38549,
+      "y": 0.57025,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.5961,
+      "y": 0.48432,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 25.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.47532,
+      "y": 0.38617,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.52413,
+      "y": 0.41857,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.56707,
+      "y": 0.3646,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.48736,
+      "y": 0.65844,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.40878,
+      "y": 0.5708,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.57477,
+      "y": 0.48249,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 27.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.48769,
+      "y": 0.38492,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.52121,
+      "y": 0.41726,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.5508,
+      "y": 0.363,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.48983,
+      "y": 0.65846,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.43264,
+      "y": 0.57124,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.55308,
+      "y": 0.48111,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 30.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.50008,
+      "y": 0.38401,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.5181,
+      "y": 0.41634,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.53426,
+      "y": 0.36191,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.49223,
+      "y": 0.65849,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.45691,
+      "y": 0.57156,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.53113,
+      "y": 0.4802,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 32.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.51244,
+      "y": 0.38346,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.51485,
+      "y": 0.41581,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.51756,
+      "y": 0.36131,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.4946,
+      "y": 0.65853,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.48144,
+      "y": 0.57176,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.50903,
+      "y": 0.47975,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 35.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.52474,
+      "y": 0.38326,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.51153,
+      "y": 0.41566,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.50078,
+      "y": 0.36122,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.49696,
+      "y": 0.65859,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.50608,
+      "y": 0.57184,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.48687,
+      "y": 0.47976,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 37.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.53694,
+      "y": 0.38343,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.5082,
+      "y": 0.4159,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.48404,
+      "y": 0.36162,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.49935,
+      "y": 0.65868,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.53068,
+      "y": 0.57179,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.46476,
+      "y": 0.48024,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 40.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.54901,
+      "y": 0.38394,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.50492,
+      "y": 0.41652,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.46742,
+      "y": 0.36252,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.50181,
+      "y": 0.65878,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.55509,
+      "y": 0.57163,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.44281,
+      "y": 0.48119,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 42.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.56091,
+      "y": 0.38481,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.50176,
+      "y": 0.41753,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.45104,
+      "y": 0.36392,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.50435,
+      "y": 0.65889,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.57914,
+      "y": 0.57134,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.42112,
+      "y": 0.4826,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 45.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.5726,
+      "y": 0.38603,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.49876,
+      "y": 0.41891,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.43499,
+      "y": 0.36581,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.50701,
+      "y": 0.659,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.6027,
+      "y": 0.57092,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.39979,
+      "y": 0.48446,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 47.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.58404,
+      "y": 0.38758,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.49598,
+      "y": 0.42066,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.41936,
+      "y": 0.36819,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.5098,
+      "y": 0.6591,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.6256,
+      "y": 0.57039,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.37893,
+      "y": 0.48676,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 50.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.59519,
+      "y": 0.38946,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.49346,
+      "y": 0.42277,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.40425,
+      "y": 0.37105,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.51275,
+      "y": 0.65918,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.64771,
+      "y": 0.56973,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.35864,
+      "y": 0.4895,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 52.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.60599,
+      "y": 0.39163,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.49125,
+      "y": 0.4252,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.38976,
+      "y": 0.37437,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.51585,
+      "y": 0.65922,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.66889,
+      "y": 0.56895,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.33902,
+      "y": 0.49266,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 55.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.61642,
+      "y": 0.39409,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.48938,
+      "y": 0.42796,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.37595,
+      "y": 0.37814,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.51912,
+      "y": 0.65921,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.689,
+      "y": 0.56806,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.32016,
+      "y": 0.49622,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 57.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.62641,
+      "y": 0.39679,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.48786,
+      "y": 0.43099,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.36292,
+      "y": 0.38232,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.52255,
+      "y": 0.65914,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.70795,
+      "y": 0.56704,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.30216,
+      "y": 0.50016,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 60.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.63594,
+      "y": 0.3997,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.48673,
+      "y": 0.43428,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.35071,
+      "y": 0.3869,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.52613,
+      "y": 0.65899,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.72565,
+      "y": 0.56591,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.2851,
+      "y": 0.50444,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 62.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.64496,
+      "y": 0.40277,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.48598,
+      "y": 0.43778,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.33938,
+      "y": 0.39183,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.52984,
+      "y": 0.65876,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.74203,
+      "y": 0.56467,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.26903,
+      "y": 0.50905,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 65.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.65345,
+      "y": 0.40597,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.48561,
+      "y": 0.44145,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.32898,
+      "y": 0.39707,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.53366,
+      "y": 0.65843,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.75705,
+      "y": 0.56331,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.25402,
+      "y": 0.51393,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 67.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.66138,
+      "y": 0.40924,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.48561,
+      "y": 0.44525,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.31951,
+      "y": 0.40257,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.53756,
+      "y": 0.658,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.77069,
+      "y": 0.56185,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.2401,
+      "y": 0.51907,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 70.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.66876,
+      "y": 0.41254,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.48596,
+      "y": 0.44914,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.31099,
+      "y": 0.40829,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.54153,
+      "y": 0.65747,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.78298,
+      "y": 0.56028,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.2273,
+      "y": 0.52442,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 72.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.67557,
+      "y": 0.41581,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.48663,
+      "y": 0.45306,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.30341,
+      "y": 0.41418,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.54552,
+      "y": 0.65684,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.79395,
+      "y": 0.55861,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.2156,
+      "y": 0.52994,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 75.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.68182,
+      "y": 0.41901,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.48761,
+      "y": 0.45698,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.29674,
+      "y": 0.42019,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.54952,
+      "y": 0.65611,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.80364,
+      "y": 0.55685,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.20501,
+      "y": 0.53559,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 77.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.68752,
+      "y": 0.4221,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.48885,
+      "y": 0.46086,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.29095,
+      "y": 0.42625,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.5535,
+      "y": 0.65528,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.81214,
+      "y": 0.55498,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.1955,
+      "y": 0.54135,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 80.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.69271,
+      "y": 0.42503,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.49032,
+      "y": 0.46464,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.28598,
+      "y": 0.43234,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.55744,
+      "y": 0.65437,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.81953,
+      "y": 0.55301,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.187,
+      "y": 0.54718,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 82.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.69741,
+      "y": 0.42777,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.49199,
+      "y": 0.46831,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.2818,
+      "y": 0.43839,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.56131,
+      "y": 0.65338,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.8259,
+      "y": 0.55095,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.17949,
+      "y": 0.55305,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 85.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.70164,
+      "y": 0.43029,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.49383,
+      "y": 0.47183,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.27832,
+      "y": 0.44438,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.5651,
+      "y": 0.65231,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.83135,
+      "y": 0.54879,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.17288,
+      "y": 0.55893,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 87.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.70545,
+      "y": 0.43257,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.49579,
+      "y": 0.47516,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.2755,
+      "y": 0.45026,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.5688,
+      "y": 0.65118,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.83597,
+      "y": 0.54654,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.1671,
+      "y": 0.5648,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 90.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.70887,
+      "y": 0.43458,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.49786,
+      "y": 0.47831,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.27325,
+      "y": 0.45601,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.5724,
+      "y": 0.65,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.83986,
+      "y": 0.54418,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.16209,
+      "y": 0.57065,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 92.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.71194,
+      "y": 0.4363,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.50001,
+      "y": 0.48123,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.27152,
+      "y": 0.46159,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.57589,
+      "y": 0.64876,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.84311,
+      "y": 0.54172,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.15777,
+      "y": 0.57647,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 95.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.71469,
+      "y": 0.43774,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.50221,
+      "y": 0.48393,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.27025,
+      "y": 0.46699,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.57927,
+      "y": 0.64748,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.84579,
+      "y": 0.53916,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.15405,
+      "y": 0.58224,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 97.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.71716,
+      "y": 0.43886,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.50445,
+      "y": 0.4864,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.26937,
+      "y": 0.4722,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.58253,
+      "y": 0.64617,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.848,
+      "y": 0.53649,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.15088,
+      "y": 0.58797,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 100.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.71938,
+      "y": 0.43967,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.5067,
+      "y": 0.48861,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.26882,
+      "y": 0.4772,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.58569,
+      "y": 0.64482,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.84979,
+      "y": 0.5337,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.14818,
+      "y": 0.59364,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 102.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.72138,
+      "y": 0.44017,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.50897,
+      "y": 0.49058,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.26857,
+      "y": 0.48198,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.58874,
+      "y": 0.64344,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.85123,
+      "y": 0.53079,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.14588,
+      "y": 0.59927,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 105.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.72319,
+      "y": 0.44034,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.51123,
+      "y": 0.49229,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.26856,
+      "y": 0.48654,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.59169,
+      "y": 0.64203,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.85237,
+      "y": 0.52775,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.14394,
+      "y": 0.60485,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 107.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.72483,
+      "y": 0.44019,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.51348,
+      "y": 0.49375,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.26876,
+      "y": 0.49087,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.59454,
+      "y": 0.64059,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.85325,
+      "y": 0.52459,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.1423,
+      "y": 0.6104,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 110.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.72631,
+      "y": 0.43971,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.51572,
+      "y": 0.49496,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.26914,
+      "y": 0.49498,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.5973,
+      "y": 0.63913,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.85391,
+      "y": 0.52128,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.14093,
+      "y": 0.61593,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 112.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.72767,
+      "y": 0.43891,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.51795,
+      "y": 0.4959,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.26967,
+      "y": 0.49887,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.59999,
+      "y": 0.63763,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.85439,
+      "y": 0.51783,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.13977,
+      "y": 0.62143,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 115.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.72891,
+      "y": 0.43779,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.52016,
+      "y": 0.4966,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.27033,
+      "y": 0.50254,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.6026,
+      "y": 0.63611,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.8547,
+      "y": 0.51422,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.1388,
+      "y": 0.62694,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 117.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.73004,
+      "y": 0.43633,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.52235,
+      "y": 0.49703,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.27111,
+      "y": 0.50599,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.60514,
+      "y": 0.63455,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.85486,
+      "y": 0.51045,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.13801,
+      "y": 0.63245,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 120.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.73108,
+      "y": 0.43455,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.52452,
+      "y": 0.49722,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.27199,
+      "y": 0.50923,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.60762,
+      "y": 0.63295,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.8549,
+      "y": 0.50651,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.13736,
+      "y": 0.63798,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 122.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.73202,
+      "y": 0.43244,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.52668,
+      "y": 0.49715,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.27296,
+      "y": 0.51226,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.61004,
+      "y": 0.63131,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.85481,
+      "y": 0.5024,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.13685,
+      "y": 0.64356,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 125.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.73287,
+      "y": 0.43,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.52883,
+      "y": 0.49682,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.27403,
+      "y": 0.51509,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.6124,
+      "y": 0.62963,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.8546,
+      "y": 0.4981,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.13647,
+      "y": 0.64918,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 127.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.73363,
+      "y": 0.42723,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.53096,
+      "y": 0.49624,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.27518,
+      "y": 0.51772,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.61472,
+      "y": 0.6279,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.85426,
+      "y": 0.49361,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.13621,
+      "y": 0.65488,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 130.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.7343,
+      "y": 0.42412,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.53308,
+      "y": 0.4954,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.27644,
+      "y": 0.52016,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.61698,
+      "y": 0.62612,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.85379,
+      "y": 0.48892,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.13608,
+      "y": 0.66067,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 132.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.73486,
+      "y": 0.42068,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.53519,
+      "y": 0.49431,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.27779,
+      "y": 0.5224,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.61919,
+      "y": 0.62428,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.85318,
+      "y": 0.48403,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.13609,
+      "y": 0.66656,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 135.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.73531,
+      "y": 0.4169,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.53729,
+      "y": 0.49296,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.27925,
+      "y": 0.52446,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.62135,
+      "y": 0.62237,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.85241,
+      "y": 0.47893,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.13624,
+      "y": 0.67258,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 137.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.73563,
+      "y": 0.41279,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.53937,
+      "y": 0.49135,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.28083,
+      "y": 0.52634,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.62343,
+      "y": 0.6204,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.85146,
+      "y": 0.47362,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.13656,
+      "y": 0.67875,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 140.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.7358,
+      "y": 0.40834,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.54143,
+      "y": 0.48948,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.28254,
+      "y": 0.52804,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.62545,
+      "y": 0.61836,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.85029,
+      "y": 0.46808,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.13708,
+      "y": 0.68507,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 142.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.73579,
+      "y": 0.40355,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.54346,
+      "y": 0.48735,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.28441,
+      "y": 0.52956,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.62737,
+      "y": 0.61624,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.84887,
+      "y": 0.46233,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.13781,
+      "y": 0.69157,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 145.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.73557,
+      "y": 0.39844,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.54545,
+      "y": 0.48497,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.28645,
+      "y": 0.53092,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.62918,
+      "y": 0.61403,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.84717,
+      "y": 0.45636,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.1388,
+      "y": 0.69827,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 147.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.7351,
+      "y": 0.39301,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.54739,
+      "y": 0.48232,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.28868,
+      "y": 0.5321,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.63086,
+      "y": 0.61174,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.84512,
+      "y": 0.45017,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.1401,
+      "y": 0.70518,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 150.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.73433,
+      "y": 0.38727,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.54925,
+      "y": 0.47942,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.29113,
+      "y": 0.53312,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.63237,
+      "y": 0.60937,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.84267,
+      "y": 0.44378,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.14176,
+      "y": 0.71232,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 152.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.73323,
+      "y": 0.38122,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.55102,
+      "y": 0.47627,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.29383,
+      "y": 0.53398,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.63369,
+      "y": 0.60689,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.83977,
+      "y": 0.43719,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.14383,
+      "y": 0.71968,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 155.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.73173,
+      "y": 0.37491,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.55267,
+      "y": 0.47289,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.29681,
+      "y": 0.53468,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.63478,
+      "y": 0.60433,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.83634,
+      "y": 0.43042,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.1464,
+      "y": 0.72728,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 157.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.72978,
+      "y": 0.36834,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.55417,
+      "y": 0.46927,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.3001,
+      "y": 0.53522,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.63558,
+      "y": 0.60166,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.83231,
+      "y": 0.42349,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.14953,
+      "y": 0.73512,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 160.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.7273,
+      "y": 0.36155,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.55549,
+      "y": 0.46544,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.30373,
+      "y": 0.53562,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.63605,
+      "y": 0.59891,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.82761,
+      "y": 0.41642,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.15332,
+      "y": 0.74318,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 162.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.72425,
+      "y": 0.35457,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.55659,
+      "y": 0.46142,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.30774,
+      "y": 0.53586,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.63615,
+      "y": 0.59606,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.82217,
+      "y": 0.40925,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.15786,
+      "y": 0.75146,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 165.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.72054,
+      "y": 0.34745,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.55743,
+      "y": 0.45723,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.31216,
+      "y": 0.53597,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.6358,
+      "y": 0.59313,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.81589,
+      "y": 0.402,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.16325,
+      "y": 0.75993,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 167.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.71611,
+      "y": 0.34023,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.55796,
+      "y": 0.45289,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.31702,
+      "y": 0.53595,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.63497,
+      "y": 0.59013,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.80873,
+      "y": 0.39473,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.16958,
+      "y": 0.76857,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 170.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.7109,
+      "y": 0.33297,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.55815,
+      "y": 0.44845,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.32236,
+      "y": 0.5358,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.63358,
+      "y": 0.58707,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.8006,
+      "y": 0.38748,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.17697,
+      "y": 0.77732,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 172.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.70486,
+      "y": 0.32573,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.55795,
+      "y": 0.44394,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.32819,
+      "y": 0.53555,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.63159,
+      "y": 0.58397,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.79145,
+      "y": 0.3803,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.1855,
+      "y": 0.78614,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 175.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.69793,
+      "y": 0.31857,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.55732,
+      "y": 0.4394,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.33454,
+      "y": 0.53519,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.62895,
+      "y": 0.58084,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.78123,
+      "y": 0.37323,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.19527,
+      "y": 0.79497,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 177.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.69009,
+      "y": 0.31156,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.55623,
+      "y": 0.43488,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.3414,
+      "y": 0.53475,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.62562,
+      "y": 0.57771,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.76992,
+      "y": 0.36635,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.20635,
+      "y": 0.80373,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 180.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.6813,
+      "y": 0.30475,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.55463,
+      "y": 0.43042,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.3488,
+      "y": 0.53424,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.62156,
+      "y": 0.57461,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.75749,
+      "y": 0.35969,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.21881,
+      "y": 0.81237,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 182.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.67156,
+      "y": 0.29822,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.55252,
+      "y": 0.42608,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.35672,
+      "y": 0.53368,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.61675,
+      "y": 0.57157,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.74395,
+      "y": 0.35332,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.23269,
+      "y": 0.82078,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 185.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.66088,
+      "y": 0.29201,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.54986,
+      "y": 0.42189,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.36515,
+      "y": 0.53308,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.61119,
+      "y": 0.5686,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.72931,
+      "y": 0.34728,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.248,
+      "y": 0.82889,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 187.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.64927,
+      "y": 0.28619,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.54667,
+      "y": 0.41792,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.37406,
+      "y": 0.53247,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.60487,
+      "y": 0.56576,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.71361,
+      "y": 0.34163,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.26474,
+      "y": 0.83662,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 190.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.63677,
+      "y": 0.2808,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.54294,
+      "y": 0.4142,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.38343,
+      "y": 0.53187,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.59781,
+      "y": 0.56305,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.6969,
+      "y": 0.33639,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.28287,
+      "y": 0.84388,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 192.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.62343,
+      "y": 0.27588,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.53869,
+      "y": 0.41076,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.39321,
+      "y": 0.53129,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.59005,
+      "y": 0.56053,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.67924,
+      "y": 0.33161,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.30232,
+      "y": 0.8506,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 195.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.60932,
+      "y": 0.27146,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.53395,
+      "y": 0.40765,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.40338,
+      "y": 0.53075,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.58162,
+      "y": 0.5582,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.66072,
+      "y": 0.32731,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.32301,
+      "y": 0.8567,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 197.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.59452,
+      "y": 0.26758,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.52876,
+      "y": 0.40489,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.41388,
+      "y": 0.53026,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.57258,
+      "y": 0.5561,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.64142,
+      "y": 0.32351,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.34483,
+      "y": 0.86214,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 200.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.5791,
+      "y": 0.26424,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.52316,
+      "y": 0.40251,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.42467,
+      "y": 0.52984,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.563,
+      "y": 0.55425,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.62143,
+      "y": 0.32024,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.36765,
+      "y": 0.86687,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 202.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.56315,
+      "y": 0.26145,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.5172,
+      "y": 0.40052,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.43571,
+      "y": 0.5295,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.55294,
+      "y": 0.55267,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.60086,
+      "y": 0.31749,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.39132,
+      "y": 0.87084,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 205.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.54677,
+      "y": 0.25924,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.51096,
+      "y": 0.39894,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.44695,
+      "y": 0.52924,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.54247,
+      "y": 0.55138,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.57981,
+      "y": 0.31529,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.41569,
+      "y": 0.87403,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 207.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.53006,
+      "y": 0.25759,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.50448,
+      "y": 0.39777,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.45836,
+      "y": 0.52909,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.5317,
+      "y": 0.55038,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.55839,
+      "y": 0.31362,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.44061,
+      "y": 0.87641,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 210.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.51312,
+      "y": 0.25652,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.49785,
+      "y": 0.39702,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.46991,
+      "y": 0.52903,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.52069,
+      "y": 0.54969,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.53669,
+      "y": 0.31249,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.46591,
+      "y": 0.87799,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 212.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.49605,
+      "y": 0.25601,
+      "visible": false
+     },
+     {
+      "id": "nand",
+      "x": 0.49114,
+      "y": 0.3967,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.48155,
+      "y": 0.52908,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.50954,
+      "y": 0.54932,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.51483,
+      "y": 0.3119,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.49144,
+      "y": 0.87874,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 215.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.47894,
+      "y": 0.25607,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.48442,
+      "y": 0.3968,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.49326,
+      "y": 0.52923,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.49833,
+      "y": 0.54926,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.49291,
+      "y": 0.31186,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.51703,
+      "y": 0.87866,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 217.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.4619,
+      "y": 0.25671,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.47777,
+      "y": 0.39733,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.50501,
+      "y": 0.52948,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.48715,
+      "y": 0.54952,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.47103,
+      "y": 0.31235,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.54251,
+      "y": 0.87776,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 220.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.44504,
+      "y": 0.25791,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.47126,
+      "y": 0.39829,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.51676,
+      "y": 0.52984,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.4761,
+      "y": 0.55009,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.4493,
+      "y": 0.31339,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.56773,
+      "y": 0.87604,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 222.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.42844,
+      "y": 0.25968,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.46496,
+      "y": 0.39967,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.52848,
+      "y": 0.53029,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.46525,
+      "y": 0.55097,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.42783,
+      "y": 0.31497,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.59252,
+      "y": 0.87351,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 225.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.41222,
+      "y": 0.26203,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.45895,
+      "y": 0.40146,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.54013,
+      "y": 0.53083,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.4547,
+      "y": 0.55215,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.40671,
+      "y": 0.31709,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.61673,
+      "y": 0.87019,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 227.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.39647,
+      "y": 0.26494,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.4533,
+      "y": 0.40365,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.55167,
+      "y": 0.53145,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.44452,
+      "y": 0.55362,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.38606,
+      "y": 0.31974,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.6402,
+      "y": 0.8661,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 230.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.38129,
+      "y": 0.26841,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.44806,
+      "y": 0.40624,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.56305,
+      "y": 0.53214,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.4348,
+      "y": 0.55536,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.36597,
+      "y": 0.32292,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.66279,
+      "y": 0.86125,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 232.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.36677,
+      "y": 0.27244,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.44328,
+      "y": 0.4092,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.57423,
+      "y": 0.53288,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.42561,
+      "y": 0.55735,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.34655,
+      "y": 0.32663,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.68435,
+      "y": 0.85571,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 235.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.353,
+      "y": 0.27699,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.43902,
+      "y": 0.41251,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.58515,
+      "y": 0.53367,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.417,
+      "y": 0.55958,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.32788,
+      "y": 0.33084,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.70475,
+      "y": 0.8495,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 237.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.34004,
+      "y": 0.28205,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.43531,
+      "y": 0.41614,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.59576,
+      "y": 0.53448,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.40904,
+      "y": 0.56201,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.31007,
+      "y": 0.33553,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.7239,
+      "y": 0.8427,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 240.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.32797,
+      "y": 0.28759,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.43217,
+      "y": 0.42005,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.60601,
+      "y": 0.5353,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.40177,
+      "y": 0.56463,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.29319,
+      "y": 0.34069,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.74171,
+      "y": 0.83537,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 242.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.31683,
+      "y": 0.29357,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.42962,
+      "y": 0.42421,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.61586,
+      "y": 0.53611,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.39521,
+      "y": 0.56739,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.2773,
+      "y": 0.34626,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.75811,
+      "y": 0.82758,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 245.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.30667,
+      "y": 0.29993,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.42766,
+      "y": 0.42858,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.62527,
+      "y": 0.53688,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.3894,
+      "y": 0.57027,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.26246,
+      "y": 0.35222,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.77308,
+      "y": 0.81941,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 247.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.2975,
+      "y": 0.30662,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.42627,
+      "y": 0.4331,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.63419,
+      "y": 0.53761,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.38434,
+      "y": 0.57325,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.2487,
+      "y": 0.35852,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.78661,
+      "y": 0.81095,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 250.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.28933,
+      "y": 0.31359,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.42545,
+      "y": 0.43773,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.64261,
+      "y": 0.53826,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.38001,
+      "y": 0.57628,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.23605,
+      "y": 0.36511,
+      "visible": false
+     },
+     {
+      "id": "connector",
+      "x": 0.79871,
+      "y": 0.80228,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 252.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.28214,
+      "y": 0.32077,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.42516,
+      "y": 0.44241,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65051,
+      "y": 0.53883,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.3764,
+      "y": 0.57935,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.2245,
+      "y": 0.37193,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.80945,
+      "y": 0.79348,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 255.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.2759,
+      "y": 0.32809,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.42536,
+      "y": 0.44711,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65789,
+      "y": 0.5393,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.37348,
+      "y": 0.58242,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.21405,
+      "y": 0.37894,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.81886,
+      "y": 0.78463,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 257.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.27059,
+      "y": 0.3355,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.42601,
+      "y": 0.45177,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.66474,
+      "y": 0.53966,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.37121,
+      "y": 0.58548,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.20465,
+      "y": 0.38607,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.82705,
+      "y": 0.77579,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 260.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.26614,
+      "y": 0.34292,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.42707,
+      "y": 0.45635,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.67108,
+      "y": 0.53989,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.36954,
+      "y": 0.5885,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.19628,
+      "y": 0.39328,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.83409,
+      "y": 0.76702,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 262.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.2625,
+      "y": 0.3503,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.42848,
+      "y": 0.46082,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.67693,
+      "y": 0.53998,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.36842,
+      "y": 0.59146,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.18886,
+      "y": 0.4005,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.8401,
+      "y": 0.75838,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 265.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.25959,
+      "y": 0.35758,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.4302,
+      "y": 0.46514,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.68231,
+      "y": 0.53993,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.3678,
+      "y": 0.59436,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.18234,
+      "y": 0.40771,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.84516,
+      "y": 0.7499,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 267.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.25736,
+      "y": 0.36472,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.43218,
+      "y": 0.46928,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.68726,
+      "y": 0.53973,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.36762,
+      "y": 0.59717,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.17665,
+      "y": 0.41485,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.84938,
+      "y": 0.74162,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 270.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.25572,
+      "y": 0.37167,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.43438,
+      "y": 0.47322,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.69179,
+      "y": 0.53937,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.36782,
+      "y": 0.59991,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.17171,
+      "y": 0.42189,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.85286,
+      "y": 0.73356,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 272.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.25462,
+      "y": 0.37839,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.43675,
+      "y": 0.47693,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.69595,
+      "y": 0.53885,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.36835,
+      "y": 0.60255,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.16744,
+      "y": 0.4288,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.8557,
+      "y": 0.72572,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 275.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.25398,
+      "y": 0.38485,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.43926,
+      "y": 0.48041,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.69977,
+      "y": 0.53817,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.36918,
+      "y": 0.6051,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.16377,
+      "y": 0.43555,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.85798,
+      "y": 0.71813,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 277.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.25374,
+      "y": 0.39104,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.44189,
+      "y": 0.48364,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.70328,
+      "y": 0.53733,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.37024,
+      "y": 0.60755,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.16063,
+      "y": 0.44212,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.85978,
+      "y": 0.71077,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 280.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.25384,
+      "y": 0.39691,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.4446,
+      "y": 0.48662,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.70651,
+      "y": 0.53631,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.3715,
+      "y": 0.60992,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.15796,
+      "y": 0.4485,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.86116,
+      "y": 0.70365,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 282.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.25424,
+      "y": 0.40248,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.44737,
+      "y": 0.48934,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.70949,
+      "y": 0.53513,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.37293,
+      "y": 0.6122,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.15568,
+      "y": 0.45467,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.8622,
+      "y": 0.69675,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 285.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.25489,
+      "y": 0.40771,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.45018,
+      "y": 0.49179,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.71225,
+      "y": 0.53377,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.3745,
+      "y": 0.61439,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.15375,
+      "y": 0.46063,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.86294,
+      "y": 0.69006,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 287.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.25575,
+      "y": 0.41261,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.45302,
+      "y": 0.49398,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.71482,
+      "y": 0.53224,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.37618,
+      "y": 0.6165,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.15211,
+      "y": 0.46637,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.86343,
+      "y": 0.68358,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 290.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.2568,
+      "y": 0.41718,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.45588,
+      "y": 0.4959,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.71722,
+      "y": 0.53053,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.37796,
+      "y": 0.61853,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.15073,
+      "y": 0.47189,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.8637,
+      "y": 0.67727,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 292.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.25799,
+      "y": 0.4214,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.45875,
+      "y": 0.49756,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.71946,
+      "y": 0.52864,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.37981,
+      "y": 0.6205,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.14956,
+      "y": 0.4772,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.86379,
+      "y": 0.67112,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 295.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.25932,
+      "y": 0.42528,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.46164,
+      "y": 0.49895,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.72156,
+      "y": 0.52656,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.38173,
+      "y": 0.6224,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.14857,
+      "y": 0.48229,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.86372,
+      "y": 0.66512,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 297.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.26077,
+      "y": 0.42882,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.46453,
+      "y": 0.50008,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.72354,
+      "y": 0.5243,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.38371,
+      "y": 0.62423,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.14774,
+      "y": 0.48717,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.86351,
+      "y": 0.65925,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 300.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.26233,
+      "y": 0.43201,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.46742,
+      "y": 0.50095,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.72541,
+      "y": 0.52184,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.38575,
+      "y": 0.62601,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.14705,
+      "y": 0.49185,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.86317,
+      "y": 0.65349,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 302.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.26399,
+      "y": 0.43487,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.47033,
+      "y": 0.50157,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.72717,
+      "y": 0.51919,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.38783,
+      "y": 0.62773,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.1465,
+      "y": 0.49633,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.8627,
+      "y": 0.64781,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 305.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.26575,
+      "y": 0.4374,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.47325,
+      "y": 0.50192,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.72884,
+      "y": 0.51634,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.38996,
+      "y": 0.62941,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.14606,
+      "y": 0.50062,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.86212,
+      "y": 0.64221,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 307.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.26762,
+      "y": 0.43958,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.47619,
+      "y": 0.50201,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.7304,
+      "y": 0.51328,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.39215,
+      "y": 0.63104,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.14574,
+      "y": 0.50473,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.86141,
+      "y": 0.63666,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 310.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.26959,
+      "y": 0.44144,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.47914,
+      "y": 0.50185,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.73187,
+      "y": 0.51002,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.39439,
+      "y": 0.63263,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.14554,
+      "y": 0.50866,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.86056,
+      "y": 0.63115,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 312.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.27168,
+      "y": 0.44296,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.48212,
+      "y": 0.50142,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.73323,
+      "y": 0.50653,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.39669,
+      "y": 0.63419,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.14546,
+      "y": 0.51242,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.85957,
+      "y": 0.62567,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 315.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.2739,
+      "y": 0.44415,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.48512,
+      "y": 0.50074,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.73447,
+      "y": 0.50283,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.39906,
+      "y": 0.63571,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.14552,
+      "y": 0.51602,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.85842,
+      "y": 0.6202,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 317.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.27626,
+      "y": 0.445,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.48815,
+      "y": 0.4998,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.73558,
+      "y": 0.49891,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.40149,
+      "y": 0.6372,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.14574,
+      "y": 0.51946,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.85708,
+      "y": 0.61473,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 320.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.27878,
+      "y": 0.44553,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.4912,
+      "y": 0.4986,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.73655,
+      "y": 0.49476,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.404,
+      "y": 0.63866,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.14613,
+      "y": 0.52276,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.85552,
+      "y": 0.60924,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 322.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.28147,
+      "y": 0.44572,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.49429,
+      "y": 0.49713,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.73734,
+      "y": 0.49038,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.4066,
+      "y": 0.6401,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.14673,
+      "y": 0.52592,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.85371,
+      "y": 0.60372,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 325.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.28438,
+      "y": 0.44558,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.4974,
+      "y": 0.49541,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.73792,
+      "y": 0.48578,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.40928,
+      "y": 0.64151,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.14757,
+      "y": 0.52895,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.8516,
+      "y": 0.59817,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 327.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.28751,
+      "y": 0.44511,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.50052,
+      "y": 0.49342,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.73826,
+      "y": 0.48095,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.41205,
+      "y": 0.64289,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.14869,
+      "y": 0.53185,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.84915,
+      "y": 0.59258,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 330.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.29089,
+      "y": 0.44432,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.50366,
+      "y": 0.49118,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.73831,
+      "y": 0.47589,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.41493,
+      "y": 0.64425,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.15016,
+      "y": 0.53464,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.84629,
+      "y": 0.58695,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 332.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.29457,
+      "y": 0.4432,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.50679,
+      "y": 0.48869,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.73804,
+      "y": 0.47063,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.4179,
+      "y": 0.64557,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.15201,
+      "y": 0.53731,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.84296,
+      "y": 0.58126,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 335.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.29858,
+      "y": 0.44177,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.50991,
+      "y": 0.48594,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.73737,
+      "y": 0.46516,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.42099,
+      "y": 0.64686,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.15433,
+      "y": 0.53987,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.8391,
+      "y": 0.57554,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 337.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.30294,
+      "y": 0.44002,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.51299,
+      "y": 0.48296,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.73625,
+      "y": 0.4595,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.42417,
+      "y": 0.64811,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.15718,
+      "y": 0.54233,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.83464,
+      "y": 0.56976,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 340.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.3077,
+      "y": 0.43798,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.51601,
+      "y": 0.47976,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.73462,
+      "y": 0.45368,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.42746,
+      "y": 0.64932,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.16065,
+      "y": 0.54469,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.82951,
+      "y": 0.56396,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 342.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.31288,
+      "y": 0.43566,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.51894,
+      "y": 0.47634,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.73241,
+      "y": 0.44771,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.43085,
+      "y": 0.65047,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.16483,
+      "y": 0.54696,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.82362,
+      "y": 0.55813,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 345.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.31854,
+      "y": 0.43307,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.52175,
+      "y": 0.47274,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.72954,
+      "y": 0.44163,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.43432,
+      "y": 0.65156,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.16981,
+      "y": 0.54913,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.8169,
+      "y": 0.55229,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 347.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.32468,
+      "y": 0.43024,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.5244,
+      "y": 0.46896,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.72596,
+      "y": 0.43547,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.43787,
+      "y": 0.65259,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.17569,
+      "y": 0.55121,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.80929,
+      "y": 0.54647,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 350.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.33135,
+      "y": 0.4272,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.52685,
+      "y": 0.46506,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.7216,
+      "y": 0.42927,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.44149,
+      "y": 0.65355,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.18257,
+      "y": 0.55319,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.80071,
+      "y": 0.54069,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 352.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.33856,
+      "y": 0.42399,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.52907,
+      "y": 0.46105,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.71639,
+      "y": 0.42308,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.44515,
+      "y": 0.65442,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.19054,
+      "y": 0.55509,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.79112,
+      "y": 0.53498,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 355.0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.34633,
+      "y": 0.42064,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53102,
+      "y": 0.45698,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.71029,
+      "y": 0.41694,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.44883,
+      "y": 0.65521,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.19969,
+      "y": 0.5569,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.78047,
+      "y": 0.52937,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 357.5,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.35466,
+      "y": 0.41719,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53265,
+      "y": 0.45289,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.70326,
+      "y": 0.41091,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.45252,
+      "y": 0.6559,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.21009,
+      "y": 0.55862,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.76873,
+      "y": 0.52389,
+      "visible": true
+     }
+    ]
+   }
+  ]
+ },
+ "explode": {
+  "count": 72,
+  "path": "explode/{000-071}.webp",
+  "easing": {
+   "explode": "cubic in-out of u",
+   "dolly": "expo in-out of u"
+  },
+  "frames": [
+   {
+    "u": 0,
+    "explode": 0,
+    "dolly": 0,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.36354,
+      "y": 0.4137,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53392,
+      "y": 0.44882,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.69526,
+      "y": 0.40504,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.45618,
+      "y": 0.6565,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.22181,
+      "y": 0.56024,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.75588,
+      "y": 0.51859,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.01408,
+    "explode": 1e-05,
+    "dolly": 0.00059,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.36362,
+      "y": 0.41393,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53392,
+      "y": 0.449,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.69521,
+      "y": 0.40519,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.45621,
+      "y": 0.65661,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.22196,
+      "y": 0.56045,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.75581,
+      "y": 0.51868,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.02817,
+    "explode": 9e-05,
+    "dolly": 0.00072,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.36367,
+      "y": 0.4139,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53391,
+      "y": 0.44904,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.69519,
+      "y": 0.40522,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.45621,
+      "y": 0.65664,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.22198,
+      "y": 0.5605,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.75579,
+      "y": 0.5187,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.04225,
+    "explode": 0.0003,
+    "dolly": 0.00088,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.36379,
+      "y": 0.41373,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53388,
+      "y": 0.44908,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.69515,
+      "y": 0.40526,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.45618,
+      "y": 0.65666,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.22198,
+      "y": 0.56054,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.75574,
+      "y": 0.51872,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.05634,
+    "explode": 0.00072,
+    "dolly": 0.00107,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.36399,
+      "y": 0.41336,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53382,
+      "y": 0.44913,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.69507,
+      "y": 0.4053,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.45613,
+      "y": 0.65668,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.22196,
+      "y": 0.5606,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.75567,
+      "y": 0.51874,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.07042,
+    "explode": 0.0014,
+    "dolly": 0.0013,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.36432,
+      "y": 0.41271,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53372,
+      "y": 0.44918,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.69496,
+      "y": 0.40534,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.45604,
+      "y": 0.6567,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.22191,
+      "y": 0.56065,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.75556,
+      "y": 0.51876,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.08451,
+    "explode": 0.00241,
+    "dolly": 0.00158,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.36481,
+      "y": 0.41172,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53357,
+      "y": 0.44925,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.6948,
+      "y": 0.40539,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.45591,
+      "y": 0.65671,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.22182,
+      "y": 0.56071,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.75539,
+      "y": 0.51878,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.09859,
+    "explode": 0.00383,
+    "dolly": 0.00192,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.36548,
+      "y": 0.4103,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53337,
+      "y": 0.44932,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.69458,
+      "y": 0.40545,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.45571,
+      "y": 0.65673,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.22167,
+      "y": 0.56078,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.75518,
+      "y": 0.5188,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.11268,
+    "explode": 0.00572,
+    "dolly": 0.00233,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.36637,
+      "y": 0.40841,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53313,
+      "y": 0.4494,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.69429,
+      "y": 0.40552,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.45546,
+      "y": 0.65674,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.22147,
+      "y": 0.56086,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.75489,
+      "y": 0.51882,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.12676,
+    "explode": 0.00815,
+    "dolly": 0.00283,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.3675,
+      "y": 0.40596,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53286,
+      "y": 0.44951,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.69392,
+      "y": 0.4056,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.45512,
+      "y": 0.65674,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.22121,
+      "y": 0.56095,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.75452,
+      "y": 0.51884,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.14085,
+    "explode": 0.01118,
+    "dolly": 0.00344,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.36892,
+      "y": 0.4029,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53258,
+      "y": 0.44965,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.69347,
+      "y": 0.40569,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.45471,
+      "y": 0.65675,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.22087,
+      "y": 0.56105,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.75407,
+      "y": 0.51887,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.15493,
+    "explode": 0.01488,
+    "dolly": 0.00418,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.37065,
+      "y": 0.39915,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53229,
+      "y": 0.44983,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.69294,
+      "y": 0.40582,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.4542,
+      "y": 0.65675,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.22046,
+      "y": 0.56118,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.75352,
+      "y": 0.51889,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.16901,
+    "explode": 0.01931,
+    "dolly": 0.00508,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.37273,
+      "y": 0.39466,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53202,
+      "y": 0.45006,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.69236,
+      "y": 0.40597,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.45359,
+      "y": 0.65676,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.21998,
+      "y": 0.56134,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.75285,
+      "y": 0.51893,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.1831,
+    "explode": 0.02455,
+    "dolly": 0.00618,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.37519,
+      "y": 0.38937,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53176,
+      "y": 0.45035,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.69172,
+      "y": 0.40617,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.45288,
+      "y": 0.65678,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.21941,
+      "y": 0.56153,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.75207,
+      "y": 0.51898,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.19718,
+    "explode": 0.03067,
+    "dolly": 0.00751,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.37806,
+      "y": 0.38322,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53153,
+      "y": 0.45072,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.69103,
+      "y": 0.40642,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.45205,
+      "y": 0.65681,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.21877,
+      "y": 0.56178,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.75114,
+      "y": 0.51905,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.21127,
+    "explode": 0.03772,
+    "dolly": 0.00913,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.3814,
+      "y": 0.37616,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53136,
+      "y": 0.45118,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.6903,
+      "y": 0.40674,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.4511,
+      "y": 0.65686,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.21805,
+      "y": 0.56209,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.75007,
+      "y": 0.51913,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.22535,
+    "explode": 0.04578,
+    "dolly": 0.0111,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.38522,
+      "y": 0.36814,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53123,
+      "y": 0.45176,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.68954,
+      "y": 0.40714,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.45003,
+      "y": 0.65693,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.21726,
+      "y": 0.56248,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.74884,
+      "y": 0.51925,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.23944,
+    "explode": 0.05491,
+    "dolly": 0.0135,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.38957,
+      "y": 0.35912,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53118,
+      "y": 0.45248,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.68875,
+      "y": 0.40766,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.44883,
+      "y": 0.65705,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.21641,
+      "y": 0.56298,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.74743,
+      "y": 0.5194,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.25352,
+    "explode": 0.06518,
+    "dolly": 0.01641,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.3945,
+      "y": 0.34908,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53121,
+      "y": 0.45336,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.68794,
+      "y": 0.4083,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.4475,
+      "y": 0.65722,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.21551,
+      "y": 0.56362,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.74582,
+      "y": 0.51961,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.26761,
+    "explode": 0.07666,
+    "dolly": 0.01994,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.40003,
+      "y": 0.33799,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53133,
+      "y": 0.45444,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.6871,
+      "y": 0.40909,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.44604,
+      "y": 0.65746,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.21459,
+      "y": 0.56442,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.744,
+      "y": 0.51988,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.28169,
+    "explode": 0.08941,
+    "dolly": 0.02424,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.40621,
+      "y": 0.32587,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53156,
+      "y": 0.45577,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.68625,
+      "y": 0.41008,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.44444,
+      "y": 0.6578,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.21366,
+      "y": 0.56544,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.74196,
+      "y": 0.52024,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.29577,
+    "explode": 0.1035,
+    "dolly": 0.02947,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.41308,
+      "y": 0.31273,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.5319,
+      "y": 0.45738,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.68537,
+      "y": 0.41129,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.44272,
+      "y": 0.65825,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.21277,
+      "y": 0.56671,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.73965,
+      "y": 0.52069,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.30986,
+    "explode": 0.119,
+    "dolly": 0.03583,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.42067,
+      "y": 0.29862,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53236,
+      "y": 0.45934,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.68446,
+      "y": 0.41278,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.44089,
+      "y": 0.65885,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.21195,
+      "y": 0.56829,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.73708,
+      "y": 0.52128,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.32394,
+    "explode": 0.13598,
+    "dolly": 0.04355,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.42903,
+      "y": 0.28362,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53297,
+      "y": 0.4617,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.68352,
+      "y": 0.4146,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.43895,
+      "y": 0.65963,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.21126,
+      "y": 0.57025,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.73421,
+      "y": 0.52203,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.33803,
+    "explode": 0.1545,
+    "dolly": 0.05294,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.43817,
+      "y": 0.26786,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53372,
+      "y": 0.46455,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.68253,
+      "y": 0.41681,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.43692,
+      "y": 0.66064,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.21075,
+      "y": 0.57268,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.73101,
+      "y": 0.52297,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.35211,
+    "explode": 0.17462,
+    "dolly": 0.06436,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.44814,
+      "y": 0.25152,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53462,
+      "y": 0.46798,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.68148,
+      "y": 0.41949,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.43483,
+      "y": 0.66193,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.21051,
+      "y": 0.57565,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.72745,
+      "y": 0.52415,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.3662,
+    "explode": 0.19643,
+    "dolly": 0.07823,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.45893,
+      "y": 0.23483,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53568,
+      "y": 0.47208,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.68036,
+      "y": 0.42272,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.4327,
+      "y": 0.66355,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.21063,
+      "y": 0.57928,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.72351,
+      "y": 0.52562,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.38028,
+    "explode": 0.21998,
+    "dolly": 0.0951,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.47055,
+      "y": 0.21811,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.5369,
+      "y": 0.47697,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.67914,
+      "y": 0.42661,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.43058,
+      "y": 0.66558,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.2112,
+      "y": 0.58367,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.71916,
+      "y": 0.52743,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.39437,
+    "explode": 0.24533,
+    "dolly": 0.11561,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.48297,
+      "y": 0.20177,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53828,
+      "y": 0.48278,
+      "visible": false
+     },
+     {
+      "id": "controller",
+      "x": 0.67778,
+      "y": 0.43126,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.42851,
+      "y": 0.66807,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.21235,
+      "y": 0.58895,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.71435,
+      "y": 0.52966,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.40845,
+    "explode": 0.27257,
+    "dolly": 0.14054,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.49614,
+      "y": 0.18631,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.53981,
+      "y": 0.48965,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.67626,
+      "y": 0.43679,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.42654,
+      "y": 0.67112,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.21422,
+      "y": 0.59525,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.70907,
+      "y": 0.53236,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.42254,
+    "explode": 0.30175,
+    "dolly": 0.17084,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.50905,
+      "y": 0.17397,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.54149,
+      "y": 0.49773,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.67453,
+      "y": 0.44335,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.42475,
+      "y": 0.67481,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.21695,
+      "y": 0.6027,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.70327,
+      "y": 0.53562,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.43662,
+    "explode": 0.33294,
+    "dolly": 0.20767,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.52022,
+      "y": 0.16782,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.5433,
+      "y": 0.50716,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.67255,
+      "y": 0.45106,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.42321,
+      "y": 0.67921,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.22069,
+      "y": 0.61144,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.69693,
+      "y": 0.53952,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.4507,
+    "explode": 0.36621,
+    "dolly": 0.25245,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.5296,
+      "y": 0.16834,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.54522,
+      "y": 0.51809,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.67026,
+      "y": 0.46008,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.422,
+      "y": 0.68442,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.2256,
+      "y": 0.62158,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.69004,
+      "y": 0.54415,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.46479,
+    "explode": 0.40163,
+    "dolly": 0.30689,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.5372,
+      "y": 0.1759,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.5472,
+      "y": 0.53066,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.66761,
+      "y": 0.47054,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.42123,
+      "y": 0.69049,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.23183,
+      "y": 0.63321,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.68257,
+      "y": 0.5496,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.47887,
+    "explode": 0.43926,
+    "dolly": 0.37306,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.54304,
+      "y": 0.19075,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.54922,
+      "y": 0.54496,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.66455,
+      "y": 0.48255,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.42097,
+      "y": 0.69749,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.23949,
+      "y": 0.64638,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.67455,
+      "y": 0.55593,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.49296,
+    "explode": 0.47917,
+    "dolly": 0.45349,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.5472,
+      "y": 0.21293,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.5512,
+      "y": 0.56104,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.66101,
+      "y": 0.49621,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.42134,
+      "y": 0.70543,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.24869,
+      "y": 0.66107,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.66598,
+      "y": 0.56319,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.50704,
+    "explode": 0.52083,
+    "dolly": 0.54651,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.54991,
+      "y": 0.24016,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55256,
+      "y": 0.57793,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65728,
+      "y": 0.51086,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.4222,
+      "y": 0.71384,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.2588,
+      "y": 0.67642,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.6572,
+      "y": 0.57101,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.52113,
+    "explode": 0.56074,
+    "dolly": 0.62694,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.55196,
+      "y": 0.26094,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55364,
+      "y": 0.59139,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65501,
+      "y": 0.52281,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.4225,
+      "y": 0.72027,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.26631,
+      "y": 0.68819,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.64978,
+      "y": 0.57714,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.53521,
+    "explode": 0.59837,
+    "dolly": 0.69311,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.55358,
+      "y": 0.27572,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55458,
+      "y": 0.60178,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65413,
+      "y": 0.5323,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.42226,
+      "y": 0.72495,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.27153,
+      "y": 0.69687,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.6436,
+      "y": 0.58173,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.5493,
+    "explode": 0.63379,
+    "dolly": 0.74755,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.55486,
+      "y": 0.28625,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.5554,
+      "y": 0.6099,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.6538,
+      "y": 0.53986,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.42165,
+      "y": 0.72839,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.27512,
+      "y": 0.70334,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.63837,
+      "y": 0.58518,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.56338,
+    "explode": 0.66706,
+    "dolly": 0.79233,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.55583,
+      "y": 0.29373,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55611,
+      "y": 0.61632,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65375,
+      "y": 0.54591,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.42079,
+      "y": 0.73091,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.27752,
+      "y": 0.70821,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.63388,
+      "y": 0.58778,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "u": 0.57746,
+    "explode": 0.69825,
+    "dolly": 0.82916,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.55655,
+      "y": 0.29899,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55672,
+      "y": 0.62143,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65388,
+      "y": 0.55079,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.41976,
+      "y": 0.73275,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.27905,
+      "y": 0.71187,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.62997,
+      "y": 0.58974,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.59155,
+    "explode": 0.72743,
+    "dolly": 0.85946,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.55704,
+      "y": 0.30264,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55723,
+      "y": 0.62553,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65415,
+      "y": 0.55476,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.41862,
+      "y": 0.73408,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.27993,
+      "y": 0.71464,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.62656,
+      "y": 0.5912,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.60563,
+    "explode": 0.75467,
+    "dolly": 0.88439,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.55732,
+      "y": 0.30512,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55766,
+      "y": 0.62883,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65449,
+      "y": 0.55801,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.41741,
+      "y": 0.73503,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.28033,
+      "y": 0.71672,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.62354,
+      "y": 0.5923,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.61972,
+    "explode": 0.78002,
+    "dolly": 0.9049,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.55741,
+      "y": 0.30677,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.558,
+      "y": 0.6315,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65488,
+      "y": 0.56066,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.41618,
+      "y": 0.73568,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.28038,
+      "y": 0.71827,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.62086,
+      "y": 0.5931,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.6338,
+    "explode": 0.80357,
+    "dolly": 0.92177,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.55733,
+      "y": 0.30782,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55826,
+      "y": 0.63365,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65529,
+      "y": 0.56285,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.41495,
+      "y": 0.73611,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.28017,
+      "y": 0.71942,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.61848,
+      "y": 0.59368,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.64789,
+    "explode": 0.82538,
+    "dolly": 0.93564,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.55711,
+      "y": 0.30847,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55845,
+      "y": 0.63539,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.6557,
+      "y": 0.56466,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.41374,
+      "y": 0.73638,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.27978,
+      "y": 0.72026,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.61634,
+      "y": 0.59409,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.66197,
+    "explode": 0.8455,
+    "dolly": 0.94706,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.55675,
+      "y": 0.30887,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55856,
+      "y": 0.6368,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65609,
+      "y": 0.56615,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.41257,
+      "y": 0.73652,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.27926,
+      "y": 0.72086,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.61443,
+      "y": 0.59436,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.67606,
+    "explode": 0.86402,
+    "dolly": 0.95645,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.55628,
+      "y": 0.3091,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55861,
+      "y": 0.63793,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65645,
+      "y": 0.56738,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.41144,
+      "y": 0.73656,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.27866,
+      "y": 0.72127,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.61272,
+      "y": 0.59454,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.69014,
+    "explode": 0.881,
+    "dolly": 0.96417,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.55571,
+      "y": 0.30925,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.5586,
+      "y": 0.63884,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65678,
+      "y": 0.56839,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.41038,
+      "y": 0.73654,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.27802,
+      "y": 0.72154,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.61118,
+      "y": 0.59464,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.70423,
+    "explode": 0.8965,
+    "dolly": 0.97053,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.55506,
+      "y": 0.30937,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55854,
+      "y": 0.63956,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65706,
+      "y": 0.56923,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.40937,
+      "y": 0.73647,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.27735,
+      "y": 0.72171,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.6098,
+      "y": 0.59468,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.71831,
+    "explode": 0.91059,
+    "dolly": 0.97576,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.55434,
+      "y": 0.30951,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55842,
+      "y": 0.64014,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.6573,
+      "y": 0.56992,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.40844,
+      "y": 0.73637,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.27669,
+      "y": 0.72179,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.60856,
+      "y": 0.59468,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.73239,
+    "explode": 0.92334,
+    "dolly": 0.98006,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.55359,
+      "y": 0.30967,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55826,
+      "y": 0.64058,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.6575,
+      "y": 0.57049,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.40757,
+      "y": 0.73625,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.27604,
+      "y": 0.72182,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.60746,
+      "y": 0.59465,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.74648,
+    "explode": 0.93482,
+    "dolly": 0.98359,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.5528,
+      "y": 0.30988,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55807,
+      "y": 0.64093,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65765,
+      "y": 0.57095,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.40678,
+      "y": 0.73611,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.27543,
+      "y": 0.72181,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.60648,
+      "y": 0.5946,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.76056,
+    "explode": 0.94509,
+    "dolly": 0.9865,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.55201,
+      "y": 0.31012,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55784,
+      "y": 0.64119,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65776,
+      "y": 0.57132,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.40606,
+      "y": 0.73598,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.27485,
+      "y": 0.72177,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.60562,
+      "y": 0.59455,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.77465,
+    "explode": 0.95422,
+    "dolly": 0.9889,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.55123,
+      "y": 0.3104,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55759,
+      "y": 0.64138,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65783,
+      "y": 0.57162,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.40541,
+      "y": 0.73584,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.27431,
+      "y": 0.72172,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.60485,
+      "y": 0.59448,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.78873,
+    "explode": 0.96228,
+    "dolly": 0.99087,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.55048,
+      "y": 0.3107,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55731,
+      "y": 0.64152,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65785,
+      "y": 0.57186,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.40483,
+      "y": 0.73571,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.27382,
+      "y": 0.72165,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.60418,
+      "y": 0.59441,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.80282,
+    "explode": 0.96933,
+    "dolly": 0.99249,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.54978,
+      "y": 0.311,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55703,
+      "y": 0.64161,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65784,
+      "y": 0.57205,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.40432,
+      "y": 0.73559,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.27338,
+      "y": 0.72158,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.60359,
+      "y": 0.59435,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.8169,
+    "explode": 0.97545,
+    "dolly": 0.99382,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.54914,
+      "y": 0.31128,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55674,
+      "y": 0.64167,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65781,
+      "y": 0.57219,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.40388,
+      "y": 0.73549,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.27299,
+      "y": 0.72151,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.60309,
+      "y": 0.59429,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.83099,
+    "explode": 0.98069,
+    "dolly": 0.99492,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.54859,
+      "y": 0.31152,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55646,
+      "y": 0.6417,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65774,
+      "y": 0.5723,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.40349,
+      "y": 0.73539,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.27266,
+      "y": 0.72145,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.60266,
+      "y": 0.59423,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.84507,
+    "explode": 0.98512,
+    "dolly": 0.99582,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.54813,
+      "y": 0.31171,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55618,
+      "y": 0.64171,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65765,
+      "y": 0.57238,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.40317,
+      "y": 0.73531,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.27237,
+      "y": 0.72139,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.6023,
+      "y": 0.59418,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.85915,
+    "explode": 0.98882,
+    "dolly": 0.99656,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.54774,
+      "y": 0.31186,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55591,
+      "y": 0.64171,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65755,
+      "y": 0.57244,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.40289,
+      "y": 0.73524,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.27213,
+      "y": 0.72134,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.60199,
+      "y": 0.59414,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.87324,
+    "explode": 0.99185,
+    "dolly": 0.99717,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.54742,
+      "y": 0.31199,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55568,
+      "y": 0.6417,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65744,
+      "y": 0.57247,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.40267,
+      "y": 0.73518,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.27193,
+      "y": 0.7213,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.60175,
+      "y": 0.59411,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.88732,
+    "explode": 0.99428,
+    "dolly": 0.99767,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.54717,
+      "y": 0.3121,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55547,
+      "y": 0.64169,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65733,
+      "y": 0.5725,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.40249,
+      "y": 0.73514,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.27177,
+      "y": 0.72127,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.60155,
+      "y": 0.59408,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.90141,
+    "explode": 0.99617,
+    "dolly": 0.99808,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.54697,
+      "y": 0.31219,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55529,
+      "y": 0.64168,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65721,
+      "y": 0.57251,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.40236,
+      "y": 0.7351,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.27165,
+      "y": 0.72125,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.60139,
+      "y": 0.59406,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.91549,
+    "explode": 0.99759,
+    "dolly": 0.99842,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.54682,
+      "y": 0.31227,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55516,
+      "y": 0.64167,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65711,
+      "y": 0.57252,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.40225,
+      "y": 0.73508,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.27157,
+      "y": 0.72124,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.60128,
+      "y": 0.59405,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.92958,
+    "explode": 0.9986,
+    "dolly": 0.9987,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.54672,
+      "y": 0.31233,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55507,
+      "y": 0.64168,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65702,
+      "y": 0.57253,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.40218,
+      "y": 0.73507,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.27151,
+      "y": 0.72124,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.60119,
+      "y": 0.59404,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.94366,
+    "explode": 0.99928,
+    "dolly": 0.99893,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.54664,
+      "y": 0.31239,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55501,
+      "y": 0.64168,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65695,
+      "y": 0.57253,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.40214,
+      "y": 0.73506,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.27148,
+      "y": 0.72124,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.60113,
+      "y": 0.59404,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.95775,
+    "explode": 0.9997,
+    "dolly": 0.99912,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.5466,
+      "y": 0.31244,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55497,
+      "y": 0.64169,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65691,
+      "y": 0.57254,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.40211,
+      "y": 0.73506,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.27146,
+      "y": 0.72124,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.6011,
+      "y": 0.59404,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.97183,
+    "explode": 0.99991,
+    "dolly": 0.99928,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.54658,
+      "y": 0.31249,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55495,
+      "y": 0.6417,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65688,
+      "y": 0.57255,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.4021,
+      "y": 0.73506,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.27146,
+      "y": 0.72125,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.60108,
+      "y": 0.59405,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.98592,
+    "explode": 0.99999,
+    "dolly": 0.99941,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.54657,
+      "y": 0.31253,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55494,
+      "y": 0.64171,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65687,
+      "y": 0.57256,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.40211,
+      "y": 0.73507,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.27147,
+      "y": 0.72126,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.60107,
+      "y": 0.59406,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 1,
+    "explode": 1,
+    "dolly": 1,
+    "anchors": [
+     {
+      "id": "label",
+      "x": 0.54657,
+      "y": 0.31272,
+      "visible": true
+     },
+     {
+      "id": "nand",
+      "x": 0.55493,
+      "y": 0.64178,
+      "visible": true
+     },
+     {
+      "id": "controller",
+      "x": 0.65684,
+      "y": 0.57263,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.40214,
+      "y": 0.73511,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.27154,
+      "y": 0.72133,
+      "visible": true
+     },
+     {
+      "id": "connector",
+      "x": 0.60106,
+      "y": 0.59409,
+      "visible": true
+     }
+    ]
+   }
+  ]
+ },
+ "parts": [
+  {
+   "id": "label",
+   "name": "Heat-Spreader Label",
+   "description": "The printed sticker on top of the chips. Its foil backing spreads heat from the flash and controller across the drive.",
+   "color": "#ffc64a",
+   "side": "l",
+   "label": {
+    "x": 0.28,
+    "y": 0.16
+   }
+  },
+  {
+   "id": "nand",
+   "name": "NAND Flash",
+   "description": "The memory chips that store your data. They keep it with the power off, and together hold the full 1 TB.",
+   "color": "#3cc8f4",
+   "side": "r",
+   "label": {
+    "x": 0.74,
+    "y": 0.85
+   }
+  },
+  {
+   "id": "controller",
+   "name": "SSD Controller",
+   "description": "The drive's processor: it talks NVMe to the PC, spreads writes evenly across the flash and corrects errors.",
+   "color": "#ffc64a",
+   "side": "r",
+   "label": {
+    "x": 0.77,
+    "y": 0.52
+   }
+  },
+  {
+   "id": "pcb",
+   "name": "PCB",
+   "description": "The circuit board (22 \u00d7 80 mm, hence \"2280\") whose copper traces connect the chips to the connector.",
+   "color": "#3cc8f4",
+   "side": "l",
+   "label": {
+    "x": 0.23,
+    "y": 0.85
+   }
+  },
+  {
+   "id": "notch",
+   "name": "Mounting Notch",
+   "description": "The half-round cut-out where a single screw or latch holds the drive flat against the motherboard.",
+   "color": "#ffc64a",
+   "side": "l",
+   "label": {
+    "x": 0.17,
+    "y": 0.6
+   }
+  },
+  {
+   "id": "connector",
+   "name": "M.2 M-Key Connector",
+   "description": "The gold edge contacts that plug into the M.2 slot. The M-key gap marks a PCIe x4 slot, which NVMe drives use.",
+   "color": "#3cc8f4",
+   "side": "r",
+   "label": {
+    "x": 0.77,
+    "y": 0.69
+   }
+  }
+ ]
+}

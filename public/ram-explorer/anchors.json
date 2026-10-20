@@ -1,0 +1,10546 @@
+{
+ "version": 2,
+ "frameSize": [
+  1600,
+  900
+ ],
+ "coords": "normalised 0-1, origin top-left of the frame",
+ "note": "explode.frames[j].anchors are the 2D anchor points of each labelled part in explode frame j; labels are meant to be shown on the last (fully exploded) frame. rotate anchors are informational (visible=false means occluded at that angle).",
+ "rotate": {
+  "count": 144,
+  "path": "rotate/{000-143}.webp",
+  "angleDeg": [
+   0.0,
+   2.5,
+   5.0,
+   7.5,
+   10.0,
+   12.5,
+   15.0,
+   17.5,
+   20.0,
+   22.5,
+   25.0,
+   27.5,
+   30.0,
+   32.5,
+   35.0,
+   37.5,
+   40.0,
+   42.5,
+   45.0,
+   47.5,
+   50.0,
+   52.5,
+   55.0,
+   57.5,
+   60.0,
+   62.5,
+   65.0,
+   67.5,
+   70.0,
+   72.5,
+   75.0,
+   77.5,
+   80.0,
+   82.5,
+   85.0,
+   87.5,
+   90.0,
+   92.5,
+   95.0,
+   97.5,
+   100.0,
+   102.5,
+   105.0,
+   107.5,
+   110.0,
+   112.5,
+   115.0,
+   117.5,
+   120.0,
+   122.5,
+   125.0,
+   127.5,
+   130.0,
+   132.5,
+   135.0,
+   137.5,
+   140.0,
+   142.5,
+   145.0,
+   147.5,
+   150.0,
+   152.5,
+   155.0,
+   157.5,
+   160.0,
+   162.5,
+   165.0,
+   167.5,
+   170.0,
+   172.5,
+   175.0,
+   177.5,
+   180.0,
+   182.5,
+   185.0,
+   187.5,
+   190.0,
+   192.5,
+   195.0,
+   197.5,
+   200.0,
+   202.5,
+   205.0,
+   207.5,
+   210.0,
+   212.5,
+   215.0,
+   217.5,
+   220.0,
+   222.5,
+   225.0,
+   227.5,
+   230.0,
+   232.5,
+   235.0,
+   237.5,
+   240.0,
+   242.5,
+   245.0,
+   247.5,
+   250.0,
+   252.5,
+   255.0,
+   257.5,
+   260.0,
+   262.5,
+   265.0,
+   267.5,
+   270.0,
+   272.5,
+   275.0,
+   277.5,
+   280.0,
+   282.5,
+   285.0,
+   287.5,
+   290.0,
+   292.5,
+   295.0,
+   297.5,
+   300.0,
+   302.5,
+   305.0,
+   307.5,
+   310.0,
+   312.5,
+   315.0,
+   317.5,
+   320.0,
+   322.5,
+   325.0,
+   327.5,
+   330.0,
+   332.5,
+   335.0,
+   337.5,
+   340.0,
+   342.5,
+   345.0,
+   347.5,
+   350.0,
+   352.5,
+   355.0,
+   357.5
+  ],
+  "frames": [
+   {
+    "angleDeg": 0.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.69272,
+      "y": 0.38949,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.29667,
+      "y": 0.47777,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.63264,
+      "y": 0.47407,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.16217,
+      "y": 0.41649,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57861,
+      "y": 0.58851,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.36376,
+      "y": 0.67876,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.55331,
+      "y": 0.64371,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 2.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.6938,
+      "y": 0.38346,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.29941,
+      "y": 0.47718,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.6343,
+      "y": 0.46976,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.16472,
+      "y": 0.41565,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.58087,
+      "y": 0.58655,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.36734,
+      "y": 0.68176,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.55569,
+      "y": 0.643,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 5.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.69456,
+      "y": 0.37711,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.30244,
+      "y": 0.47634,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.63572,
+      "y": 0.4652,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.16778,
+      "y": 0.41444,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.58299,
+      "y": 0.58448,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.37114,
+      "y": 0.6848,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.55797,
+      "y": 0.64224,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 7.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.69495,
+      "y": 0.37045,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.30578,
+      "y": 0.47525,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.63687,
+      "y": 0.46041,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.1714,
+      "y": 0.41286,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.58493,
+      "y": 0.58228,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.37516,
+      "y": 0.68788,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.56011,
+      "y": 0.64142,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 10.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.69491,
+      "y": 0.36351,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.30946,
+      "y": 0.47391,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.6377,
+      "y": 0.45539,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.17569,
+      "y": 0.41093,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.58664,
+      "y": 0.57997,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.37943,
+      "y": 0.691,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.56208,
+      "y": 0.64054,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 12.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.69436,
+      "y": 0.35634,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.31352,
+      "y": 0.47235,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.63813,
+      "y": 0.45018,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.18071,
+      "y": 0.40865,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.58809,
+      "y": 0.57754,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.38396,
+      "y": 0.69413,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.56383,
+      "y": 0.6396,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 15.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.69323,
+      "y": 0.34896,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.31799,
+      "y": 0.47057,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.63812,
+      "y": 0.4448,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.18658,
+      "y": 0.40603,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.58922,
+      "y": 0.57501,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.38874,
+      "y": 0.69727,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.56532,
+      "y": 0.63859,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 17.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.69146,
+      "y": 0.34142,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.3229,
+      "y": 0.46859,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.6376,
+      "y": 0.43927,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.19338,
+      "y": 0.40311,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.58998,
+      "y": 0.57238,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.39378,
+      "y": 0.7004,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.5665,
+      "y": 0.63752,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 20.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.68896,
+      "y": 0.33379,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.32828,
+      "y": 0.46643,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.63649,
+      "y": 0.43365,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.20122,
+      "y": 0.39991,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.5903,
+      "y": 0.56966,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.39908,
+      "y": 0.70349,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.56732,
+      "y": 0.63638,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 22.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.68567,
+      "y": 0.32613,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.33414,
+      "y": 0.46412,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.63475,
+      "y": 0.42796,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.2102,
+      "y": 0.39646,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.59013,
+      "y": 0.56688,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.40464,
+      "y": 0.70653,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.56772,
+      "y": 0.63518,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 25.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.68153,
+      "y": 0.3185,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.34051,
+      "y": 0.46168,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.63231,
+      "y": 0.42227,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.22039,
+      "y": 0.3928,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.58942,
+      "y": 0.56406,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.41044,
+      "y": 0.70949,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.56766,
+      "y": 0.63392,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 27.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.67649,
+      "y": 0.31097,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.3474,
+      "y": 0.45916,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.62912,
+      "y": 0.41663,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.23188,
+      "y": 0.38898,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.58812,
+      "y": 0.56121,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.41646,
+      "y": 0.71234,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.56708,
+      "y": 0.63262,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 30.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.67049,
+      "y": 0.30362,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35481,
+      "y": 0.45659,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.62514,
+      "y": 0.41109,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.24473,
+      "y": 0.38506,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.58618,
+      "y": 0.55837,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.42269,
+      "y": 0.71507,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.56595,
+      "y": 0.63128,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 32.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.66352,
+      "y": 0.29653,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.36274,
+      "y": 0.45402,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.62033,
+      "y": 0.4057,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.25899,
+      "y": 0.3811,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.58357,
+      "y": 0.55557,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.42909,
+      "y": 0.71764,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.56423,
+      "y": 0.62993,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 35.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.65556,
+      "y": 0.28976,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.37117,
+      "y": 0.45148,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.61468,
+      "y": 0.40053,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.27466,
+      "y": 0.37717,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.58027,
+      "y": 0.55284,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.43564,
+      "y": 0.72004,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.5619,
+      "y": 0.62857,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 37.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.64662,
+      "y": 0.28339,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.38009,
+      "y": 0.44902,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.60818,
+      "y": 0.39564,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.29175,
+      "y": 0.37332,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57628,
+      "y": 0.55022,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.4423,
+      "y": 0.72225,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.55895,
+      "y": 0.62724,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 40.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.63672,
+      "y": 0.27747,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.38946,
+      "y": 0.44669,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.60086,
+      "y": 0.39107,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.31021,
+      "y": 0.36963,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57159,
+      "y": 0.54773,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.44905,
+      "y": 0.72425,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.55538,
+      "y": 0.62594,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 42.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.62591,
+      "y": 0.27207,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.39926,
+      "y": 0.44453,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.59275,
+      "y": 0.38688,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.32997,
+      "y": 0.36616,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.56623,
+      "y": 0.54541,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.45585,
+      "y": 0.72602,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.55121,
+      "y": 0.6247,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 45.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.61424,
+      "y": 0.26724,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.40944,
+      "y": 0.44258,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.58389,
+      "y": 0.38311,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.35095,
+      "y": 0.36297,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.56023,
+      "y": 0.54329,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.46267,
+      "y": 0.72757,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.54646,
+      "y": 0.62355,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 47.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.6018,
+      "y": 0.263,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.41996,
+      "y": 0.44086,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.57435,
+      "y": 0.37979,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.37301,
+      "y": 0.36012,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.55364,
+      "y": 0.5414,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.4695,
+      "y": 0.72887,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.54119,
+      "y": 0.6225,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 50.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.58866,
+      "y": 0.2594,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.43079,
+      "y": 0.43942,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.5642,
+      "y": 0.37695,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.39602,
+      "y": 0.35766,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.54653,
+      "y": 0.53976,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.4763,
+      "y": 0.72994,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.53544,
+      "y": 0.62158,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 52.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.57494,
+      "y": 0.25646,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.44187,
+      "y": 0.43827,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.55353,
+      "y": 0.37463,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.41982,
+      "y": 0.35562,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.53897,
+      "y": 0.5384,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.48307,
+      "y": 0.73077,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.52928,
+      "y": 0.62081,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 55.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.56074,
+      "y": 0.2542,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.45317,
+      "y": 0.43744,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.54244,
+      "y": 0.37284,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.44424,
+      "y": 0.35404,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.53103,
+      "y": 0.53732,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.48981,
+      "y": 0.73136,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.52279,
+      "y": 0.62019,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 57.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.54617,
+      "y": 0.25262,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.46465,
+      "y": 0.43693,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.53103,
+      "y": 0.37159,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.4691,
+      "y": 0.35295,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.52282,
+      "y": 0.53655,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.4965,
+      "y": 0.73172,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.51605,
+      "y": 0.61974,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 60.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.53136,
+      "y": 0.25175,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.47627,
+      "y": 0.43676,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.51941,
+      "y": 0.37089,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.4942,
+      "y": 0.35235,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.51443,
+      "y": 0.53609,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.50316,
+      "y": 0.73184,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.50915,
+      "y": 0.61947,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 62.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.51642,
+      "y": 0.25157,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.48799,
+      "y": 0.43693,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.5077,
+      "y": 0.37074,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.51936,
+      "y": 0.35226,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.50595,
+      "y": 0.53595,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.50978,
+      "y": 0.73173,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.50219,
+      "y": 0.61938,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 65.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.50149,
+      "y": 0.25209,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.49977,
+      "y": 0.43745,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.49601,
+      "y": 0.37116,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.54438,
+      "y": 0.35268,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.49749,
+      "y": 0.53613,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.51638,
+      "y": 0.73139,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.49525,
+      "y": 0.61948,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 67.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.48669,
+      "y": 0.25331,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.51158,
+      "y": 0.43829,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.48444,
+      "y": 0.37213,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.56908,
+      "y": 0.3536,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.48915,
+      "y": 0.53662,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.52296,
+      "y": 0.73083,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.48843,
+      "y": 0.61975,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 70.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.47213,
+      "y": 0.25521,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.52337,
+      "y": 0.43946,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.47312,
+      "y": 0.37364,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.59328,
+      "y": 0.35501,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.48103,
+      "y": 0.53742,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.52953,
+      "y": 0.73003,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.48182,
+      "y": 0.6202,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 72.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.45793,
+      "y": 0.25779,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.5351,
+      "y": 0.44094,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.46214,
+      "y": 0.37568,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.61679,
+      "y": 0.35688,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.4732,
+      "y": 0.53852,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.53608,
+      "y": 0.729,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.4755,
+      "y": 0.62081,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 75.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.44421,
+      "y": 0.26103,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.54672,
+      "y": 0.4427,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.45161,
+      "y": 0.37824,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.63945,
+      "y": 0.35919,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.46577,
+      "y": 0.5399,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.54261,
+      "y": 0.72774,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.46956,
+      "y": 0.62157,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 77.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.43106,
+      "y": 0.26491,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.55817,
+      "y": 0.44473,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.44161,
+      "y": 0.38129,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.6611,
+      "y": 0.36189,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.45881,
+      "y": 0.54153,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.54911,
+      "y": 0.72625,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.46405,
+      "y": 0.62247,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 80.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.41857,
+      "y": 0.26938,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.5694,
+      "y": 0.44698,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.43223,
+      "y": 0.3848,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.68162,
+      "y": 0.36493,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.45238,
+      "y": 0.54341,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.55557,
+      "y": 0.72454,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.45904,
+      "y": 0.62347,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 82.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.40683,
+      "y": 0.27443,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.58035,
+      "y": 0.44942,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.42352,
+      "y": 0.38873,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.70089,
+      "y": 0.36827,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.44653,
+      "y": 0.54549,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.56197,
+      "y": 0.72261,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.45458,
+      "y": 0.62457,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 85.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.39589,
+      "y": 0.27999,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.59098,
+      "y": 0.45202,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.41554,
+      "y": 0.39305,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.71881,
+      "y": 0.37185,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.4413,
+      "y": 0.54776,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.56829,
+      "y": 0.72047,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.45069,
+      "y": 0.62573,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 87.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.38581,
+      "y": 0.28601,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.60122,
+      "y": 0.45473,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.40834,
+      "y": 0.3977,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.73535,
+      "y": 0.37559,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.43673,
+      "y": 0.55017,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.57449,
+      "y": 0.71813,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.44739,
+      "y": 0.62695,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 90.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.37663,
+      "y": 0.29244,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.61104,
+      "y": 0.4575,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.40192,
+      "y": 0.40264,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.75045,
+      "y": 0.37943,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.43281,
+      "y": 0.5527,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.58056,
+      "y": 0.71562,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.44469,
+      "y": 0.62819,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 92.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.36834,
+      "y": 0.2992,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.6204,
+      "y": 0.46029,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.3963,
+      "y": 0.40781,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.76413,
+      "y": 0.38332,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.42955,
+      "y": 0.55532,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.58647,
+      "y": 0.71294,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.44259,
+      "y": 0.62945,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 95.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.36096,
+      "y": 0.30622,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.62927,
+      "y": 0.46306,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.39146,
+      "y": 0.41315,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.7764,
+      "y": 0.38717,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.42694,
+      "y": 0.55799,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.59219,
+      "y": 0.71013,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.44106,
+      "y": 0.63069,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 97.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.35446,
+      "y": 0.31344,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.63763,
+      "y": 0.46576,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.38739,
+      "y": 0.4186,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.78732,
+      "y": 0.39094,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.42493,
+      "y": 0.56069,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.5977,
+      "y": 0.70719,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.44008,
+      "y": 0.63191,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 100.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.34882,
+      "y": 0.32077,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.64546,
+      "y": 0.46835,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.38404,
+      "y": 0.42412,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.79694,
+      "y": 0.39456,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.42351,
+      "y": 0.56337,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.60298,
+      "y": 0.70417,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.4396,
+      "y": 0.63309,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 102.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.344,
+      "y": 0.32816,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.65278,
+      "y": 0.47081,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.38138,
+      "y": 0.42964,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.80535,
+      "y": 0.39798,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.42262,
+      "y": 0.56603,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.60802,
+      "y": 0.70108,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.43958,
+      "y": 0.63423,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 105.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.33993,
+      "y": 0.33552,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.65958,
+      "y": 0.4731,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.37934,
+      "y": 0.43512,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.81264,
+      "y": 0.40117,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.42221,
+      "y": 0.56863,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.61282,
+      "y": 0.69794,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.43999,
+      "y": 0.63531,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 107.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.33656,
+      "y": 0.3428,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.66589,
+      "y": 0.47519,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.37787,
+      "y": 0.4405,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.81891,
+      "y": 0.40408,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.42223,
+      "y": 0.57117,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.61736,
+      "y": 0.69478,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.44075,
+      "y": 0.63633,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 110.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.33382,
+      "y": 0.34995,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.67172,
+      "y": 0.47707,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.37692,
+      "y": 0.44577,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.82426,
+      "y": 0.4067,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.42263,
+      "y": 0.57362,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.62166,
+      "y": 0.69161,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.44183,
+      "y": 0.63729,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 112.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.33166,
+      "y": 0.35691,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.67709,
+      "y": 0.47871,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.37641,
+      "y": 0.45087,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.82879,
+      "y": 0.40899,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.42336,
+      "y": 0.57597,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.6257,
+      "y": 0.68845,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.44318,
+      "y": 0.6382,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 115.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.33001,
+      "y": 0.36364,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.68205,
+      "y": 0.48012,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.3763,
+      "y": 0.45579,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.83259,
+      "y": 0.41094,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.42437,
+      "y": 0.57822,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.62951,
+      "y": 0.68532,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.44476,
+      "y": 0.63904,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 117.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.3288,
+      "y": 0.37011,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.68661,
+      "y": 0.48126,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.37653,
+      "y": 0.46049,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.83576,
+      "y": 0.41253,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.42561,
+      "y": 0.58035,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.63309,
+      "y": 0.68223,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.44651,
+      "y": 0.63983,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 120.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.32797,
+      "y": 0.3763,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.69082,
+      "y": 0.48215,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.37705,
+      "y": 0.46497,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.83837,
+      "y": 0.41377,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.42704,
+      "y": 0.58238,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.63644,
+      "y": 0.67917,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.44841,
+      "y": 0.64057,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 122.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.32747,
+      "y": 0.38217,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.69469,
+      "y": 0.48278,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.37781,
+      "y": 0.46922,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.8405,
+      "y": 0.41465,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.42862,
+      "y": 0.58429,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.6396,
+      "y": 0.67617,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.45042,
+      "y": 0.64126,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 125.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.32725,
+      "y": 0.38772,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.69827,
+      "y": 0.48314,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.37876,
+      "y": 0.47322,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.84222,
+      "y": 0.41516,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.43033,
+      "y": 0.58608,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.64256,
+      "y": 0.67323,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.45251,
+      "y": 0.6419,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 127.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.32727,
+      "y": 0.39293,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.70158,
+      "y": 0.48323,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.37988,
+      "y": 0.47696,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.84358,
+      "y": 0.41531,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.43213,
+      "y": 0.58777,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.64534,
+      "y": 0.67034,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.45467,
+      "y": 0.6425,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 130.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.32748,
+      "y": 0.39779,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.70465,
+      "y": 0.48306,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.38113,
+      "y": 0.48045,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.84464,
+      "y": 0.41509,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.434,
+      "y": 0.58934,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.64796,
+      "y": 0.6675,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.45687,
+      "y": 0.64307,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 132.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.32786,
+      "y": 0.4023,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.70749,
+      "y": 0.48263,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.38249,
+      "y": 0.48369,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.84544,
+      "y": 0.41451,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.43593,
+      "y": 0.5908,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.65043,
+      "y": 0.66472,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.4591,
+      "y": 0.64361,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 135.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.32838,
+      "y": 0.40647,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.71015,
+      "y": 0.48193,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.38394,
+      "y": 0.48668,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.84602,
+      "y": 0.41358,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.4379,
+      "y": 0.59216,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.65277,
+      "y": 0.66198,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.46134,
+      "y": 0.64412,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 137.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.32901,
+      "y": 0.41028,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.71263,
+      "y": 0.48096,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.38546,
+      "y": 0.48941,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.84641,
+      "y": 0.41229,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.43989,
+      "y": 0.59342,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.65497,
+      "y": 0.65929,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.46359,
+      "y": 0.6446,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 140.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.32974,
+      "y": 0.41374,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.71496,
+      "y": 0.47974,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.38704,
+      "y": 0.4919,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.84662,
+      "y": 0.41065,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.44191,
+      "y": 0.59458,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.65707,
+      "y": 0.65664,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.46585,
+      "y": 0.64506,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 142.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.33055,
+      "y": 0.41685,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.71715,
+      "y": 0.47825,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.38867,
+      "y": 0.49413,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.84669,
+      "y": 0.40866,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.44395,
+      "y": 0.59565,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.65907,
+      "y": 0.65402,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.46811,
+      "y": 0.6455,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 145.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.33144,
+      "y": 0.41962,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.71921,
+      "y": 0.47649,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.39035,
+      "y": 0.49613,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.84663,
+      "y": 0.40632,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.44601,
+      "y": 0.59662,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.66097,
+      "y": 0.65142,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.47038,
+      "y": 0.64592,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 147.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.3324,
+      "y": 0.42205,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.72115,
+      "y": 0.47447,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.39207,
+      "y": 0.49789,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.84644,
+      "y": 0.40364,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.44808,
+      "y": 0.5975,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.66278,
+      "y": 0.64885,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.47264,
+      "y": 0.64632,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 150.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.33343,
+      "y": 0.42413,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.723,
+      "y": 0.47218,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.39384,
+      "y": 0.49941,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.84614,
+      "y": 0.4006,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.45017,
+      "y": 0.59829,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.66452,
+      "y": 0.64629,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.47492,
+      "y": 0.6467,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 152.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.33452,
+      "y": 0.42587,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.72474,
+      "y": 0.46963,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.39564,
+      "y": 0.5007,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.84573,
+      "y": 0.39722,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.45228,
+      "y": 0.599,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.66618,
+      "y": 0.64373,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.4772,
+      "y": 0.64708,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 155.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.33568,
+      "y": 0.42728,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.72639,
+      "y": 0.4668,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.3975,
+      "y": 0.50175,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.8452,
+      "y": 0.39349,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.45441,
+      "y": 0.59962,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.66777,
+      "y": 0.64117,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.4795,
+      "y": 0.64743,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 157.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.3369,
+      "y": 0.42834,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.72794,
+      "y": 0.46369,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.39941,
+      "y": 0.50257,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.84456,
+      "y": 0.38941,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.45657,
+      "y": 0.60015,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.66929,
+      "y": 0.63861,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.48181,
+      "y": 0.64777,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 160.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.3382,
+      "y": 0.42907,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.7294,
+      "y": 0.46031,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.40137,
+      "y": 0.50317,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.84379,
+      "y": 0.38497,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.45876,
+      "y": 0.6006,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.67074,
+      "y": 0.63602,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.48414,
+      "y": 0.6481,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 162.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.33958,
+      "y": 0.42946,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.73076,
+      "y": 0.45664,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.40339,
+      "y": 0.50353,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.84288,
+      "y": 0.38018,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.46099,
+      "y": 0.60097,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.67211,
+      "y": 0.63342,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.4865,
+      "y": 0.64842,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 165.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.34105,
+      "y": 0.4295,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.732,
+      "y": 0.45268,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.40548,
+      "y": 0.50366,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.84181,
+      "y": 0.37504,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.46325,
+      "y": 0.60126,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.6734,
+      "y": 0.63079,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.48888,
+      "y": 0.64873,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 167.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.34261,
+      "y": 0.42921,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.73312,
+      "y": 0.44844,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.40764,
+      "y": 0.50356,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.84055,
+      "y": 0.36954,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.46556,
+      "y": 0.60147,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.67459,
+      "y": 0.62812,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.49129,
+      "y": 0.64902,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 170.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.34428,
+      "y": 0.42856,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.73409,
+      "y": 0.4439,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.40988,
+      "y": 0.50323,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.83909,
+      "y": 0.36368,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.46791,
+      "y": 0.6016,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.67567,
+      "y": 0.6254,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.49372,
+      "y": 0.6493,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 172.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.34606,
+      "y": 0.42757,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.73489,
+      "y": 0.43907,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.4122,
+      "y": 0.50267,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.83737,
+      "y": 0.35747,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.4703,
+      "y": 0.60164,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.67661,
+      "y": 0.62264,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.49618,
+      "y": 0.64957,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 175.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.34797,
+      "y": 0.42623,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.73549,
+      "y": 0.43394,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.41462,
+      "y": 0.50188,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.83536,
+      "y": 0.35091,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.47273,
+      "y": 0.6016,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.6774,
+      "y": 0.61983,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.49866,
+      "y": 0.64981,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 177.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.35002,
+      "y": 0.42454,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.73584,
+      "y": 0.42853,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.41712,
+      "y": 0.50085,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.83301,
+      "y": 0.34401,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.47519,
+      "y": 0.60147,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.678,
+      "y": 0.61696,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.50114,
+      "y": 0.65004,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 180.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.35223,
+      "y": 0.4225,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.73592,
+      "y": 0.42282,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.41972,
+      "y": 0.49959,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.83027,
+      "y": 0.33679,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.47769,
+      "y": 0.60126,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.67836,
+      "y": 0.61402,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.50363,
+      "y": 0.65025,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 182.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.3546,
+      "y": 0.42011,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.73566,
+      "y": 0.41685,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.42241,
+      "y": 0.4981,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.82706,
+      "y": 0.32925,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.4802,
+      "y": 0.60096,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.67846,
+      "y": 0.61101,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.50611,
+      "y": 0.65043,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 185.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.35715,
+      "y": 0.41738,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.73501,
+      "y": 0.4106,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.4252,
+      "y": 0.49638,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.82332,
+      "y": 0.32143,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.48272,
+      "y": 0.60057,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.67824,
+      "y": 0.60793,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.50855,
+      "y": 0.65057,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 187.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.3599,
+      "y": 0.41432,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.7339,
+      "y": 0.40412,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.42808,
+      "y": 0.49444,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.81898,
+      "y": 0.31335,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.48522,
+      "y": 0.60009,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.67765,
+      "y": 0.60479,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.51094,
+      "y": 0.65068,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 190.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.36285,
+      "y": 0.41094,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.73226,
+      "y": 0.39741,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.43105,
+      "y": 0.49229,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.81395,
+      "y": 0.30504,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.48769,
+      "y": 0.59951,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.67662,
+      "y": 0.60157,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.51325,
+      "y": 0.65075,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 192.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.36602,
+      "y": 0.40725,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.73003,
+      "y": 0.39052,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.4341,
+      "y": 0.48994,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.80817,
+      "y": 0.29656,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.49011,
+      "y": 0.59885,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.67509,
+      "y": 0.59829,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.51544,
+      "y": 0.65077,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 195.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.36942,
+      "y": 0.40329,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.72713,
+      "y": 0.38347,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.43721,
+      "y": 0.48739,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.80154,
+      "y": 0.28794,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.49244,
+      "y": 0.59809,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.673,
+      "y": 0.59495,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.51749,
+      "y": 0.65074,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 197.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.37305,
+      "y": 0.39908,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.72349,
+      "y": 0.37631,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.44037,
+      "y": 0.48468,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.79398,
+      "y": 0.27925,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.49466,
+      "y": 0.59725,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.67028,
+      "y": 0.59157,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.51935,
+      "y": 0.65065,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 200.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.37693,
+      "y": 0.39467,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.71902,
+      "y": 0.3691,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.44356,
+      "y": 0.48182,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.78544,
+      "y": 0.27056,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.49672,
+      "y": 0.59633,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.66687,
+      "y": 0.58815,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.52099,
+      "y": 0.65051,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 202.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.38106,
+      "y": 0.39008,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.71366,
+      "y": 0.36188,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.44677,
+      "y": 0.47885,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.77583,
+      "y": 0.26191,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.4986,
+      "y": 0.59533,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.6627,
+      "y": 0.58473,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.52236,
+      "y": 0.6503,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 205.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.38542,
+      "y": 0.38538,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.70736,
+      "y": 0.35472,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.44996,
+      "y": 0.47579,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.76512,
+      "y": 0.2534,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.50025,
+      "y": 0.59427,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.65771,
+      "y": 0.58131,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.52342,
+      "y": 0.65004,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 207.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.39003,
+      "y": 0.38062,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.70006,
+      "y": 0.34768,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.45311,
+      "y": 0.47268,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.75325,
+      "y": 0.2451,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.50165,
+      "y": 0.59316,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.65187,
+      "y": 0.57792,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.52413,
+      "y": 0.64971,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 210.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.39486,
+      "y": 0.37586,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.69174,
+      "y": 0.34083,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.4562,
+      "y": 0.46957,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.7402,
+      "y": 0.23708,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.50275,
+      "y": 0.59202,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.64514,
+      "y": 0.5746,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.52446,
+      "y": 0.64933,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 212.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.39991,
+      "y": 0.37117,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.68235,
+      "y": 0.33423,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.4592,
+      "y": 0.46649,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.72598,
+      "y": 0.22941,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.50353,
+      "y": 0.59086,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.63748,
+      "y": 0.57137,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.52437,
+      "y": 0.64891,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 215.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.40516,
+      "y": 0.36661,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.67192,
+      "y": 0.32795,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.46208,
+      "y": 0.4635,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.71059,
+      "y": 0.22217,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.50396,
+      "y": 0.5897,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.62891,
+      "y": 0.56827,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.52383,
+      "y": 0.64845,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 217.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.4106,
+      "y": 0.36225,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.66045,
+      "y": 0.32205,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.46483,
+      "y": 0.46063,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.69406,
+      "y": 0.21541,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.50403,
+      "y": 0.58857,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.61943,
+      "y": 0.56533,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.52284,
+      "y": 0.64797,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 220.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.41621,
+      "y": 0.35816,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.64798,
+      "y": 0.31659,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.46744,
+      "y": 0.45792,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.67646,
+      "y": 0.2092,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.50373,
+      "y": 0.58748,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.60907,
+      "y": 0.56258,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.52139,
+      "y": 0.64748,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 222.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.42198,
+      "y": 0.3544,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.63455,
+      "y": 0.31161,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.46988,
+      "y": 0.45543,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.65785,
+      "y": 0.20358,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.50307,
+      "y": 0.58647,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.59788,
+      "y": 0.56005,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.51949,
+      "y": 0.647,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 225.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.42787,
+      "y": 0.35102,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.62025,
+      "y": 0.30715,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.47217,
+      "y": 0.45318,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.63831,
+      "y": 0.1986,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.50205,
+      "y": 0.58554,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.58591,
+      "y": 0.55777,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.51716,
+      "y": 0.64655,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 227.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.4339,
+      "y": 0.34807,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.60516,
+      "y": 0.30326,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.47431,
+      "y": 0.45122,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.61795,
+      "y": 0.19428,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.5007,
+      "y": 0.58472,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.57324,
+      "y": 0.55578,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.51443,
+      "y": 0.64613,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 230.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.44003,
+      "y": 0.34559,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.58937,
+      "y": 0.29997,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.47631,
+      "y": 0.44956,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.59688,
+      "y": 0.19065,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.49907,
+      "y": 0.58403,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.55997,
+      "y": 0.55409,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.51133,
+      "y": 0.64576,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 232.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.44628,
+      "y": 0.34361,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.57299,
+      "y": 0.29728,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.4782,
+      "y": 0.44824,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.57522,
+      "y": 0.18773,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.49718,
+      "y": 0.58349,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.54617,
+      "y": 0.55272,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.50793,
+      "y": 0.64547,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 235.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.45264,
+      "y": 0.34217,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.55614,
+      "y": 0.29523,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.48,
+      "y": 0.44727,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.55309,
+      "y": 0.18552,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.4951,
+      "y": 0.58311,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.53198,
+      "y": 0.5517,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.50429,
+      "y": 0.64526,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 237.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.45912,
+      "y": 0.34128,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.53894,
+      "y": 0.29381,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.48176,
+      "y": 0.44667,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.53062,
+      "y": 0.18405,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.49288,
+      "y": 0.5829,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.51749,
+      "y": 0.55103,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.50047,
+      "y": 0.64514,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 240.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.46571,
+      "y": 0.34095,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.52152,
+      "y": 0.29305,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.4835,
+      "y": 0.44645,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.50795,
+      "y": 0.18331,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.49059,
+      "y": 0.58286,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.50283,
+      "y": 0.55072,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.49655,
+      "y": 0.64512,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 242.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.47243,
+      "y": 0.34118,
+      "visible": false
+     },
+     {
+      "id": "pads",
+      "x": 0.504,
+      "y": 0.29293,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.48529,
+      "y": 0.4466,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.48522,
+      "y": 0.1833,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.48831,
+      "y": 0.583,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.48812,
+      "y": 0.55077,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.49261,
+      "y": 0.64521,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 245.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.47929,
+      "y": 0.34199,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.48652,
+      "y": 0.29347,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.48715,
+      "y": 0.44713,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.46255,
+      "y": 0.18402,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.48609,
+      "y": 0.58332,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.47347,
+      "y": 0.55119,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.48872,
+      "y": 0.64539,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 247.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.48628,
+      "y": 0.34335,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.4692,
+      "y": 0.29465,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.48913,
+      "y": 0.44804,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.44009,
+      "y": 0.18548,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.484,
+      "y": 0.58382,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.45901,
+      "y": 0.55197,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.48496,
+      "y": 0.64567,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 250.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.49341,
+      "y": 0.34527,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.45217,
+      "y": 0.29647,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.49128,
+      "y": 0.44931,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.41797,
+      "y": 0.18767,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.48212,
+      "y": 0.58448,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.44486,
+      "y": 0.5531,
+      "visible": false
+     },
+     {
+      "id": "notch",
+      "x": 0.4814,
+      "y": 0.64604,
+      "visible": false
+     }
+    ]
+   },
+   {
+    "angleDeg": 252.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.50068,
+      "y": 0.3477,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.43555,
+      "y": 0.29893,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.49361,
+      "y": 0.45093,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.39632,
+      "y": 0.19058,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.4805,
+      "y": 0.58529,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.43112,
+      "y": 0.55457,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.47812,
+      "y": 0.64649,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 255.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.50806,
+      "y": 0.35064,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.41945,
+      "y": 0.302,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.49617,
+      "y": 0.45288,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.37527,
+      "y": 0.19419,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.47919,
+      "y": 0.58625,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.41792,
+      "y": 0.55636,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.47518,
+      "y": 0.64701,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 257.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.51555,
+      "y": 0.35404,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.40399,
+      "y": 0.30566,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.49897,
+      "y": 0.45513,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.35494,
+      "y": 0.19851,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.47824,
+      "y": 0.58732,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.40534,
+      "y": 0.55846,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.47263,
+      "y": 0.64758,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 260.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.52312,
+      "y": 0.35787,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.38927,
+      "y": 0.30989,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.50201,
+      "y": 0.45765,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.33543,
+      "y": 0.20348,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.47767,
+      "y": 0.5885,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.39347,
+      "y": 0.56084,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.4705,
+      "y": 0.64818,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 262.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.53073,
+      "y": 0.36206,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.37537,
+      "y": 0.31464,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.5053,
+      "y": 0.46041,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.31686,
+      "y": 0.2091,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.47752,
+      "y": 0.58975,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.3824,
+      "y": 0.56347,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.46884,
+      "y": 0.6488,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 265.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.53836,
+      "y": 0.36656,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.36235,
+      "y": 0.31989,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.50882,
+      "y": 0.46337,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.2993,
+      "y": 0.21532,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.47778,
+      "y": 0.59107,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.37218,
+      "y": 0.56632,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.46765,
+      "y": 0.64942,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 267.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.54594,
+      "y": 0.37132,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35029,
+      "y": 0.32558,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.51256,
+      "y": 0.46648,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.28284,
+      "y": 0.22208,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.47846,
+      "y": 0.59241,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.36286,
+      "y": 0.56936,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.46695,
+      "y": 0.65003,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 270.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.55346,
+      "y": 0.37626,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.33922,
+      "y": 0.33165,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.5165,
+      "y": 0.46971,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.26752,
+      "y": 0.22934,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.47954,
+      "y": 0.59377,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.35447,
+      "y": 0.57256,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.46672,
+      "y": 0.6506,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 272.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.56085,
+      "y": 0.38131,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.32916,
+      "y": 0.33805,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.5206,
+      "y": 0.47301,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.25338,
+      "y": 0.23703,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.48101,
+      "y": 0.59511,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.34701,
+      "y": 0.57588,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.46696,
+      "y": 0.65113,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 275.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.56809,
+      "y": 0.38641,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.32011,
+      "y": 0.34471,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.52482,
+      "y": 0.47632,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.24044,
+      "y": 0.24508,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.48283,
+      "y": 0.59643,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.34049,
+      "y": 0.5793,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.46763,
+      "y": 0.65161,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 277.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.57513,
+      "y": 0.3915,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.31206,
+      "y": 0.35157,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.52914,
+      "y": 0.47962,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.22868,
+      "y": 0.25342,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.48497,
+      "y": 0.59769,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.33488,
+      "y": 0.58277,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.46871,
+      "y": 0.65203,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 280.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.58195,
+      "y": 0.39649,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.30498,
+      "y": 0.35856,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.53352,
+      "y": 0.48285,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.21809,
+      "y": 0.26197,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.48738,
+      "y": 0.59889,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.33014,
+      "y": 0.58627,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.47014,
+      "y": 0.65238,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 282.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.58852,
+      "y": 0.40135,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.29882,
+      "y": 0.36562,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.53791,
+      "y": 0.48598,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.20863,
+      "y": 0.27066,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.49003,
+      "y": 0.60001,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.32623,
+      "y": 0.58978,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.47189,
+      "y": 0.65266,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 285.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.59483,
+      "y": 0.40602,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.29354,
+      "y": 0.37268,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.54229,
+      "y": 0.48899,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.20025,
+      "y": 0.27941,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.49287,
+      "y": 0.60105,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.32308,
+      "y": 0.59327,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.47392,
+      "y": 0.65287,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 287.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.60085,
+      "y": 0.41046,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.28906,
+      "y": 0.3797,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.54663,
+      "y": 0.49183,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.19287,
+      "y": 0.28816,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.49587,
+      "y": 0.60199,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.32065,
+      "y": 0.59672,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.47618,
+      "y": 0.65301,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 290.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.60658,
+      "y": 0.41462,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.28532,
+      "y": 0.38661,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.55091,
+      "y": 0.49449,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.18642,
+      "y": 0.29683,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.49898,
+      "y": 0.60283,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.31885,
+      "y": 0.60012,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.47862,
+      "y": 0.65309,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 292.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.61204,
+      "y": 0.41848,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.28225,
+      "y": 0.39339,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.5551,
+      "y": 0.49695,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.18083,
+      "y": 0.30538,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.50216,
+      "y": 0.60357,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.31763,
+      "y": 0.60347,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.48121,
+      "y": 0.65311,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 295.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.61721,
+      "y": 0.42203,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.27978,
+      "y": 0.39999,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.55919,
+      "y": 0.49919,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.17601,
+      "y": 0.31375,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.50539,
+      "y": 0.60421,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.31691,
+      "y": 0.60674,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.4839,
+      "y": 0.65308,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 297.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.6221,
+      "y": 0.42523,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.27784,
+      "y": 0.40637,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.56317,
+      "y": 0.50121,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.17189,
+      "y": 0.3219,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.50864,
+      "y": 0.60475,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.31662,
+      "y": 0.60994,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.48668,
+      "y": 0.653,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 300.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.62674,
+      "y": 0.42808,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.27636,
+      "y": 0.41252,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.56703,
+      "y": 0.503,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.16838,
+      "y": 0.3298,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.51189,
+      "y": 0.60519,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.31672,
+      "y": 0.61307,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.4895,
+      "y": 0.65288,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 302.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.63113,
+      "y": 0.43057,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.27527,
+      "y": 0.41841,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.57077,
+      "y": 0.50455,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.1654,
+      "y": 0.3374,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.51512,
+      "y": 0.60553,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.31714,
+      "y": 0.61612,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.49235,
+      "y": 0.65272,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 305.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.63528,
+      "y": 0.43269,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.27453,
+      "y": 0.42404,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.57438,
+      "y": 0.50587,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.1629,
+      "y": 0.34469,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.51832,
+      "y": 0.60578,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.31783,
+      "y": 0.6191,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.49521,
+      "y": 0.65254,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 307.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.63922,
+      "y": 0.43445,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.27408,
+      "y": 0.42939,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.57787,
+      "y": 0.50694,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.16079,
+      "y": 0.35166,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.52147,
+      "y": 0.60593,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.31874,
+      "y": 0.62202,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.49806,
+      "y": 0.65232,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 310.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.64296,
+      "y": 0.43585,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.27387,
+      "y": 0.43445,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.58124,
+      "y": 0.50777,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.15904,
+      "y": 0.35829,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.52457,
+      "y": 0.606,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.31985,
+      "y": 0.62487,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.5009,
+      "y": 0.65208,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 312.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.64652,
+      "y": 0.43689,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.27387,
+      "y": 0.43922,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.5845,
+      "y": 0.50836,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.15758,
+      "y": 0.36456,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.52762,
+      "y": 0.60597,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.32112,
+      "y": 0.62766,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.5037,
+      "y": 0.65183,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 315.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.64991,
+      "y": 0.43756,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.27405,
+      "y": 0.4437,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.58765,
+      "y": 0.50872,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.15637,
+      "y": 0.37049,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.53061,
+      "y": 0.60586,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.32252,
+      "y": 0.63041,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.50648,
+      "y": 0.65156,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 317.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.65315,
+      "y": 0.43788,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.27438,
+      "y": 0.4479,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.59071,
+      "y": 0.50884,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.15538,
+      "y": 0.37605,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.53355,
+      "y": 0.60567,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.32403,
+      "y": 0.63311,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.50923,
+      "y": 0.65127,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 320.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.65625,
+      "y": 0.43785,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.27484,
+      "y": 0.45181,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.59367,
+      "y": 0.50872,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.15458,
+      "y": 0.38126,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.53644,
+      "y": 0.60538,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.32563,
+      "y": 0.63577,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51194,
+      "y": 0.65097,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 322.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.65923,
+      "y": 0.43746,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.27541,
+      "y": 0.45544,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.59655,
+      "y": 0.50837,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.15394,
+      "y": 0.38611,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.53928,
+      "y": 0.60502,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.32733,
+      "y": 0.6384,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51463,
+      "y": 0.65065,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 325.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.66211,
+      "y": 0.43673,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.27608,
+      "y": 0.45878,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.59936,
+      "y": 0.50778,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.15345,
+      "y": 0.3906,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.54208,
+      "y": 0.60457,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.3291,
+      "y": 0.64101,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51728,
+      "y": 0.65032,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 327.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.66488,
+      "y": 0.43564,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.27684,
+      "y": 0.46185,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.6021,
+      "y": 0.50696,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.15309,
+      "y": 0.39474,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.54484,
+      "y": 0.60404,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.33094,
+      "y": 0.6436,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51992,
+      "y": 0.64998,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 330.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.66756,
+      "y": 0.43421,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.27769,
+      "y": 0.46465,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.60478,
+      "y": 0.5059,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.15285,
+      "y": 0.39853,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.54757,
+      "y": 0.60342,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.33285,
+      "y": 0.64618,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.52253,
+      "y": 0.64962,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 332.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.67016,
+      "y": 0.43243,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.27863,
+      "y": 0.46718,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.6074,
+      "y": 0.50461,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.15272,
+      "y": 0.40196,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.55027,
+      "y": 0.60271,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.33484,
+      "y": 0.64876,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.52513,
+      "y": 0.64925,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 335.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.67268,
+      "y": 0.43031,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.27965,
+      "y": 0.46945,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.60998,
+      "y": 0.50308,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.15272,
+      "y": 0.40505,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.55295,
+      "y": 0.60191,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.33691,
+      "y": 0.65134,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.52772,
+      "y": 0.64886,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 337.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.67513,
+      "y": 0.42783,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.28077,
+      "y": 0.47145,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.61252,
+      "y": 0.50131,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.15284,
+      "y": 0.40779,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.55562,
+      "y": 0.60103,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.33906,
+      "y": 0.65393,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.53031,
+      "y": 0.64846,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 340.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.6775,
+      "y": 0.425,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.28198,
+      "y": 0.47319,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.61501,
+      "y": 0.4993,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.15309,
+      "y": 0.41018,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.55827,
+      "y": 0.60005,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.3413,
+      "y": 0.65654,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.53289,
+      "y": 0.64803,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 342.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.6798,
+      "y": 0.42182,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.2833,
+      "y": 0.47467,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.61746,
+      "y": 0.49704,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.15348,
+      "y": 0.41221,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.5609,
+      "y": 0.59897,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.34364,
+      "y": 0.65917,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.53548,
+      "y": 0.64759,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 345.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.68202,
+      "y": 0.41828,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.28473,
+      "y": 0.47589,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.61986,
+      "y": 0.49453,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.15402,
+      "y": 0.4139,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.56353,
+      "y": 0.5978,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.34608,
+      "y": 0.66184,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.53806,
+      "y": 0.64713,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 347.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.68415,
+      "y": 0.41438,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.2863,
+      "y": 0.47685,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.62221,
+      "y": 0.49176,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.15475,
+      "y": 0.41523,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.56613,
+      "y": 0.59652,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.34865,
+      "y": 0.66454,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.54065,
+      "y": 0.64663,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 350.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.68617,
+      "y": 0.41012,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.28801,
+      "y": 0.47755,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.62449,
+      "y": 0.48874,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.15568,
+      "y": 0.41621,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.56872,
+      "y": 0.59514,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.35135,
+      "y": 0.66728,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.54322,
+      "y": 0.64612,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 352.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.68807,
+      "y": 0.4055,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.28988,
+      "y": 0.47799,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.6267,
+      "y": 0.48547,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.15684,
+      "y": 0.41683,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57128,
+      "y": 0.59365,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.3542,
+      "y": 0.67008,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.54579,
+      "y": 0.64557,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 355.0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.68981,
+      "y": 0.40052,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.29193,
+      "y": 0.47817,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.62881,
+      "y": 0.48193,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.15828,
+      "y": 0.41708,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57379,
+      "y": 0.59205,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.35721,
+      "y": 0.67292,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.54834,
+      "y": 0.64499,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "angleDeg": 357.5,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.69138,
+      "y": 0.39518,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.29419,
+      "y": 0.4781,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.6308,
+      "y": 0.47813,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.16004,
+      "y": 0.41697,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57624,
+      "y": 0.59034,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.36039,
+      "y": 0.67581,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.55085,
+      "y": 0.64437,
+      "visible": true
+     }
+    ]
+   }
+  ]
+ },
+ "explode": {
+  "count": 72,
+  "path": "explode/{000-071}.webp",
+  "easing": {
+   "explode": "cubic in-out of u",
+   "dolly": "expo in-out of u"
+  },
+  "frames": [
+   {
+    "u": 0,
+    "explode": 0,
+    "dolly": 0,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.69272,
+      "y": 0.38949,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.29667,
+      "y": 0.47777,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.63264,
+      "y": 0.47407,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.16217,
+      "y": 0.41649,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57861,
+      "y": 0.58851,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.36376,
+      "y": 0.67876,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.55331,
+      "y": 0.64371,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.01408,
+    "explode": 1e-05,
+    "dolly": 0.00059,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.69263,
+      "y": 0.38973,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.29675,
+      "y": 0.47802,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.63258,
+      "y": 0.47429,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.1623,
+      "y": 0.41679,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57856,
+      "y": 0.58868,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.36381,
+      "y": 0.67892,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.55327,
+      "y": 0.64386,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.02817,
+    "explode": 9e-05,
+    "dolly": 0.00072,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.69263,
+      "y": 0.38973,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.29676,
+      "y": 0.47807,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.63256,
+      "y": 0.47434,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.16233,
+      "y": 0.41686,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57855,
+      "y": 0.58872,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.36382,
+      "y": 0.67895,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.55326,
+      "y": 0.64389,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.04225,
+    "explode": 0.0003,
+    "dolly": 0.00088,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.69263,
+      "y": 0.38966,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.29678,
+      "y": 0.47814,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.63254,
+      "y": 0.47439,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.16237,
+      "y": 0.41694,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57854,
+      "y": 0.58876,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.36383,
+      "y": 0.67899,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.55326,
+      "y": 0.64394,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.05634,
+    "explode": 0.00072,
+    "dolly": 0.00107,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.69266,
+      "y": 0.38948,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.2968,
+      "y": 0.47822,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.63252,
+      "y": 0.47446,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.16241,
+      "y": 0.41703,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57852,
+      "y": 0.58882,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.36384,
+      "y": 0.67904,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.55324,
+      "y": 0.64398,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.07042,
+    "explode": 0.0014,
+    "dolly": 0.0013,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.69272,
+      "y": 0.38914,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.29683,
+      "y": 0.47831,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.6325,
+      "y": 0.47455,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.16246,
+      "y": 0.41715,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57851,
+      "y": 0.58889,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.36386,
+      "y": 0.6791,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.55323,
+      "y": 0.64404,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.08451,
+    "explode": 0.00241,
+    "dolly": 0.00158,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.69282,
+      "y": 0.38861,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.29686,
+      "y": 0.47843,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.63247,
+      "y": 0.47465,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.16253,
+      "y": 0.41729,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57849,
+      "y": 0.58897,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.36388,
+      "y": 0.67918,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.55321,
+      "y": 0.64412,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.09859,
+    "explode": 0.00383,
+    "dolly": 0.00192,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.69297,
+      "y": 0.38784,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.29691,
+      "y": 0.47858,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.63243,
+      "y": 0.47477,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.1626,
+      "y": 0.41746,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57846,
+      "y": 0.58907,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.3639,
+      "y": 0.67927,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.55319,
+      "y": 0.6442,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.11268,
+    "explode": 0.00572,
+    "dolly": 0.00233,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.69318,
+      "y": 0.38681,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.29696,
+      "y": 0.47875,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.63238,
+      "y": 0.47492,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.1627,
+      "y": 0.41767,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57843,
+      "y": 0.58919,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.36393,
+      "y": 0.67938,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.55317,
+      "y": 0.64431,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.12676,
+    "explode": 0.00815,
+    "dolly": 0.00283,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.69344,
+      "y": 0.38547,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.29702,
+      "y": 0.47896,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.63233,
+      "y": 0.47511,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.16281,
+      "y": 0.41792,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57839,
+      "y": 0.58934,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.36397,
+      "y": 0.67951,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.55314,
+      "y": 0.64444,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.14085,
+    "explode": 0.01118,
+    "dolly": 0.00344,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.69378,
+      "y": 0.3838,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.29709,
+      "y": 0.47922,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.63226,
+      "y": 0.47533,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.16295,
+      "y": 0.41822,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57834,
+      "y": 0.58952,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.36401,
+      "y": 0.67967,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.5531,
+      "y": 0.6446,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.15493,
+    "explode": 0.01488,
+    "dolly": 0.00418,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.69419,
+      "y": 0.38175,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.29718,
+      "y": 0.47952,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.63218,
+      "y": 0.4756,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.16312,
+      "y": 0.4186,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57829,
+      "y": 0.58974,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.36406,
+      "y": 0.67986,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.55306,
+      "y": 0.64479,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.16901,
+    "explode": 0.01931,
+    "dolly": 0.00508,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.69467,
+      "y": 0.37929,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.29728,
+      "y": 0.47981,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.63207,
+      "y": 0.47593,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.16333,
+      "y": 0.41905,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57822,
+      "y": 0.59,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.36413,
+      "y": 0.6801,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.553,
+      "y": 0.64502,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.1831,
+    "explode": 0.02455,
+    "dolly": 0.00618,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.69525,
+      "y": 0.37641,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.2974,
+      "y": 0.48006,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.63195,
+      "y": 0.47633,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.16357,
+      "y": 0.4196,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57813,
+      "y": 0.59033,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.36421,
+      "y": 0.68039,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.55294,
+      "y": 0.64531,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.19718,
+    "explode": 0.03067,
+    "dolly": 0.00751,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.69591,
+      "y": 0.37307,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.29754,
+      "y": 0.4802,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.6318,
+      "y": 0.47681,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.16388,
+      "y": 0.42026,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57803,
+      "y": 0.59072,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.3643,
+      "y": 0.68074,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.55286,
+      "y": 0.64565,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.21127,
+    "explode": 0.03772,
+    "dolly": 0.00913,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.69666,
+      "y": 0.36925,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.29771,
+      "y": 0.48019,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.63162,
+      "y": 0.4774,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.16424,
+      "y": 0.42107,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57791,
+      "y": 0.59119,
+      "visible": false
+     },
+     {
+      "id": "contacts",
+      "x": 0.36442,
+      "y": 0.68117,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.55276,
+      "y": 0.64607,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.22535,
+    "explode": 0.04578,
+    "dolly": 0.0111,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.69749,
+      "y": 0.36494,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.29789,
+      "y": 0.48001,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.63141,
+      "y": 0.47811,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.16468,
+      "y": 0.42204,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57776,
+      "y": 0.59176,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.36456,
+      "y": 0.68168,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.55264,
+      "y": 0.64657,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.23944,
+    "explode": 0.05491,
+    "dolly": 0.0135,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.69842,
+      "y": 0.36014,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.29811,
+      "y": 0.47961,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.63114,
+      "y": 0.47898,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.16522,
+      "y": 0.42323,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57758,
+      "y": 0.59246,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.36472,
+      "y": 0.68231,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.5525,
+      "y": 0.64718,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.25352,
+    "explode": 0.06518,
+    "dolly": 0.01641,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.69942,
+      "y": 0.35483,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.29837,
+      "y": 0.47896,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.63082,
+      "y": 0.48002,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.16587,
+      "y": 0.42466,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57736,
+      "y": 0.5933,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.36493,
+      "y": 0.68306,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.55233,
+      "y": 0.64792,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.26761,
+    "explode": 0.07666,
+    "dolly": 0.01994,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.7005,
+      "y": 0.34903,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.29868,
+      "y": 0.47806,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.63044,
+      "y": 0.48129,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.16666,
+      "y": 0.4264,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57709,
+      "y": 0.59433,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.36518,
+      "y": 0.68398,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.55212,
+      "y": 0.64882,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.28169,
+    "explode": 0.08941,
+    "dolly": 0.02424,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.70164,
+      "y": 0.34277,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.29905,
+      "y": 0.4769,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.62997,
+      "y": 0.48282,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.16761,
+      "y": 0.42849,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57677,
+      "y": 0.59556,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.36548,
+      "y": 0.68508,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.55187,
+      "y": 0.64991,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.29577,
+    "explode": 0.1035,
+    "dolly": 0.02947,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.70282,
+      "y": 0.33609,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.29949,
+      "y": 0.47548,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.6294,
+      "y": 0.48467,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.16876,
+      "y": 0.43102,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57638,
+      "y": 0.59705,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.36584,
+      "y": 0.68642,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.55156,
+      "y": 0.65122,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.30986,
+    "explode": 0.119,
+    "dolly": 0.03583,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.70402,
+      "y": 0.32905,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.30003,
+      "y": 0.47384,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.62872,
+      "y": 0.48691,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.17014,
+      "y": 0.43408,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57591,
+      "y": 0.59885,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.36627,
+      "y": 0.68803,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.5512,
+      "y": 0.6528,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.32394,
+    "explode": 0.13598,
+    "dolly": 0.04355,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.70521,
+      "y": 0.32173,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.30068,
+      "y": 0.47201,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.6279,
+      "y": 0.4896,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.17181,
+      "y": 0.43775,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57534,
+      "y": 0.60102,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.3668,
+      "y": 0.68996,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.55075,
+      "y": 0.6547,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.33803,
+    "explode": 0.1545,
+    "dolly": 0.05294,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.70635,
+      "y": 0.31425,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.30148,
+      "y": 0.47006,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.62691,
+      "y": 0.49283,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.17381,
+      "y": 0.44215,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57466,
+      "y": 0.60362,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.36743,
+      "y": 0.69229,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.55022,
+      "y": 0.65699,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.35211,
+    "explode": 0.17462,
+    "dolly": 0.06436,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.7074,
+      "y": 0.30676,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.30245,
+      "y": 0.46809,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.62572,
+      "y": 0.49671,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.17621,
+      "y": 0.44743,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57385,
+      "y": 0.60675,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.36819,
+      "y": 0.69508,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.54958,
+      "y": 0.65973,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.3662,
+    "explode": 0.19643,
+    "dolly": 0.07823,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.70828,
+      "y": 0.29946,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.30363,
+      "y": 0.46622,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.6243,
+      "y": 0.50135,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.17907,
+      "y": 0.45373,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57287,
+      "y": 0.61049,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.36909,
+      "y": 0.69841,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.54882,
+      "y": 0.66302,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.38028,
+    "explode": 0.21998,
+    "dolly": 0.0951,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.70893,
+      "y": 0.2926,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.30507,
+      "y": 0.46461,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.62261,
+      "y": 0.50689,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.18247,
+      "y": 0.46122,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57171,
+      "y": 0.61494,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.37017,
+      "y": 0.70238,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.54791,
+      "y": 0.66693,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.39437,
+    "explode": 0.24533,
+    "dolly": 0.11561,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.70926,
+      "y": 0.28646,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.3068,
+      "y": 0.46346,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.62059,
+      "y": 0.51346,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.18651,
+      "y": 0.4701,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.57033,
+      "y": 0.62023,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.37145,
+      "y": 0.70708,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.54683,
+      "y": 0.67157,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.40845,
+    "explode": 0.27257,
+    "dolly": 0.14054,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.70917,
+      "y": 0.28143,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.3089,
+      "y": 0.46301,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.61821,
+      "y": 0.52123,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.19126,
+      "y": 0.48055,
+      "visible": false
+     },
+     {
+      "id": "spd",
+      "x": 0.56869,
+      "y": 0.62648,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.37296,
+      "y": 0.71262,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.54556,
+      "y": 0.67705,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.42254,
+    "explode": 0.30175,
+    "dolly": 0.17084,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.70833,
+      "y": 0.27885,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.3114,
+      "y": 0.46355,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.61542,
+      "y": 0.53037,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.19683,
+      "y": 0.49278,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.56677,
+      "y": 0.63382,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.37473,
+      "y": 0.71913,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.54406,
+      "y": 0.68349,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.43662,
+    "explode": 0.33294,
+    "dolly": 0.20767,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.70631,
+      "y": 0.28055,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.31437,
+      "y": 0.46539,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.61215,
+      "y": 0.54104,
+      "visible": false
+     },
+     {
+      "id": "pcb",
+      "x": 0.20331,
+      "y": 0.507,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.56453,
+      "y": 0.64238,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.3768,
+      "y": 0.72669,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.54231,
+      "y": 0.69101,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.4507,
+    "explode": 0.36621,
+    "dolly": 0.25245,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.70301,
+      "y": 0.2869,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.31787,
+      "y": 0.46888,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.60835,
+      "y": 0.55341,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.21078,
+      "y": 0.52339,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.56193,
+      "y": 0.65231,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.37919,
+      "y": 0.73543,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.54028,
+      "y": 0.6997,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.46479,
+    "explode": 0.40163,
+    "dolly": 0.30689,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.69833,
+      "y": 0.2982,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.32194,
+      "y": 0.47439,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.60399,
+      "y": 0.56763,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.21932,
+      "y": 0.5421,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.55895,
+      "y": 0.66369,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.38193,
+      "y": 0.74542,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.53795,
+      "y": 0.70968,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.47887,
+    "explode": 0.43926,
+    "dolly": 0.37306,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.69222,
+      "y": 0.3147,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.32664,
+      "y": 0.48229,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.59903,
+      "y": 0.58379,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.22897,
+      "y": 0.56321,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.55555,
+      "y": 0.67662,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.38505,
+      "y": 0.75671,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.5353,
+      "y": 0.721,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.49296,
+    "explode": 0.47917,
+    "dolly": 0.45349,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.68463,
+      "y": 0.33652,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.33198,
+      "y": 0.49291,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.59344,
+      "y": 0.60195,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.23976,
+      "y": 0.58673,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.55174,
+      "y": 0.69112,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.38854,
+      "y": 0.76932,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.53232,
+      "y": 0.73368,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.50704,
+    "explode": 0.52083,
+    "dolly": 0.54651,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.67608,
+      "y": 0.36196,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.33766,
+      "y": 0.50514,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.58752,
+      "y": 0.62114,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.25109,
+      "y": 0.61137,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.5477,
+      "y": 0.70642,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.39223,
+      "y": 0.78255,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.52918,
+      "y": 0.74705,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.52113,
+    "explode": 0.56074,
+    "dolly": 0.62694,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.66937,
+      "y": 0.3819,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.34199,
+      "y": 0.51165,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.58282,
+      "y": 0.63637,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.26003,
+      "y": 0.63074,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.54449,
+      "y": 0.71853,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.39515,
+      "y": 0.79296,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.52668,
+      "y": 0.75761,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.53521,
+    "explode": 0.59837,
+    "dolly": 0.69311,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.66435,
+      "y": 0.39667,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.34512,
+      "y": 0.51274,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.5792,
+      "y": 0.64803,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.26686,
+      "y": 0.64549,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.54203,
+      "y": 0.72779,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.39739,
+      "y": 0.80089,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.52477,
+      "y": 0.76569,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.5493,
+    "explode": 0.63379,
+    "dolly": 0.74755,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.66055,
+      "y": 0.40771,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.34734,
+      "y": 0.50954,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.57639,
+      "y": 0.65709,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.27216,
+      "y": 0.6569,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.54012,
+      "y": 0.73498,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.39913,
+      "y": 0.80702,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.52328,
+      "y": 0.77195,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.56338,
+    "explode": 0.66706,
+    "dolly": 0.79233,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.65765,
+      "y": 0.41602,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.34893,
+      "y": 0.50392,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.57417,
+      "y": 0.66422,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.27631,
+      "y": 0.66582,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.53861,
+      "y": 0.74061,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.4005,
+      "y": 0.81182,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.52211,
+      "y": 0.77685,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.57746,
+    "explode": 0.69825,
+    "dolly": 0.82916,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.65542,
+      "y": 0.4223,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.3501,
+      "y": 0.49764,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.57241,
+      "y": 0.66986,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.2796,
+      "y": 0.67287,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.53742,
+      "y": 0.74508,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.40159,
+      "y": 0.81561,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.52118,
+      "y": 0.78074,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.59155,
+    "explode": 0.72743,
+    "dolly": 0.85946,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.65371,
+      "y": 0.42705,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35094,
+      "y": 0.49099,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.57101,
+      "y": 0.67437,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.28223,
+      "y": 0.67849,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.53646,
+      "y": 0.74864,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.40245,
+      "y": 0.81862,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.52043,
+      "y": 0.78383,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.60563,
+    "explode": 0.75467,
+    "dolly": 0.88439,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.65238,
+      "y": 0.43066,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35155,
+      "y": 0.48419,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.56988,
+      "y": 0.67799,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.28433,
+      "y": 0.68299,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.5357,
+      "y": 0.7515,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.40315,
+      "y": 0.82104,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51984,
+      "y": 0.78632,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.61972,
+    "explode": 0.78002,
+    "dolly": 0.9049,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.65135,
+      "y": 0.43341,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35197,
+      "y": 0.47739,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.56897,
+      "y": 0.6809,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.28603,
+      "y": 0.68661,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.53508,
+      "y": 0.7538,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.40371,
+      "y": 0.82298,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51936,
+      "y": 0.78832,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.6338,
+    "explode": 0.80357,
+    "dolly": 0.92177,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.65055,
+      "y": 0.43551,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35225,
+      "y": 0.47072,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.56823,
+      "y": 0.68326,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.2874,
+      "y": 0.68954,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.53458,
+      "y": 0.75566,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.40417,
+      "y": 0.82455,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51897,
+      "y": 0.78993,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.64789,
+    "explode": 0.82538,
+    "dolly": 0.93564,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.64991,
+      "y": 0.43713,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35243,
+      "y": 0.46427,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.56763,
+      "y": 0.68518,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.28852,
+      "y": 0.69191,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.53417,
+      "y": 0.75717,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.40454,
+      "y": 0.82583,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51865,
+      "y": 0.79124,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.66197,
+    "explode": 0.8455,
+    "dolly": 0.94706,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.64941,
+      "y": 0.43841,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35252,
+      "y": 0.45812,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.56714,
+      "y": 0.68674,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.28943,
+      "y": 0.69384,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.53384,
+      "y": 0.7584,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.40484,
+      "y": 0.82686,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51839,
+      "y": 0.79231,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.67606,
+    "explode": 0.86402,
+    "dolly": 0.95645,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.649,
+      "y": 0.43942,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35256,
+      "y": 0.4523,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.56674,
+      "y": 0.68801,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.29016,
+      "y": 0.69541,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.53357,
+      "y": 0.7594,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.40509,
+      "y": 0.8277,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51818,
+      "y": 0.79318,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.69014,
+    "explode": 0.881,
+    "dolly": 0.96417,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.64867,
+      "y": 0.44025,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35256,
+      "y": 0.44688,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.56642,
+      "y": 0.68905,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.29077,
+      "y": 0.6967,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.53335,
+      "y": 0.76022,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.40529,
+      "y": 0.82839,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51801,
+      "y": 0.79389,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.70423,
+    "explode": 0.8965,
+    "dolly": 0.97053,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.6484,
+      "y": 0.44095,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35253,
+      "y": 0.44185,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.56615,
+      "y": 0.6899,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.29126,
+      "y": 0.69775,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.53316,
+      "y": 0.76089,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.40545,
+      "y": 0.82895,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51787,
+      "y": 0.79447,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.71831,
+    "explode": 0.91059,
+    "dolly": 0.97576,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.64816,
+      "y": 0.44157,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35248,
+      "y": 0.43725,
+      "visible": false
+     },
+     {
+      "id": "dram",
+      "x": 0.56593,
+      "y": 0.69059,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.29167,
+      "y": 0.6986,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.53302,
+      "y": 0.76143,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.40559,
+      "y": 0.82941,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51776,
+      "y": 0.79494,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.73239,
+    "explode": 0.92334,
+    "dolly": 0.98006,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.64796,
+      "y": 0.44212,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35241,
+      "y": 0.43308,
+      "visible": true
+     },
+     {
+      "id": "dram",
+      "x": 0.56575,
+      "y": 0.69116,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.292,
+      "y": 0.69931,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.5329,
+      "y": 0.76188,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.4057,
+      "y": 0.82979,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51766,
+      "y": 0.79533,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.74648,
+    "explode": 0.93482,
+    "dolly": 0.98359,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.64778,
+      "y": 0.44263,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35234,
+      "y": 0.42933,
+      "visible": true
+     },
+     {
+      "id": "dram",
+      "x": 0.56561,
+      "y": 0.69163,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.29227,
+      "y": 0.69988,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.5328,
+      "y": 0.76225,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.40579,
+      "y": 0.8301,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51759,
+      "y": 0.79565,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.76056,
+    "explode": 0.94509,
+    "dolly": 0.9865,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.64762,
+      "y": 0.4431,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35228,
+      "y": 0.42601,
+      "visible": true
+     },
+     {
+      "id": "dram",
+      "x": 0.56549,
+      "y": 0.69201,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.29249,
+      "y": 0.70036,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.53272,
+      "y": 0.76255,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.40586,
+      "y": 0.83035,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51752,
+      "y": 0.79591,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.77465,
+    "explode": 0.95422,
+    "dolly": 0.9889,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.64747,
+      "y": 0.44355,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35221,
+      "y": 0.42309,
+      "visible": true
+     },
+     {
+      "id": "dram",
+      "x": 0.56539,
+      "y": 0.69232,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.29267,
+      "y": 0.70074,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.53265,
+      "y": 0.7628,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.40592,
+      "y": 0.83056,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51747,
+      "y": 0.79613,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.78873,
+    "explode": 0.96228,
+    "dolly": 0.99087,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.64734,
+      "y": 0.44397,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35215,
+      "y": 0.42056,
+      "visible": true
+     },
+     {
+      "id": "dram",
+      "x": 0.56531,
+      "y": 0.69258,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.29282,
+      "y": 0.70106,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.53259,
+      "y": 0.763,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.40597,
+      "y": 0.83073,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51743,
+      "y": 0.7963,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.80282,
+    "explode": 0.96933,
+    "dolly": 0.99249,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.64722,
+      "y": 0.44435,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.3521,
+      "y": 0.41841,
+      "visible": true
+     },
+     {
+      "id": "dram",
+      "x": 0.56524,
+      "y": 0.69279,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.29295,
+      "y": 0.70132,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.53255,
+      "y": 0.76317,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.40601,
+      "y": 0.83087,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51739,
+      "y": 0.79645,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.8169,
+    "explode": 0.97545,
+    "dolly": 0.99382,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.64712,
+      "y": 0.44468,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35205,
+      "y": 0.4166,
+      "visible": true
+     },
+     {
+      "id": "dram",
+      "x": 0.56519,
+      "y": 0.69297,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.29305,
+      "y": 0.70154,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.53251,
+      "y": 0.76331,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.40605,
+      "y": 0.83098,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51736,
+      "y": 0.79657,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.83099,
+    "explode": 0.98069,
+    "dolly": 0.99492,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.64704,
+      "y": 0.44497,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35201,
+      "y": 0.41512,
+      "visible": true
+     },
+     {
+      "id": "dram",
+      "x": 0.56514,
+      "y": 0.69311,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.29313,
+      "y": 0.70171,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.53248,
+      "y": 0.76342,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.40607,
+      "y": 0.83108,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51734,
+      "y": 0.79666,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.84507,
+    "explode": 0.98512,
+    "dolly": 0.99582,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.64697,
+      "y": 0.4452,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35198,
+      "y": 0.41394,
+      "visible": true
+     },
+     {
+      "id": "dram",
+      "x": 0.5651,
+      "y": 0.69323,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.2932,
+      "y": 0.70186,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.53246,
+      "y": 0.76351,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.4061,
+      "y": 0.83116,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51732,
+      "y": 0.79674,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.85915,
+    "explode": 0.98882,
+    "dolly": 0.99656,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.64691,
+      "y": 0.44539,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35196,
+      "y": 0.41302,
+      "visible": true
+     },
+     {
+      "id": "dram",
+      "x": 0.56507,
+      "y": 0.69332,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.29326,
+      "y": 0.70198,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.53243,
+      "y": 0.76359,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.40611,
+      "y": 0.83122,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51731,
+      "y": 0.79681,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.87324,
+    "explode": 0.99185,
+    "dolly": 0.99717,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.64686,
+      "y": 0.44555,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35195,
+      "y": 0.41235,
+      "visible": true
+     },
+     {
+      "id": "dram",
+      "x": 0.56505,
+      "y": 0.6934,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.2933,
+      "y": 0.70208,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.53242,
+      "y": 0.76365,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.40613,
+      "y": 0.83127,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51729,
+      "y": 0.79686,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.88732,
+    "explode": 0.99428,
+    "dolly": 0.99767,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.64683,
+      "y": 0.44568,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35194,
+      "y": 0.41187,
+      "visible": true
+     },
+     {
+      "id": "dram",
+      "x": 0.56503,
+      "y": 0.69347,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.29334,
+      "y": 0.70216,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.5324,
+      "y": 0.7637,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.40614,
+      "y": 0.83132,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51728,
+      "y": 0.79691,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.90141,
+    "explode": 0.99617,
+    "dolly": 0.99808,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.64679,
+      "y": 0.44578,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35194,
+      "y": 0.41157,
+      "visible": true
+     },
+     {
+      "id": "dram",
+      "x": 0.56501,
+      "y": 0.69352,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.29337,
+      "y": 0.70222,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.53239,
+      "y": 0.76374,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.40615,
+      "y": 0.83135,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51727,
+      "y": 0.79695,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.91549,
+    "explode": 0.99759,
+    "dolly": 0.99842,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.64677,
+      "y": 0.44587,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35194,
+      "y": 0.41141,
+      "visible": true
+     },
+     {
+      "id": "dram",
+      "x": 0.565,
+      "y": 0.69357,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.2934,
+      "y": 0.70228,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.53238,
+      "y": 0.76378,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.40616,
+      "y": 0.83138,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51726,
+      "y": 0.79698,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.92958,
+    "explode": 0.9986,
+    "dolly": 0.9987,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.64675,
+      "y": 0.44594,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35195,
+      "y": 0.41135,
+      "visible": true
+     },
+     {
+      "id": "dram",
+      "x": 0.56499,
+      "y": 0.6936,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.29342,
+      "y": 0.70232,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.53238,
+      "y": 0.76381,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.40617,
+      "y": 0.83141,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51726,
+      "y": 0.797,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.94366,
+    "explode": 0.99928,
+    "dolly": 0.99893,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.64673,
+      "y": 0.446,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35196,
+      "y": 0.41136,
+      "visible": true
+     },
+     {
+      "id": "dram",
+      "x": 0.56498,
+      "y": 0.69363,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.29344,
+      "y": 0.70236,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.53237,
+      "y": 0.76383,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.40617,
+      "y": 0.83142,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51725,
+      "y": 0.79702,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.95775,
+    "explode": 0.9997,
+    "dolly": 0.99912,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.64671,
+      "y": 0.44605,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35197,
+      "y": 0.4114,
+      "visible": true
+     },
+     {
+      "id": "dram",
+      "x": 0.56497,
+      "y": 0.69366,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.29345,
+      "y": 0.70239,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.53236,
+      "y": 0.76385,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.40618,
+      "y": 0.83144,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51725,
+      "y": 0.79704,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.97183,
+    "explode": 0.99991,
+    "dolly": 0.99928,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.6467,
+      "y": 0.44609,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35197,
+      "y": 0.41144,
+      "visible": true
+     },
+     {
+      "id": "dram",
+      "x": 0.56496,
+      "y": 0.69368,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.29346,
+      "y": 0.70241,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.53236,
+      "y": 0.76387,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.40618,
+      "y": 0.83145,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51725,
+      "y": 0.79705,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 0.98592,
+    "explode": 0.99999,
+    "dolly": 0.99941,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.64669,
+      "y": 0.44612,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35198,
+      "y": 0.41148,
+      "visible": true
+     },
+     {
+      "id": "dram",
+      "x": 0.56496,
+      "y": 0.69369,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.29347,
+      "y": 0.70243,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.53236,
+      "y": 0.76388,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.40619,
+      "y": 0.83147,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51724,
+      "y": 0.79706,
+      "visible": true
+     }
+    ]
+   },
+   {
+    "u": 1,
+    "explode": 1,
+    "dolly": 1,
+    "anchors": [
+     {
+      "id": "spreader",
+      "x": 0.64665,
+      "y": 0.44628,
+      "visible": true
+     },
+     {
+      "id": "pads",
+      "x": 0.35201,
+      "y": 0.41164,
+      "visible": true
+     },
+     {
+      "id": "dram",
+      "x": 0.56493,
+      "y": 0.69377,
+      "visible": true
+     },
+     {
+      "id": "pcb",
+      "x": 0.29352,
+      "y": 0.70253,
+      "visible": true
+     },
+     {
+      "id": "spd",
+      "x": 0.53234,
+      "y": 0.76394,
+      "visible": true
+     },
+     {
+      "id": "contacts",
+      "x": 0.4062,
+      "y": 0.83152,
+      "visible": true
+     },
+     {
+      "id": "notch",
+      "x": 0.51723,
+      "y": 0.79712,
+      "visible": true
+     }
+    ]
+   }
+  ]
+ },
+ "parts": [
+  {
+   "id": "spreader",
+   "name": "Heat Spreader",
+   "description": "Two brushed metal covers that clip over both sides of the module, protecting the chips and spreading their heat out to the air.",
+   "color": "#ffc64a",
+   "side": "r",
+   "label": {
+    "x": 0.78,
+    "y": 0.14
+   }
+  },
+  {
+   "id": "pads",
+   "name": "Thermal Pads",
+   "description": "Soft pads between the chips and the spreader that fill the tiny air gaps so heat can flow into the metal.",
+   "color": "#3cc8f4",
+   "side": "l",
+   "label": {
+    "x": 0.2,
+    "y": 0.2
+   }
+  },
+  {
+   "id": "dram",
+   "name": "DRAM Chips",
+   "description": "The memory chips that hold your data while the PC is running. They sit on both sides of the board.",
+   "color": "#3cc8f4",
+   "side": "r",
+   "label": {
+    "x": 0.8,
+    "y": 0.42
+   }
+  },
+  {
+   "id": "pcb",
+   "name": "PCB",
+   "description": "The green circuit board that connects every memory chip to the contacts along the bottom edge.",
+   "color": "#ffc64a",
+   "side": "l",
+   "label": {
+    "x": 0.2,
+    "y": 0.4
+   }
+  },
+  {
+   "id": "spd",
+   "name": "SPD Chip",
+   "description": "A tiny chip that tells the motherboard how the module is set up, so the system can configure it at boot.",
+   "color": "#ffc64a",
+   "side": "r",
+   "label": {
+    "x": 0.8,
+    "y": 0.62
+   }
+  },
+  {
+   "id": "contacts",
+   "name": "Gold Edge Contacts",
+   "description": "The row of gold-plated fingers that press into the motherboard's memory slot to carry power and signals.",
+   "color": "#ffc64a",
+   "side": "l",
+   "label": {
+    "x": 0.2,
+    "y": 0.7
+   }
+  },
+  {
+   "id": "notch",
+   "name": "Key Notch",
+   "description": "An off-centre gap in the contact edge that matches the ridge in the slot, so the module only fits one way round.",
+   "color": "#3cc8f4",
+   "side": "r",
+   "label": {
+    "x": 0.8,
+    "y": 0.82
+   }
+  }
+ ]
+}
