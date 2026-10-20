@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
-import { ArrowLeft, ArrowRight, Cpu, ShieldCheck } from 'lucide-react'
+import { ArrowLeft, ArrowRight, ShieldCheck } from 'lucide-react'
 import { loginAccount, registerAccount } from './api/client.js'
 import { storeAuthSession } from './authSession.js'
+import { publicAsset } from './utils/assets.js'
 import './auth.css'
 
 function safeReturnPath(search) {
@@ -41,7 +42,7 @@ export default function AccountPage() {
   return <main className="account-shell">
     <Link className="account-back" to="/"><ArrowLeft size={16} /> Back to PCForge</Link>
     <section className="account-card" aria-labelledby="account-title">
-      <div className="account-brand"><span><Cpu size={23} /></span><b>PC<span>FORGE</span></b></div>
+      <div className="account-brand"><img src={publicAsset('/images/pcforge-logo.jpg')} alt="" /><b>PC<span>FORGE</span><small>BUILT AROUND YOU</small></b></div>
       <div className="account-kicker"><ShieldCheck size={15} /> YOUR PCFORGE ACCOUNT</div>
       <h1 id="account-title">{isRegister ? 'Create your account.' : 'Welcome back.'}</h1>
       <p className="account-intro">{isRegister ? 'Save your place and keep your PCForge experience together.' : 'Sign in to continue to your PCForge account.'}</p>

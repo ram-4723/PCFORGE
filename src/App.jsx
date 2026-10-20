@@ -25,7 +25,8 @@ import SpecificationChips from './components/SpecificationChips.jsx'
 import { componentToProduct, productTitle } from './utils/catalogue.js'
 import { publicAsset } from './utils/assets.js'
 import { loadRazorpayCheckout } from './utils/razorpayCheckout.js'
-import { checkBuildCompatibility, createOrder, createPaymentCheckout, downloadInvoice, getComponents, getOrder, getRecommendation, reportPaymentFailure, saveBuild, verifyPayment } from './api/client.js'
+import { checkBuildCompatibility, createOrder, createPaymentCheckout, downloadInvoice, getComponents, getOrder, getRecommendation, loginAccount, reportPaymentFailure, saveBuild, verifyPayment } from './api/client.js'
+import { storeAuthSession, readAuthSession } from './authSession.js'
 
 const componentIcons = { 'Processors (CPU)': 'Cpu', CPU: 'Cpu', 'Graphics Cards (GPU)': 'Gpu', GPU: 'Gpu', Motherboards: 'CircuitBoard', RAM: 'MemoryStick', 'SSDs and HDDs': 'Database', Storage: 'Database', 'Power Supplies': 'Zap', PSU: 'Zap', 'PC Cabinets and Cases': 'Box', Case: 'Box', 'CPU Coolers': 'Fan', 'CPU Cooler': 'Fan', 'Case Fans': 'Fan', Monitors: 'Monitor', Monitor: 'Monitor', Keyboards: 'Keyboard', Keyboard: 'Keyboard', 'Gaming Mice': 'Mouse', Mouse: 'Mouse', 'Gaming Chairs': 'Box', 'Headphones and Speakers': 'Headphones', 'Gaming Controllers': 'Gamepad2', Mousepads: 'PanelsTopLeft', 'Networking Devices': 'Wifi', 'Other PC Accessories': 'Cable' }
 function toShopProduct(component) {
@@ -82,6 +83,39 @@ function Reveal({ children, className = '', delay = 0 }) {
   return <motion.div className={className} initial={reduce ? false : { opacity: 0, y: 22 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.14 }} transition={{ duration: reduce ? 0 : 0.62, delay }}>{children}</motion.div>
 }
 
+function TimedLoginPrompt({ onSkip }) {
+  const [form, setForm] = useState({ email: '', password: '' })
+  const [state, setState] = useState({ loading: false, error: '' })
+  const navigate = useNavigate()
+  const submit = async (event) => {
+    event.preventDefault()
+    setState({ loading: true, error: '' })
+    try {
+      const result = await loginAccount(form.email.trim(), form.password)
+      storeAuthSession(result)
+      onSkip()
+    } catch (error) {
+      setState({ loading: false, error: error.message || 'Unable to sign in. Please try again.' })
+    }
+  }
+  return <motion.div className="login-prompt-scrim" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onMouseDown={(event) => { if (event.target === event.currentTarget) onSkip() }}>
+    <motion.section className="login-prompt-card" role="dialog" aria-modal="true" aria-labelledby="login-prompt-title" initial={{ opacity: 0, y: 18, scale: .98 }} animate={{ opacity: 1, y: 0, scale: 1 }} exit={{ opacity: 0, y: 12 }}>
+      <button className="login-prompt-close" type="button" aria-label="Skip sign in" onClick={onSkip}><X size={18} /></button>
+      <div className="login-prompt-brand"><img src={publicAsset('/images/pcforge-logo.jpg')} alt="" /><span>PC<span>FORGE</span><small>BUILT AROUND YOU</small></span></div>
+      <span className="login-prompt-kicker">YOUR PCFORGE ACCOUNT</span>
+      <h2 id="login-prompt-title">Welcome to PCForge.</h2>
+      <p>Sign in to continue. You can also skip this and keep exploring.</p>
+      <form onSubmit={submit}>
+        <label>Email address<input type="email" autoComplete="email" value={form.email} onChange={(event) => setForm({ ...form, email: event.target.value })} placeholder="you@example.com" required /></label>
+        <label>Password<input type="password" autoComplete="current-password" value={form.password} onChange={(event) => setForm({ ...form, password: event.target.value })} placeholder="Your password" required /></label>
+        {state.error && <p className="login-prompt-error" role="alert">{state.error}</p>}
+        <button className="login-prompt-submit" type="submit" disabled={state.loading}>{state.loading ? 'Please wait…' : 'Sign in'} <ArrowRight size={16} /></button>
+      </form>
+      <div className="login-prompt-actions"><button type="button" onClick={() => { onSkip(); navigate('/account?mode=register') }}>Create an account</button><button type="button" onClick={onSkip}>Skip for now</button></div>
+    </motion.section>
+  </motion.div>
+}
+
 function Header({ onConfigure, cartCount, wishlistCount, onOpenCart, onOpenWishlist, searchTerm, onSearch }) {
   const [open, setOpen] = useState(false)
   const navigate = useNavigate()
@@ -135,6 +169,18 @@ function App() {
   const reduceMotion = useReducedMotion()
   const route = resolveSiteRoute(pathname)
   const page = route.id
+  const [loginPromptOpen, setLoginPromptOpen] = useState(false)
+  useEffect(() => {
+    let dismissed = false
+    try { dismissed = sessionStorage.getItem('pcforge-login-prompt-dismissed') === 'true' } catch { /* storage can be unavailable */ }
+    if (dismissed || readAuthSession()) return
+    const timer = window.setTimeout(() => setLoginPromptOpen(true), 10000)
+    return () => window.clearTimeout(timer)
+  }, [])
+  const dismissLoginPrompt = () => {
+    setLoginPromptOpen(false)
+    try { sessionStorage.setItem('pcforge-login-prompt-dismissed', 'true') } catch { /* storage can be unavailable */ }
+  }
   const [budget, setBudget] = useState(65000)
   const [budgetDraft, setBudgetDraft] = useState('65,000')
   const [usage, setUsage] = useState('Gaming')
@@ -604,6 +650,8 @@ function App() {
     <CartDrawer mode="wishlist" open={wishlistOpen} items={wishlistProducts} onClose={() => setWishlistOpen(false)} onAddToCart={addProduct} onToggleWishlist={toggleWishlist} />
     <CartDrawer mode="cart" open={cartOpen} items={cart} subtotal={cartSubtotal} onClose={() => setCartOpen(false)} onQuantity={updateQuantity} onRemove={removeCartItem} onCheckout={() => { setCartOpen(false); setCartCheckoutOpen(true) }} />
     <CartCheckoutModal open={cartCheckoutOpen} items={cart} total={cartSubtotal} onClose={() => setCartCheckoutOpen(false)} onBackToCart={() => setCartOpen(true)} onPurchaseComplete={() => setCart([])} />
+
+    <AnimatePresence>{loginPromptOpen && <TimedLoginPrompt onSkip={dismissLoginPrompt} />}</AnimatePresence>
 
     <AnimatePresence>{productDetail && <motion.div className="modal-scrim" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onMouseDown={(e) => { if (e.target === e.currentTarget) setProductDetail(null) }}><motion.div className="product-detail-modal" initial={{ y: 18, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: 18, opacity: 0 }} role="dialog" aria-modal="true" aria-labelledby="product-detail-title"><button className="modal-close" onClick={() => setProductDetail(null)} aria-label="Close product details"><X /></button><ProductArt key={`${productDetail.id}:${productDetail.image || ''}:${productDetail.fallbackImage || ''}`} icon={productDetail.icon} tone={productDetail.tone} image={productDetail.image} fallbackImage={productDetail.fallbackImage} alt={productDetail.imageAlt || `${productDetail.name} product photo`} /><div><span className="eyebrow">{productDetail.brand ? `${productDetail.brand} · ` : ''}{productDetail.category}</span><h2 id="product-detail-title">{productDetail.name}</h2><SpecificationChips specifications={productDetail.specs} /><p className="detail-stock">{productDetail.stock}</p><strong>{formatINR(productDetail.price)}</strong>{productDetail.isDemoData && <small className="sample-price-label">Sample price</small>}<button className="button button-gold full" onClick={() => { addProduct(productDetail); setProductDetail(null) }}>Add to cart <ShoppingBag size={15} /></button></div></motion.div></motion.div>}</AnimatePresence>
 
