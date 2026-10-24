@@ -197,13 +197,13 @@ button:disabled, [aria-disabled='true'] { cursor: not-allowed; }
 }
 
 @media (max-width: 760px) {
-  .section-pad { padding-block: 60px; padding-inline: 20px; }
-  .section-top { margin-bottom: 24px; }
-  .section-title h2 { font-size: clamp(30px, 8vw, 40px); }
-  .section-title p { font-size: 15px; }
-  .hero { min-height: 0; padding: 54px 22px 36px; }
-  .hero h1 { font-size: clamp(48px, 12vw, 70px); }
-  .hero-art { height: clamp(250px, 68vw, 390px); }
+  .section-pad { padding-block: 48px; padding-inline: 18px; }
+  .section-top { margin-bottom: 20px; }
+  .section-title h2 { font-size: clamp(28px, 7vw, 36px); }
+  .section-title p { font-size: 14px; }
+  .hero { min-height: 0; padding: 44px 18px 30px; }
+  .hero h1 { font-size: clamp(42px, 10vw, 60px); }
+  .hero-art { height: clamp(230px, 62vw, 350px); }
   .hero-benefits { gap: 8px; }
   .hero-benefits span { padding: 7px 9px; }
   .product-visual .product-art { min-height: 190px; }
@@ -212,9 +212,14 @@ button:disabled, [aria-disabled='true'] { cursor: not-allowed; }
   .builder-progress button { padding-inline: 2px; }
   .builder-progress button small { display: none; }
   .use-card { min-height: 150px; }
-  .hardware-part-copy { padding: 24px 20px; }
-  .forge-toolbar { max-width: calc(100% - 20px); }
-  .forge-toolbar button { min-height: 40px; padding-inline: 8px; }
+  .hardware-part-copy { padding: 20px 17px; }
+  .forge-toolbar { max-width: calc(100% - 16px); }
+  .forge-toolbar button { min-height: 35px; padding-inline: 7px; }
+  .pc-part-selector { display: flex; gap: 6px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: thin; }
+  .pc-part-selector button { flex: 0 0 78px; min-height: 61px; gap: 4px; padding: 7px 5px; scroll-snap-align: start; }
+  .part-index { display: none; }
+  .part-icon { width: 17px; height: 17px; }
+  .part-name { font-size: 12px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

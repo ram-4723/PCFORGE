@@ -415,7 +415,14 @@ export const GpuExplorer = forwardRef(function GpuExplorer({
       const a = last?.anchors?.find((x) => x.id === p.id);
       const m = mp[p.id];
       if (!a || !m) return null;
-      return { ...p, ax: a.x, ay: a.y, lx: m.label.x, ly: m.label.y, side: m.side || "r", color: m.color || "#ffc64a" };
+      const side = m.side || "r";
+      // Keep label edges inside the viewer. The leader endpoint follows the
+      // adjusted label anchor so exploded parts never point outside the frame.
+      const lx = side === "l"
+        ? Math.min(0.98, Math.max(0.28, m.label.x))
+        : Math.min(0.72, Math.max(0.02, m.label.x));
+      const ly = Math.min(0.96, Math.max(0.14, m.label.y));
+      return { ...p, ax: a.x, ay: a.y, lx, ly, side, color: m.color || "#ffc64a" };
     }).filter(Boolean);
   }, [shown, shownLabels]);
 
@@ -458,7 +465,7 @@ export const GpuExplorer = forwardRef(function GpuExplorer({
                 key={p.id}
                 type="button"
                 className={`gpux-label gpux-label--${p.side} ${activeId === p.id ? "is-active" : ""}`}
-                style={{ left: `${p.lx * 100}%`, top: `${p.ly * 100}%`, "--i": i, "--accent": p.color }}
+                style={{ "--gpux-lx": `${p.lx * 100}%`, "--gpux-ly": `${p.ly * 100}%`, "--i": i, "--accent": p.color }}
                 aria-label={p.name}
                 tabIndex={labelsOn ? 0 : -1}
                 aria-describedby={activeId === p.id ? descId : undefined}

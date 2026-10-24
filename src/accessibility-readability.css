@@ -11,6 +11,12 @@ body :is(p, li, dt, dd, label, button, a, small, span, strong, b, time, figcapti
     input, select, textarea, .forge-viewer-head, .forge-status, .forge-zoom-controls,
     .forge-toolbar, .part-name, .part-index, .hotspot-label,
     .hardware-fact > span, .hardware-fact-grid > div > span) {
+    font-size: max(12px, 1em) !important;
+  }
+}
+
+@media (max-width: 760px) {
+  body :is(p, li, dt, dd, .section-title p, .hardware-part-summary, .hardware-part-copy > p) {
     font-size: max(14px, 1em) !important;
   }
 }

@@ -117,7 +117,7 @@ function TimedLoginPrompt({ onSkip }) {
 }
 
 function Header({ onConfigure, cartCount, wishlistCount, onOpenCart, onOpenWishlist, searchTerm, onSearch }) {
-  const [open, setOpen] = useState(() => window.matchMedia('(max-width: 1024px)').matches)
+  const [open, setOpen] = useState(false)
   const navigate = useNavigate()
   const move = (path) => { navigate(path); setOpen(false) }
   return <header className="topbar"><Link className="brand" to="/" onClick={() => setOpen(false)}><img className="brand-logo" src={publicAsset('/images/pcforge-logo.jpg')} alt="PCForge logo" /><span>PC<span className="gold">FORGE</span><small>BUILT AROUND YOU</small></span></Link>
