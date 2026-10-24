@@ -15,8 +15,10 @@
 .hardware-explorer-grid{grid-template-columns:minmax(0,1fr)}.hardware-studio-scene .pc-stage{min-height:clamp(360px,54vw,480px)}.pc-part-selector{grid-template-columns:repeat(4,minmax(0,1fr))}.pc-part-selector button{min-width:0;min-height:44px}.pc-stage-controls{flex-wrap:wrap}.pc-stage-controls button{min-height:44px}
 .checkout-modal,.store-checkout-modal,.product-detail-modal,.prebuilt-detail-modal{width:min(100%,calc(100vw - 32px));max-height:calc(100dvh - 32px);overflow-y:auto}
 }
-@media(max-width:700px){
+@media(max-width:1024px){
 .shop-filter-toggle{display:flex;align-items:center;gap:9px;width:100%;min-height:46px;padding:0 14px;border:1px solid rgba(154,187,209,.24);border-radius:7px;background:rgba(255,255,255,.035);color:#edf2f5;text-align:left;font-size:13px;font-weight:600}.shop-filter-toggle>svg:first-child{color:var(--gold)}.shop-filter-toggle>svg:last-child{margin-left:auto;transition:transform .18s}.shop-filter-toggle>svg:last-child.is-open{transform:rotate(180deg)}.shop-filter-count{display:grid;place-items:center;min-width:21px;height:21px;padding:0 6px;border-radius:11px;background:var(--gold);color:#14202a;font-size:11px;font-weight:700}.shop-filter-panel{display:none}.shop-filter-panel.is-open{display:grid;gap:10px;margin-top:10px}
+}
+@media(max-width:700px){
 .hero{grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto;gap:12px;min-height:0;padding:58px clamp(16px,5vw,28px) 32px}.hero-copy{padding:0}.hero h1{font-size:clamp(42px,11vw,62px)}.hero-art{position:relative;inset:auto;grid-row:auto;width:100%;min-width:0;height:clamp(240px,65vw,360px);margin:0;opacity:1}.hero-benefits{gap:12px;margin-top:28px}
 .category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.shop-filters{grid-template-columns:repeat(2,minmax(0,1fr))}.prebuilt-grid{grid-template-columns:minmax(0,1fr)}.prebuilt-card{grid-template-columns:minmax(110px,.65fr) minmax(0,1.35fr)}.peripheral-layout{grid-template-columns:minmax(0,1fr)}.peripheral-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 .component-row{grid-template-columns:36px minmax(0,1fr) auto}.component-row>select{grid-column:2/-1;grid-row:2;width:100%}.component-row .component-price{grid-column:3;grid-row:1;white-space:nowrap}.component-row .component-brand{grid-column:2;grid-row:2}.component-name{grid-column:2;grid-row:1;padding-right:4px}.component-row>select~.component-brand{display:none}
@@ -34,7 +36,7 @@ html,body{max-width:100%;overflow-x:clip}body{min-width:0}
 .hero-art{width:100%;max-width:100%;min-width:0;overflow:hidden}
 }
 
-@media(min-width:701px){.shop-filter-toggle{display:none}.shop-filter-panel{display:contents}}
+@media(min-width:1025px){.shop-filter-toggle{display:none}.shop-filter-panel{display:contents}}
 
 /* Navbar logo uses the supplied artwork without changing the brand lockup. */
 .topbar .brand-logo{display:block;width:39px;height:39px;flex:0 0 39px;aspect-ratio:1;object-fit:contain;border-radius:50%}
