@@ -1,0 +1,58 @@
+/* Consistent readable type and contrast across the full site. */
+body :is(p, li, dt, dd, label, button, a, small, span, strong, b, time, figcaption, output,
+  input, select, textarea, .forge-viewer-head, .forge-status, .forge-zoom-controls,
+  .forge-toolbar, .part-name, .part-index, .hotspot-label,
+  .hardware-fact > span, .hardware-fact-grid > div > span) {
+  font-size: max(12px, 1em) !important;
+}
+
+@media (max-width: 1024px) {
+  body :is(p, li, dt, dd, label, button, a, small, span, strong, b, time, figcaption, output,
+    input, select, textarea, .forge-viewer-head, .forge-status, .forge-zoom-controls,
+    .forge-toolbar, .part-name, .part-index, .hotspot-label,
+    .hardware-fact > span, .hardware-fact-grid > div > span) {
+    font-size: max(14px, 1em) !important;
+  }
+}
+
+/* The hardware guide uses a dark panel, so its summary and details need light text. */
+.hardware-part-detail .hardware-part-copy .hardware-part-summary {
+  color: #f1f5f8 !important;
+}
+
+.hardware-part-detail .hardware-part-copy > p:not(.hardware-part-summary),
+.hardware-part-detail .hardware-fact p,
+.hardware-part-detail .hardware-fact-grid p,
+.hardware-part-detail .hardware-fit-note small,
+.forge-view-hint,
+.forge-status,
+.forge-toolbar button,
+.pc-part-selector button,
+.part-index {
+  color: #c5d1d9 !important;
+}
+
+.config-layout .component-name small,
+.config-layout .component-brand,
+.config-layout .result-head p,
+.config-layout .compat-line,
+.config-layout .tiny-disclaimer,
+.config-layout .total-box > p,
+.config-layout .total-box > small,
+.config-layout .optional-parts-row small {
+  color: #d3dde5 !important;
+}
+
+.config-layout :is(.button-darkline:disabled, .button-gold:disabled, .button:disabled) {
+  color: #f1f5f9 !important;
+  border-color: #82919d !important;
+  background: #35434e !important;
+  opacity: 1;
+}
+
+.product-card :is(.product-brand, .product-body p, .product-body small, .product-meta, .product-specs),
+.prebuilt-card :is(.prebuilt-copy > p, .prebuilt-copy li, .prebuilt-copy small),
+.demo-stock-note,
+.sample-stock-note {
+  color: #c0ccd4;
+}
