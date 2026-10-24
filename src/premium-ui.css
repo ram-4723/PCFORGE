@@ -1,0 +1,222 @@
+/* PCForge visual system: precise, calm, and consistent across routes. */
+:root {
+  --night: #080e13;
+  --navy: #101b24;
+  --surface: #0d171f;
+  --surface-soft: #13212b;
+  --surface-raised: #172832;
+  --gold: #f2c66d;
+  --gold-dark: #d9a845;
+  --brand-blue: #65d1e2;
+  --brand-blue-dark: #35b6cc;
+  --text: #f3f6f8;
+  --text-muted: #b6c4cd;
+  --border: rgba(166, 193, 207, .18);
+  --hairline: rgba(166, 193, 207, .14);
+  --shadow-card: 0 14px 38px rgba(0, 0, 0, .24);
+  --shadow-hover: 0 20px 46px rgba(0, 0, 0, .34), 0 0 22px rgba(101, 209, 226, .08);
+}
+
+html { scroll-behavior: smooth; }
+body {
+  color: var(--text);
+  background: radial-gradient(ellipse at 50% -18%, #13232b 0, transparent 50%), var(--night);
+  font-family: 'DM Sans', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 { font-family: Manrope, 'DM Sans', sans-serif; }
+:focus-visible { outline: 2px solid var(--brand-blue); outline-offset: 3px; }
+::selection { color: #071116; background: var(--brand-blue); }
+
+/* Use familiar cursors instead of the decorative wrench cursor. */
+html, body, body * { cursor: auto; }
+a, button:not(:disabled), [role='button'], summary, select { cursor: pointer; }
+input:not([type='button']):not([type='submit']):not([type='reset']):not([type='checkbox']):not([type='radio']):not([type='range']):not([type='file']),
+textarea, [contenteditable='true'], [role='textbox'] { cursor: text; }
+button:disabled, [aria-disabled='true'] { cursor: not-allowed; }
+
+.section-pad { padding-block: clamp(64px, 7vw, 104px); }
+.section-top { gap: 24px; margin-bottom: clamp(24px, 3.2vw, 40px); }
+.section-title { max-width: 760px; }
+.section-title .eyebrow { color: var(--gold); letter-spacing: .15em; }
+.section-title h2 { margin: 8px 0 12px; color: #f5f7f8; font-size: clamp(32px, 4vw, 52px); line-height: 1.08; letter-spacing: -.055em; }
+.section-title p { max-width: 62ch; color: var(--text-muted); font-size: 16px; line-height: 1.65; }
+.side-note, .catalogue-count { color: #c0ccd3; }
+
+/* Glassy fixed navigation with clean active and focus states. */
+.topbar {
+  min-height: 76px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(7, 13, 18, .94);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, .2);
+  backdrop-filter: blur(18px) saturate(135%);
+}
+.brand { gap: 12px; font-family: Manrope, sans-serif; }
+.brand-logo { border: 1px solid rgba(242, 198, 109, .48); box-shadow: 0 3px 16px rgba(0, 0, 0, .3); }
+.brand small { color: #b1c0c9; letter-spacing: .16em; }
+.nav-links { gap: clamp(10px, 1.35vw, 22px); }
+.nav-links a { color: #c1cdd4; font-weight: 600; transition: color .2s ease, background .2s ease; }
+.nav-links a::after { height: 2px; background: var(--brand-blue); box-shadow: 0 0 12px rgba(101, 209, 226, .36); }
+.nav-links a:hover, .nav-links a.active { color: #fff; }
+.nav-links a:hover svg, .nav-links a.active svg { color: var(--gold); }
+.header-search { border-color: rgba(166, 193, 207, .26); border-radius: 9px; background: #0d171e; }
+.header-search:focus-within { border-color: var(--brand-blue); box-shadow: 0 0 0 3px rgba(101, 209, 226, .1); }
+.header-search input::placeholder { color: #a1b1ba; }
+.header-icon-button { border-radius: 9px; border-color: rgba(166, 193, 207, .24); background: #0d171e; transition: transform .18s ease, border-color .18s ease, background .18s ease; }
+.header-icon-button:hover { transform: translateY(-2px); border-color: var(--gold); }
+.header-icon-button span { min-width: 19px; height: 19px; line-height: 19px; color: #111820; background: var(--gold); }
+
+/* Refined shared controls. */
+.button, .nav-cta, .clear-filters, .icon-button, .shop-category-chips button, .prebuilt-filters button {
+  border-radius: 9px;
+  font-weight: 700;
+  transition: transform .2s ease, color .2s ease, background .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.button { min-height: 46px; }
+.button-gold, .nav-cta { box-shadow: 0 7px 20px rgba(242, 198, 109, .16); }
+.button-gold:hover, .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 11px 26px rgba(242, 198, 109, .24); }
+.button-line, .button-darkline { border-color: rgba(180, 204, 216, .38); }
+.button-line:hover, .button-darkline:hover { transform: translateY(-2px); box-shadow: 0 9px 24px rgba(0, 0, 0, .2); }
+
+/* Homepage hero. */
+.hero {
+  min-height: min(760px, calc(100svh - 76px));
+  background: radial-gradient(ellipse at 76% 44%, rgba(49, 142, 163, .24), transparent 38%), linear-gradient(112deg, #080e13 8%, #0b1820 58%, #12212a 100%);
+}
+.hero::before { background: linear-gradient(0deg, rgba(4, 9, 13, .62), transparent 20%, transparent 83%, rgba(4, 8, 12, .2)); }
+.hero-kicker { color: #d0dce1; }
+.hero h1 { max-width: 740px; text-transform: none; font-size: clamp(54px, 7vw, 92px); line-height: 1.02; letter-spacing: -.065em; }
+.hero h1 em { color: var(--gold); }
+.hero-subtitle { color: #eff4f6; }
+.hero-copy > p { max-width: 48ch; color: #c2cfd6; font-size: 17px; }
+.hero-benefits { gap: 10px; color: #d2dde2; }
+.hero-benefits span { border-color: rgba(180, 204, 216, .18); border-radius: 99px; background: rgba(5, 12, 17, .72); }
+.hero-chip { border-radius: 99px; }
+.hero-art-label strong { font-size: 15px; }
+
+/* Elevated cards with restrained motion and a shared border language. */
+.category-tile, .build-card, .product-card, .prebuilt-card, .service-item {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow-card);
+  transition: transform .24s cubic-bezier(.2, .7, .2, 1), border-color .24s ease, box-shadow .24s ease, background .24s ease;
+}
+.category-tile:hover, .build-card:hover, .product-card:hover, .prebuilt-card:hover, .service-item:hover {
+  transform: translateY(-4px);
+  border-color: rgba(101, 209, 226, .48);
+  box-shadow: var(--shadow-hover);
+}
+.category-tile { background: linear-gradient(145deg, #14232c, #0d171e); }
+.build-card, .product-card, .prebuilt-card { overflow: hidden; background: linear-gradient(155deg, #111e26, #0b141a 74%); }
+.build-photo, .product-visual, .prebuilt-visual { background-color: #101d25; }
+.build-info, .product-body, .prebuilt-copy { padding: clamp(18px, 2vw, 25px); background: transparent; }
+.build-info h3, .product-body h3, .prebuilt-copy h3 { color: #f4f7f8; font-size: clamp(19px, 1.6vw, 24px); line-height: 1.24; letter-spacing: -.035em; }
+.build-info p, .product-body p, .prebuilt-copy > p { color: #c0cdd4; line-height: 1.6; }
+.product-brand, .build-use, .product-meta { color: #c2d0d7; }
+.product-visual .product-art { min-height: 220px; }
+.product-art-photo { background: #f4f5f3; }
+.product-card .add-cart-button { min-height: 46px; border-radius: 8px; color: #dffaff; border-color: rgba(101, 209, 226, .42); background: rgba(101, 209, 226, .1); font-weight: 700; }
+.product-card .add-cart-button:hover { color: #071116; background: var(--brand-blue); }
+.product-details-link { min-height: 44px; color: #d6e3e8; }
+.product-price-row strong, .prebuilt-price strong { color: #fff; font-variant-numeric: tabular-nums; }
+
+/* Component catalogue. */
+.shop-filters { border: 1px solid var(--border); border-radius: 12px; background: linear-gradient(145deg, #111e26, #0c151b); box-shadow: 0 10px 28px rgba(0, 0, 0, .18); }
+.filter-select, .price-filter { color: #d4dfe4; }
+.filter-select select, .shop-filters input { border-radius: 8px; }
+.shop-category-chips button, .prebuilt-filters button { min-height: 42px; border-color: rgba(166, 193, 207, .28); color: #cbd6dc; background: #0e1920; }
+.shop-category-chips button.active, .prebuilt-filters button.active { color: #071116; border-color: var(--brand-blue); background: var(--brand-blue); box-shadow: 0 5px 18px rgba(101, 209, 226, .16); }
+.shop-filter-toggle { min-height: 48px; border-color: var(--border); border-radius: 10px; background: linear-gradient(145deg, #12212a, #0d171e); }
+.demo-stock-note { color: #c0cdd4; }
+.catalogue-count { border-left: 2px solid var(--gold); padding-left: 14px; }
+
+/* Builder dashboard and hardware guide share the same inset-surface treatment. */
+.config-layout { border-color: rgba(101, 209, 226, .24); border-radius: 16px; box-shadow: 0 22px 60px rgba(0, 0, 0, .28); }
+.config-heading, .builder-progress { background: rgba(15, 27, 35, .96); }
+.config-heading { padding: 28px clamp(22px, 3vw, 42px) 20px; }
+.config-heading .section-title h2 { font-size: clamp(30px, 3vw, 40px); }
+.config-form { padding: clamp(24px, 3vw, 40px); }
+.step-block { border-bottom-color: rgba(166, 193, 207, .2); }
+.step-heading h3 { font-size: 18px; }
+.builder-progress { padding: 20px clamp(16px, 3vw, 38px); }
+.builder-progress button { min-height: 58px; border-radius: 10px; transition: background .2s ease, color .2s ease; }
+.builder-progress button:hover { background: rgba(255, 255, 255, .04); }
+.builder-progress button b { color: #e1e9ed; font-size: 13px; }
+.builder-progress button small { color: #b6c4cc; font-size: 12px; }
+.builder-step-number { width: 34px; height: 34px; color: #d4dfe5; }
+.use-card { border-color: rgba(166, 193, 207, .3); border-radius: 12px; background-color: #101c24; }
+.use-card b { font-size: 16px; }
+.use-card small { color: #d1dce1; font-size: 13px; }
+.budget-entry-wrap, .component-row select, .optional-parts-row select { border-radius: 9px; }
+.quick-budgets button { min-height: 42px; border-radius: 8px; color: #dce5e9; font-size: 13px; }
+.generate-button { min-height: 50px; border-radius: 9px; font-size: 15px; }
+.live-build-summary { border-color: rgba(101, 209, 226, .22); background: linear-gradient(155deg, #101e27, #0a141a); }
+.live-summary-heading { border-bottom: 1px solid var(--hairline); }
+.live-metric, .live-compatibility, .compatibility-box { border: 1px solid var(--hairline); border-radius: 10px; background: rgba(255, 255, 255, .025); }
+.result-panel { border: 1px solid rgba(101, 209, 226, .25); border-radius: 14px; background: #0c171e; box-shadow: var(--shadow-card); }
+.component-row { border-bottom-color: var(--hairline); }
+.component-row select { min-height: 46px; }
+.total-box { border: 1px solid rgba(242, 198, 109, .2); border-radius: 12px; }
+
+.hardware-explorer-section { background: radial-gradient(ellipse at 70% 10%, rgba(40, 118, 135, .15), transparent 34%), #0a1117; }
+.hardware-explorer-section .section-title p { color: #c0cdd4; }
+.forge-viewer { border-color: rgba(166, 193, 207, .22); border-radius: 14px; box-shadow: var(--shadow-card); }
+.forge-viewer-head, .forge-status { color: #c2d0d7; }
+.forge-stage { background: radial-gradient(ellipse at 50% 45%, #20333a 0, #101c23 45%, #090f14 78%); }
+.forge-view-hint { color: #bdcbd2; }
+.forge-toolbar { border-color: rgba(166, 193, 207, .25); border-radius: 12px; }
+.forge-toolbar button { min-height: 42px; border-radius: 8px; color: #d0dbe0; }
+.forge-toolbar button:hover, .forge-toolbar button.active { color: #fff1cf; border-color: rgba(242, 198, 109, .32); background: rgba(242, 198, 109, .12); }
+.pc-part-selector { overflow: hidden; border-color: var(--border); border-radius: 12px; }
+.pc-part-selector button { min-height: 88px; color: #c4d0d5; }
+.part-index { color: #b0c0c8; }
+.hardware-part-detail { border-color: rgba(166, 193, 207, .2); border-radius: 14px; box-shadow: var(--shadow-card); }
+.hardware-part-copy { padding: clamp(24px, 3.2vw, 44px); }
+.hardware-part-copy h3 { font-size: clamp(28px, 3vw, 40px); letter-spacing: -.045em; }
+.hardware-part-copy .hardware-part-summary { color: #f1f5f8 !important; font-size: 18px; line-height: 1.55; }
+.hardware-fact, .hardware-fact-grid { border-color: rgba(166, 193, 207, .2); }
+.hardware-fact > span, .hardware-fact-grid > div > span { color: var(--gold); }
+.hardware-fit-note { border-radius: 9px; }
+
+.contact-form, .campaign-manager, .checkout-modal, .store-checkout-modal, .cart-drawer,
+.product-detail-modal, .prebuilt-detail-modal { border-radius: 14px; box-shadow: 0 24px 72px rgba(0, 0, 0, .36); }
+.contact-form input, .contact-form select, .contact-form textarea,
+.checkout-form input, .checkout-form textarea { border-radius: 8px; }
+.footer { border-top-color: var(--border); }
+.footer h4 { letter-spacing: .08em; }
+
+@media (max-width: 1024px) {
+  .section-pad { padding-inline: clamp(22px, 5vw, 44px); }
+  .topbar { min-height: 68px; }
+  .hero { min-height: auto; }
+  .config-form { padding: clamp(20px, 4vw, 30px); }
+  .hardware-part-copy { padding: clamp(22px, 4vw, 34px); }
+}
+
+@media (max-width: 760px) {
+  .section-pad { padding-block: 60px; padding-inline: 20px; }
+  .section-top { margin-bottom: 24px; }
+  .section-title h2 { font-size: clamp(30px, 8vw, 40px); }
+  .section-title p { font-size: 15px; }
+  .hero { min-height: 0; padding: 54px 22px 36px; }
+  .hero h1 { font-size: clamp(48px, 12vw, 70px); }
+  .hero-art { height: clamp(250px, 68vw, 390px); }
+  .hero-benefits { gap: 8px; }
+  .hero-benefits span { padding: 7px 9px; }
+  .product-visual .product-art { min-height: 190px; }
+  .config-heading { padding: 22px 20px 16px; }
+  .builder-progress { padding: 13px 9px; }
+  .builder-progress button { padding-inline: 2px; }
+  .builder-progress button small { display: none; }
+  .use-card { min-height: 150px; }
+  .hardware-part-copy { padding: 24px 20px; }
+  .forge-toolbar { max-width: calc(100% - 20px); }
+  .forge-toolbar button { min-height: 40px; padding-inline: 8px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
