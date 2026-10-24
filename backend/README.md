@@ -138,4 +138,11 @@ docker run --rm -p 8080:8080 \
 
 Production launch command: `java -jar app.jar`; set `SPRING_PROFILES_ACTIVE=prod`, `PORT`, MongoDB, exact CORS origins, and only Test Mode payment credentials until live payments are explicitly approved. `/api/health` reports MongoDB reachability and returns 503 when it is unavailable. Actuator health probes are enabled with details hidden.
 
+
+
+PCForge
+- 🌐 Live Website (Vercel): https://pcforge-vqv2.vercel.app
+- 🌐 GitHub Pages Version: ram-4723.github.io/PCFORGE/
+- 💻 **Source Code: https://github.com/ram-4723/PCFORGE
+
 Before deployment, configure Atlas network access and database credentials in the hosting secret manager; use HTTPS; configure a Razorpay Test Mode webhook and test key pair; configure seller/tax data only after review; set `FRONTEND_ORIGINS` to the exact site origin; apply edge rate limits; verify `/api/health`, component listing, order create/retrieve, payment signature, webhook, and PDF download in a staging environment. This repository has not been deployed, and live MongoDB/Razorpay connectivity has not been verified from this workspace.
