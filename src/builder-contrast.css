@@ -38,41 +38,47 @@
 .builder-progress button.active small,
 .builder-progress button.complete small { color: var(--builder-secondary); }
 
-.config-layout :is(.live-component-copy, .live-remove-component, .live-findings-toggle,
-  .text-link.light-link) { color: #55d5ff; }
-.config-layout :is(.live-component-copy:hover, .live-findings-toggle:hover,
-  .text-link.light-link:hover) { color: #a2ebff; }
+:is(.config-layout, .result-panel, .total-box) :is(.live-component-copy, .live-remove-component, .live-findings-toggle,
+  .text-link.light-link),
+.total-box .text-link.light-link { color: #55d5ff !important; font-weight: 600 !important; }
+:is(.config-layout, .result-panel, .total-box) :is(.live-component-copy:hover, .live-findings-toggle:hover,
+  .text-link.light-link:hover),
+.total-box .text-link.light-link:hover { color: #ffc64a !important; }
 
-.config-layout .button-darkline {
+:is(.config-layout, .result-panel, .total-box) .button-darkline,
+.total-box .button-darkline {
   min-height: 44px;
-  border-color: #718496;
-  background: #13232e;
-  color: var(--builder-primary) !important;
-  font-weight: 600;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  background: #13232e !important;
+  color: #f8fafc !important;
+  font-weight: 700 !important;
 }
-.config-layout .button-darkline:hover:not(:disabled) {
-  border-color: #55d5ff;
-  background: #1a3442;
+:is(.config-layout, .result-panel, .total-box) .button-darkline:hover:not(:disabled),
+.total-box .button-darkline:hover:not(:disabled) {
+  border-color: #55d5ff !important;
+  background: #1a3442 !important;
   color: #fff !important;
 }
-.config-layout .button-gold:disabled,
-.config-layout .button-darkline:disabled,
-.config-layout .button:disabled {
-  opacity: 1;
-  transform: none;
-  cursor: not-allowed;
-  box-shadow: none;
+:is(.config-layout, .result-panel, .total-box) :is(.button-gold:disabled, .button-darkline:disabled, .button:disabled),
+.total-box :is(.button-gold:disabled, .button-darkline:disabled, .button:disabled) {
+  opacity: 1 !important;
+  transform: none !important;
+  cursor: not-allowed !important;
+  box-shadow: none !important;
   color: #d2dae2 !important;
   border-color: #667684 !important;
   background: #303b45 !important;
 }
-.config-layout .button-gold:disabled { color: #e4e8ec !important; }
+:is(.config-layout, .result-panel, .total-box) .button-gold:disabled,
+.total-box .button-gold:disabled { color: #e4e8ec !important; }
 
-.config-layout .total-box .button-gold:not(:disabled),
+:is(.config-layout, .result-panel, .total-box) .button-gold:not(:disabled),
+.total-box .button-gold:not(:disabled),
 .config-layout .live-summary-continue:not(:disabled) {
   color: #15120a !important;
   background: #ffc64a !important;
   border-color: #ffc64a !important;
+  font-weight: 700 !important;
 }
 
 .checkout-modal :is(h2, h3, b, strong, label, .checkout-total),

@@ -38,22 +38,32 @@ body :is(p, li, dt, dd, label, button, a, small, span, strong, b, time, figcapti
   color: #c5d1d9 !important;
 }
 
-.config-layout .component-name small,
-.config-layout .component-brand,
-.config-layout .result-head p,
-.config-layout .compat-line,
-.config-layout .tiny-disclaimer,
-.config-layout .total-box > p,
-.config-layout .total-box > small,
-.config-layout .optional-parts-row small {
+:is(.config-layout, .result-panel) .component-name small,
+:is(.config-layout, .result-panel) .component-brand,
+:is(.config-layout, .result-panel) .result-head p,
+:is(.config-layout, .result-panel) .compat-line,
+:is(.config-layout, .result-panel) .tiny-disclaimer,
+:is(.config-layout, .result-panel, .total-box) .total-box > p,
+.total-box > p,
+:is(.config-layout, .result-panel, .total-box) .total-box > small,
+.total-box > small,
+:is(.config-layout, .result-panel) .optional-parts-row small {
   color: #d3dde5 !important;
 }
 
-.config-layout :is(.button-darkline:disabled, .button-gold:disabled, .button:disabled) {
+:is(.config-layout, .result-panel, .total-box) :is(.button-darkline:disabled, .button-gold:disabled, .button:disabled),
+.total-box :is(.button-darkline:disabled, .button-gold:disabled, .button:disabled) {
   color: #f1f5f9 !important;
   border-color: #82919d !important;
   background: #35434e !important;
-  opacity: 1;
+  opacity: 1 !important;
+}
+
+:is(.config-layout, .result-panel, .total-box) .button-darkline,
+.total-box .button-darkline {
+  color: #f8fafc !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  background: #13232e !important;
 }
 
 .product-card :is(.product-brand, .product-body p, .product-body small, .product-meta, .product-specs),
