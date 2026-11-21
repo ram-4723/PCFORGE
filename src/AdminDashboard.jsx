@@ -36,6 +36,7 @@ import {
 } from './api/client.js'
 import { clearAuthSession, readAuthSession, storeAuthSession } from './authSession.js'
 import { getStoredOrders, updateStoredOrderStatus, getStoredUsers, clearAllStoredOrders } from './utils/orderStorage.js'
+import { publicAsset } from './utils/assets.js'
 import './admin.css'
 
 const ORDER_STATUS_OPTIONS = [
@@ -347,10 +348,12 @@ export default function AdminDashboard() {
       {/* Sidebar Navigation */}
       <aside className="admin-sidebar">
         <div className="admin-brand-header">
-          <Link className="admin-brand-link" to="/">
-            <div className="admin-brand-icon">
-              <Cpu size={20} />
-            </div>
+          <Link className="admin-brand-link" to="/" title="Return to PCForge Storefront">
+            <img
+              src={publicAsset('/images/pcforge-logo.jpg')}
+              alt="PCForge Logo"
+              className="admin-brand-logo-img"
+            />
             <div className="admin-brand-title">
               <span>PC</span><b className="admin-brand-highlight">FORGE</b>
             </div>
@@ -399,6 +402,11 @@ export default function AdminDashboard() {
         {/* Top Header Bar */}
         <header className="admin-header-bar">
           <div className="admin-breadcrumb">
+            <img
+              src={publicAsset('/images/pcforge-logo.jpg')}
+              alt=""
+              className="admin-breadcrumb-logo"
+            />
             <span>PCFORGE Console</span>
             <span>/</span>
             <b>{currentTab === 'overview' ? 'Overview' : currentTab === 'orders' ? 'Orders Pipeline' : 'Users Directory'}</b>
