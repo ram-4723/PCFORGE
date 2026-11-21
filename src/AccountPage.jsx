@@ -56,6 +56,36 @@ export default function AccountPage() {
         <label>Password<input type="password" autoComplete={isRegister ? 'new-password' : 'current-password'} value={form.password} onChange={(event) => setForm({ ...form, password: event.target.value })} placeholder={isRegister ? 'At least 10 characters' : 'Your password'} required minLength={isRegister ? 10 : undefined} maxLength={72} /></label>
         {state.error && <p className="account-error" role="alert">{state.error}</p>}
         <button className="account-submit" type="submit" disabled={state.loading}>{state.loading ? 'Please wait…' : isRegister ? 'Create account' : 'Sign in'} <ArrowRight size={17} /></button>
+
+        <button
+          type="button"
+          onClick={() => {
+            storeAuthSession({
+              user: { name: 'Recruiter Admin (Guest)', email: 'recruiter@pcforge.dev', role: 'ADMIN' },
+              accessToken: 'demo-recruiter-token',
+              isGuestMode: true
+            })
+            navigate('/admin', { replace: true })
+          }}
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: '8px',
+            width: '100%',
+            padding: '11px',
+            borderRadius: '8px',
+            background: 'linear-gradient(135deg, rgba(56, 189, 248, 0.15) 0%, rgba(255, 198, 74, 0.15) 100%)',
+            border: '1px solid rgba(56, 189, 248, 0.4)',
+            color: '#38bdf8',
+            fontSize: '13px',
+            fontWeight: '700',
+            cursor: 'pointer',
+            marginTop: '8px'
+          }}
+        >
+          ✨ Recruiter Demo Access (1-Click Admin Console) →
+        </button>
       </form>
       <p className="account-privacy">Passwords are hashed before storage and are never returned by the API.</p>
       {new URLSearchParams(location.search).has('next') && <p className="account-admin-note">Administrator access is granted only to accounts provisioned by PCForge.</p>}
