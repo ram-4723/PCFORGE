@@ -153,26 +153,31 @@ function Header({ onConfigure, cartCount, wishlistCount, onOpenCart, onOpenWishl
               <AnimatePresence>
                 <motion.div
                   className="hardware-explorer-nav-card"
-                  initial={{ opacity: 0, y: -10, scale: 0.94, x: '-50%' }}
+                  initial={{ opacity: 0, y: -12, scale: 0.94, x: '-50%' }}
                   animate={{ opacity: 1, y: 0, scale: 1, x: '-50%' }}
-                  exit={{ opacity: 0, y: -10, scale: 0.94, x: '-50%' }}
-                  transition={{ duration: 0.28, ease: 'easeOut' }}
+                  exit={{ opacity: 0, y: -12, scale: 0.94, x: '-50%' }}
+                  transition={{ duration: 0.3, ease: 'easeOut' }}
                 >
                   <div className="nav-card-caret" />
                   <div className="nav-card-top">
-                    <span className="nav-card-tag"><Sparkles size={11} /> 3D STUDIO</span>
+                    <div className="nav-card-badge-group">
+                      <div className="nav-card-icon-bubble">
+                        <CircuitBoard size={15} color="#38bdf8" />
+                      </div>
+                      <span className="nav-card-tag"><Sparkles size={11} /> 3D HARDWARE STUDIO</span>
+                    </div>
                     <button
                       type="button"
                       className="nav-card-close"
                       onClick={(e) => { e.stopPropagation(); setShowExplorerCard(false); }}
-                      aria-label="Close card"
+                      aria-label="Close spotlight"
                     >
                       <X size={13} />
                     </button>
                   </div>
                   <h4 className="nav-card-title">Hardware Explorer</h4>
                   <p className="nav-card-desc">
-                    Inspect 3D components, motherboard sockets, coolers & GPUs in real-time.
+                    Inspect 3D components, motherboard sockets, coolers & GPUs interactively.
                   </p>
                   <button
                     type="button"
@@ -183,8 +188,8 @@ function Header({ onConfigure, cartCount, wishlistCount, onOpenCart, onOpenWishl
                       navigate('/hardware-explorer');
                     }}
                   >
-                    <span>Explore Hardware</span>
-                    <ArrowRight size={13} />
+                    <span>Explore Hardware in 3D</span>
+                    <ArrowRight size={14} />
                   </button>
                 </motion.div>
               </AnimatePresence>
