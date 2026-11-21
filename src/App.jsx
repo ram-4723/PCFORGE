@@ -217,11 +217,11 @@ function Header({ onConfigure, cartCount, wishlistCount, onOpenCart, onOpenWishl
                 >
                   <div className="nav-card-caret" />
                   <div className="nav-card-top">
-                    <div className="nav-card-badge-group">
+                    <div className="nav-card-header-left">
                       <div className="nav-card-icon-bubble">
-                        <CircuitBoard size={15} color="#38bdf8" />
+                        <CircuitBoard size={16} color="#38bdf8" />
                       </div>
-                      <span className="nav-card-tag"><Sparkles size={11} /> 3D HARDWARE STUDIO</span>
+                      <h4 className="nav-card-title">Hardware Explorer</h4>
                     </div>
                     <button
                       type="button"
@@ -232,7 +232,6 @@ function Header({ onConfigure, cartCount, wishlistCount, onOpenCart, onOpenWishl
                       <X size={13} />
                     </button>
                   </div>
-                  <h4 className="nav-card-title">Hardware Explorer</h4>
                   <p className="nav-card-desc">
                     Inspect 3D components, motherboard sockets, coolers & GPUs interactively.
                   </p>

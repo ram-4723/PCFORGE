@@ -467,38 +467,24 @@ button:disabled, [aria-disabled="true"] { cursor: not-allowed; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
-.nav-card-badge-group {
+.nav-card-header-left {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 
 .nav-card-icon-bubble {
-  width: 26px;
-  height: 26px;
-  border-radius: 6px;
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
   background: rgba(56, 189, 248, 0.15);
   border: 1px solid rgba(56, 189, 248, 0.3);
   display: grid;
   place-items: center;
-}
-
-.nav-card-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  padding: 3px 7px;
-  border-radius: 4px;
-  background: rgba(255, 198, 74, 0.15);
-  border: 1px solid rgba(255, 198, 74, 0.35);
-  color: #ffc64a;
-  font-size: 9px;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  flex-shrink: 0;
 }
 
 /* Close button - override .nav-links button reset */
@@ -522,7 +508,7 @@ button:disabled, [aria-disabled="true"] { cursor: not-allowed; }
 }
 
 .nav-card-title {
-  margin: 0 0 6px !important;
+  margin: 0 !important;
   color: #f8fafc !important;
   font: 700 15px/1.2 'Manrope', sans-serif !important;
   letter-spacing: -0.01em !important;
