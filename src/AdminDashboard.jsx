@@ -347,11 +347,13 @@ export default function AdminDashboard() {
       {/* Sidebar Navigation */}
       <aside className="admin-sidebar">
         <div className="admin-brand-header">
-          <Link className="admin-logo" to="/">
-            <div className="admin-logo-icon">
+          <Link className="admin-brand-link" to="/">
+            <div className="admin-brand-icon">
               <Cpu size={20} />
             </div>
-            <span>PC<b>FORGE</b></span>
+            <div className="admin-brand-title">
+              <span>PC</span><b className="admin-brand-highlight">FORGE</b>
+            </div>
           </Link>
           <span className="admin-badge-role">ADMIN</span>
         </div>

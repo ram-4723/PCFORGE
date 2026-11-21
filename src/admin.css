@@ -30,25 +30,66 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
+.admin-brand-link,
 .admin-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: #f8fafc;
-  font: 800 17px 'Manrope', sans-serif;
-  letter-spacing: 0.02em;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  text-decoration: none !important;
+  background: transparent !important;
 }
 
+.admin-brand-icon,
 .admin-logo-icon {
-  display: grid;
-  width: 36px;
-  height: 36px;
-  place-items: center;
-  border-radius: 9px;
-  background: linear-gradient(135deg, #1e3a5f 0%, #0f233a 100%);
-  border: 1px solid rgba(56, 189, 248, 0.3);
-  color: #38bdf8;
+  display: grid !important;
+  width: 36px !important;
+  height: 36px !important;
+  place-items: center !important;
+  border-radius: 9px !important;
+  background: linear-gradient(135deg, #1e3a5f 0%, #0f233a 100%) !important;
+  border: 1px solid rgba(56, 189, 248, 0.3) !important;
+  color: #38bdf8 !important;
+  flex-shrink: 0 !important;
+}
+
+.admin-brand-title {
+  display: inline-flex !important;
+  align-items: baseline !important;
+  gap: 1px !important;
+  font: 800 18px 'Manrope', sans-serif !important;
+  letter-spacing: 0.02em !important;
+  color: #f8fafc !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  width: auto !important;
+  height: auto !important;
+  line-height: 1 !important;
+}
+
+.admin-brand-title span {
+  display: inline !important;
+  width: auto !important;
+  height: auto !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  color: #f8fafc !important;
+  font-weight: 800 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.admin-brand-highlight {
+  display: inline !important;
+  width: auto !important;
+  height: auto !important;
+  background: transparent !important;
+  color: #ffc64a !important;
+  font-weight: 800 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .admin-badge-role {
