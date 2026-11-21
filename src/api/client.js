@@ -76,6 +76,39 @@ export function getAdminUsers(accessToken, { page = 1, size = 10, search = '' } 
   if (search.trim()) params.set('search', search.trim())
   return request(`/admin/users?${params}`, { headers: { Authorization: `Bearer ${accessToken}` } })
 }
+export function getAdminOrders(accessToken, { page = 1, size = 15, search = '', status = '', paymentStatus = '' } = {}) {
+  const params = new URLSearchParams({ page: String(page), size: String(size) })
+  if (search && search.trim()) params.set('search', search.trim())
+  if (status && status !== 'all') params.set('status', status)
+  if (paymentStatus && paymentStatus !== 'all') params.set('paymentStatus', paymentStatus)
+  return request(`/admin/orders?${params}`, { headers: { Authorization: `Bearer ${accessToken}` } })
+}
+export function getAdminOrderDetail(accessToken, orderId) {
+  return request(`/admin/orders/${encodeURIComponent(orderId)}`, { headers: { Authorization: `Bearer ${accessToken}` } })
+}
+export function updateAdminOrderStatus(accessToken, orderId, status) {
+  return request(`/admin/orders/${encodeURIComponent(orderId)}/status`, {
+    method: 'PATCH',
+    headers: { Authorization: `Bearer ${accessToken}` },
+    body: JSON.stringify({ status })
+  })
+}
+export async function downloadAdminInvoice(accessToken, orderId) {
+  const response = await fetch(`${API_BASE}/admin/orders/${encodeURIComponent(orderId)}/invoice`, {
+    headers: { Accept: 'application/pdf', Authorization: `Bearer ${accessToken}` }
+  })
+  if (!response.ok) {
+    const payload = await response.json().catch(() => null)
+    throw new Error(payload?.error?.message || `Invoice download failed (${response.status})`)
+  }
+  return response.blob()
+}
+export function seedAdminOrders(accessToken) {
+  return request('/admin/orders/seed', {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${accessToken}` }
+  })
+}
 export function logoutAccount(accessToken) {
   return request('/auth/logout', { method: 'POST', headers: { Authorization: `Bearer ${accessToken}` } })
 }
