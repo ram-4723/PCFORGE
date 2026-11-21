@@ -1,9 +1,10 @@
-import { useState } from 'react'
-import { ArrowLeft, Check, CircleAlert, ShieldCheck, X } from 'lucide-react'
+import { useState, useEffect } from 'react'
+import { ArrowLeft, Check, CircleAlert, ShieldCheck, Sparkles, X } from 'lucide-react'
 import { createOrder, createPaymentCheckout, reportPaymentFailure, saveBuild, verifyPayment } from '../api/client.js'
 import { loadRazorpayCheckout } from '../utils/razorpayCheckout.js'
 import { formatINR } from '../utils/pricing.js'
 import { saveStoredOrder, updateStoredOrderStatus, saveStoredUser } from '../utils/orderStorage.js'
+import { readAuthSession } from '../authSession.js'
 
 const emptyDetails = { name: '', email: '', phone: '', address: '' }
 const isComponentId = (value) => /^[a-f\d]{24}$/i.test(value || '')
@@ -19,6 +20,21 @@ export default function CartCheckoutModal({ open, items, total, onClose, onBackT
   const [pendingPayment, setPendingPayment] = useState(null)
   const cartIsOrderable = items.length > 0 && items.every((item) => item.kindLabel === 'Component' && isComponentId(item.componentId) && Number.isInteger(item.quantity) && item.quantity > 0 && item.quantity <= 10)
   const orderTotal = activeOrder?.order?.totalInr ?? total
+
+  useEffect(() => {
+    if (open && (!details.name || !details.email)) {
+      try {
+        const session = readAuthSession()
+        if (session?.user) {
+          setDetails(d => ({
+            ...d,
+            name: d.name || session.user.name || '',
+            email: d.email || session.user.email || ''
+          }))
+        }
+      } catch {}
+    }
+  }, [open])
 
   const exitCheckout = (backToCart = false) => {
     if (busy) return
@@ -157,7 +173,27 @@ export default function CartCheckoutModal({ open, items, total, onClose, onBackT
     {view === 'details' ? <>
       <div className="demo-banner"><ShieldCheck size={18} /><span><b>RAZORPAY TEST MODE</b><small>Payments are verified by the PCForge backend. Test Mode does not charge real money.</small></span></div>
       <div className="store-checkout-grid"><div><span className="eyebrow">ORDER SUMMARY</span><h2 id="store-checkout-title">Review your components.</h2><div className="store-order-list">{items.map((item) => <div key={item.key}><span>{item.quantity} × {item.name}</span><b>{formatINR(item.price * item.quantity)}</b></div>)}</div><div className="store-order-total"><span>Current estimate</span><strong>{formatINR(total)}</strong></div><p className="sensitive-note">The server confirms catalogue prices and stock before creating your order.</p></div>
-        <form className="store-checkout-form" onSubmit={placeOrder}><span className="eyebrow">DELIVERY DETAILS</span>{[['name', 'Name', 'Your name'], ['email', 'Email', 'you@example.com'], ['phone', 'Phone', '+91 98765 43210'], ['address', 'Delivery address', 'Street, city, postal code']].map(([key, label, placeholder]) => <label key={key}>{label}<input value={details[key]} onChange={(event) => setDetails({ ...details, [key]: event.target.value })} placeholder={placeholder} autoComplete={key === 'address' ? 'street-address' : key} />{errors[key] && <small>{errors[key]}</small>}</label>)}<p>Razorpay handles payment details securely. PCForge never asks for your UPI PIN, CVV, or OTP.</p>{error && <p role="alert">{error}</p>}<div className="store-pay-actions"><button className="button button-gold" type="submit" disabled={busy || !cartIsOrderable}>{busy ? 'Preparing order…' : 'Continue to order review'}</button></div>{!cartIsOrderable && <small role="alert">Your cart has preview-only items. Add components from the active catalogue to purchase.</small>}</form></div>
+        <form className="store-checkout-form" onSubmit={placeOrder}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
+            <span className="eyebrow" style={{ margin: 0 }}>DELIVERY DETAILS</span>
+            <button
+              type="button"
+              className="btn-autofill-demo"
+              onClick={() => {
+                const session = readAuthSession()
+                setDetails({
+                  name: session?.user?.name || details.name || 'Aryan Verma',
+                  email: session?.user?.email || details.email || 'aryan.verma@example.com',
+                  phone: details.phone || '+91 98765 43210',
+                  address: details.address || 'Flat 402, Highline Residency, 12th Main, Indiranagar, Bengaluru, KA 560038'
+                })
+                setErrors({})
+              }}
+              title="Auto-fill sample details to quickly complete order"
+            >
+              <Sparkles size={12} /> Auto-fill Details
+            </button>
+          </div>{[['name', 'Name', 'Your name'], ['email', 'Email', 'you@example.com'], ['phone', 'Phone', '+91 98765 43210'], ['address', 'Delivery address', 'Street, city, postal code']].map(([key, label, placeholder]) => <label key={key}>{label}<input value={details[key]} onChange={(event) => setDetails({ ...details, [key]: event.target.value })} placeholder={placeholder} autoComplete={key === 'address' ? 'street-address' : key} />{errors[key] && <small>{errors[key]}</small>}</label>)}<p>Razorpay handles payment details securely. PCForge never asks for your UPI PIN, CVV, or OTP.</p>{error && <p role="alert">{error}</p>}<div className="store-pay-actions"><button className="button button-gold" type="submit" disabled={busy || !cartIsOrderable}>{busy ? 'Preparing order…' : 'Continue to order review'}</button></div>{!cartIsOrderable && <small role="alert">Your cart has preview-only items. Add components from the active catalogue to purchase.</small>}</form></div>
       <button className="checkout-back" onClick={() => exitCheckout(true)}><ArrowLeft size={14} /> Back to cart</button>
     </> : view === 'processing' ? <div className="store-result payment-processing" role="status" aria-live="polite"><span className="payment-spinner" aria-hidden="true" /><span className="eyebrow">SECURE CHECKOUT</span><h2 id="store-checkout-title">{pendingPayment ? 'Verifying payment' : 'Preparing your order'}</h2><p>Keep this window open while PCForge confirms your order with the server.</p><div className="processing-total"><span>Order total</span><b>{formatINR(orderTotal)}</b></div><div className="processing-progress"><span /></div></div>
       : view === 'review' ? <div className="store-result"><span className="eyebrow">SERVER-PRICED ORDER</span><h2 id="store-checkout-title">Ready for Razorpay.</h2><div className="store-order-list">{activeOrder?.order?.items?.map((item) => <div key={item.componentId}><span>{item.quantity} × {item.name}</span><b>{formatINR(item.lineTotalInr)}</b></div>)}</div><div className="store-order-total"><span>Server-calculated total</span><strong>{formatINR(orderTotal)}</strong></div><p>Payment is not recorded until Razorpay confirms it and PCForge verifies the signature.</p>{error && <p role="alert">{error}</p>}<div className="store-pay-actions"><button className="button button-gold" onClick={startPayment} disabled={busy}>Continue to secure payment · {formatINR(orderTotal)}</button><button className="button button-darkline" onClick={() => setView('details')}>Edit delivery details</button></div></div>

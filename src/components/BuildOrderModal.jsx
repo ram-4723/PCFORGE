@@ -1,15 +1,51 @@
+import { useEffect } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import { ArrowLeft, ArrowRight, Check, CircleAlert, Download, LoaderCircle, ShieldCheck, X } from 'lucide-react'
+import { ArrowLeft, ArrowRight, Check, CircleAlert, Download, LoaderCircle, ShieldCheck, Sparkles, X } from 'lucide-react'
+import { readAuthSession } from '../authSession.js'
 
 export default function BuildOrderModal({ open, view, setView, build, parts, categoryLabels, customer, setCustomer, errors, message, orderState, verificationPending, paymentsEnabled, formatINR, onClose, onPlaceOrder, onPay, onDownload }) {
   const order = orderState?.order
+
+  useEffect(() => {
+    if (open && (!customer.name || !customer.email)) {
+      try {
+        const session = readAuthSession()
+        if (session?.user) {
+          setCustomer(c => ({
+            ...c,
+            name: c.name || session.user.name || '',
+            email: c.email || session.user.email || ''
+          }))
+        }
+      } catch {}
+    }
+  }, [open])
   return <AnimatePresence>{open && <motion.div className="modal-scrim checkout-scrim" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
     <motion.div className="checkout-modal" initial={{ y: 22, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: 22, opacity: 0 }} role="dialog" aria-modal="true" aria-labelledby="checkout-title">
       <div className="checkout-top"><a className="brand" href="#home" onClick={(e) => e.preventDefault()}><span className="brand-mark"><ShieldCheck size={18} /></span><span>PC<span className="gold">FORGE</span><small>SECURE BUILD ORDER</small></span></a><button className="modal-close" aria-label="Close checkout" onClick={onClose}><X /></button></div>
       {view === 'details' && <>
         <div className="demo-banner"><ShieldCheck size={18} /><span><b>SERVER-PRICED ORDER</b><small>Availability and totals are rechecked by PCForge before payment.</small></span></div>
         <div className="checkout-content"><div className="checkout-order"><span className="eyebrow">YOUR CONFIGURATION</span><h2 id="checkout-title">Review your build.</h2><div className="checkout-parts">{parts.map((key) => <div key={key}><span>{categoryLabels[key]} · {build[key].name}</span><b>{formatINR(build[key].price)}</b></div>)}</div><div className="checkout-total"><span>Current catalogue estimate</span><strong>{formatINR(parts.reduce((total, key) => total + (build[key].price || 0), 0))}</strong></div><p className="tiny-disclaimer">The final order total is calculated from current server catalog prices and shown before payment.</p></div>
-          <form className="checkout-form" onSubmit={(e) => { e.preventDefault(); onPlaceOrder() }} noValidate><span className="eyebrow">DELIVERY DETAILS</span>
+          <form className="checkout-form" onSubmit={(e) => { e.preventDefault(); onPlaceOrder() }} noValidate>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
+              <span className="eyebrow" style={{ margin: 0 }}>DELIVERY DETAILS</span>
+              <button
+                type="button"
+                className="btn-autofill-demo"
+                onClick={() => {
+                  const session = readAuthSession()
+                  setCustomer({
+                    name: session?.user?.name || customer.name || 'Aryan Verma',
+                    email: session?.user?.email || customer.email || 'aryan.verma@example.com',
+                    phone: customer.phone || '+91 98765 43210',
+                    address: customer.address || 'Flat 402, Highline Residency, 12th Main, Indiranagar, Bengaluru, KA 560038'
+                  })
+                }}
+                title="Fill sample details for quick testing"
+              >
+                <Sparkles size={12} /> Auto-fill Details
+              </button>
+            </div>
             <label>Name<input autoComplete="name" value={customer.name} onChange={(e) => setCustomer({ ...customer, name: e.target.value })} placeholder="Your name" />{errors.name && <small className="field-error">{errors.name}</small>}</label>
             <label>Email<input autoComplete="email" type="email" value={customer.email} onChange={(e) => setCustomer({ ...customer, email: e.target.value })} placeholder="you@example.com" />{errors.email && <small className="field-error">{errors.email}</small>}</label>
             <label>Phone<input autoComplete="tel" value={customer.phone} onChange={(e) => setCustomer({ ...customer, phone: e.target.value })} placeholder="+91 98765 43210" />{errors.phone && <small className="field-error">{errors.phone}</small>}</label>

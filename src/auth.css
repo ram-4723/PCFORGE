@@ -3,3 +3,367 @@
 /* Match the account screen to the PCForge storefront palette. */
 .account-shell{background:radial-gradient(ellipse at 50% 5%,rgba(50,166,180,.16),transparent 42%),linear-gradient(145deg,#080e13,#101920 58%,#080d12);color:#f1f2ec}.account-back{color:#aebbc1}.account-back:hover{color:#ffc64a}.account-card{background:rgba(15,24,31,.96);border-color:rgba(164,190,190,.18);box-shadow:0 22px 70px #0008}.account-brand{gap:12px;color:#f3f2ec}.account-brand img{width:42px;height:42px;object-fit:cover;border:1px solid rgba(255,198,74,.55);border-radius:50%;box-shadow:0 0 18px rgba(255,198,74,.12)}.account-brand b{display:grid;gap:3px}.account-brand b>span{color:#ffc64a}.account-brand small{color:#91a0a5;font:600 8px Manrope,sans-serif;letter-spacing:.14em}.account-kicker{color:#65d5df}.account-card h1{color:#f4f2ec}.account-intro{color:#aab6bc}.account-tabs{background:#0a1218;border:1px solid rgba(164,190,190,.12)}.account-tabs button{color:#9daab0}.account-tabs button.active{background:#1b2a31;color:#ffc64a;box-shadow:0 1px 8px #0005}.account-form label{color:#c6cecf}.account-form input{border-color:#314047;background:#0b1319;color:#f3f2ec}.account-form input:focus{border-color:#58ceda;box-shadow:0 0 0 3px rgba(67,201,214,.15)}.account-form input::placeholder{color:#74838a}.account-error{border-color:#823c38;background:#321c1c;color:#ffc0b4}.account-submit{background:#ffc64a;color:#11181c}.account-submit:hover{background:#f0b735}.account-privacy,.account-admin-note{color:#849399}
 .account-back:focus-visible,.account-tabs button:focus-visible,.account-submit:focus-visible{outline:2px solid #ffc64a;outline-offset:3px}
+
+/* Account Profile Details & Orders Console */
+.account-profile-card {
+  width: min(100%, 640px) !important;
+  padding: 32px 34px !important;
+}
+
+.profile-header-banner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 24px 0 20px;
+  padding: 18px;
+  border-radius: 12px;
+  background: rgba(18, 30, 40, 0.7);
+  border: 1px solid rgba(164, 190, 190, 0.14);
+}
+
+.profile-avatar {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: rgba(30, 48, 62, 0.75);
+  border: 1px solid rgba(164, 190, 190, 0.2);
+  flex-shrink: 0;
+}
+
+.profile-identity {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.profile-kicker {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: #38bdf8;
+}
+
+.profile-active-dot {
+  color: #4ade80 !important;
+  margin-left: 6px;
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.profile-name {
+  margin: 0 !important;
+  font-size: 22px !important;
+  font-weight: 800 !important;
+  color: #f4f2ec !important;
+}
+
+.profile-email-line {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #9daab0;
+  font-size: 13px;
+}
+
+.profile-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+@media (max-width: 520px) {
+  .profile-details-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.profile-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 12px 14px;
+  background: #0b1319;
+  border: 1px solid rgba(164, 190, 190, 0.1);
+  border-radius: 9px;
+}
+
+.profile-field .field-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #7e8f97;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.profile-field .field-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: #f1f2ec;
+  word-break: break-all;
+}
+
+.profile-field .role-badge[data-role="admin"] {
+  color: #ffc64a;
+  font-weight: 800;
+}
+
+.profile-field .role-badge[data-role="customer"] {
+  color: #38bdf8;
+  font-weight: 800;
+}
+
+.profile-field .status-active {
+  color: #4ade80;
+  font-weight: 700;
+}
+
+.profile-actions-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.btn-profile-primary {
+  flex: 1;
+  min-width: 140px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 8px;
+  background: #ffc64a;
+  color: #080e13;
+  font-weight: 700;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-profile-primary:hover {
+  background: #f0b735;
+  transform: translateY(-1px);
+}
+
+.btn-profile-secondary {
+  flex: 1;
+  min-width: 140px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 8px;
+  background: #1b2a31;
+  color: #f4f2ec;
+  font-weight: 700;
+  font-size: 13px;
+  border: 1px solid rgba(164, 190, 190, 0.2);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-profile-secondary:hover {
+  background: #253942;
+  border-color: rgba(255, 198, 74, 0.4);
+}
+
+.btn-profile-signout {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 8px;
+  background: rgba(239, 68, 68, 0.12);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-profile-signout:hover {
+  background: rgba(239, 68, 68, 0.22);
+  border-color: #f87171;
+}
+
+.profile-orders-section {
+  border-top: 1px solid rgba(164, 190, 190, 0.14);
+  padding-top: 22px;
+}
+
+.profile-orders-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.orders-header-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.orders-header-title h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #f4f2ec;
+}
+
+.orders-count-badge {
+  padding: 2px 8px;
+  border-radius: 12px;
+  background: #1b2a31;
+  color: #9daab0;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.profile-orders-empty {
+  text-align: center;
+  padding: 28px 16px;
+  background: #0b1319;
+  border: 1px dashed rgba(164, 190, 190, 0.15);
+  border-radius: 10px;
+  color: #849399;
+  font-size: 13px;
+}
+
+.profile-orders-empty .empty-icon {
+  color: #4b5d67;
+  margin-bottom: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-orders-empty p {
+  margin: 0;
+}
+
+.empty-order-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ffc64a;
+  font-weight: 700;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.empty-order-link:hover {
+  text-decoration: underline;
+}
+
+.profile-orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 360px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.profile-order-card {
+  background: #0b1319;
+  border: 1px solid rgba(164, 190, 190, 0.12);
+  border-radius: 10px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile-order-card .order-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order-card-ref {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.order-card-ref .order-number {
+  font-size: 13px;
+  font-weight: 800;
+  color: #f4f2ec;
+  font-family: monospace;
+}
+
+.order-card-ref .order-date {
+  font-size: 11px;
+  color: #7e8f97;
+}
+
+.order-status-pill {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  padding: 2px 8px;
+  border-radius: 10px;
+  border: 1px solid;
+}
+
+.order-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.order-items-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.order-item-chip {
+  padding: 2px 7px;
+  background: #15222b;
+  border-radius: 4px;
+  font-size: 11px;
+  color: #cbd5e1;
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.order-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2px;
+}
+
+.order-recipient {
+  font-size: 11px;
+  color: #7e8f97;
+}
+
+.order-price {
+  font-size: 14px;
+  font-weight: 800;
+  color: #ffc64a;
+  font-family: 'DM Sans', sans-serif;
+}
