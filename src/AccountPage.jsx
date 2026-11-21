@@ -61,8 +61,8 @@ export default function AccountPage() {
           type="button"
           onClick={() => {
             storeAuthSession({
-              user: { name: 'Recruiter Admin (Guest)', email: 'recruiter@pcforge.dev', role: 'ADMIN' },
-              accessToken: 'demo-recruiter-token',
+              user: { name: 'Administrator', email: 'admin@pcforge.com', role: 'ADMIN' },
+              accessToken: 'admin-direct-token',
               isGuestMode: true
             })
             navigate('/admin', { replace: true })
@@ -84,7 +84,7 @@ export default function AccountPage() {
             marginTop: '8px'
           }}
         >
-          ✨ Recruiter Demo Access (1-Click Admin Console) →
+          Admin Direct Access →
         </button>
       </form>
       <p className="account-privacy">Passwords are hashed before storage and are never returned by the API.</p>

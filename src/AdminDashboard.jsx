@@ -308,8 +308,8 @@ export default function AdminDashboard() {
     const existing = readAuthSession()
     if (existing?.accessToken) return existing
     const guestAdmin = {
-      user: { name: 'Recruiter Admin (Guest)', email: 'recruiter@pcforge.dev', role: 'ADMIN' },
-      accessToken: 'demo-recruiter-token',
+      user: { name: 'Administrator', email: 'admin@pcforge.com', role: 'ADMIN' },
+      accessToken: 'admin-direct-token',
       isGuestMode: true
     }
     storeAuthSession(guestAdmin)
@@ -673,7 +673,7 @@ export default function AdminDashboard() {
               <div className="admin-user-avatar">
                 {session?.user?.name?.charAt(0)?.toUpperCase() || 'R'}
               </div>
-              <span>{session?.user?.name || 'Recruiter Admin'}</span>
+              <span>{session?.user?.name || 'Administrator'}</span>
             </div>
             <button className="admin-btn-logout" onClick={handleSignOut} title="Sign Out">
               <LogOut size={15} /> Exit
@@ -681,7 +681,7 @@ export default function AdminDashboard() {
           </div>
         </header>
 
-        {/* Recruiter Live Preview Welcome Pill */}
+        {/* Admin Access Welcome Pill */}
         <div style={{
           background: 'linear-gradient(90deg, rgba(56, 189, 248, 0.15), rgba(255, 198, 74, 0.12))',
           borderBottom: '1px solid rgba(56, 189, 248, 0.3)',
@@ -696,11 +696,11 @@ export default function AdminDashboard() {
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <Sparkles size={16} color="#38bdf8" />
             <span>
-              <strong>Recruiter & Guest Live Access:</strong> You have full administrative privileges to inspect hardware orders, change fulfillment stages, and generate invoices.
+              <strong>Admin Direct Access:</strong> Full administrative privileges active. You can inspect hardware orders, change fulfillment stages, and generate invoices.
             </span>
           </div>
           <span style={{ fontSize: '11px', color: '#ffc64a', fontWeight: 700, letterSpacing: '0.04em' }}>
-            LIVE DEMO ACTIVE
+            ADMIN ACCESS ACTIVE
           </span>
         </div>
 
