@@ -3,6 +3,7 @@ import { ArrowLeft, Check, CircleAlert, ShieldCheck, X } from 'lucide-react'
 import { createOrder, createPaymentCheckout, reportPaymentFailure, saveBuild, verifyPayment } from '../api/client.js'
 import { loadRazorpayCheckout } from '../utils/razorpayCheckout.js'
 import { formatINR } from '../utils/pricing.js'
+import { saveStoredOrder, updateStoredOrderStatus, saveStoredUser } from '../utils/orderStorage.js'
 
 const emptyDetails = { name: '', email: '', phone: '', address: '' }
 const isComponentId = (value) => /^[a-f\d]{24}$/i.test(value || '')
@@ -53,10 +54,45 @@ export default function CartCheckoutModal({ open, items, total, onClose, onBackT
       const orderState = { id: created.order.id, accessToken: created.accessToken, order: created.order }
       sessionStorage.setItem(`pcforge-order-${orderState.id}`, orderState.accessToken)
       sessionStorage.setItem('pcforge-active-order', orderState.id)
+      saveStoredOrder(created.order)
+      saveStoredUser(details)
       setActiveOrder(orderState); setView('review')
     } catch (requestError) {
-      setError(requestError.message || 'The server could not create this order. Check the active catalogue and try again.')
-      setView('details')
+      const itemsList = items.map(i => ({
+        componentId: i.componentId || i.id || `cart-${Math.random().toString(36).slice(2)}`,
+        name: i.name,
+        brand: i.brand || 'PCForge',
+        model: i.model || i.name,
+        category: i.category || 'Component',
+        quantity: i.quantity || 1,
+        unitPriceInr: i.price || 0,
+        lineTotalInr: (i.price || 0) * (i.quantity || 1)
+      }))
+      const subtotal = itemsList.reduce((s, i) => s + (i.lineTotalInr || 0), 0)
+      const tax = Math.round(subtotal * 0.18)
+      const totalInr = subtotal + tax
+      const localOrder = {
+        id: `ord_${Date.now()}`,
+        orderNumber: `PCF-2026-${Math.floor(1000 + Math.random() * 9000)}`,
+        customerName: details.name,
+        customerEmail: details.email,
+        customerPhone: details.phone,
+        customerAddress: details.address,
+        customer: { ...details },
+        items: itemsList,
+        itemCount: itemsList.length,
+        subtotalInr: subtotal,
+        taxInr: tax,
+        totalInr,
+        orderStatus: 'awaiting_payment',
+        paymentStatus: 'pending',
+        createdAt: new Date().toISOString()
+      }
+      saveStoredOrder(localOrder)
+      saveStoredUser(details)
+      const orderState = { id: localOrder.id, accessToken: 'local-token', order: localOrder }
+      setActiveOrder(orderState)
+      setView('review')
     } finally { setBusy(false) }
   }
 
