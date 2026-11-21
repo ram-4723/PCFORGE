@@ -424,3 +424,133 @@ button:disabled, [aria-disabled="true"] { cursor: not-allowed; }
 @media (hover: none) and (pointer: coarse) {
   html, body, body * { cursor: auto !important; }
 }
+
+/* Hardware Explorer Navbar Popup Card */
+.nav-link-item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-hardware-explorer-wrapper {
+  position: relative;
+}
+
+.hardware-explorer-nav-card {
+  position: absolute;
+  top: calc(100% + 14px);
+  left: 50%;
+  width: 250px;
+  background: #0c141d;
+  border: 1px solid rgba(255, 198, 74, 0.45);
+  border-radius: 12px;
+  padding: 14px 15px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8), 0 0 25px rgba(255, 198, 74, 0.15);
+  z-index: 1000;
+  text-align: left;
+  user-select: none;
+}
+
+.nav-card-caret {
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 10px;
+  height: 10px;
+  background: #0c141d;
+  border-left: 1px solid rgba(255, 198, 74, 0.45);
+  border-top: 1px solid rgba(255, 198, 74, 0.45);
+}
+
+.nav-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.nav-card-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 7px;
+  border-radius: 4px;
+  background: rgba(255, 198, 74, 0.15);
+  border: 1px solid rgba(255, 198, 74, 0.35);
+  color: #ffc64a;
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.nav-card-close {
+  background: transparent;
+  border: 0;
+  color: #94a3b8;
+  padding: 3px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: all 0.15s;
+}
+
+.nav-card-close:hover {
+  color: #f8fafc;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.nav-card-title {
+  margin: 0 0 5px;
+  color: #f8fafc;
+  font: 700 14px 'Manrope', sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.nav-card-desc {
+  margin: 0 0 12px;
+  color: #94a3b8;
+  font-size: 11.5px;
+  line-height: 1.45;
+}
+
+.nav-card-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: #ffc64a;
+  border: 0;
+  color: #0b1319;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.nav-card-btn:hover {
+  background: #f0b735;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 760px) {
+  .nav-hardware-explorer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .hardware-explorer-nav-card {
+    position: relative;
+    top: 6px;
+    left: 0;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  .nav-card-caret {
+    display: none;
+  }
+}

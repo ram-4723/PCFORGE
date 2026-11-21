@@ -118,12 +118,84 @@ function TimedLoginPrompt({ onSkip }) {
 
 function Header({ onConfigure, cartCount, wishlistCount, onOpenCart, onOpenWishlist, searchTerm, onSearch }) {
   const [open, setOpen] = useState(false)
+  const [showExplorerCard, setShowExplorerCard] = useState(false)
   const navigate = useNavigate()
   const move = (path) => { navigate(path); setOpen(false) }
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowExplorerCard(true)
+    }, 700)
+    return () => clearTimeout(timer)
+  }, [])
+
   return <header className="topbar"><Link className="brand" to="/" onClick={() => setOpen(false)}><img className="brand-logo" src={publicAsset('/images/pcforge-logo.jpg')} alt="PCForge logo" /><span>PC<span className="gold">FORGE</span><small>BUILT AROUND YOU</small></span></Link>
     <div className="header-search"><Search size={15} /><input aria-label="Search products" placeholder="Search components..." value={searchTerm} onChange={(e) => onSearch(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter') move('/components') }} /><button aria-label="Show search results" onClick={() => move('/components')}><ArrowRight size={14} /></button></div>
     <button className="menu-toggle" onClick={() => setOpen(!open)} aria-label={open ? 'Close navigation' : 'Open navigation'}>{open ? <X /> : <Menu />}</button>
-    <nav className={open ? 'nav-links open' : 'nav-links'} aria-label="Main navigation">{navLinks.map(([id, label, path]) => { const Icon = navIcons[id]; return <NavLink key={path} to={path} end={path === '/'} className={({ isActive }) => isActive ? 'active' : ''} onClick={() => setOpen(false)}>{Icon && <Icon size={16} strokeWidth={1.8} />}<span>{label}</span></NavLink> })}<NavLink to="/account" className={({ isActive }) => isActive ? 'active' : ''} onClick={() => setOpen(false)}><span>Account</span></NavLink></nav><div className="header-actions"><button className="header-icon-button" onClick={onOpenWishlist} aria-label={`Wishlist, ${wishlistCount} saved products`}><Heart size={18} /><span>{wishlistCount}</span></button><button className="header-icon-button" onClick={onOpenCart} aria-label={`Shopping cart, ${cartCount} items`}><ShoppingBag size={18} /><span>{cartCount}</span></button><button className="nav-cta" onClick={onConfigure}>Build Your PC <ArrowRight size={15} /></button></div>
+    <nav className={open ? 'nav-links open' : 'nav-links'} aria-label="Main navigation">
+      {navLinks.map(([id, label, path]) => {
+        const Icon = navIcons[id];
+        const isHardwareExplorer = id === 'hardware-explorer';
+        return (
+          <div key={path} className={`nav-link-item ${isHardwareExplorer ? 'nav-hardware-explorer-wrapper' : ''}`}>
+            <NavLink
+              to={path}
+              end={path === '/'}
+              className={({ isActive }) => isActive ? 'active' : ''}
+              onClick={() => { setOpen(false); if (isHardwareExplorer) setShowExplorerCard(false); }}
+            >
+              {Icon && <Icon size={16} strokeWidth={1.8} />}
+              <span>{label}</span>
+            </NavLink>
+
+            {isHardwareExplorer && showExplorerCard && (
+              <AnimatePresence>
+                <motion.div
+                  className="hardware-explorer-nav-card"
+                  initial={{ opacity: 0, y: -10, scale: 0.94, x: '-50%' }}
+                  animate={{ opacity: 1, y: 0, scale: 1, x: '-50%' }}
+                  exit={{ opacity: 0, y: -10, scale: 0.94, x: '-50%' }}
+                  transition={{ duration: 0.28, ease: 'easeOut' }}
+                >
+                  <div className="nav-card-caret" />
+                  <div className="nav-card-top">
+                    <span className="nav-card-tag"><Sparkles size={11} /> 3D STUDIO</span>
+                    <button
+                      type="button"
+                      className="nav-card-close"
+                      onClick={(e) => { e.stopPropagation(); setShowExplorerCard(false); }}
+                      aria-label="Close card"
+                    >
+                      <X size={13} />
+                    </button>
+                  </div>
+                  <h4 className="nav-card-title">Hardware Explorer</h4>
+                  <p className="nav-card-desc">
+                    Inspect 3D components, motherboard sockets, coolers & GPUs in real-time.
+                  </p>
+                  <button
+                    type="button"
+                    className="nav-card-btn"
+                    onClick={() => {
+                      setShowExplorerCard(false);
+                      setOpen(false);
+                      navigate('/hardware-explorer');
+                    }}
+                  >
+                    <span>Explore Hardware</span>
+                    <ArrowRight size={13} />
+                  </button>
+                </motion.div>
+              </AnimatePresence>
+            )}
+          </div>
+        );
+      })}
+      <NavLink to="/account" className={({ isActive }) => isActive ? 'active' : ''} onClick={() => setOpen(false)}>
+        <span>Account</span>
+      </NavLink>
+    </nav>
+    <div className="header-actions"><button className="header-icon-button" onClick={onOpenWishlist} aria-label={`Wishlist, ${wishlistCount} saved products`}><Heart size={18} /><span>{wishlistCount}</span></button><button className="header-icon-button" onClick={onOpenCart} aria-label={`Shopping cart, ${cartCount} items`}><ShoppingBag size={18} /><span>{cartCount}</span></button><button className="nav-cta" onClick={onConfigure}>Build Your PC <ArrowRight size={15} /></button></div>
   </header>
 }
 
