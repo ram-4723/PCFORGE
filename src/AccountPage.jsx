@@ -67,8 +67,8 @@ export default function AccountPage() {
           type="button"
           onClick={() => {
             const directCustomer = {
-              name: 'Aryan Verma (Customer)',
-              email: 'aryan.verma@example.com',
+              name: 'Customer User',
+              email: 'user@pcforge.com',
               role: 'USER'
             }
             storeAuthSession({
@@ -96,7 +96,7 @@ export default function AccountPage() {
             marginTop: '10px'
           }}
         >
-          <UserCheck size={16} /> Customer Direct Access →
+          <UserCheck size={16} /> Login as User Directly →
         </button>
 
         <button

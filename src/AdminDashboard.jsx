@@ -35,7 +35,7 @@ import {
   logoutAccount
 } from './api/client.js'
 import { clearAuthSession, readAuthSession, storeAuthSession } from './authSession.js'
-import { getStoredOrders, updateStoredOrderStatus, getStoredUsers } from './utils/orderStorage.js'
+import { getStoredOrders, updateStoredOrderStatus, getStoredUsers, clearAllStoredOrders } from './utils/orderStorage.js'
 import './admin.css'
 
 const ORDER_STATUS_OPTIONS = [
@@ -448,7 +448,24 @@ export default function AdminDashboard() {
               </p>
             </div>
 
-            <div className="admin-action-row">
+            <div className="admin-action-row" style={{ display: 'flex', gap: '8px' }}>
+              {orders.length > 0 && (
+                <button
+                  type="button"
+                  className="admin-btn-secondary"
+                  onClick={() => {
+                    if (window.confirm('Are you sure you want to clear all placed orders and reset the admin console to 0?')) {
+                      clearAllStoredOrders()
+                      setOrders([])
+                      setActionNotice('All orders cleared. Console reset to 0 orders.')
+                      setTimeout(() => setActionNotice(null), 3000)
+                    }
+                  }}
+                  title="Reset order count to 0"
+                >
+                  Clear Orders
+                </button>
+              )}
               <Link to="/builder" className="admin-btn-primary" style={{ textDecoration: 'none' }}>
                 <Wrench size={14} /> Place Customer Order
               </Link>

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Link, NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom'
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
-import { ArrowDownRight, ArrowLeft, ArrowRight, Check, ChevronDown, CircleAlert, Clipboard, Cpu, Gamepad2, Menu, Monitor, Sparkles, Code2, Video, GraduationCap, X, Zap, Wrench, ArrowUpRight, RotateCcw, CreditCard, Landmark, Smartphone, ShieldCheck, Heart, ShoppingBag, Search, Tag, House, CircuitBoard, Images, SlidersHorizontal } from 'lucide-react'
+import { ArrowDownRight, ArrowLeft, ArrowRight, Check, ChevronDown, CircleAlert, Clipboard, Cpu, Gamepad2, Menu, Monitor, Sparkles, Code2, Video, GraduationCap, X, Zap, Wrench, ArrowUpRight, RotateCcw, CreditCard, Landmark, Smartphone, ShieldCheck, UserCheck, Heart, ShoppingBag, Search, Tag, House, CircuitBoard, Images, SlidersHorizontal } from 'lucide-react'
 import { categoryLabels } from './data/components.js'
 import { exampleBuilds } from './data/exampleBuilds.js'
 import { services } from './data/services.js'
@@ -111,6 +111,63 @@ function TimedLoginPrompt({ onSkip }) {
         <label>Password<input type="password" autoComplete="current-password" value={form.password} onChange={(event) => setForm({ ...form, password: event.target.value })} placeholder="Your password" required /></label>
         {state.error && <p className="login-prompt-error" role="alert">{state.error}</p>}
         <button className="login-prompt-submit" type="submit" disabled={state.loading}>{state.loading ? 'Please wait…' : 'Sign in'} <ArrowRight size={16} /></button>
+        <button
+          type="button"
+          onClick={() => {
+            const directCustomer = { name: 'Customer User', email: 'user@pcforge.com', role: 'USER' }
+            storeAuthSession({ user: directCustomer, accessToken: 'customer-direct-token' })
+            saveStoredUser(directCustomer)
+            onSkip()
+          }}
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: '8px',
+            width: '100%',
+            padding: '10px 14px',
+            borderRadius: '8px',
+            background: 'linear-gradient(135deg, rgba(34, 197, 94, 0.15) 0%, rgba(56, 189, 248, 0.15) 100%)',
+            border: '1px solid rgba(34, 197, 94, 0.45)',
+            color: '#4ade80',
+            fontSize: '13px',
+            fontWeight: '700',
+            cursor: 'pointer',
+            marginTop: '8px'
+          }}
+        >
+          <UserCheck size={15} /> Login as User Directly →
+        </button>
+        <button
+          type="button"
+          onClick={() => {
+            storeAuthSession({
+              user: { name: 'Administrator', email: 'admin@pcforge.com', role: 'ADMIN' },
+              accessToken: 'admin-direct-token',
+              isGuestMode: true
+            })
+            onSkip()
+            navigate('/admin')
+          }}
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: '8px',
+            width: '100%',
+            padding: '10px 14px',
+            borderRadius: '8px',
+            background: 'linear-gradient(135deg, rgba(56, 189, 248, 0.15) 0%, rgba(255, 198, 74, 0.15) 100%)',
+            border: '1px solid rgba(56, 189, 248, 0.45)',
+            color: '#38bdf8',
+            fontSize: '13px',
+            fontWeight: '700',
+            cursor: 'pointer',
+            marginTop: '6px'
+          }}
+        >
+          <ShieldCheck size={15} /> Admin Direct Access →
+        </button>
       </form>
       <div className="login-prompt-actions"><button type="button" onClick={() => { onSkip(); navigate('/account?mode=register') }}>Create an account</button><button type="button" onClick={onSkip}>Skip for now</button></div>
     </motion.section>
@@ -182,14 +239,34 @@ function Header({ onConfigure, cartCount, wishlistCount, onOpenCart, onOpenWishl
                   <button
                     type="button"
                     className="nav-card-btn"
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      gap: '8px',
+                      width: '100%',
+                      height: '42px',
+                      padding: '0 16px',
+                      borderRadius: '8px',
+                      background: 'linear-gradient(135deg, #ffc64a 0%, #eab308 100%)',
+                      border: 'none',
+                      color: '#080e14',
+                      fontFamily: "'DM Sans', sans-serif",
+                      fontSize: '13px',
+                      fontWeight: '700',
+                      letterSpacing: '0.01em',
+                      boxShadow: '0 4px 18px rgba(255, 198, 74, 0.4)',
+                      cursor: 'pointer',
+                      marginTop: '6px'
+                    }}
                     onClick={() => {
                       setShowExplorerCard(false);
                       setOpen(false);
                       navigate('/hardware-explorer');
                     }}
                   >
-                    <span>Explore Hardware in 3D</span>
-                    <ArrowRight size={14} />
+                    <span style={{ color: '#080e14', fontWeight: '700' }}>Explore Hardware in 3D</span>
+                    <ArrowRight size={14} color="#080e14" />
                   </button>
                 </motion.div>
               </AnimatePresence>
